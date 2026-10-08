@@ -1,0 +1,35 @@
+erDiagram
+  PRODUCTION_RUN ||--o{ LEDGER_ENTRY : issues
+  LEDGER_ENTRY ||--o| OUTCOME : "resolved by"
+  PRODUCTION_RUN ||--o| EXPORT : "published as"
+  PRODUCTION_RUN {
+    string run_id PK
+    string status
+  }
+  LEDGER_ENTRY {
+    string forecast_id PK
+    string series
+    string forecaster_id
+    string target_period
+    string issuance_date
+    string data_cutoff
+    json probabilities
+    string prediction
+    bool is_official
+    string input_data_version
+    string code_hash
+    string prev
+    string hash
+  }
+  OUTCOME {
+    string forecast_id FK
+    string actual
+    string prev
+    string hash
+  }
+  EXPORT {
+    string content_hash PK
+    string engine_commit
+    string generated_at
+    int files
+  }

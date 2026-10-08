@@ -1,0 +1,23 @@
+%%{init: {"flowchart": {"nodeSpacing": 22, "rankSpacing": 40}}}%%
+flowchart LR
+  subgraph ext["External Data Sources"]
+    direction TB
+    bls["U.S. Bureau of Labor Statistics<br/>air-freight price indexes"]
+    eia["U.S. Energy Information<br/>Administration: fuel prices"]
+    hkia["Airport Authority Hong Kong<br/>flight information"]
+    dot["U.S. Department of Transportation<br/>international departures"]
+  end
+  sched["Production Scheduler<br/>(GitHub Actions)"]
+  maint["Maintainer /<br/>Operator"]
+  sys(["AirPulse<br/>benchmark forecasting and<br/>market intelligence"])
+  repo["Repository and<br/>Deployment<br/>(GitHub, GitHub Pages)"]
+  user["Public User<br/>(web browser)"]
+  bls -- "releases" --> sys
+  eia -- "spreadsheets" --> sys
+  hkia -- "flight lists" --> sys
+  dot -- "route file" --> sys
+  sched -- "start of a run" --> sys
+  maint -- "configuration,<br/>licence status" --> sys
+  sys -- "run summary" --> maint
+  sys -- "state (commit),<br/>built site (gated)" --> repo
+  repo -- "pages, data" --> user

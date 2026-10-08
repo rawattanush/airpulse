@@ -1,0 +1,68 @@
+operator_icao,operator_name,role,confidence,note
+FDX,FedEx Express,all_cargo,high,express integrator
+UPS,UPS Airlines,all_cargo,high,express integrator
+GTI,Atlas Air,all_cargo,medium,cargo and some passenger charter
+PAC,Polar Air Cargo,all_cargo,high,
+CKS,Kalitta Air,all_cargo,high,
+ABX,ABX Air,all_cargo,high,
+ATN,Air Transport International,all_cargo,medium,cargo and combi
+SOO,Southern Air,all_cargo,high,
+WGN,Western Global Airlines,all_cargo,high,
+NCR,National Airlines,all_cargo,medium,cargo and passenger charter
+CLX,Cargolux,all_cargo,high,
+ICV,Cargolux Italia,all_cargo,high,
+BOX,AeroLogic,all_cargo,high,
+GEC,Lufthansa Cargo,all_cargo,high,
+BCS,European Air Transport Leipzig,all_cargo,high,DHL network
+DHK,DHL Air UK,all_cargo,high,DHL network
+DAE,DHL Aero Expreso,all_cargo,high,DHL network
+DHX,DHL International Aviation ME,all_cargo,high,DHL network
+TAY,ASL Airlines Belgium,all_cargo,high,
+MPH,Martinair,all_cargo,high,
+ABW,AirBridgeCargo,all_cargo,high,
+VDA,Volga-Dnepr Airlines,all_cargo,high,
+ADB,Antonov Airlines,all_cargo,high,
+AZG,Silk Way West Airlines,all_cargo,high,
+MNB,MNG Airlines,all_cargo,high,
+NCA,Nippon Cargo Airlines,all_cargo,high,
+CKK,China Cargo Airlines,all_cargo,high,
+CAO,Air China Cargo,all_cargo,high,
+CSS,SF Airlines,all_cargo,high,
+CYZ,China Postal Airlines,all_cargo,high,
+YZR,Suparna Airlines,all_cargo,medium,cargo and passenger
+AHK,Air Hong Kong,all_cargo,high,
+HKC,Hong Kong Air Cargo,all_cargo,high,
+SQC,Singapore Airlines Cargo,all_cargo,high,merged into Singapore Airlines in 2018
+CJT,Cargojet Airways,all_cargo,high,
+TPA,Avianca Cargo,all_cargo,high,
+LCO,LATAM Cargo Chile,all_cargo,high,
+MSX,Egyptair Cargo,all_cargo,high,
+SRR,Star Air,all_cargo,high,
+NPT,West Atlantic UK,all_cargo,high,
+SWN,West Air Sweden,all_cargo,high,
+BDA,Blue Dart Aviation,all_cargo,high,
+QJE,Quikjet Airlines,all_cargo,high,
+AJK,Allied Air,all_cargo,high,
+KAL,Korean Air,combination,high,passenger aircraft and freighters under one code
+AAR,Asiana Airlines,combination,high,passenger aircraft and freighters under one code
+CPA,Cathay Pacific,combination,high,passenger aircraft and freighters under one code
+CAL,China Airlines,combination,high,passenger aircraft and freighters under one code
+EVA,EVA Air,combination,high,passenger aircraft and freighters under one code
+SIA,Singapore Airlines,combination,high,passenger aircraft and freighters under one code
+UAE,Emirates,combination,high,passenger aircraft and freighters under one code
+QTR,Qatar Airways,combination,high,passenger aircraft and freighters under one code
+ETD,Etihad Airways,combination,high,passenger aircraft and freighters under one code
+THY,Turkish Airlines,combination,high,passenger aircraft and freighters under one code
+SVA,Saudia,combination,high,passenger aircraft and freighters under one code
+ETH,Ethiopian Airlines,combination,high,passenger aircraft and freighters under one code
+CSN,China Southern Airlines,combination,high,passenger aircraft and freighters under one code
+ANA,All Nippon Airways,combination,high,passenger aircraft and freighters under one code
+AFR,Air France,combination,high,passenger aircraft and freighters under one code
+KLM,KLM,combination,medium,passenger aircraft and freighters under one code
+ACA,Air Canada,combination,medium,freighters since 2021
+MAS,Malaysia Airlines,combination,high,passenger aircraft and freighters under one code
+ELY,El Al,combination,high,passenger aircraft and freighters under one code
+QFA,Qantas,combination,medium,passenger aircraft and freighters under one code
+UZB,Uzbekistan Airways,combination,medium,passenger aircraft and freighters under one code
+LAN,LATAM Airlines,combination,medium,passenger aircraft and freighters under one code
+IGO,IndiGo,combination,medium,converted freighters since 2022

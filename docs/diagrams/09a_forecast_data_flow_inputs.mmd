@@ -1,0 +1,8 @@
+%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 30}}}%%
+flowchart LR
+  raw["Raw observations<br/>every BLS release<br/>of IC1312"]
+  asof["As-of dataset<br/>values as known on<br/>the issuance date"]
+  feat["Features (F1)<br/>own changes,<br/>month of year"]
+  fc["Forecaster<br/>official: seasonal<br/>baseline BL-SEA"]
+  prob["Probabilities<br/>P(DOWN), P(FLAT),<br/>P(UP)"]
+  raw --> asof --> feat --> fc --> prob

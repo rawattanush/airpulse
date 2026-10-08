@@ -1,0 +1,9 @@
+{
+ "source_id": "SRC-01",
+ "url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPJK_PF4_RGC_DPGd.xls",
+ "retrieved_at": "2026-10-03T14:37:18Z",
+ "sha256": "4084aa75d262541a45362e3a002f24235cb5069c093ce1ca4ad449d004a7f3c8",
+ "http_status": 200,
+ "bytes": 135847,
+ "note": "Written as observation_date,value from the Energy Information Administration's spreadsheet SRC-01_eia_EER_EPJK_PF4_RGC_DPG.xls (sha256 ce73a1e081cdc8fb): python scripts/build_eia_snapshot.py. Values unmodified."
+}

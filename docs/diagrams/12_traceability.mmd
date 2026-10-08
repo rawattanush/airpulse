@@ -1,0 +1,12 @@
+%%{init: {"flowchart": {"nodeSpacing": 20, "rankSpacing": 18}}}%%
+flowchart LR
+  r["Requirements<br/>FR, NFR"]
+  d["Design<br/>components"]
+  i["Implementation<br/>modules"]
+  t["Tests"]
+  v["Validation<br/>evidence"]
+  r -- "allocated to" --> d
+  d -- "realised by" --> i
+  i -- "verified by" --> t
+  t -- "confirmed by" --> v
+  v -. "demonstrates" .-> r

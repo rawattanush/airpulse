@@ -1,0 +1,18 @@
+flowchart TB
+  src["External Data Sources"]
+  p1(("1<br/>Ingestion<br/>(source adapters)"))
+  p2(("2<br/>Validation"))
+  p3(("3<br/>Canonical<br/>storage"))
+  p4(("4<br/>Feature<br/>construction"))
+  d1[("D1 Raw answers<br/>operations/raw")]
+  d2[("D2 Current files<br/>operations/current")]
+  d3[("D3 Ingestion log")]
+  d4[("D4 As-of store<br/>(SQLite, derived)")]
+  src -- "raw answer" --> p1
+  p1 -- "dated raw copy" --> d1
+  p1 -- "candidate file" --> p2
+  p2 -- "result of every attempt" --> d3
+  p2 -- "accepted file, checksum" --> d2
+  d2 -- "every release, every value" --> p3
+  p3 -- "revision log" --> d4
+  d4 -- "values as known at issuance" --> p4

@@ -1,0 +1,9 @@
+{
+ "source_id": "SRC-01",
+ "url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPJK_PF4_RGC_DPGd.xls",
+ "retrieved_at": "2026-10-03T14:37:18Z",
+ "sha256": "ce73a1e081cdc8fb16729ce4d9c4f971c4c0ca5c7e059a2dae8c712f8f1c7171",
+ "http_status": 200,
+ "bytes": 460288,
+ "note": "The Energy Information Administration's spreadsheet of series EER_EPJK_PF4_RGC_DPG, as retrieved from the Administration for the first data audit; byte for byte the file held since as SRC-01_eia_jetfuel_usgulf_daily.xls."
+}

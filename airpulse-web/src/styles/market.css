@@ -1,0 +1,192 @@
+/* Overview (executive briefing), Market (research terminal), Forecast (analytical workspace), Trends (visualisation), History (record). */
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* ---------- the outlook word, shared by Overview and Forecast */
+.call-word { font-family: var(--display); font-weight: 700; font-stretch: 92%; font-size: clamp(4rem, 12vw, 9.5rem); line-height: 0.88; letter-spacing: -0.045em; text-transform: uppercase; display: flex; align-items: center; gap: 0.16em; margin: 14px 0 0 -0.04em; color: var(--navy); }
+.call-word i { font-style: normal; font-size: 0.42em; font-weight: 600; width: 1.5em; height: 1.5em; display: inline-flex; align-items: center; justify-content: center; flex: none; letter-spacing: 0; }
+.call-word.up i { background: var(--yellow); } .call-word.flat i { background: #C5D2DE; } .call-word.down i { background: var(--sky); }
+.call-sub { margin-top: 26px; font-size: clamp(1.05rem, 1.5vw, 1.25rem); line-height: 1.45; max-width: 34em; color: var(--ink-2); }
+.call-close { margin-top: 12px; padding-left: 14px; border-left: 3px solid var(--yellow); font-size: 15px; color: var(--ink); max-width: 38em; }
+.big-num { font-family: var(--display); font-weight: 680; font-size: clamp(2.8rem, 6vw, 4.6rem); line-height: 1; letter-spacing: -0.03em; margin: 8px 0 18px; font-variant-numeric: tabular-nums; }
+
+/* ---------- Overview: a morning briefing. Typography and rules; no boxes. */
+.brief { --page: 1120px; }
+.dateline { display: flex; flex-wrap: wrap; gap: 6px 0; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); padding-bottom: 14px; border-bottom: 2px solid var(--navy); }
+.dateline span + span::before { content: '·'; margin: 0 12px; }
+.brief-top { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr); gap: 40px 72px; padding: clamp(28px, 4vw, 48px) 0 clamp(32px, 5vw, 56px); align-items: start; }
+.brief-prob .kv { margin-top: 20px; }
+.brief-prob .kv > div:first-child { border-top: 1px solid var(--faint); }
+.brief-chart { padding-top: 22px; border-top: 1px solid var(--rule); }
+.brief-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 3.1fr); gap: 20px 48px; margin-top: clamp(40px, 5vw, 64px); padding-top: 18px; border-top: 1px solid var(--navy); }
+.brief-row > h2 { font-size: clamp(1.5rem, 2.6vw, 2.1rem); }
+.changed li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--faint); }
+.changed li:first-child { padding-top: 2px; }
+.changed-n { font-family: var(--mono); font-size: 12px; color: var(--ink-3); padding-top: 4px; }
+.changed h3 { font-size: 1.16rem; }
+.changed p { color: var(--ink-2); margin-top: 4px; max-width: 64ch; font-size: 15px; }
+.changed a { display: inline-block; margin-top: 8px; font-size: 13.5px; font-weight: 600; text-underline-offset: 4px; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; }
+.why { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 28px 48px; }
+.why-main p { font-size: 1.12rem; line-height: 1.5; max-width: 34em; }
+.why-main p.fine { font-size: 13.5px; }
+.why-side { border-left: 1px solid var(--rule); padding-left: 28px; }
+.why-side p + p { margin-top: 10px; }
+.why-side > p:nth-child(2) { font-size: 15px; color: var(--ink-2); margin-top: 10px; }
+.basis-bar { display: flex; height: 34px; margin: 18px 0 10px; max-width: 34em; gap: 2px; }
+.basis-bar span { display: flex; align-items: center; padding: 0 10px; font-family: var(--mono); font-size: 11.5px; color: var(--navy); white-space: nowrap; overflow: hidden; min-width: 0; flex-basis: 0; }
+.brief-state { margin-top: 28px; font-size: 13px; color: var(--ink-3); display: block; }
+.brief-state i { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--grey); margin-right: 8px; }
+.brief-state i.automated, .brief-state i.live { background: #2F9E6B; }
+
+/* ---------- Market: a research terminal. Dark head with the figures, then the chart at full width. */
+.mkt-head { position: relative; background: var(--navy); color: #fff; overflow: hidden; }
+.mkt-head picture { position: absolute; top: 0; right: 0; bottom: 0; width: 62%; opacity: 0.75; }
+.mkt-head::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--navy) 30%, rgba(16, 42, 67, 0.82) 52%, rgba(16, 42, 67, 0.3) 100%); }
+.mkt-head-in { position: relative; z-index: 1; max-width: calc(var(--page) + 2 * var(--gut)); margin: 0 auto; padding: clamp(32px, 5vw, 56px) var(--gut) clamp(26px, 4vw, 40px); }
+.mkt-head .eyebrow { color: var(--yellow); }
+.mkt-lane { font-size: clamp(1.5rem, 3vw, 2.3rem); margin-top: 12px; letter-spacing: -0.01em; text-transform: uppercase; font-weight: 620; }
+.mkt-lane span { color: var(--yellow); }
+.mkt-now { display: flex; flex-wrap: wrap; gap: 28px 80px; margin-top: clamp(22px, 3.4vw, 40px); align-items: flex-end; }
+.mkt-dir { font-family: var(--display); font-weight: 700; font-stretch: 92%; font-size: clamp(3.2rem, 8.6vw, 7rem); line-height: 0.9; letter-spacing: -0.04em; text-transform: uppercase; }
+.mkt-dir.up { color: var(--yellow); } .mkt-dir.down { color: var(--sky); }
+.mkt-chg { margin-top: 14px; font-size: 1.1rem; color: var(--on-dark); }
+.mkt-chg b { color: #fff; font-size: 1.5rem; font-weight: 500; margin-right: 6px; }
+.mkt-level { border-left: 1px solid rgba(255, 255, 255, 0.28); padding-left: 28px; }
+.mkt-level .eyebrow { color: var(--on-dark); }
+.mkt-val { font-size: clamp(2.4rem, 5vw, 3.6rem); line-height: 1.05; font-weight: 500; margin-top: 6px; }
+.mkt-what { font-size: 13.5px; color: var(--on-dark); margin-top: 6px; line-height: 1.45; }
+.mkt-what b { color: #fff; font-weight: 600; }
+.mkt-as-of { margin-top: 26px; font-family: var(--mono); font-size: 11.5px; letter-spacing: 0.06em; color: var(--on-dark-2); display: flex; flex-wrap: wrap; gap: 8px 28px; align-items: baseline; }
+.mkt-when { color: var(--on-dark) !important; margin-bottom: 10px; }
+.mkt-next { color: #fff; text-decoration: none; border-bottom: 1px solid var(--yellow); padding-bottom: 1px; }
+.mkt-next b { color: var(--yellow); font-weight: 500; }
+.mkt-next:hover { border-bottom-color: #fff; }
+.mkt-tracked { margin: 28px 0 0; }
+.mkt-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-bottom: 1px solid var(--rule); }
+.mkt-stats > div { padding: 22px 24px 20px 0; }
+.mkt-stats > div + div { padding-left: 24px; border-left: 1px solid var(--rule); }
+.mkt-stats dt { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); }
+.mkt-stats dd { font-size: 1.55rem; font-weight: 500; margin-top: 6px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.mkt-stats dd span:not(.dir) { font-family: var(--body); font-size: 13px; color: var(--ink-3); font-weight: 400; }
+.mkt-stats dd .dir { font-size: 14px; font-weight: 500; }
+.mkt-stats dd:not(.num) { font-family: var(--display); font-weight: 620; }
+.page.flush > .disclosure { margin-top: 18px; border-top: 0; }
+.mkt-chart { margin-top: clamp(28px, 4vw, 44px); }
+.mkt-means { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.4fr); gap: 16px 48px; margin-top: clamp(44px, 6vw, 72px); padding: 26px 0; border-top: 2px solid var(--navy); border-bottom: 1px solid var(--rule); }
+.mkt-means p { font-size: 1.05rem; color: var(--ink-2); max-width: 60ch; }
+.mkt-means p + p { margin-top: 10px; }
+.mkt-means p.lead { font-family: var(--display); font-size: clamp(1.25rem, 2.1vw, 1.6rem); line-height: 1.25; color: var(--ink); font-weight: 560; letter-spacing: -0.01em; }
+.mkt-means p.fine { font-size: 13.5px; color: var(--ink-3); margin-top: 16px; }
+.mkt-table { margin-top: 26px; }
+
+/* ---------- Forecast: an analytical workspace. */
+.fc-top { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr); gap: 36px 72px; align-items: start; }
+.fc-call .probbars { margin-top: 30px; }
+.fc-call .call-close { margin-top: 20px; }
+.fc-same { margin-top: 10px; }
+.fc-same a { text-underline-offset: 3px; }
+.fc-facts { border-top: 2px solid var(--navy); }
+.fc-late { margin-top: 14px; }
+.fc-basis { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px 64px; }
+.fc-basis-why p { font-size: 1.1rem; line-height: 1.5; max-width: 34em; }
+.fc-basis-why p.fine { font-size: 13.5px; }
+.fc-record-big { font-size: 1.15rem; margin: 8px 0 8px; color: var(--ink-2); }
+.fc-record-big b { font-family: var(--display); font-size: 2.6rem; font-weight: 680; color: var(--ink); letter-spacing: -0.02em; margin-right: 4px; }
+.fc-record-big span { font-family: var(--mono); font-size: 14px; background: var(--yellow); color: var(--navy); padding: 2px 8px; margin-left: 8px; }
+.fc-periods { margin-top: 18px; }
+.fc-bycall { display: flex; flex-wrap: wrap; gap: 10px 44px; margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--faint); font-size: 14.5px; }
+.fc-bycall p { display: flex; align-items: baseline; gap: 8px; }
+.fc-bycall span:not(.dir) { color: var(--ink-3); }
+.fc-bycall b { font-family: var(--mono); font-weight: 500; }
+.fc-table { margin-top: 26px; }
+.fc-known { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 32px 56px; align-items: start; }
+.fc-known h3 { margin-bottom: 6px; }
+.fc-known .fine { margin: 14px 0 16px; }
+
+/* ---------- Trends: the charts carry the page. */
+.trend-main { margin-top: 0; }
+.trend-season { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 32px 64px; }
+.trend-season h3 { margin-bottom: 14px; font-size: 0.98rem; }
+
+/* ---------- History: a record with a time rail. */
+.hist-marks { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 2.6fr); gap: 20px 48px; }
+.hist-marks h2 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); }
+.tl { border-left: 2px solid var(--navy); }
+.tl li { position: relative; display: grid; grid-template-columns: 96px minmax(0, 1fr); gap: 20px; padding: 0 0 22px 24px; }
+.tl li::before { content: ''; position: absolute; left: -7px; top: 5px; width: 12px; height: 12px; background: var(--yellow); border: 2px solid var(--navy); }
+.tl li:last-child { padding-bottom: 0; }
+.tl time { font-family: var(--mono); font-size: 12.5px; color: var(--ink-3); padding-top: 2px; }
+.tl p { color: var(--ink-2); font-size: 15px; margin-top: 2px; max-width: 58ch; }
+.turn { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 2px 8px; color: var(--navy); }
+.turn.high { background: var(--yellow); } .turn.low { background: var(--sky); }
+.yr-bar { display: inline-flex; width: min(220px, 46vw); height: 12px; vertical-align: middle; }
+.yr-bar i { display: block; height: 100%; }
+.yr-n { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); margin-left: 12px; white-space: nowrap; }
+.hist-note { margin-top: 14px; max-width: 80ch; }
+
+@media (max-width: 860px) {
+  .brief-top, .why, .fc-top, .fc-basis, .fc-known, .trend-season, .mkt-means, .brief-row, .hist-marks { grid-template-columns: minmax(0, 1fr); }
+  .why-side { border-left: 0; padding-left: 0; border-top: 1px solid var(--rule); padding-top: 18px; }
+  .mkt-head picture { width: 100%; opacity: 0.45; }
+  .mkt-head::after { background: linear-gradient(180deg, rgba(16, 42, 67, 0.7), rgba(16, 42, 67, 0.92)); }
+  .mkt-level { border-left: 0; padding-left: 0; }
+  .mkt-now { gap: 22px; }
+  .mkt-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mkt-stats > div:nth-child(3) { padding-left: 0; border-left: 0; }
+  .mkt-stats > div:nth-child(n + 3) { border-top: 1px solid var(--rule); }
+  .tl li { grid-template-columns: minmax(0, 1fr); gap: 2px; }
+}
+
+/* ---- weekly fuel-cost outlook ---- */
+.wk-not { border-left: 3px solid var(--yellow); padding: 4px 0 4px 18px; max-width: 82ch; color: var(--ink-2); margin: 0 0 44px; }
+.wk-not b { color: var(--ink); }
+.wk-stale { background: #FFF6D6; border: 1px solid var(--yellow); padding: 12px 16px; margin: 0 0 32px; max-width: 82ch; }
+.wk-why { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 36px 64px; align-items: start; }
+.wk-why p + p { margin-top: 12px; }
+.wk-rules { list-style: none; padding: 0; margin: 10px 0 14px; border-top: 1px solid var(--faint); }
+.wk-rules li { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 14px; padding: 9px 0; border-bottom: 1px solid var(--faint); font-size: 14.5px; align-items: baseline; }
+.wk-rules b { font-weight: 550; font-variant-numeric: tabular-nums; }
+.wk-rules em { font-style: normal; font-family: var(--mono); font-size: 13px; color: var(--ink-3); min-width: 3.2em; text-align: right; }
+.wk-strength { margin-top: 28px; }
+.wk-list { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); max-width: 88ch; }
+.wk-list li { padding: 13px 0; border-bottom: 1px solid var(--faint); color: var(--ink-2); }
+.wk-list b { color: var(--ink); }
+
+/* ---- monthly outlook: evidence and calibration ---- */
+.fc-ev { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 36px 64px; align-items: start; }
+.fc-ev .lead { font-size: 1.12rem; }
+.fc-ev p + p { margin-top: 12px; }
+.fc-ev .tbl-wrap { margin-top: 22px; }
+.fc-ev h3 { font-size: 0.95rem; }
+.fc-ev-off td { background: var(--cloud); font-weight: 550; }
+.fc-groups { list-style: none; padding: 0; margin: 10px 0 14px; border-top: 2px solid var(--navy); }
+.fc-groups li { display: flex; justify-content: space-between; gap: 16px; padding: 10px 0; border-bottom: 1px solid var(--faint); font-size: 14.5px; }
+.fc-groups b { font-weight: 500; color: var(--ink-3); text-align: right; }
+.fc-groups b.yes { color: var(--ink); font-weight: 600; }
+.fc-cal { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 36px 64px; align-items: start; }
+.fc-cal p + p { margin-top: 12px; }
+.kv-more { font-size: 13px; font-weight: 400; margin-left: 6px; }
+
+/* ---- market: the two outlooks, kept apart ---- */
+.mkt-out { margin: 72px 0 0; }
+.mkt-out-rows { border-top: 2px solid var(--navy); margin-top: 18px; }
+.mkt-out-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr) auto; gap: 6px 32px; align-items: baseline; padding: 18px 0; border-bottom: 1px solid var(--rule); color: inherit; text-decoration: none; }
+.mkt-out-row:hover { background: var(--cloud); }
+.mkt-out-row .eyebrow { margin: 0; }
+.mkt-out-row .eyebrow i { font-style: normal; background: var(--yellow); color: var(--navy); padding: 1px 6px; margin-left: 6px; letter-spacing: 0; text-transform: none; white-space: nowrap; }
+.mkt-out-q { font-family: var(--display); font-size: 1.1rem; font-weight: 600; }
+.mkt-out-a { display: flex; gap: 12px; align-items: baseline; white-space: nowrap; }
+.mkt-out-a em { font-style: normal; color: var(--ink-3); font-size: 14px; }
+.mkt-ctx { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px 64px; margin-top: 30px; }
+.mkt-ctx h3 { font-size: 0.95rem; margin-bottom: 6px; }
+.mkt-ctx p { color: var(--ink-2); }
+
+@media (max-width: 860px) {
+  .wk-why, .fc-ev, .fc-cal, .mkt-ctx { grid-template-columns: minmax(0, 1fr); }
+  .mkt-out-row { grid-template-columns: minmax(0, 1fr); }
+  .mkt-out-a { white-space: normal; flex-wrap: wrap; }
+}
+.wk-carry { border: 1px solid var(--navy); border-left: 6px solid var(--navy); padding: 14px 18px; max-width: 82ch; margin: 0 0 40px; color: var(--ink-2); }
+.wk-carry b { color: var(--ink); }
+.fc-ev2 { margin-top: 48px; padding-top: 30px; border-top: 1px solid var(--faint); }
+.fc-ev2 > h3 { font-size: 1.12rem; margin-bottom: 18px; }
+.fc-ev2 .tbl-wrap { margin-bottom: 22px; }

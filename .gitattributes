@@ -1,0 +1,3 @@
+# Every file is stored and checked out byte for byte: checksums of data snapshots, the news archive,
+# the frozen artifacts and the reference annotation depend on exact bytes (no end-of-line conversion).
+* -text

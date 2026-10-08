@@ -1,0 +1,27 @@
+flowchart TB
+  ext["External data sources<br/>(HTTPS, read-only)"]
+  subgraph gh["GitHub (hosting provider)"]
+    subgraph repo["«node» Git repository (public)"]
+      a1["engine source, configuration, tests"]
+      a2["operations/ : committed state"]
+      a3["airpulse-web/ : application source"]
+      a4[".github/workflows/production.yml, ci.yml"]
+    end
+    subgraph runner["«node» GitHub Actions runner (Ubuntu, ephemeral)"]
+      r1["Python 3.12: production run, tests"]
+      r2["Node 22: export, tests, static build"]
+      r3["pre-upload checks and licence gate"]
+    end
+    subgraph pages["«node» GitHub Pages (static file host)"]
+      g1["index.html, 404.html, JS and CSS bundles"]
+      g2["data/*.json (exported, read-only)"]
+    end
+  end
+  subgraph client["«node» User device"]
+    b1["Web browser:<br/>React single-page application"]
+  end
+  repo -- "checkout" --> runner
+  ext -- "HTTPS GET / POST" --> runner
+  runner -- "git push: operations/ only" --> repo
+  runner -- "Pages artifact, only if<br/>the licence gate is open" --> pages
+  pages -- "HTTPS: static files" --> client

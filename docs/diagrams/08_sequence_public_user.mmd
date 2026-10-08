@@ -1,0 +1,23 @@
+sequenceDiagram
+  autonumber
+  participant B as Browser
+  participant P as GitHub Pages
+  participant A as React Application
+  participant J as Static Production Data
+  B->>P: GET page
+  alt route is the root
+    P-->>B: index.html
+  else deep link
+    P-->>B: 404.html (app shell)
+  end
+  B->>P: GET bundles
+  P-->>B: bundles
+  B->>A: start, resolve route
+  A->>P: GET data/*.json
+  P->>J: read files
+  J-->>A: JSON
+  alt data present and within the page contract
+    A-->>B: rendered page
+  else a file is missing or a source is not healthy
+    A-->>B: page states what is unavailable
+  end

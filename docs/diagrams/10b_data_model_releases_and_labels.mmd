@@ -1,0 +1,33 @@
+erDiagram
+  SERIES ||--o{ RELEASE : "first released"
+  SERIES ||--o{ LABEL : labelled
+  SERIES ||--o{ DATA_QUALITY_RESULT : "checked by"
+  SERIES {
+    string series_id PK
+    string title
+    string kind
+    string frequency
+    int file_id FK
+  }
+  RELEASE {
+    string series_id PK
+    string obs_month PK
+    string first_release_date
+    int first_release_observed
+    string final_date
+  }
+  LABEL {
+    string series_id PK
+    string target_month PK
+    string kind PK
+    float pct_change
+    string label
+    string label_date
+  }
+  DATA_QUALITY_RESULT {
+    int result_id PK
+    string series_id FK
+    string check_name
+    float value
+    string detail
+  }

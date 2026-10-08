@@ -1,0 +1,12 @@
+{
+ "bytes": 10263986,
+ "http_status": 200,
+ "licence": "Public Domain U.S. Government",
+ "note": "US Department of Transportation, International_Report_Departures: all nonstop commercial departures between international points and US airports, by month, airport pair and carrier.",
+ "raw_bytes": 85876063,
+ "raw_sha256": "cb4b76a005effad4db85cb7c208ff07445f057aa8f694b5cdaef3af41b79c11e",
+ "retrieved_at": "2026-10-05T10:22:17Z",
+ "sha256": "bee8270dd581441a86eb4fcb05635b70a855460db56970c61586d47edb7a2601",
+ "source_id": "AV-15",
+ "url": "https://data.transportation.gov/api/views/innc-gbgc/rows.csv?accessType=DOWNLOAD"
+}

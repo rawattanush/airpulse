@@ -1,0 +1,9 @@
+{
+ "source_id": "SRC-08",
+ "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+ "retrieved_at": "2026-10-03T14:37:29Z",
+ "sha256": "bf3da33d21e30b387cc543bb1d6690d123ffd9b196f37cabd8624e9f9c08ecd1",
+ "http_status": 200,
+ "bytes": 452096,
+ "note": "The Energy Information Administration's spreadsheet of series RBRTE, as retrieved from the Administration for the first data audit; byte for byte the file held since as SRC-08_eia_brent_daily.xls."
+}

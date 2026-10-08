@@ -1,0 +1,9 @@
+{
+ "source_id": "SRC-09",
+ "url": "https://www.bls.gov/bls/news-release/ximpim.htm (each of 198 archived releases); https://api.bls.gov/publicAPI/v1/timeseries/data/ (series EIUIV1311)",
+ "retrieved_at": "2026-10-07T06:00:49Z",
+ "sha256": "12b88f7c2ba651a6a47ef467926d38e230b5b965bf53f3a5341112bcaa6b8425",
+ "http_status": 200,
+ "bytes": 216162,
+ "note": "Rebuilt from the Bureau of Labor Statistics' own archived releases 2010-03-16 to 2026-09-16 and its database values (CL-024, rule 3): python scripts/build_bls_vintages.py build. Release tables: research/bls_releases/releases_manifest.csv (sha256 0fbad0302d436efc); database values: research/bls_releases/final_values.csv (sha256 4069ff5900715ad1). Column = series_YYYYMMDD release date."
+}

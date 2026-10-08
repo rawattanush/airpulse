@@ -1,0 +1,39 @@
+%%{init: {"flowchart": {"nodeSpacing": 14, "rankSpacing": 40}}}%%
+flowchart LR
+  user["«actor»<br/>Public User"]
+  sched["«actor»<br/>Production Scheduler"]
+  maint["«actor»<br/>Maintainer"]
+  src["«actor»<br/>Data Source"]
+  subgraph sys["AirPulse"]
+    direction TB
+    uc1(["View index by lane and trends"])
+    uc2(["View monthly benchmark outlook"])
+    uc3(["Review forecast record and replay"])
+    uc4(["View fuel prices"])
+    uc5(["View airport and route activity"])
+    uc6(["Calculate a shipment scenario"])
+    uc7(["Inspect sources, freshness and method"])
+    uc8(["Run the production pipeline"])
+    uc9(["Fetch and validate a source"])
+    uc10(["Issue and record a forecast"])
+    uc11(["Export data and build the site"])
+    uc12(["Apply the deployment gate"])
+    uc13(["Maintain source declarations<br/>and licence status"])
+    uc14(["Rebuild and verify the benchmark"])
+  end
+  user --- uc1
+  user --- uc2
+  user --- uc3
+  user --- uc4
+  user --- uc5
+  user --- uc6
+  user --- uc7
+  sched --- uc8
+  maint --- uc8
+  maint --- uc13
+  maint --- uc14
+  uc8 -. "«include»" .-> uc9
+  uc8 -. "«include»" .-> uc10
+  uc8 -. "«include»" .-> uc11
+  uc11 -. "«include»" .-> uc12
+  uc9 --- src

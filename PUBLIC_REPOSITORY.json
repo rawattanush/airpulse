@@ -1,0 +1,131 @@
+{
+ "built_at": "2026-10-08T16:58:33Z",
+ "built_from": {
+  "application_commit": "659a5a8e5f09b577aca45123a614c4bc02858704",
+  "engine_commit": "8b5d3231434524aba57da848f96bafdde736a8bf"
+ },
+ "by_folder": {
+  "(root)": {
+   "bytes": 12934,
+   "files": 6
+  },
+  ".github": {
+   "bytes": 14555,
+   "files": 2
+  },
+  "airpulse-web": {
+   "bytes": 4798301,
+   "files": 78
+  },
+  "config": {
+   "bytes": 41163,
+   "files": 2
+  },
+  "data": {
+   "bytes": 46187,
+   "files": 6
+  },
+  "docs": {
+   "bytes": 3696906,
+   "files": 52
+  },
+  "evaluation": {
+   "bytes": 1043224,
+   "files": 6
+  },
+  "operations": {
+   "bytes": 15304446,
+   "files": 119
+  },
+  "research": {
+   "bytes": 3875541,
+   "files": 30
+  },
+  "scripts": {
+   "bytes": 112402,
+   "files": 11
+  },
+  "src": {
+   "bytes": 370774,
+   "files": 79
+  },
+  "tests": {
+   "bytes": 118004,
+   "files": 5
+  }
+ },
+ "bytes": 29434437,
+ "files": 396,
+ "largest_files": [
+  {
+   "bytes": 10263986,
+   "path": "operations/aviation/official/usdot/international_report_departures.csv.gz"
+  },
+  {
+   "bytes": 1904083,
+   "path": "docs/SRS.pdf"
+  },
+  {
+   "bytes": 921912,
+   "path": "evaluation/forecast_ledger.csv"
+  },
+  {
+   "bytes": 634906,
+   "path": "docs/diagrams/04_use_case.svg"
+  },
+  {
+   "bytes": 460288,
+   "path": "research/data_samples/SRC-01_eia_EER_EPJK_PF4_RGC_DPG.xls"
+  },
+  {
+   "bytes": 452096,
+   "path": "research/data_samples/SRC-08_eia_RBRTE.xls"
+  },
+  {
+   "bytes": 448921,
+   "path": "airpulse-web/public/brand/globe.jpg"
+  },
+  {
+   "bytes": 424792,
+   "path": "airpulse-web/public/brand/loading.jpg"
+  }
+ ],
+ "manifest_sha256": "4c64e6f6bd26e0970fae29ebcf43f83c79457118b70fa8e30b4020f274a63f2f",
+ "mode": "first build",
+ "sources_switched_off": [
+  "news_aircargoweek",
+  "news_splash247",
+  "eurocontrol",
+  "flight_lists_2019_2022"
+ ],
+ "src_not_taken": [
+  "src/aviation/experiment.py",
+  "src/aviation/report.py",
+  "src/v2/__init__.py",
+  "src/v2/cli.py",
+  "src/v2/config.py",
+  "src/v2/data.py",
+  "src/v2/features.py",
+  "src/v2/models.py",
+  "src/v2/monthly.py",
+  "src/v2/ops.py",
+  "src/v2/reference.py",
+  "src/v2/report.py",
+  "src/v2/report_monthly.py",
+  "src/v2/stats.py",
+  "src/v2/weekly.py",
+  "src/v3/__init__.py",
+  "src/v3/cli.py",
+  "src/v3/config.py",
+  "src/v3/data.py",
+  "src/v3/features.py",
+  "src/v3/fuel.py",
+  "src/v3/investigate.py",
+  "src/v3/monthly.py",
+  "src/v3/report.py",
+  "src/v3/stable.py"
+ ],
+ "src_tree_sha256": "d656446247f15b6c81710cc904529e76b9cfb4ba0d1e20a10ef9d56fd3a00d8c",
+ "trial": null,
+ "what": "AirPulse production repository: engine, customer application and one production workflow. Built by scripts/build_public_repo.py of the research repository; see README.md."
+}

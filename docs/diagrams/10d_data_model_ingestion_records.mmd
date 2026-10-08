@@ -1,0 +1,36 @@
+erDiagram
+  SOURCE_DECLARATION ||--o{ INGESTION_RECORD : "attempted in"
+  PRODUCTION_RUN ||--o{ INGESTION_RECORD : makes
+  SOURCE_DECLARATION {
+    string id PK
+    string layer
+    string url
+    int check_every_days
+    int stale_after_days
+    bool active
+    string licence_status
+  }
+  INGESTION_RECORD {
+    int seq PK
+    string source FK
+    string retrieved_at
+    string result
+    int http_status
+    string checksum
+    string validation
+    string latest_observation
+    string prev
+    string hash
+  }
+  PRODUCTION_RUN {
+    string run_id PK
+    string trigger
+    string started_at
+    string status
+    int exit
+    json gate
+    int sources_attempted
+    int sources_failed
+    int forecast_issued
+    string hash
+  }

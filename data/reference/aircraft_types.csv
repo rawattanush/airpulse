@@ -1,0 +1,150 @@
+aircraft_type,manufacturer,model,category,widebody,freighter,cargo_capable,confidence,source
+A306,Airbus,A300-600,widebody,yes,mixed,yes,high,ICAO type designator; role by operator
+A30B,Airbus,A300B4,widebody,yes,always,yes,medium,ICAO type designator; remaining fleet is freighter
+A310,Airbus,A310,widebody,yes,mixed,yes,high,ICAO type designator; role by operator
+A318,Airbus,A318,narrowbody,no,never,limited,high,ICAO type designator
+A319,Airbus,A319,narrowbody,no,never,limited,high,ICAO type designator
+A19N,Airbus,A319neo,narrowbody,no,never,limited,high,ICAO type designator
+A320,Airbus,A320,narrowbody,no,never,limited,high,ICAO type designator
+A20N,Airbus,A320neo,narrowbody,no,never,limited,high,ICAO type designator
+A321,Airbus,A321,narrowbody,no,mixed,limited,high,ICAO type designator; converted freighters exist; role by operator
+A21N,Airbus,A321neo,narrowbody,no,never,limited,high,ICAO type designator
+A332,Airbus,A330-200,widebody,yes,mixed,yes,high,ICAO type designator; A330-200F shares the designator; role by operator
+A333,Airbus,A330-300,widebody,yes,mixed,yes,high,ICAO type designator; converted freighters exist; role by operator
+A338,Airbus,A330-800,widebody,yes,never,yes,high,ICAO type designator
+A339,Airbus,A330-900,widebody,yes,never,yes,high,ICAO type designator
+A342,Airbus,A340-200,widebody,yes,never,yes,high,ICAO type designator
+A343,Airbus,A340-300,widebody,yes,never,yes,high,ICAO type designator
+A345,Airbus,A340-500,widebody,yes,never,yes,high,ICAO type designator
+A346,Airbus,A340-600,widebody,yes,never,yes,high,ICAO type designator
+A359,Airbus,A350-900,widebody,yes,never,yes,high,ICAO type designator
+A35K,Airbus,A350-1000,widebody,yes,never,yes,high,ICAO type designator
+A388,Airbus,A380-800,widebody,yes,never,yes,high,ICAO type designator
+A3ST,Airbus,A300-600ST Beluga,widebody,yes,always,yes,high,ICAO type designator; outsize transport
+A337,Airbus,A330-700 BelugaXL,widebody,yes,always,yes,high,ICAO type designator; outsize transport
+BCS1,Airbus,A220-100,narrowbody,no,never,limited,high,ICAO type designator
+BCS3,Airbus,A220-300,narrowbody,no,never,limited,high,ICAO type designator
+B712,Boeing,717-200,narrowbody,no,never,limited,high,ICAO type designator
+B722,Boeing,727-200,narrowbody,no,always,yes,medium,ICAO type designator; remaining fleet is freighter
+B732,Boeing,737-200,narrowbody,no,mixed,limited,medium,ICAO type designator; role by operator
+B733,Boeing,737-300,narrowbody,no,mixed,limited,high,ICAO type designator; converted freighters exist; role by operator
+B734,Boeing,737-400,narrowbody,no,mixed,limited,high,ICAO type designator; converted freighters exist; role by operator
+B735,Boeing,737-500,narrowbody,no,never,limited,high,ICAO type designator
+B736,Boeing,737-600,narrowbody,no,never,limited,high,ICAO type designator
+B737,Boeing,737-700,narrowbody,no,mixed,limited,high,ICAO type designator; converted freighters exist; role by operator
+B738,Boeing,737-800,narrowbody,no,mixed,limited,high,ICAO type designator; converted freighters exist; role by operator
+B739,Boeing,737-900,narrowbody,no,never,limited,high,ICAO type designator
+B37M,Boeing,737 MAX 7,narrowbody,no,never,limited,high,ICAO type designator
+B38M,Boeing,737 MAX 8,narrowbody,no,never,limited,high,ICAO type designator
+B39M,Boeing,737 MAX 9,narrowbody,no,never,limited,high,ICAO type designator
+B3XM,Boeing,737 MAX 10,narrowbody,no,never,limited,high,ICAO type designator
+B741,Boeing,747-100,widebody,yes,mixed,yes,medium,ICAO type designator; role by operator
+B742,Boeing,747-200,widebody,yes,mixed,yes,medium,ICAO type designator; role by operator
+B743,Boeing,747-300,widebody,yes,mixed,yes,medium,ICAO type designator; role by operator
+B744,Boeing,747-400,widebody,yes,mixed,yes,high,ICAO type designator; 747-400F shares the designator; role by operator
+B748,Boeing,747-8,widebody,yes,mixed,yes,high,ICAO type designator; 747-8F shares the designator; role by operator
+BLCF,Boeing,747-400 LCF Dreamlifter,widebody,yes,always,yes,high,ICAO type designator; outsize transport
+B752,Boeing,757-200,narrowbody,no,mixed,limited,high,ICAO type designator; freighters share the designator; role by operator
+B753,Boeing,757-300,narrowbody,no,never,limited,high,ICAO type designator
+B762,Boeing,767-200,widebody,yes,mixed,yes,high,ICAO type designator; role by operator
+B763,Boeing,767-300,widebody,yes,mixed,yes,high,ICAO type designator; 767-300F shares the designator; role by operator
+B764,Boeing,767-400,widebody,yes,never,yes,high,ICAO type designator
+B772,Boeing,777-200,widebody,yes,never,yes,high,ICAO type designator
+B77L,Boeing,777-200LR and 777F,widebody,yes,mixed,yes,high,ICAO type designator; the 777 Freighter shares the designator; role by operator
+B773,Boeing,777-300,widebody,yes,never,yes,high,ICAO type designator
+B77W,Boeing,777-300ER,widebody,yes,mixed,yes,high,ICAO type designator; converted freighters exist; role by operator
+B788,Boeing,787-8,widebody,yes,never,yes,high,ICAO type designator
+B789,Boeing,787-9,widebody,yes,never,yes,high,ICAO type designator
+B78X,Boeing,787-10,widebody,yes,never,yes,high,ICAO type designator
+DC10,McDonnell Douglas,DC-10,widebody,yes,always,yes,medium,ICAO type designator; remaining fleet is freighter or tanker
+MD11,McDonnell Douglas,MD-11,widebody,yes,always,yes,high,ICAO type designator; no passenger operator since 2014
+MD82,McDonnell Douglas,MD-82,narrowbody,no,never,limited,high,ICAO type designator
+MD83,McDonnell Douglas,MD-83,narrowbody,no,never,limited,high,ICAO type designator
+MD88,McDonnell Douglas,MD-88,narrowbody,no,never,limited,high,ICAO type designator
+MD90,McDonnell Douglas,MD-90,narrowbody,no,never,limited,high,ICAO type designator
+IL76,Ilyushin,Il-76,widebody,yes,always,yes,high,ICAO type designator; cargo transport
+IL96,Ilyushin,Il-96,widebody,yes,mixed,yes,medium,ICAO type designator; role by operator
+A124,Antonov,An-124,widebody,yes,always,yes,high,ICAO type designator; cargo transport
+A225,Antonov,An-225,widebody,yes,always,yes,high,ICAO type designator; cargo transport
+AN12,Antonov,An-12,narrowbody,no,always,yes,high,ICAO type designator; cargo transport
+AN26,Antonov,An-26,regional,no,always,yes,medium,ICAO type designator; cargo transport
+C130,Lockheed,C-130 Hercules,narrowbody,no,always,yes,medium,ICAO type designator; military or cargo transport
+C17,Boeing,C-17,widebody,yes,always,yes,medium,ICAO type designator; military transport
+SU95,Sukhoi,Superjet 100,regional,no,never,limited,high,ICAO type designator
+C919,COMAC,C919,narrowbody,no,never,limited,high,ICAO type designator
+AJ27,COMAC,ARJ21,regional,no,never,limited,high,ICAO type designator
+E170,Embraer,E170,regional,no,never,limited,high,ICAO type designator
+E75L,Embraer,E175,regional,no,never,limited,high,ICAO type designator
+E75S,Embraer,E175,regional,no,never,limited,high,ICAO type designator
+E190,Embraer,E190,regional,no,never,limited,high,ICAO type designator
+E195,Embraer,E195,regional,no,never,limited,high,ICAO type designator
+E290,Embraer,E190-E2,regional,no,never,limited,high,ICAO type designator
+E295,Embraer,E195-E2,regional,no,never,limited,high,ICAO type designator
+E135,Embraer,ERJ-135,regional,no,never,limited,high,ICAO type designator
+E145,Embraer,ERJ-145,regional,no,never,limited,high,ICAO type designator
+CRJ2,Bombardier,CRJ200,regional,no,never,limited,high,ICAO type designator
+CRJ7,Bombardier,CRJ700,regional,no,never,limited,high,ICAO type designator
+CRJ9,Bombardier,CRJ900,regional,no,never,limited,high,ICAO type designator
+CRJX,Bombardier,CRJ1000,regional,no,never,limited,high,ICAO type designator
+DH8A,De Havilland Canada,Dash 8-100,regional,no,never,limited,high,ICAO type designator
+DH8B,De Havilland Canada,Dash 8-200,regional,no,never,limited,high,ICAO type designator
+DH8C,De Havilland Canada,Dash 8-300,regional,no,never,limited,high,ICAO type designator
+DH8D,De Havilland Canada,Dash 8-400,regional,no,never,limited,high,ICAO type designator
+AT43,ATR,ATR 42-300,regional,no,mixed,limited,high,ICAO type designator; role by operator
+AT45,ATR,ATR 42-500,regional,no,mixed,limited,high,ICAO type designator; role by operator
+AT72,ATR,ATR 72-200,regional,no,mixed,limited,high,ICAO type designator; role by operator
+AT75,ATR,ATR 72-500,regional,no,mixed,limited,high,ICAO type designator; role by operator
+AT76,ATR,ATR 72-600,regional,no,mixed,limited,high,ICAO type designator; role by operator
+SF34,Saab,340,regional,no,mixed,limited,high,ICAO type designator; role by operator
+SB20,Saab,2000,regional,no,never,limited,high,ICAO type designator
+F50,Fokker,50,regional,no,mixed,limited,high,ICAO type designator; role by operator
+F70,Fokker,70,regional,no,never,limited,high,ICAO type designator
+F100,Fokker,100,regional,no,never,limited,high,ICAO type designator
+B461,British Aerospace,BAe 146-100,regional,no,mixed,limited,high,ICAO type designator; role by operator
+B462,British Aerospace,BAe 146-200,regional,no,mixed,limited,high,ICAO type designator; role by operator
+B463,British Aerospace,BAe 146-300,regional,no,mixed,limited,high,ICAO type designator; role by operator
+RJ85,British Aerospace,Avro RJ85,regional,no,never,limited,high,ICAO type designator
+RJ1H,British Aerospace,Avro RJ100,regional,no,never,limited,high,ICAO type designator
+C208,Cessna,208 Caravan,general,no,mixed,limited,high,ICAO type designator; feeder freighters exist; role by operator
+C172,Cessna,172,general,no,never,no,high,ICAO type designator
+C182,Cessna,182,general,no,never,no,high,ICAO type designator
+PC12,Pilatus,PC-12,general,no,never,no,high,ICAO type designator
+PC24,Pilatus,PC-24,general,no,never,no,high,ICAO type designator
+BE20,Beechcraft,King Air 200,general,no,never,no,high,ICAO type designator
+B350,Beechcraft,King Air 350,general,no,never,no,high,ICAO type designator
+C25A,Cessna,Citation CJ2,general,no,never,no,high,ICAO type designator
+C25B,Cessna,Citation CJ3,general,no,never,no,high,ICAO type designator
+C25C,Cessna,Citation CJ4,general,no,never,no,high,ICAO type designator
+C510,Cessna,Citation Mustang,general,no,never,no,high,ICAO type designator
+C525,Cessna,CitationJet,general,no,never,no,high,ICAO type designator
+C550,Cessna,Citation II,general,no,never,no,high,ICAO type designator
+C560,Cessna,Citation V,general,no,never,no,high,ICAO type designator
+C56X,Cessna,Citation Excel,general,no,never,no,high,ICAO type designator
+C680,Cessna,Citation Sovereign,general,no,never,no,high,ICAO type designator
+C68A,Cessna,Citation Latitude,general,no,never,no,high,ICAO type designator
+C700,Cessna,Citation Longitude,general,no,never,no,high,ICAO type designator
+C750,Cessna,Citation X,general,no,never,no,high,ICAO type designator
+CL30,Bombardier,Challenger 300,general,no,never,no,high,ICAO type designator
+CL35,Bombardier,Challenger 350,general,no,never,no,high,ICAO type designator
+CL60,Bombardier,Challenger 600,general,no,never,no,high,ICAO type designator
+GL5T,Bombardier,Global 5000,general,no,never,no,high,ICAO type designator
+GLEX,Bombardier,Global Express,general,no,never,no,high,ICAO type designator
+GL7T,Bombardier,Global 7500,general,no,never,no,high,ICAO type designator
+GLF4,Gulfstream,G-IV,general,no,never,no,high,ICAO type designator
+GLF5,Gulfstream,G-V,general,no,never,no,high,ICAO type designator
+GLF6,Gulfstream,G650,general,no,never,no,high,ICAO type designator
+G280,Gulfstream,G280,general,no,never,no,high,ICAO type designator
+E35L,Embraer,Legacy 600,general,no,never,no,high,ICAO type designator
+E55P,Embraer,Phenom 300,general,no,never,no,high,ICAO type designator
+E50P,Embraer,Phenom 100,general,no,never,no,high,ICAO type designator
+F2TH,Dassault,Falcon 2000,general,no,never,no,high,ICAO type designator
+F900,Dassault,Falcon 900,general,no,never,no,high,ICAO type designator
+FA7X,Dassault,Falcon 7X,general,no,never,no,high,ICAO type designator
+FA8X,Dassault,Falcon 8X,general,no,never,no,high,ICAO type designator
+LJ35,Learjet,35,general,no,never,no,high,ICAO type designator
+LJ45,Learjet,45,general,no,never,no,high,ICAO type designator
+LJ60,Learjet,60,general,no,never,no,high,ICAO type designator
+H25B,Hawker,800,general,no,never,no,high,ICAO type designator
+SR22,Cirrus,SR22,general,no,never,no,high,ICAO type designator
+PA28,Piper,PA-28,general,no,never,no,high,ICAO type designator
+DA42,Diamond,DA42,general,no,never,no,high,ICAO type designator

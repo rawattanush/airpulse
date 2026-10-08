@@ -1,0 +1,44 @@
+erDiagram
+  FORECAST_RUN ||--o{ FORECAST : produces
+  MODEL_VERSION ||--o{ FORECAST : issues
+  FORECAST_RUN ||--o{ EVALUATION_RESULT : "scored in"
+  FORECAST_RUN {
+    int run_id PK
+    string started_at
+    string config_json
+    string snapshot_hash
+    string code_hash
+    int n_forecasts
+  }
+  MODEL_VERSION {
+    string forecaster_id PK
+    string name
+    string kind
+    string version
+    string params_json
+  }
+  FORECAST {
+    string forecast_id PK
+    int run_id FK
+    string series_id FK
+    string forecaster_id FK
+    string target_month
+    string issued_at
+    string max_feature_info_time
+    string target_time
+    float p_down
+    float p_flat
+    float p_up
+    string predicted
+    string actual
+  }
+  EVALUATION_RESULT {
+    string series_id PK
+    string forecaster_id PK
+    string label_kind PK
+    string period PK
+    string metric PK
+    int run_id FK
+    float value
+    int n
+  }

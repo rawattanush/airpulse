@@ -1,0 +1,202 @@
+# AirPulse source declarations. CONFIGURATION, maintained by hand: what each source is, where it is, how often it is
+# expected to publish, when it counts as stale, and what its terms allow.
+#
+# This file holds no state. The state of every source (last attempt, last success, newest data, status, error) is
+# computed from the run logs and the clock by src/observability/registry.py and written to operations/sources.yaml,
+# which is GENERATED and must never be edited. The customer application reads only the generated registry.
+#
+#   python -m src.observability.registry            # write operations/sources.yaml and print the table
+#   python -m src.observability.registry --check    # declarations consistent with the pipeline's own source table
+#
+# status (generated): HEALTHY | STALE | DEGRADED | FAILED | DISABLED | RESEARCH_ONLY
+#   DISABLED        active: false
+#   RESEARCH_ONLY   type: research (held for study, never fetched by a pipeline, never shown as current)
+#   FAILED          no successful run on record, or the newest attempt failed and the last success is older than stale_after_days
+#   DEGRADED        the newest attempt failed, was partial or was rate limited; the data held are still within stale_after_days
+#   STALE           nothing has checked the source for stale_after_days, or its newest data are older than data_stale_after_days
+#   HEALTHY         otherwise
+version: 1
+
+layers:   # where each layer writes its run records and how to read them
+  core:     {log: operations/ingestion_log.jsonl,          time: retrieved_at, latest: [latest_observation], success: [UPDATED, UNCHANGED, SEEDED],          partial: []}
+  aviation: {log: operations/aviation/ingestion_log.jsonl, time: fetched_at,   latest: [latest_observation, day], success: [NEW, REVISED, UNCHANGED, OK, SEEDED], partial: [PARTIAL, RATE_LIMITED]}
+
+sources:
+  # ------------------------------------------------------------------ forecast inputs (monthly outlook)
+  - id: eia_jet_fuel
+    layer: core
+    name: US Gulf Coast jet fuel (EIA)
+    url: https://www.eia.gov/dnav/pet/hist_xls/EER_EPJK_PF4_RGC_DPGd.xls
+    type: price series
+    frequency: daily prices, published once a week
+    check_every_days: 7
+    stale_after_days: 14
+    data_stale_after_days: 14
+    active: true
+    production: true
+    license: U.S. Energy Information Administration, read at the Administration itself; acknowledge the source with the date. Reuse of the spot prices is awaiting the Administration's confirmation (production policy)
+    coverage: daily spot price, 1990-04 onward
+    feeds: [monthly outlook context, market drivers]
+    notes: Context of the monthly outlook. The official forecast (the seasonal record) does not use it; the two evaluated models do. Every spreadsheet fetched is kept with its date.
+  - id: eia_brent
+    layer: core
+    name: Brent crude (EIA)
+    url: https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls
+    type: price series
+    frequency: daily prices, published once a week
+    check_every_days: 7
+    stale_after_days: 14
+    data_stale_after_days: 14
+    active: true
+    production: true
+    license: U.S. Energy Information Administration, read at the Administration itself; acknowledge the source with the date. Reuse of the spot prices is awaiting the Administration's confirmation (production policy)
+    coverage: daily spot price, 1987-05 onward
+    feeds: [market drivers]
+    notes: Context only.
+  - {id: bls_IC1312, layer: core, name: "Asia → US air freight price index, every release (BLS IC1312)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [monthly outlook, market, history, replay], notes: The validated target. latest_data is the date of the newest release held.}
+  - {id: bls_IC1311, layer: core, name: "Europe → US air freight price index, every release (BLS IC1311)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [market], notes: Shown as an index; no outlook.}
+  - {id: bls_IC131, layer: core, name: "All inbound US air freight price index, every release (BLS IC131)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [market], notes: Shown as an index; no outlook.}
+  - {id: bls_IS2311, layer: core, name: "US → Europe air freight price index, every release (BLS IS2311)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [market], notes: Shown as an index; no outlook.}
+  - {id: bls_IS2312, layer: core, name: "US → Asia air freight price index, every release (BLS IS2312)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [market], notes: Shown as an index; no outlook.}
+  - {id: bls_IS231, layer: core, name: "All outbound US air freight price index, every release (BLS IS231)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [market], notes: Shown as an index; no outlook.}
+  - {id: bls_IV131, layer: core, name: "All US import air freight (BoP) price index, every release (BLS IV131)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [market], notes: Shown as an index; no outlook.}
+  - {id: bls_IV1311, layer: core, name: "Europe import air freight (BoP) price index, every release (BLS IV1311)", url: "https://www.bls.gov/bls/news-release/ximpim.htm", type: price index with revision history, frequency: monthly release (mid-month), check_every_days: 19, stale_after_days: 28.5, data_stale_after_days: 45, active: true, production: true, license: "U.S. Bureau of Labor Statistics, read at the Bureau itself; public domain; cite the Bureau", coverage: "monthly, one column per release of the Bureau", feeds: [market], notes: Shown as an index; no outlook.}
+
+  # ------------------------------------------------------------------ event layer (experimental)
+  - id: news_aircargoweek
+    layer: core
+    name: Air Cargo Week headlines
+    url: https://aircargoweek.com/wp-json/wp/v2/posts
+    type: headline metadata
+    frequency: working days
+    check_every_days: 1
+    stale_after_days: 3
+    data_stale_after_days: 7
+    active: false
+    production: false
+    license: Publisher's copyright. Only the headline, its date and its link are stored and shown; no article text.
+    coverage: one trade publication
+    feeds: []
+    notes: Experimental event layer. Not an input of any forecast. Terms as read on 2026-10-03, robots.txt does not disallow the interface; no terms page was found.
+  - id: news_splash247
+    layer: core
+    name: Splash247 headlines
+    url: https://splash247.com/wp-json/wp/v2/posts
+    type: headline metadata
+    frequency: working days
+    check_every_days: 1
+    stale_after_days: 3
+    data_stale_after_days: 7
+    active: false
+    production: false
+    license: Publisher's copyright. Only the headline, its date and its link are stored and shown; no article text.
+    coverage: one trade publication
+    feeds: []
+    notes: Experimental event layer. Not an input of any forecast. Terms as read on 2026-10-03, robots.txt does not disallow the interface; the terms page has no clause on automated access.
+
+  # ------------------------------------------------------------------ aviation operations layer (experimental)
+  - id: hkia
+    layer: aviation
+    name: Hong Kong International Airport flight information
+    url: https://www.hongkongairport.com/flightinfo-rest/rest/flights/past
+    type: flight operations
+    frequency: every flight of each day; the day before is complete each morning
+    check_every_days: 1
+    stale_after_days: 3
+    data_stale_after_days: 3
+    active: true
+    production: false
+    license: DATA.GOV.HK terms. Commercial and non-commercial use free of charge with the source identified.
+    coverage: Hong Kong only; about 90 days back; cargo flights listed apart
+    feeds: [air traffic]
+    notes: latest_data is the newest day archived. The publisher keeps about 90 days, so a gap longer than that cannot be refilled.
+  - id: eurocontrol
+    layer: aviation
+    name: European airports, daily movements (EUROCONTROL)
+    url: https://www.eurocontrol.int/performance/data/download/csv/
+    type: airport movement counts
+    frequency: a month is added about three weeks after it ends
+    check_every_days: 7
+    stale_after_days: 14
+    data_stale_after_days: 75
+    active: false
+    production: false
+    license: Published for information. Reuse with the source named and NOT for commercial purposes; written permission needed otherwise.
+    coverage: 380 airports, daily, 2016 onward
+    feeds: []
+    notes: Never exported (production policy, CL-019). Collected as research.
+  - id: usdot
+    layer: aviation
+    name: US international nonstop departures (US DOT)
+    url: https://data.transportation.gov/api/views/innc-gbgc
+    type: flight operations, monthly counts
+    frequency: irregular; about eight months behind the month described
+    check_every_days: 7
+    stale_after_days: 14
+    data_stale_after_days: 365
+    active: true
+    production: false
+    license: Public Domain U.S. Government
+    coverage: every US-foreign airport pair by carrier, monthly, 1990 onward
+    feeds: [air traffic, route page]
+    notes: The file is downloaded only when the portal reports that its rows changed.
+  - id: positions
+    layer: aviation
+    name: Aircraft positions near airports (adsb.lol)
+    url: https://api.adsb.lol/v2/point
+    type: position picture
+    frequency: one picture per run
+    check_every_days: 1
+    stale_after_days: 3
+    active: false
+    production: false
+    license: Open Database License (ODbL) 1.0, with attribution
+    coverage: uneven; thin outside Europe and North America; rate limited
+    feeds: []
+    notes: Switched off (CL-019). About half of the airports answer and nothing derived from it is validated; it is not part of the product.
+
+  # ------------------------------------------------------------------ held for study or switched off
+  - id: flight_lists_2019_2022
+    name: Tracked flight lists 2019 to 2022 (Zenodo record 7923702)
+    url: https://zenodo.org/records/7923702
+    type: research
+    frequency: closed data set
+    active: false
+    production: false
+    license: Research licence, non-commercial
+    coverage: 117 million flights; aircraft type missing for about a third
+    feeds: []
+    notes: Aggregates only, in research/aviation_data/v4. Used once, in the experiments of protocol 4.0.
+  - id: live_tracking_api
+    name: Live flight-tracking interface (research network)
+    url: ""
+    type: flight positions
+    frequency: continuous
+    active: false
+    production: false
+    license: Terms exclude operational and commercial use
+    coverage: worldwide where receivers exist
+    feeds: []
+    notes: Not usable under its terms and not reachable from the development network. Not connected.
+  - id: gdelt
+    name: GDELT news index
+    url: https://api.gdeltproject.org/api/v2/doc/doc
+    type: news index
+    frequency: continuous
+    active: false
+    production: false
+    license: Open, with attribution
+    coverage: worldwide news
+    feeds: []
+    notes: No adapter. Requests were rate limited when it was examined; it is not presented as a source of the product.
+  - id: weekly_lane_rates
+    name: Weekly air-freight lane rates (commercial providers)
+    url: ""
+    type: freight rates
+    frequency: weekly
+    active: false
+    production: false
+    license: Subscription. A licence that allows storage, model training and a derived outlook is required.
+    coverage: lane level
+    feeds: []
+    notes: Nothing collected. Recorded so that the absence of a weekly freight price is explained.

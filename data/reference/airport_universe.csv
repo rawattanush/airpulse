@@ -1,0 +1,56 @@
+airport_iata,airport_icao,region,timezone,cargo_relevance,hub_type
+DEL,VIDP,South Asia,Asia/Kolkata,HIGH,gateway
+BOM,VABB,South Asia,Asia/Kolkata,HIGH,gateway
+MAA,VOMM,South Asia,Asia/Kolkata,MEDIUM,gateway
+BLR,VOBL,South Asia,Asia/Kolkata,MEDIUM,gateway
+HYD,VOHS,South Asia,Asia/Kolkata,MEDIUM,gateway
+CCU,VECC,South Asia,Asia/Kolkata,MEDIUM,gateway
+DAC,VGHS,South Asia,Asia/Dhaka,MEDIUM,gateway
+CMB,VCBI,South Asia,Asia/Colombo,MEDIUM,gateway
+KHI,OPKC,South Asia,Asia/Karachi,MEDIUM,gateway
+PVG,ZSPD,East Asia,Asia/Shanghai,HIGH,cargo hub
+PEK,ZBAA,East Asia,Asia/Shanghai,HIGH,gateway
+CAN,ZGGG,East Asia,Asia/Shanghai,HIGH,cargo hub
+SZX,ZGSZ,East Asia,Asia/Shanghai,HIGH,cargo hub
+CGO,ZHCC,East Asia,Asia/Shanghai,HIGH,cargo hub
+HKG,VHHH,East Asia,Asia/Hong_Kong,HIGH,cargo hub
+TPE,RCTP,East Asia,Asia/Taipei,HIGH,cargo hub
+NRT,RJAA,East Asia,Asia/Tokyo,HIGH,cargo hub
+HND,RJTT,East Asia,Asia/Tokyo,MEDIUM,gateway
+KIX,RJBB,East Asia,Asia/Tokyo,MEDIUM,cargo hub
+ICN,RKSI,East Asia,Asia/Seoul,HIGH,cargo hub
+SIN,WSSS,Southeast Asia,Asia/Singapore,HIGH,cargo hub
+BKK,VTBS,Southeast Asia,Asia/Bangkok,HIGH,gateway
+KUL,WMKK,Southeast Asia,Asia/Kuala_Lumpur,MEDIUM,gateway
+SGN,VVTS,Southeast Asia,Asia/Ho_Chi_Minh,MEDIUM,gateway
+HAN,VVNB,Southeast Asia,Asia/Ho_Chi_Minh,MEDIUM,gateway
+DXB,OMDB,Middle East,Asia/Dubai,HIGH,transfer hub
+DWC,OMDW,Middle East,Asia/Dubai,HIGH,cargo hub
+DOH,OTHH,Middle East,Asia/Qatar,HIGH,transfer hub
+AUH,OMAA,Middle East,Asia/Dubai,MEDIUM,transfer hub
+IST,LTFM,Middle East,Europe/Istanbul,HIGH,transfer hub
+FRA,EDDF,Europe,Europe/Berlin,HIGH,cargo hub
+AMS,EHAM,Europe,Europe/Amsterdam,HIGH,cargo hub
+LHR,EGLL,Europe,Europe/London,HIGH,gateway
+CDG,LFPG,Europe,Europe/Paris,HIGH,cargo hub
+LUX,ELLX,Europe,Europe/Luxembourg,HIGH,cargo hub
+LGG,EBLG,Europe,Europe/Brussels,HIGH,cargo hub
+LEJ,EDDP,Europe,Europe/Berlin,HIGH,express hub
+CGN,EDDK,Europe,Europe/Berlin,HIGH,express hub
+BRU,EBBR,Europe,Europe/Brussels,MEDIUM,cargo hub
+MAD,LEMD,Europe,Europe/Madrid,MEDIUM,gateway
+MXP,LIMC,Europe,Europe/Rome,MEDIUM,cargo hub
+EMA,EGNX,Europe,Europe/London,MEDIUM,express hub
+ORD,KORD,North America,America/Chicago,HIGH,cargo hub
+DFW,KDFW,North America,America/Chicago,MEDIUM,gateway
+LAX,KLAX,North America,America/Los_Angeles,HIGH,cargo hub
+JFK,KJFK,North America,America/New_York,HIGH,cargo hub
+EWR,KEWR,North America,America/New_York,MEDIUM,gateway
+ATL,KATL,North America,America/New_York,MEDIUM,gateway
+MIA,KMIA,North America,America/New_York,HIGH,cargo hub
+ANC,PANC,North America,America/Anchorage,HIGH,transfer hub
+MEM,KMEM,North America,America/Chicago,HIGH,express hub
+SDF,KSDF,North America,America/Kentucky/Louisville,HIGH,express hub
+CVG,KCVG,North America,America/New_York,HIGH,express hub
+SFO,KSFO,North America,America/Los_Angeles,MEDIUM,gateway
+SEA,KSEA,North America,America/Los_Angeles,MEDIUM,gateway

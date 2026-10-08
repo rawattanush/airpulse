@@ -1,0 +1,24 @@
+sequenceDiagram
+  autonumber
+  participant S as Scheduler
+  participant R as Production Run
+  participant A as Source Adapter
+  participant V as Validator
+  participant D as Data Store
+  S->>R: trigger
+  R->>R: select due sources
+  loop every due source
+    R->>A: fetch
+    alt source answered
+      A->>V: candidate data
+      alt validation passed
+        V->>D: store accepted file
+        V-->>R: UPDATED or UNCHANGED
+      else validation failed
+        V-->>R: FAILED (file untouched)
+      end
+    else timeout or error
+      A-->>R: FAILED (data kept)
+    end
+  end
+  R->>D: rebuild as-of store

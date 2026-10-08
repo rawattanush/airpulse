@@ -1,0 +1,15 @@
+stateDiagram-v2
+  direction TB
+  [*] --> NOT_DUE
+  NOT_DUE --> DUE : interval passed, new data expected, or last attempt failed
+  DUE --> FETCH
+  FETCH --> VALIDATE : answer received
+  FETCH --> FAILURE : timeout or HTTP error
+  VALIDATE --> ACCEPT : checks passed
+  VALIDATE --> FAILURE : schema, range or date check failed
+  ACCEPT --> HEALTHY : current file replaced or unchanged
+  FAILURE --> DEGRADED : last valid data within its age limit
+  FAILURE --> STALE : last valid data beyond its age limit
+  HEALTHY --> [*]
+  DEGRADED --> [*]
+  STALE --> [*]

@@ -1,0 +1,25 @@
+erDiagram
+  SOURCE_FILE ||--o{ SERIES : provides
+  SERIES ||--o{ OBSERVATION : has
+  SOURCE_FILE {
+    int file_id PK
+    string file_name
+    string source_id
+    string url
+    string sha256
+    string retrieved_at
+  }
+  SERIES {
+    string series_id PK
+    string title
+    string kind
+    string frequency
+    int file_id FK
+  }
+  OBSERVATION {
+    string series_id PK
+    string obs_date PK
+    string available_date PK
+    float value
+    int file_id FK
+  }

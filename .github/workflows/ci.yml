@@ -1,0 +1,80 @@
+# Checks on every change of the code. Nothing is fetched, committed or deployed here.
+#
+#   the benchmark is rebuilt from the frozen snapshot and its ledger compared with the validated one
+#   a production run without the network on the state held (what a scheduled run does when nothing is due)
+#   the engine's tests -> the export -> the application's tests -> the build under a sub-path -> the checks before an upload
+#   a fixture: one more day of flight lists is handed to the collector, and the engine, the export and the build must move
+#
+# The ledger of record was produced on Windows. On this Linux runner the regenerated ledger is expected to be numerically
+# equivalent, not byte-identical: scripts/check_benchmark_ledger.py prints which of the two it found and fails on anything
+# else (evaluation/ledger_tolerance_study.md).
+name: ci
+on:
+  push:
+    branches: [main]
+    paths-ignore: ["operations/**"]
+  pull_request: {}
+  workflow_dispatch: {}
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout (no credential is kept)
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install the engine's dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Rebuild the benchmark store and rerun the walk-forward backtest
+        run: |
+          python -m src.cli build-db
+          python -m src.cli backtest
+      - name: The regenerated benchmark ledger equals the validated one (byte-identical, or numerically equivalent on another platform)
+        run: |
+          set -o pipefail
+          python scripts/check_benchmark_ledger.py --out "$RUNNER_TEMP/benchmark_ledger_check.json" --keep "$RUNNER_TEMP/forecast_ledger_regenerated.csv" --restore | tee -a "$GITHUB_STEP_SUMMARY"
+      - name: Production run without the network (the state held is rebuilt and checked; nothing is fetched)
+        run: |
+          code=0
+          python scripts/production_run.py --offline || code=$?
+          if [ "$code" != "0" ] && [ "$code" != "2" ]; then echo "the gate failed (exit $code)"; exit 1; fi
+      - name: Engine tests
+        run: python -m pytest tests -q
+      - name: Append-only files intact
+        run: python -m src.ops.cli verify
+      - name: Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: airpulse-web/package-lock.json
+      - name: Install the application's dependencies
+        working-directory: airpulse-web
+        run: npm ci --no-audit --no-fund
+      - name: Export the data the site reads
+        working-directory: airpulse-web
+        env:
+          AIRPULSE_PYTHON: python
+        run: npm run export
+      - name: Tests of the application
+        working-directory: airpulse-web
+        env:
+          AIRPULSE_PYTHON: python
+        run: npm test
+      - name: Build under a sub-path, as GitHub Pages serves a project
+        working-directory: airpulse-web
+        env:
+          VITE_BASE: /airpulse-ci/
+        run: npm run build
+      - name: Checks before an upload (secrets, development addresses, removed features, deep links, sizes)
+        run: python scripts/deployment_checks.py all --base /airpulse-ci/
+      - name: A source that moves, moves the site (fixture of one more day of flight lists; nothing is fetched, nothing is committed)
+        run: python scripts/source_to_site_check.py --base /airpulse-ci/

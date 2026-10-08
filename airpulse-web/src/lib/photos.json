@@ -1,0 +1,81 @@
+{
+ "aircraft": {
+  "width": 1600,
+  "height": 912,
+  "fallback": "aircraft.jpg",
+  "widths": [
+   800,
+   1600
+  ]
+ },
+ "airport": {
+  "width": 1672,
+  "height": 941,
+  "fallback": "brand/airport.jpg",
+  "widths": [
+   800,
+   1600
+  ]
+ },
+ "engine": {
+  "width": 1672,
+  "height": 941,
+  "fallback": "brand/engine.jpg",
+  "widths": [
+   800,
+   1600
+  ]
+ },
+ "globe": {
+  "width": 1672,
+  "height": 941,
+  "fallback": "brand/globe.jpg",
+  "widths": [
+   800,
+   1600
+  ]
+ },
+ "loading": {
+  "width": 1560,
+  "height": 941,
+  "fallback": "brand/loading.jpg",
+  "widths": [
+   800,
+   1560
+  ]
+ },
+ "network": {
+  "width": 1832,
+  "height": 859,
+  "fallback": "brand/network.jpg",
+  "widths": [
+   800,
+   1600
+  ]
+ },
+ "sunset": {
+  "width": 1672,
+  "height": 941,
+  "fallback": "brand/sunset.jpg",
+  "widths": [
+   800,
+   1600
+  ]
+ },
+ "pallet": {
+  "width": 840,
+  "height": 570,
+  "fallback": "brand/pallet.jpg",
+  "widths": [
+   800
+  ]
+ },
+ "apron": {
+  "width": 760,
+  "height": 470,
+  "fallback": "brand/apron.jpg",
+  "widths": [
+   760
+  ]
+ }
+}

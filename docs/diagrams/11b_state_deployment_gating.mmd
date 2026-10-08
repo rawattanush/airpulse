@@ -1,0 +1,15 @@
+stateDiagram-v2
+  direction TB
+  [*] --> GATE
+  GATE --> BLOCKED : record chain broken, policy or selection inconsistent
+  GATE --> EXPORT : gate passed
+  EXPORT --> BUILD : contract checks passed
+  EXPORT --> BLOCKED : contract check failed
+  BUILD --> PRE_UPLOAD_CHECKS
+  PRE_UPLOAD_CHECKS --> BLOCKED : secret, restricted file or removed feature found
+  PRE_UPLOAD_CHECKS --> LICENCE_GATE : nothing found
+  LICENCE_GATE --> DEPLOYED : every production source CLEARED
+  LICENCE_GATE --> BUILT_NOT_DEPLOYED : a source is PENDING_CONFIRMATION
+  BLOCKED --> [*]
+  DEPLOYED --> [*]
+  BUILT_NOT_DEPLOYED --> [*]

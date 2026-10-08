@@ -1,0 +1,347 @@
+# AirPulse production policy. Which sources and which features may reach the public product.
+#
+# The export of the customer application reads this file (src/observability/policy.py) and REFUSES to publish
+#   - a source whose license_class is UNKNOWN, NON-COMMERCIAL, RESEARCH-ONLY, LICENSE-REQUIRED or BLOCKED,
+#   - a source with commercial_allowed, public_display_allowed or derived_data_allowed false, or not enabled,
+#   - a source whose production_status is not PRODUCTION,
+#   - a feature whose status is not PRODUCTION READY, or one of whose sources is refused.
+# Nothing here is state: last fetch, newest data and health are computed (operations/sources.yaml).
+# A licence class is a reading of the publisher's own terms on the date given, with the sentence it rests on. It is not legal advice.
+#
+# license_class: COMMERCIAL-SAFE | COMMERCIAL-SAFE-WITH-ATTRIBUTION | COMMERCIAL-SAFE-WITH-LIMITS | NON-COMMERCIAL |
+#                RESEARCH-ONLY | LICENSE-REQUIRED | UNKNOWN | BLOCKED
+# production_status: PRODUCTION | RESEARCH (collected, never published) | DISABLED | BLOCKED
+# licence_status (one word for every source, CL-024):
+#   CLEARED               every right the product uses is stated in the publisher's own terms, read on evidence_date
+#   PENDING_CONFIRMATION  a named question to the publisher is open (field `pending`). The source may be built into the hosted folder; nothing is deployed while it is pending
+#   RESEARCH_ONLY         held for research, never published
+#   RETIRED               no longer read (see `retired` at the end of this file)
+#   NOT_CONNECTED         declared so that the gap is visible; never read
+# feature status:    PRODUCTION READY | BLOCKED | NEEDS VALIDATION | NEEDS LICENCE | REMOVE FROM PUBLIC PRODUCT
+version: 1
+audited: "2026-10-07"
+
+defaults:
+  bls_first_party: &bls_first_party
+    authority: U.S. Bureau of Labor Statistics
+    url: "https://www.bls.gov/bls/news-release/ximpim.htm"
+    data_type: price index with revision history
+    frequency: monthly release (mid-month)
+    coverage: "monthly, one column per release of the Bureau"
+    purpose: "the official price index of air freight: the benchmark the monthly outlook is made for and scored against"
+    lag: "published in the middle of the month for the month before: two to seven weeks old"
+    license_class: COMMERCIAL-SAFE-WITH-ATTRIBUTION
+    licence_status: CLEARED
+    commercial_allowed: true
+    public_display_allowed: true
+    storage_allowed: true
+    derived_data_allowed: true
+    automation_allowed: true
+    api_required: false
+    credentials_required: false
+    stale_after: 28.5 days
+    enabled: true
+    production_status: PRODUCTION
+    attribution: "Source: U.S. Bureau of Labor Statistics, Import and Export Price Indexes, retrieved from BLS.gov on the date shown. BLS.gov cannot vouch for the data or analyses derived from these data after the data have been retrieved from BLS.gov."
+    evidence: "The Bureau's copyright page: everything it publishes is in the public domain, free to use without specific permission, with the Bureau cited. Terms of its public data interface: cite the date of retrieval and state that the Bureau cannot vouch for later analyses. Its robot policy forbids excessive automated retrieval and asks that a robot can be traced to its owner: one request at a time, a named client. Version 1 of the interface needs no key (25 queries a day)."
+    evidence_url: "https://www.bls.gov/bls/linksite.htm ; https://www.bls.gov/developers/termsOfService.htm ; https://www.bls.gov/bls/blsterms.htm"
+    evidence_date: "2026-10-07"
+  eia_first_party: &eia_first_party
+    authority: U.S. Energy Information Administration
+    data_type: price series
+    frequency: "daily prices, published once a week"
+    purpose: "fuel prices shown as context; inputs of the two comparison models of the record, not of the official forecast"
+    lag: "daily values in a weekly release: up to eight days old"
+    license_class: COMMERCIAL-SAFE-WITH-LIMITS
+    licence_status: CLEARED
+    commercial_allowed: true
+    public_display_allowed: true
+    storage_allowed: true
+    derived_data_allowed: true
+    automation_allowed: true
+    api_required: false
+    credentials_required: false
+    stale_after: 14 days
+    enabled: true
+    production_status: PRODUCTION
+    limits: "CLEARED BY THE OWNER'S DECISION of 2026-10-08, not by a confirmation of the Administration (change record CL-027). The Administration's reuse page allows use and distribution with an acknowledgment; its spot price tables name a commercial data vendor (Refinitiv, of LSEG) as their source, and whether these prices are protected material was not asked: the drafted question was not sent. The owner accepts that open point and removes the fuel prices from the product if the Administration or the vendor objects."
+    evidence: "Reuse page of the Administration: U.S. government publications are in the public domain; its data, files and databases may be used and distributed; an acknowledgment with the date is asked for. The definitions page of the spot price tables names Refinitiv, an LSEG business, as the source. The files are served without a key."
+    evidence_url: "https://www.eia.gov/about/copyrights_reuse.php ; https://www.eia.gov/dnav/pet/TblDefs/pet_pri_spt_tbldef2.asp"
+    evidence_date: "2026-10-07"
+
+sources:
+  # ---------------------------------------------------------------- inputs of the public product
+  - {id: bls_IC1312, <<: *bls_first_party, name: "Asia → US air freight price index, every release (BLS IC1312)"}
+  - {id: bls_IC1311, <<: *bls_first_party, name: "Europe → US air freight price index, every release (BLS IC1311)"}
+  - {id: bls_IC131, <<: *bls_first_party, name: "All inbound US air freight price index, every release (BLS IC131)"}
+  - {id: bls_IS2311, <<: *bls_first_party, name: "US → Europe air freight price index, every release (BLS IS2311)"}
+  - {id: bls_IS2312, <<: *bls_first_party, name: "US → Asia air freight price index, every release (BLS IS2312)"}
+  - {id: bls_IS231, <<: *bls_first_party, name: "All outbound US air freight price index, every release (BLS IS231)"}
+  - {id: bls_IV131, <<: *bls_first_party, name: "All US import air freight (BoP) price index, every release (BLS IV131)"}
+  - {id: bls_IV1311, <<: *bls_first_party, name: "Europe import air freight (BoP) price index, every release (BLS IV1311)"}
+  - {id: eia_jet_fuel, <<: *eia_first_party, name: US Gulf Coast jet fuel (EIA), url: "https://www.eia.gov/dnav/pet/hist_xls/EER_EPJK_PF4_RGC_DPGd.xls", coverage: "daily spot price, 1990-04 onward", attribution: "Source: U.S. Energy Information Administration, spot prices, with the date of the release shown."}
+  - {id: eia_brent, <<: *eia_first_party, name: Brent crude (EIA), url: "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls", coverage: "daily spot price, 1987-05 onward", attribution: "Source: U.S. Energy Information Administration, spot prices, with the date of the release shown."}
+  - id: hkia
+    name: Hong Kong International Airport flight information
+    authority: Airport Authority Hong Kong, through DATA.GOV.HK
+    url: "https://www.hongkongairport.com/flightinfo-rest/rest/flights/past"
+    data_type: flight operations
+    frequency: every flight of each day; the day before is complete each morning
+    coverage: Hong Kong only; about 90 days back; cargo flights listed apart
+    license_class: COMMERCIAL-SAFE-WITH-ATTRIBUTION
+    commercial_allowed: true
+    public_display_allowed: true
+    storage_allowed: true
+    derived_data_allowed: true
+    api_required: false
+    credentials_required: false
+    stale_after: 3 days
+    enabled: true
+    production_status: PRODUCTION
+    licence_status: CLEARED
+    purpose: "flights at Hong Kong, cargo flights apart: observed activity"
+    lag: "the day before is complete each morning"
+    automation_allowed: true
+    attribution: "Airport Authority Hong Kong, flight information, via DATA.GOV.HK. The Government and the Authority own the intellectual property rights in the data."
+    evidence: "DATA.GOV.HK terms: 'You are allowed to browse, download, distribute, reproduce, hyperlink to, and print the Data for both commercial and non-commercial purposes on a free-of-charge basis'; the source must be identified and ownership acknowledged. The data are provided as is."
+    evidence_url: "https://data.gov.hk/en/terms-and-conditions"
+    evidence_date: "2026-10-06"
+  - id: usdot
+    name: US international nonstop departures (US DOT)
+    authority: U.S. Department of Transportation
+    url: "https://data.transportation.gov/api/views/innc-gbgc"
+    data_type: flight operations, monthly counts
+    frequency: irregular; about eight months behind the month described
+    coverage: every US-foreign airport pair by carrier, monthly, 1990 onward
+    license_class: COMMERCIAL-SAFE
+    commercial_allowed: true
+    public_display_allowed: true
+    storage_allowed: true
+    derived_data_allowed: true
+    api_required: false
+    credentials_required: false
+    stale_after: 14 days
+    enabled: true
+    production_status: PRODUCTION
+    licence_status: CLEARED
+    purpose: "monthly departures by route between the United States and abroad: a historical record"
+    lag: "about eight months behind the month described"
+    automation_allowed: true
+    attribution: "U.S. Department of Transportation, International Report Departures."
+    evidence: "Metadata of the data set on data.transportation.gov (read from its interface on 2026-10-05): licence 'Public Domain U.S. Government'."
+    evidence_url: "https://data.transportation.gov/api/views/innc-gbgc.json"
+    evidence_date: "2026-10-05"
+
+  # ---------------------------------------------------------------- collected, never published
+  - id: eurocontrol
+    name: European airports, daily movements (EUROCONTROL)
+    authority: EUROCONTROL Performance Review Unit
+    url: "https://www.eurocontrol.int/performance/data/download/csv/"
+    data_type: airport movement counts
+    frequency: a month is added about three weeks after it ends
+    coverage: 380 airports, daily, 2016 onward
+    license_class: NON-COMMERCIAL
+    commercial_allowed: false
+    public_display_allowed: false
+    storage_allowed: true
+    derived_data_allowed: false
+    api_required: false
+    credentials_required: false
+    stale_after: 14 days
+    enabled: false
+    production_status: RESEARCH
+    licence_status: RESEARCH_ONLY
+    attribution: "EUROCONTROL Performance Review Unit."
+    evidence: "Disclaimer of the publisher (ansperformance.eu/about/disclaimer): the data may be copied with EUROCONTROL named as the source; use for commercial purposes (for financial gain) is prohibited; modification needs prior written permission."
+    evidence_url: "https://ansperformance.eu/about/disclaimer/"
+    evidence_date: "2026-10-06"
+  - id: news_aircargoweek
+    name: Air Cargo Week headlines
+    authority: Air Cargo Week (publisher)
+    url: "https://aircargoweek.com/wp-json/wp/v2/posts"
+    data_type: headline metadata
+    frequency: working days
+    coverage: one trade publication
+    license_class: UNKNOWN
+    commercial_allowed: false
+    public_display_allowed: false
+    storage_allowed: true
+    derived_data_allowed: false
+    api_required: false
+    credentials_required: false
+    stale_after: 3 days
+    enabled: false
+    production_status: RESEARCH
+    licence_status: RESEARCH_ONLY
+    attribution: "Air Cargo Week."
+    evidence: "No terms page could be read: the address tried on 2026-10-06 answered 'not found', and none was found on 2026-10-03. The headlines are the publisher's copyright. Without terms the right to display them in a product is not established."
+    evidence_url: "https://aircargoweek.com/terms-and-conditions/"
+    evidence_date: "2026-10-06"
+  - id: news_splash247
+    name: Splash247 headlines
+    authority: Splash247 (publisher)
+    url: "https://splash247.com/wp-json/wp/v2/posts"
+    data_type: headline metadata
+    frequency: working days
+    coverage: one trade publication
+    license_class: UNKNOWN
+    commercial_allowed: false
+    public_display_allowed: false
+    storage_allowed: true
+    derived_data_allowed: false
+    api_required: false
+    credentials_required: false
+    stale_after: 3 days
+    enabled: false
+    production_status: RESEARCH
+    licence_status: RESEARCH_ONLY
+    attribution: "Splash247."
+    evidence: "The terms page refused the request on 2026-10-06 (forbidden). On 2026-10-03 it was read and held no clause on automated access; a right to display the headlines in a product was not found. The headlines are the publisher's copyright."
+    evidence_url: "https://splash247.com/terms-conditions/"
+    evidence_date: "2026-10-06"
+  - id: flight_lists_2019_2022
+    name: Tracked flight lists 2019 to 2022 (Zenodo record 7923702)
+    authority: research network (Zenodo record)
+    url: "https://zenodo.org/records/7923702"
+    data_type: research
+    frequency: closed data set
+    coverage: 117 million flights; aircraft type missing for about a third
+    license_class: RESEARCH-ONLY
+    commercial_allowed: false
+    public_display_allowed: false
+    storage_allowed: true
+    derived_data_allowed: false
+    api_required: false
+    credentials_required: false
+    stale_after: does not apply
+    enabled: false
+    production_status: RESEARCH
+    licence_status: RESEARCH_ONLY
+    attribution: "See the record."
+    evidence: "Licence of the record: non-commercial research use (read 2026-10-05)."
+    evidence_url: "https://zenodo.org/records/7923702"
+    evidence_date: "2026-10-05"
+
+  # ---------------------------------------------------------------- switched off or blocked
+  - id: positions
+    name: Aircraft positions near airports (adsb.lol)
+    authority: adsb.lol (community receivers)
+    url: "https://api.adsb.lol/v2/point"
+    data_type: position picture
+    frequency: one picture per run
+    coverage: uneven; thin outside Europe and North America; rate limited
+    license_class: COMMERCIAL-SAFE-WITH-ATTRIBUTION
+    commercial_allowed: true
+    public_display_allowed: true
+    storage_allowed: true
+    derived_data_allowed: true
+    api_required: true
+    credentials_required: false
+    stale_after: 3 days
+    enabled: false
+    production_status: DISABLED
+    licence_status: RESEARCH_ONLY
+    attribution: "adsb.lol contributors."
+    evidence: "The publisher's licence page names CC0 for contributed data; its repository names the Open Database License. The licence would allow the use. The source is switched off for another reason: it answers for about half of the airports and nothing derived from it is validated, so it is not a production feature."
+    evidence_url: "https://www.adsb.lol/privacy-license/"
+    evidence_date: "2026-10-06"
+  - id: live_tracking_api
+    name: Live flight-tracking interface (research network)
+    authority: research network
+    url: ""
+    data_type: flight positions
+    frequency: continuous
+    coverage: worldwide where receivers exist
+    license_class: LICENSE-REQUIRED
+    commercial_allowed: false
+    public_display_allowed: false
+    storage_allowed: false
+    derived_data_allowed: false
+    api_required: true
+    credentials_required: true
+    stale_after: does not apply
+    enabled: false
+    production_status: BLOCKED
+    licence_status: NOT_CONNECTED
+    attribution: ""
+    evidence: "Its terms exclude operational and commercial use without an agreement; the interface was not reachable from the development network (31 failed requests, 2026-10-03 to 2026-10-05). A commercial flight-data licence with display, storage and derived-data rights is needed for any live tracking."
+    evidence_url: ""
+    evidence_date: "2026-10-05"
+  - id: gdelt
+    name: GDELT news index
+    authority: GDELT Project
+    url: "https://api.gdeltproject.org/api/v2/doc/doc"
+    data_type: news index
+    frequency: continuous
+    coverage: worldwide news
+    license_class: UNKNOWN
+    commercial_allowed: false
+    public_display_allowed: false
+    storage_allowed: false
+    derived_data_allowed: false
+    api_required: true
+    credentials_required: false
+    stale_after: does not apply
+    enabled: false
+    production_status: DISABLED
+    licence_status: NOT_CONNECTED
+    attribution: ""
+    evidence: "No adapter exists. Requests were rate limited when it was examined; its terms were not audited because nothing uses it."
+    evidence_url: ""
+    evidence_date: "2026-10-05"
+  - id: weekly_lane_rates
+    name: Weekly air-freight lane rates (commercial providers)
+    authority: TAC Index, Freightos, WorldACD, Baltic Exchange, Xeneta, Drewry, IATA CargoIS
+    url: ""
+    data_type: freight rates
+    frequency: weekly
+    coverage: lane level
+    license_class: LICENSE-REQUIRED
+    commercial_allowed: false
+    public_display_allowed: false
+    storage_allowed: false
+    derived_data_allowed: false
+    api_required: true
+    credentials_required: true
+    stale_after: does not apply
+    enabled: false
+    production_status: BLOCKED
+    licence_status: NOT_CONNECTED
+    attribution: ""
+    evidence: "Every provider examined sells its history under subscription (research/WEEKLY_FREIGHT_DATA_AUDIT_V2.md). A licence must allow storage, model training, a derived outlook and its public display. Nothing was collected."
+    evidence_url: ""
+    evidence_date: "2026-10-05"
+
+features:
+  # ---------------------------------------------------------------- in the public product
+  - {id: market_index, name: Air-freight price index by lane, kind: observation, status: PRODUCTION READY, sources: [bls_IC1312, bls_IC1311, bls_IC131, bls_IS2311, bls_IS2312, bls_IS231, bls_IV131, bls_IV1311], artifacts: ["core.lanes", "market/<lane>.json"], pages: [Overview, Market, Trends, History, Lanes], validation: "values equal the publisher's vintages; release calendar and labels by the validated ingestion code (tests T-01 to T-05; data contracts)", wording: "an index level, never a price or a rate"}
+  - {id: monthly_outlook, name: "Monthly outlook for the validated index, its record and its replay", kind: prediction, status: PRODUCTION READY, sources: [bls_IC1312], artifacts: ["outlook.forecasts", "outlook.record", "outlook.current", "outlook.operational", "outlook.selection", "outlook.reliability", "replay.json"], pages: [Overview, Market, Monthly outlook, History, Replay], validation: "walk-forward evaluation on 123 scored months; the official forecaster is the one the selection rule names; leakage audit; three later pre-registered experiments named no replacement", wording: "an outlook with its probability and its record; a proxy index, not a lane rate"}
+  - {id: fuel_prices, name: Jet fuel and crude oil prices and market context, kind: observation, status: PRODUCTION READY, sources: [eia_jet_fuel, eia_brent, bls_IC1312], artifacts: ["core.fuel", "replay.months[].signals"], pages: [Overview, Fuel and context], validation: "validated ingestion code; adapters refuse disordered, duplicated, non-positive, truncated or future-dated values (ops tests; PR-T05)", wording: "published prices and arithmetic on them"}
+  - {id: hong_kong_airport_activity, name: Hong Kong airport activity (observed), kind: observation, status: PRODUCTION READY, sources: [hkia], artifacts: ["aviation.airport"], pages: [Air traffic], validation: "official flight information; four lists per day archived with checksums; record validators and quality gate (AO-T03, AO-T05, AO-T12, PR-T10)", wording: "counts of flights; no expected level, no anomaly, no capacity, no cause, no price"}
+  - {id: us_route_departures, name: US international departures by route (observed), kind: observation, status: PRODUCTION READY, sources: [usdot], artifacts: ["aviation.routes"], pages: [Air traffic, Route], validation: "official monthly counts; file refused unless columns, months and totals are consistent (PR-T09)", wording: "monthly counts as published, about eight months old; historical, never current"}
+  - {id: scenario_calculator, name: Scenario calculator, kind: tool, status: PRODUCTION READY, sources: [], artifacts: [], pages: [Estimate], validation: "arithmetic on the user's own numbers (web tests of scenario.js)", wording: "a scenario of the user's numbers; no route rate"}
+  - {id: data_status, name: Data state and run status, kind: observation, status: PRODUCTION READY, sources: [], artifacts: ["core.registry", "core.status", "core.schedule", "core.export"], pages: [Data], validation: "computed from append-only run records and the clock; recomputed in the browser (PR-T02 to PR-T04; web tests)", wording: "states, with their reasons"}
+
+  # ---------------------------------------------------------------- removed from the public product
+  - {id: weekly_fuel_outlook, name: Weekly fuel-cost outlook, kind: prediction, status: NEEDS LICENCE, sources: [], reason: "Its weekly release windows, its fitted rule and its record were built on dated vintages of the fuel prices that only one relay service holds, and that service's terms forbid keeping the data and building models on them without its consent. The Energy Information Administration publishes no dated vintages from which they could be rebuilt. The outlook returns when it can be rerun on releases the deployed system has archived itself, or with that consent. Kept as research."}
+  - {id: event_intelligence, name: "Reported events, briefing and themes from the trade press", kind: observation, status: REMOVE FROM PUBLIC PRODUCT, sources: [news_aircargoweek, news_splash247], reason: "Two conditions fail. The right to display the publishers' headlines is not established (licence class UNKNOWN). The event extraction is not validated: it was checked only against a reference annotation whose annotator is not recorded. Kept as research in the repository and the Control Center."}
+  - {id: european_airport_activity, name: European airport activity, kind: observation, status: NEEDS LICENCE, sources: [eurocontrol], reason: "The publisher forbids commercial use. Removed from the public product; it returns only with EUROCONTROL's written permission. Kept as research."}
+  - {id: airport_anomaly_reading, name: "Expected activity, difference, reading and flags of unusual activity", kind: anomaly, status: REMOVE FROM PUBLIC PRODUCT, sources: [hkia, eurocontrol], reason: "Its validation events are now independently evidenced (data/reference/disruption_events.csv: 15 of 15), and it finds all of them, but it flags 7.1% of ordinary airport-days against the 5% allowed by the rule fixed before the test (protocol 4.0). The detector was not changed to pass. Not promoted; removed."}
+  - {id: capacity_proxy, name: Capacity proxy, kind: capacity, status: REMOVE FROM PUBLIC PRODUCT, sources: [flight_lists_2019_2022], reason: "No scheme tracks official cargo tonnes, and aircraft types exist in research-licensed data only. No capacity statement is made anywhere in the product."}
+  - {id: corridor_activity_index, name: Corridor index against its expected level, kind: anomaly, status: REMOVE FROM PUBLIC PRODUCT, sources: [usdot], reason: "A derived index with an expected level from three reference values; never validated. The observed route counts it was built from stay (us_route_departures)."}
+  - {id: aircraft_positions_picture, name: Aircraft seen near airports, kind: live, status: REMOVE FROM PUBLIC PRODUCT, sources: [positions], reason: "About half of the airports answer; nothing derived from it is validated. The source is switched off and the word live is not used."}
+  - {id: research_results_on_pages, name: "Results of experiments on customer pages (data groups, second pass, the alternative being watched, the air-traffic ablation, the fuel carry-forward table)", kind: research, status: REMOVE FROM PUBLIC PRODUCT, sources: [], reason: "Research metrics. They stay in research/ and evaluation/; the Methodology says in words what was tested and what it means for the product."}
+  - {id: south_asia_europe_view, name: South Asia to Europe figures, kind: observation, status: REMOVE FROM PUBLIC PRODUCT, sources: [flight_lists_2019_2022], reason: "The only route-level data end in 2022 under a research licence; official route statistics are years old. No quantitative statement about the lane is made; the limitation is in the Methodology."}
+
+  # ---------------------------------------------------------------- not built: what each would need
+  - {id: live_flight_tracking, name: Live flight tracking, kind: live, status: NEEDS LICENCE, sources: [live_tracking_api], reason: "Needs a commercial flight-data licence with display, storage and derived-data rights (candidates and what to ask of them: research/AVIATION_DATA_SOURCE_AUDIT.md). Nothing is scraped."}
+  - {id: weekly_freight_rates, name: Weekly air-freight rate outlook, kind: prediction, status: NEEDS LICENCE, sources: [weekly_lane_rates], reason: "No public weekly rate series may be used; a licensed history is the precondition of any target (research/WEEKLY_FREIGHT_DATA_AUDIT_V2.md)."}
+  - {id: south_asia_europe_forecast, name: South Asia to Europe outlook, kind: prediction, status: BLOCKED, sources: [weekly_lane_rates], reason: "No rate history for the lane is held and no current route data may be used. Not manufactured."}
+  - {id: route_cargo_capacity, name: Cargo capacity by route, kind: capacity, status: NEEDS VALIDATION, sources: [], reason: "One official source holds freight and available payload by route and aircraft type (US T-100 segment data, public). It is not ingested and nothing built on it is validated."}
+  - {id: aviation_features_in_forecast, name: Air-traffic inputs in the monthly outlook, kind: prediction, status: BLOCKED, sources: [usdot, eurocontrol], reason: "Twenty screening tests found no improvement at the lag with which the data are published, and no source has a release history, so nothing could be confirmed."}
+
+# ---------------------------------------------------------------- retired access paths (CL-024). Documentation: nothing here is read by the pipeline
+retired:
+  - {was: "the eight index series with their vintages, read through the vintage service of a Federal Reserve Bank", licence_status: RETIRED, retired_on: "2026-10-07", replaced_by: "bls_IC1312 and the seven other bls_ sources", reason: "The terms of that service forbid, without the Bank's written consent, storing or archiving its content, passing stored portions on, and using it to develop software or models (KI-101). The files stay in the research repository as RESEARCH_ONLY and are in no production file."}
+  - {was: "the two daily fuel series, read through the data service of the same Bank", licence_status: RETIRED, retired_on: "2026-10-07", replaced_by: "eia_jet_fuel, eia_brent", reason: "The same terms. The values are identical to the Administration's own files (evaluation/licence_repair/eia_fuel_comparison.json)."}
+  - {was: "the dated weekly releases of the two fuel series, read through the vintage service", licence_status: RESEARCH_ONLY, retired_on: "2026-10-07", replaced_by: "nothing: no publisher holds dated releases", reason: "The same terms. The weekly fuel-cost outlook built on them is out of the public product (feature weekly_fuel_outlook)."}

@@ -1,0 +1,56 @@
+%%{init: {"flowchart": {"nodeSpacing": 10, "rankSpacing": 14, "padding": 6}}}%%
+flowchart LR
+  subgraph cfg["«package» Configuration"]
+    direction TB
+    c1["config/sources.yaml<br/>source declarations"]
+    c2["config/<br/>production_sources.yaml<br/>policy, licence status"]
+    c3["src/config.py<br/>frozen constants"]
+    c1 ~~~ c2 ~~~ c3
+  end
+  subgraph ops["«package» Operational pipeline"]
+    direction TB
+    o1["scripts/<br/>production_run.py<br/>orchestrator, gate"]
+    o2["src/ops/adapters, bls, eia<br/>source adapters"]
+    o3["src/ops/pipeline<br/>validate, issue, resolve"]
+    o4["src/ops/selection<br/>official forecaster"]
+    o5["src/aviation/collector,<br/>operations<br/>air-traffic layer (isolated)"]
+    o1 ~~~ o2 ~~~ o3 ~~~ o4 ~~~ o5
+  end
+  subgraph core["«package» Validated engine"]
+    direction TB
+    e1["src/ingestion<br/>loaders, store build"]
+    e2["src/database<br/>schema, as-of store"]
+    e3["src/preprocessing<br/>releases, labels"]
+    e4["src/features<br/>feature construction"]
+    e5["src/forecasting<br/>baselines, models"]
+    e6["src/api/backtest<br/>walk-forward evaluation"]
+    e7["src/evaluation<br/>metrics"]
+    e1 ~~~ e2 ~~~ e3 ~~~ e4 ~~~ e5 ~~~ e6 ~~~ e7
+  end
+  subgraph obs["«package» Observability"]
+    direction TB
+    b1["src/observability/records<br/>hash-chained records"]
+    b2["src/observability/<br/>registry, sources"]
+    b3["src/observability/policy<br/>policy checks"]
+    b1 ~~~ b2 ~~~ b3
+  end
+  subgraph pub["«package» Publication"]
+    direction TB
+    p1["airpulse-web/scripts/<br/>export_data.py<br/>staged export, contract"]
+    p2["airpulse-web/src<br/>React application"]
+    p3["scripts/<br/>deployment_checks.py<br/>checks, licence gate"]
+    p1 ~~~ p2 ~~~ p3
+  end
+  subgraph res["«package» Research only"]
+    direction TB
+    r1["src/v2, src/v3<br/>experiment passes<br/>(not hosted)"]
+    r2["src/news<br/>event layer (hosted as code,<br/>sources switched off)"]
+    r3["src/aviation/experiment<br/>(not hosted)"]
+    r1 ~~~ r2 ~~~ r3
+  end
+  cfg -- "read by" --> ops
+  ops -- "uses" --> core
+  ops -- "writes" --> obs
+  obs -- "read by" --> pub
+  core -. "read only" .-> res
+  core ~~~ obs

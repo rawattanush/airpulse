@@ -1,0 +1,16 @@
+flowchart LR
+  src["External Data<br/>Sources"]
+  sched["Production<br/>Scheduler"]
+  user["Public User"]
+  maint["Maintainer"]
+  p0(("0<br/>AirPulse"))
+  d1[("D1 Operational state<br/>operations/")]
+  d2[("D2 Benchmark snapshot<br/>and evaluation ledger")]
+  src -- "raw releases, spreadsheets,<br/>flight lists" --> p0
+  sched -- "trigger (schedule or manual)" --> p0
+  maint -- "source declarations,<br/>production policy" --> p0
+  p0 -- "run records, validated files,<br/>forecasts" --> d1
+  d1 -- "state held from earlier runs" --> p0
+  d2 -- "frozen inputs,<br/>evaluation record" --> p0
+  p0 -- "static pages and exported data" --> user
+  p0 -- "run status, health of each source" --> maint

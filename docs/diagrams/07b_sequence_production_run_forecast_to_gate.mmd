@@ -1,0 +1,26 @@
+sequenceDiagram
+  autonumber 10
+  participant S as Scheduler
+  participant R as Production Run
+  participant F as Forecast Engine
+  participant L as Ledger
+  participant X as Exporter
+  participant W as Web Build
+  participant G as Deployment Gate
+  R->>F: forecast months due
+  F->>L: append once
+  R->>L: record outcomes
+  R->>R: production gate
+  alt gate failed
+    R-->>S: exit 1: stop
+  else gate passed
+    R->>R: tests, commit state
+    R->>X: staged export
+    X->>W: tests, build
+    W->>G: checks, licence gate
+    alt every production source CLEARED
+      G-->>S: site uploaded and deployed
+    else a licence confirmation is open
+      G-->>S: built and checked, not uploaded, licence job fails
+    end
+  end

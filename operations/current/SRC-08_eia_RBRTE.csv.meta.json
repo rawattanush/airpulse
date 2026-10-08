@@ -1,0 +1,9 @@
+{
+ "source_id": "SRC-08",
+ "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+ "retrieved_at": "2026-10-03T14:37:29Z",
+ "sha256": "e6df3a1bbea6bffe9f4f7ec2e4e29d5fa7f8f030ec88b0d50e3b6eba5f4ac936",
+ "http_status": 200,
+ "bytes": 154607,
+ "note": "Written as observation_date,value from the Energy Information Administration's spreadsheet SRC-08_eia_brent_daily.xls (sha256 bf3da33d21e30b38): python scripts/build_eia_snapshot.py. Values unmodified."
+}

@@ -1,0 +1,46 @@
+carrier_code,carrier_name,role,confidence,note
+FX,FedEx Express,all_cargo,high,code as used in the US DOT international reports
+5X,UPS Airlines,all_cargo,high,
+5Y,Atlas Air,all_cargo,medium,cargo and some passenger charter
+PO,Polar Air Cargo,all_cargo,high,
+KAQ,Kalitta Air,all_cargo,high,US DOT code
+K4,Kalitta Air,all_cargo,high,
+GB,ABX Air,all_cargo,high,
+8C,Air Transport International,all_cargo,medium,cargo and combi
+9S,Southern Air,all_cargo,high,
+KD,Western Global Airlines,all_cargo,high,
+N8,National Airlines,all_cargo,medium,cargo and passenger charter
+M6,Amerijet International,all_cargo,high,
+NC,Northern Air Cargo,all_cargo,high,
+GG,Sky Lease Cargo,all_cargo,high,
+CV,Cargolux,all_cargo,high,
+C8,Cargolux Italia,all_cargo,high,
+3S,AeroLogic,all_cargo,high,
+QY,European Air Transport Leipzig,all_cargo,high,DHL network
+D0,DHL Air UK,all_cargo,high,DHL network
+3V,ASL Airlines Belgium,all_cargo,high,
+MP,Martinair,all_cargo,high,
+RU,AirBridgeCargo,all_cargo,high,
+KZ,Nippon Cargo Airlines,all_cargo,high,
+CK,China Cargo Airlines,all_cargo,high,
+O3,SF Airlines,all_cargo,high,
+Y8,Suparna Airlines,all_cargo,medium,cargo and passenger
+LD,Air Hong Kong,all_cargo,high,
+W8,Cargojet Airways,all_cargo,high,
+QT,Avianca Cargo,all_cargo,high,
+UC,LATAM Cargo Chile,all_cargo,high,
+M3,LATAM Cargo Brasil,all_cargo,high,
+L7,LATAM Cargo Colombia,all_cargo,high,
+KE,Korean Air,combination,high,passenger aircraft and freighters under one code
+OZ,Asiana Airlines,combination,high,passenger aircraft and freighters under one code
+CX,Cathay Pacific,combination,high,passenger aircraft and freighters under one code
+CI,China Airlines,combination,high,passenger aircraft and freighters under one code
+BR,EVA Air,combination,high,passenger aircraft and freighters under one code
+SQ,Singapore Airlines,combination,high,passenger aircraft and freighters under one code
+NH,All Nippon Airways,combination,high,passenger aircraft and freighters under one code
+CZ,China Southern Airlines,combination,high,passenger aircraft and freighters under one code
+CA,Air China,combination,medium,Air China Cargo flights may be filed under this code
+EK,Emirates,combination,high,passenger aircraft and freighters under one code
+QR,Qatar Airways,combination,high,passenger aircraft and freighters under one code
+EY,Etihad Airways,combination,high,passenger aircraft and freighters under one code
+TK,Turkish Airlines,combination,high,passenger aircraft and freighters under one code

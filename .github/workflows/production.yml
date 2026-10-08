@@ -1,0 +1,216 @@
+# AirPulse production. One workflow does everything, on GitHub's own machines, and nothing else runs anywhere:
+#
+#   what is due -> fetch -> validate -> forecast when due -> ledger -> source registry -> gate -> tests
+#   -> commit of the operational state -> export -> contract checks -> tests of the application -> build -> checks -> deploy
+#
+# WHEN. Three schedules (UTC) and a manual start (Actions -> production -> Run workflow). The command is publication-aware:
+# every run asks only the sources that are due (never fetched, check interval reached, newest data older than the
+# publisher's usual interval, or the last attempt failed). A daily run does not create a monthly outlook because the clock
+# moved: an outlook is issued once, when the release it needs is on file and none is on the ledger for that month.
+#
+#   DAILY    whatever is due; Hong Kong flight lists; the US route file when its publisher changed it
+#   WEEKLY   fuel prices and the air-traffic files are asked whether due or not
+#   MONTHLY  after the release window of the index: the release is asked once more; the outlook of the newest month due
+#            must be on the ledger
+#
+# WHAT STOPS A DEPLOYMENT. Any step that fails stops the job before the upload, so GitHub Pages keeps serving the site it
+# had: a failed validation gate (exit 1 of the run), a failed test, a broken hash chain, an export that fails its contract
+# or holds a field of a removed feature, a secret or a development address found in the files to be published.
+#
+# WHAT DOES NOT STOP IT. A source that failed, is degraded or stale (exit 2 of the run). The site is still built and
+# deployed, because it is the site that tells a visitor which source is late. The last job then fails, so that GitHub
+# notifies the owner.
+#
+# STATE. The operational state (operations/) is committed to this repository after the gate and the tests passed: ledgers
+# and run records (append-only, hash-chained), the vintage files of the series, the flight lists, the US route file. The
+# data the site reads (airpulse-web/public/data) are generated here on every run and are never committed.
+#
+# CREDENTIALS. None is needed for any source. The repository's own token is given to one script step only (the push of the
+# operational state); the checkout keeps no credential, so the steps that install and run third-party packages cannot push
+# and cannot reach the Pages settings. The provider's own action that reads those settings receives the token by itself.
+name: production
+on:
+  schedule:
+    - cron: "11 7 * * *"       # daily, 07:11 UTC
+    - cron: "23 8 * * 1"       # weekly, Monday 08:23 UTC
+    - cron: "31 9 23 * *"      # monthly, the 23rd 09:31 UTC, after the release window of the index
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Groups to treat as due, separated by spaces (fuel bls aviation). Empty: only what is due."
+        required: false
+        default: ""
+permissions:
+  contents: read
+concurrency:
+  group: airpulse-production
+  cancel-in-progress: false
+jobs:
+  build:
+    name: Refresh, validate, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    permissions:
+      contents: write          # the operational state is committed to this repository
+      pages: write             # the address the site is served under is read from the Pages settings (the permission the provider's own starter workflow gives that step)
+    outputs:
+      run_exit: ${{ steps.run.outputs.code }}
+      licence_cleared: ${{ steps.licence.outputs.cleared }}
+    steps:
+      - name: Checkout (no credential is kept)
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+          cache: pip
+      - name: Install the engine's dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Production run (what is due, ingestion, validation gate, forecasts when due, ledger, source registry, run record)
+        id: run
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
+          FORCE_INPUT: ${{ github.event.inputs.force }}
+        run: |
+          set -o pipefail
+          case "${SCHEDULE:-}" in
+            "23 8 * * 1")  FORCE="fuel aviation"; CADENCE=weekly ;;
+            "31 9 23 * *") FORCE="bls"; CADENCE=monthly ;;
+            *)             FORCE="${FORCE_INPUT:-}"; CADENCE=daily ;;
+          esac
+          for g in $FORCE; do case "$g" in fuel|bls|aviation) ;; *) echo "unknown group: $g (fuel bls aviation)"; exit 1 ;; esac; done
+          echo "$CADENCE" > "$RUNNER_TEMP/cadence"
+          code=0
+          python scripts/production_run.py ${FORCE:+--force $FORCE} 2>&1 | tee "$RUNNER_TEMP/production.log" || code=$?
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          if [ "$code" != "0" ] && [ "$code" != "2" ]; then echo "the gate failed (exit $code): nothing is committed and nothing is published"; exit 1; fi
+      - name: Source audit and operations report (the monthly run also requires the outlook of the newest month due)
+        run: |
+          set -o pipefail
+          python -m src.observability.registry --check
+          python scripts/production_report.py --cadence "$(cat "$RUNNER_TEMP/cadence")" 2>&1 | tee -a "$RUNNER_TEMP/production.log"
+      - name: Engine tests (production pipeline, public product, operational pipeline, deployment)
+        run: |
+          set -o pipefail
+          python -m pytest tests -q 2>&1 | tee -a "$RUNNER_TEMP/production.log"
+      - name: Append-only files intact
+        run: python -m src.ops.cli verify
+      - name: Commit the operational state (the gate and the tests passed)
+        env:
+          PUSH_TOKEN: ${{ github.token }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          BRANCH="${GITHUB_REF_NAME:-$(git rev-parse --abbrev-ref HEAD)}"
+          git add operations
+          if git diff --cached --quiet; then
+            echo "the operational state did not change: no commit"
+          else
+            git commit -q -m "operations: production run (${GITHUB_EVENT_NAME:-manual}${GITHUB_RUN_ID:+, run $GITHUB_RUN_ID})"
+            git pull --quiet --rebase --autostash origin "$BRANCH"
+            if [ "${GITHUB_ACTIONS:-}" = "true" ]; then
+              git push --quiet "https://x-access-token:${PUSH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:${BRANCH}"
+            else
+              git push --quiet origin "HEAD:${BRANCH}"
+            fi
+            echo "committed and pushed: $(git log -1 --format=%h)"
+          fi
+          python scripts/deployment_checks.py size | tee -a "$RUNNER_TEMP/production.log"
+      - name: Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: airpulse-web/package-lock.json
+      - name: Install the application's dependencies
+        working-directory: airpulse-web
+        run: npm ci --no-audit --no-fund
+      - name: Export the data the site reads (staged, contract checks, refusal of any field of a removed feature)
+        working-directory: airpulse-web
+        env:
+          AIRPULSE_PYTHON: python
+        run: npm run export
+      - name: Tests of the application (data contract, nothing typed, nothing of a removed feature)
+        working-directory: airpulse-web
+        env:
+          AIRPULSE_PYTHON: python
+        run: npm test
+      - name: Address the site is served under
+        id: pages
+        uses: actions/configure-pages@v6
+      - name: Build the application
+        working-directory: airpulse-web
+        env:
+          VITE_BASE: ${{ steps.pages.outputs.base_path }}/
+        run: npm run build
+      - name: Checks before anything is uploaded (secrets, development addresses, removed features, deep links, sizes)
+        env:
+          SITE_BASE: ${{ steps.pages.outputs.base_path }}/
+        run: python scripts/deployment_checks.py all --base "$SITE_BASE"
+      - name: Licence gate (is every production source cleared?)
+        id: licence
+        run: |
+          if python scripts/deployment_checks.py licence >> "$RUNNER_TEMP/production.log" 2>&1; then echo "cleared=true" >> "$GITHUB_OUTPUT"; else echo "cleared=false" >> "$GITHUB_OUTPUT"; fi
+          tail -n 4 "$RUNNER_TEMP/production.log"
+      - name: Upload the site
+        if: steps.licence.outputs.cleared == 'true'
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: airpulse-web/dist
+      - name: Run summary
+        if: always()
+        run: |
+          echo '### production' >> "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+          tail -n 100 "$RUNNER_TEMP/production.log" >> "$GITHUB_STEP_SUMMARY" || true
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+      - name: Keep the log
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: production-log
+          path: ${{ runner.temp }}/production.log
+          retention-days: 30
+          if-no-files-found: ignore
+  licence:
+    name: Licence confirmation (fails while a production source awaits one)
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Nothing is uploaded or deployed while a licence confirmation is open
+        env:
+          CLEARED: ${{ needs.build.outputs.licence_cleared }}
+        run: |
+          if [ "$CLEARED" != "true" ]; then echo "a production source awaits a licence confirmation (config/production_sources.yaml, field pending): the site was built and checked, and it was NOT uploaded or deployed. See the summary of the build job."; exit 1; fi
+          echo "every production source is cleared"
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    if: needs.build.outputs.licence_cleared == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      pages: write             # to deploy to Pages
+      id-token: write          # to prove that the deployment comes from this workflow
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v5
+  health:
+    name: Every production source healthy
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Fail when a source failed, is degraded or stale (the site is deployed and shows that state)
+        env:
+          RUN_EXIT: ${{ needs.build.outputs.run_exit }}
+        run: |
+          if [ "$RUN_EXIT" != "0" ]; then echo "the production run ended with exit $RUN_EXIT: a source failed, is degraded or stale. The site was deployed and names it on its Data page; see the summary of the build job."; exit 1; fi
+          echo "every production source is healthy"

@@ -1,0 +1,84 @@
+{
+ "source": "U.S. Bureau of Labor Statistics, public data interface, version 1 (no key)",
+ "url": "https://api.bls.gov/publicAPI/v1/timeseries/data/",
+ "requests": [
+  {
+   "request": {
+    "seriesid": [
+     "EIUIV131",
+     "EIUIV1311",
+     "EIUIC131",
+     "EIUIC1311",
+     "EIUIC1312",
+     "EIUIS231",
+     "EIUIS2311",
+     "EIUIS2312"
+    ],
+    "startyear": "1990",
+    "endyear": "1999"
+   },
+   "http_status": 200,
+   "retrieved_at": "2026-10-07T06:00:56Z",
+   "answer_sha256": "3931ad4d9ae1c337a00ca8919c84b404d82cef5163d03d6ccf96d0026c21a892"
+  },
+  {
+   "request": {
+    "seriesid": [
+     "EIUIV131",
+     "EIUIV1311",
+     "EIUIC131",
+     "EIUIC1311",
+     "EIUIC1312",
+     "EIUIS231",
+     "EIUIS2311",
+     "EIUIS2312"
+    ],
+    "startyear": "2000",
+    "endyear": "2009"
+   },
+   "http_status": 200,
+   "retrieved_at": "2026-10-07T06:00:59Z",
+   "answer_sha256": "6d29df37c4b8b9a3826956e21af1010281b759c9804957c6c9a915c122d392ca"
+  },
+  {
+   "request": {
+    "seriesid": [
+     "EIUIV131",
+     "EIUIV1311",
+     "EIUIC131",
+     "EIUIC1311",
+     "EIUIC1312",
+     "EIUIS231",
+     "EIUIS2311",
+     "EIUIS2312"
+    ],
+    "startyear": "2010",
+    "endyear": "2019"
+   },
+   "http_status": 200,
+   "retrieved_at": "2026-10-07T06:01:03Z",
+   "answer_sha256": "09e2752f8c81f75a9c5139b764429ba12d427d9754aba198748cfae2f2ed9211"
+  },
+  {
+   "request": {
+    "seriesid": [
+     "EIUIV131",
+     "EIUIV1311",
+     "EIUIC131",
+     "EIUIC1311",
+     "EIUIC1312",
+     "EIUIS231",
+     "EIUIS2311",
+     "EIUIS2312"
+    ],
+    "startyear": "2020",
+    "endyear": "2026"
+   },
+   "http_status": 200,
+   "retrieved_at": "2026-10-07T06:01:06Z",
+   "answer_sha256": "8361324b497723e8e32f4a5cc9046369eaedc85194725dacaca4dbaef5d8715b"
+  }
+ ],
+ "sha256": "4069ff5900715ad163dbcc3be65d6ba57f4f009965610351d9f1a0b2fdc97ce6",
+ "note": "values of the database on the day of retrieval; a month is final after the three releases that follow its first publication"
+}

@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.pytest_cache/
+*.log
+.DS_Store
+Thumbs.db
+
+# derived on every run from the files held; never committed
+data/*.sqlite
+data/raw/
+data/cache/
+
+# the customer application: dependencies, the build, and the data the site reads (generated in the workflow)
+airpulse-web/node_modules/
+airpulse-web/dist/
+airpulse-web/public/data/
+airpulse-web/public/data.staging/
