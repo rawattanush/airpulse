@@ -48,24 +48,7 @@
   }
  ],
  "evaluation_period": "2016-01 to 2026-05",
- "later_decisions": [
-  {
-   "candidates_that_passed": [],
-   "changed": false,
-   "date": "2026-10-05",
-   "experiment": "expansion pass (protocol 2.0)",
-   "file": "evaluation/monthly/results_v2.json",
-   "official": "BL-SEA"
-  },
-  {
-   "candidates_that_passed": [],
-   "changed": false,
-   "date": "2026-10-05",
-   "experiment": "global pass (protocol 3.0)",
-   "file": "evaluation/global_features/results_v3.json",
-   "official": "BL-SEA"
-  }
- ],
+ "later_decisions": [],
  "name": "Same-calendar-month majority",
  "official": "BL-SEA",
  "rule": "Among the forecasters with registry status VALIDATED, the one with the lowest Brier score and the highest hit rate on the final labels of the validated target over all scored months; both criteria must agree. Every later pre-registered experiment must name the same forecaster.",

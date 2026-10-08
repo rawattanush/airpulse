@@ -1,9 +1,9 @@
 {
  "source_id": "SRC-01",
  "url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPJK_PF4_RGC_DPGd.xls",
- "retrieved_at": "2026-10-03T14:37:18Z",
- "sha256": "4084aa75d262541a45362e3a002f24235cb5069c093ce1ca4ad449d004a7f3c8",
+ "retrieved_at": "2026-10-08T19:26:20Z",
+ "sha256": "d8446cab7fb635e0787036c7cd4c9302c3119c056cd5899880f7f14948ca8849",
  "http_status": 200,
- "bytes": 135847,
- "note": "Written as observation_date,value from the Energy Information Administration's spreadsheet SRC-01_eia_jetfuel_usgulf_daily.xls (sha256 ce73a1e081cdc8fb): python scripts/build_eia_snapshot.py. Values unmodified."
+ "bytes": 135931,
+ "note": "operational refresh (OPS-1.0): spreadsheet 8e78b7fd08ce6a81 kept as operations/raw/eia_jet_fuel/20261008T192620Z_8e78b7fd08ce.xls.gz and written as observation_date,value; previous file 4084aa75d262541a"
 }

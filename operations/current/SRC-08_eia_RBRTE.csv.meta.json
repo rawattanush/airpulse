@@ -1,9 +1,9 @@
 {
  "source_id": "SRC-08",
  "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
- "retrieved_at": "2026-10-03T14:37:29Z",
- "sha256": "e6df3a1bbea6bffe9f4f7ec2e4e29d5fa7f8f030ec88b0d50e3b6eba5f4ac936",
+ "retrieved_at": "2026-10-08T19:26:20Z",
+ "sha256": "64a0d877d8a467e991b4e64f23b13b94eb93bad3d044d30fd9521d1a2757943f",
  "http_status": 200,
- "bytes": 154607,
- "note": "Written as observation_date,value from the Energy Information Administration's spreadsheet SRC-08_eia_brent_daily.xls (sha256 bf3da33d21e30b38): python scripts/build_eia_snapshot.py. Values unmodified."
+ "bytes": 154697,
+ "note": "operational refresh (OPS-1.0): spreadsheet a7b7074cb3e1e4b7 kept as operations/raw/eia_brent/20261008T192620Z_a7b7074cb3e1.xls.gz and written as observation_date,value; previous file e6df3a1bbea6bffe"
 }

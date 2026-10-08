@@ -1,0 +1,60 @@
+{
+ "feeds": {
+  "hkia": {
+   "age_hours": 27.451944444444443,
+   "attempts": 94,
+   "days_archived": 91,
+   "failures_since_last_success": 0,
+   "last_attempt": "2026-10-08T19:26:59Z",
+   "last_failure_reason": null,
+   "last_result": "NEW",
+   "last_success": "2026-10-08T19:26:59Z",
+   "mode": "RECENT",
+   "newest_observation": "2026-10-07T23:59:59+08:00",
+   "scheduled_runs": 0,
+   "triggers": [
+    "manual",
+    "manual-dispatch"
+   ]
+  },
+  "positions": {
+   "age_hours": 74.87277777777778,
+   "attempts": 2,
+   "days_archived": null,
+   "failures_since_last_success": 0,
+   "last_attempt": "2026-10-05T16:34:44Z",
+   "last_failure_reason": null,
+   "last_result": "PARTIAL",
+   "last_success": "2026-10-05T16:34:44Z",
+   "mode": "DELAYED",
+   "newest_observation": "2026-10-05T16:34:44Z",
+   "scheduled_runs": 0,
+   "triggers": [
+    "manual"
+   ]
+  }
+ },
+ "generated": "2026-10-08T19:27:06Z",
+ "log_intact": true,
+ "quality": {
+  "checked": {
+   "eurocontrol": {
+    "switched_off": true
+   },
+   "hkia": {
+    "days": 91,
+    "records": 101907
+   },
+   "usdot": {
+    "files": 1
+   }
+  },
+  "critical": {},
+  "warnings": {
+   "hkia": [
+    "same_origin_and_destination: 21 records",
+    "unknown_airport: 43154 records"
+   ]
+  }
+ }
+}
