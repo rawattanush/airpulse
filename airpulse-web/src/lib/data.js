@@ -52,3 +52,4 @@ export function useLane(core) {
   }
   return [lane, setLane]
 }
+export const useNews = () => useData('news.json')        // the news-adjusted outlook: experimental, beside the official outlook

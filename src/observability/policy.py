@@ -17,7 +17,8 @@ from src.observability import registry, sources
 
 POLICY = os.path.join(sources.ROOT, "config", "production_sources.yaml")
 SAFE = ("COMMERCIAL-SAFE", "COMMERCIAL-SAFE-WITH-ATTRIBUTION", "COMMERCIAL-SAFE-WITH-LIMITS")
-CLASSES = SAFE + ("NON-COMMERCIAL", "RESEARCH-ONLY", "LICENSE-REQUIRED", "UNKNOWN", "BLOCKED")
+OWNER = "OWNER-ACCEPTED"                 # terms not established; the owner publishes on his own decision, written out in the field owner_decision (CL-028). Never inferred: without that field the class is refused
+CLASSES = SAFE + (OWNER, "NON-COMMERCIAL", "RESEARCH-ONLY", "LICENSE-REQUIRED", "UNKNOWN", "BLOCKED")
 SOURCE_STATUS = ("PRODUCTION", "RESEARCH", "DISABLED", "BLOCKED")
 LICENCE_STATUS = ("CLEARED", "PENDING_CONFIRMATION", "RESEARCH_ONLY", "RETIRED", "NOT_CONNECTED")
 PRODUCTION_FIELDS = ("purpose", "lag", "automation_allowed", "attribution", "evidence", "evidence_url", "evidence_date")     # what a production source must state besides FIELDS
@@ -35,7 +36,8 @@ def load(path=None):
 def refusal(entry):
     """Why a source may not be published; None when it may. The first reason found is returned."""
     if entry is None: return "not in the production policy"
-    if entry.get("license_class") not in SAFE: return f"licence class {entry.get('license_class')}"
+    if entry.get("license_class") == OWNER and not str(entry.get("owner_decision") or "").strip(): return "licence class OWNER-ACCEPTED without a recorded decision of the owner"
+    if entry.get("license_class") not in SAFE + (OWNER,): return f"licence class {entry.get('license_class')}"
     for k, word in (("commercial_allowed", "commercial use is not allowed"), ("public_display_allowed", "public display is not allowed"), ("derived_data_allowed", "derived data are not allowed"), ("enabled", "switched off")):
         if entry.get(k) is not True: return word
     if entry.get("production_status") != "PRODUCTION": return f"production status {entry.get('production_status')}"

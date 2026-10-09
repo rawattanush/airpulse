@@ -12,7 +12,7 @@ const MODE = {
 }
 const LAYER = { core: 'Market and monthly outlook', weekly: 'Weekly fuel outlook', aviation: 'Air traffic' }
 const STATUS = { HEALTHY: 'Healthy', DEGRADED: 'Degraded', STALE: 'Stale', FAILED: 'Failed', UNAVAILABLE: 'Unavailable' }
-const TERMS = { 'COMMERCIAL-SAFE': 'Public domain', 'COMMERCIAL-SAFE-WITH-ATTRIBUTION': 'Free to use with attribution', 'COMMERCIAL-SAFE-WITH-LIMITS': 'Free to reuse by the publisher’s own statement' }
+const TERMS = { 'COMMERCIAL-SAFE': 'Public domain', 'COMMERCIAL-SAFE-WITH-ATTRIBUTION': 'Free to use with attribution', 'COMMERCIAL-SAFE-WITH-LIMITS': 'Free to reuse by the publisher’s own statement', 'OWNER-ACCEPTED': 'Terms not established; shown on the site owner’s decision' }
 const DATASET = { benchmark_snapshot: 'Index and fuel snapshot of the evaluation', expansion_snapshot: 'Snapshot of the data of the later tests', weekly_fuel_vintages: 'Weekly fuel releases' }
 const STARTED = { manual: 'By hand', 'manual-dispatch': 'By hand (hosted)', schedule: 'Scheduler', seed: 'Copied from the snapshot' }
 const RUN = { OK: 'Completed', DEGRADED: 'Completed; a source was not healthy', FAILED: 'Failed its checks' }

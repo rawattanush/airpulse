@@ -33,10 +33,10 @@ Figure 5 of the specification shows the packages. The decomposition follows the 
 |---|---|---|---|
 | Configuration | `config/*.yaml`, `src/config.py` | Declarations of sources; production policy; frozen constants of the method | nothing |
 | Validated engine | `src/ingestion`, `src/database`, `src/preprocessing`, `src/validation`, `src/features`, `src/forecasting`, `src/evaluation`, `src/api` | From files to store, labels, features, forecasts and the evaluation | configuration; earlier packages of this list |
-| Operational pipeline | `src/ops`, `scripts/production_run.py`, `src/aviation` (collector, operations) | Retrieval, validation, operational copies, issuance, outcomes, selection | engine, observability |
+| Operational pipeline | `src/ops`, `scripts/production_run.py`, `src/aviation` (collector, operations), `src/press` (press reading and news-adjusted view, experimental) | Retrieval, validation, operational copies, issuance, outcomes, selection | engine, observability |
 | Observability | `src/observability` | Append-only records, registry of sources, policy checks | configuration |
 | Publication | `airpulse-web/scripts`, `airpulse-web/src`, `scripts/deployment_checks.py` | Export under a contract, the site, the checks before upload | the records and files written by the layers above, never their code paths |
-| Research only | `src/news`, `src/v2`, `src/v3`, `src/aviation/experiment.py`, `src/dashboard` | Experiments. `src/v2`, `src/v3` and the experiment commands are not in the hosted repository; `src/news` and `src/dashboard` are present in the hosted repository as code the pipeline imports, with the event layer's sources switched off | engine (read only) |
+| Research only | `src/news`, `src/v2`, `src/v3`, `src/aviation/experiment.py`, `src/dashboard` | Experiments. `src/v2`, `src/v3` and the experiment commands are not in the hosted repository; `src/news` and `src/dashboard` are present in the hosted repository as code the pipeline imports, with the event layer's sources switched off; the headline parser of `src/news` is also what the press reading uses | engine (read only) |
 
 ### 3.1 Separation of concerns
 
@@ -206,10 +206,14 @@ Licence status is treated as an input of the build, like a test result.
 
 The effect is that publication cannot happen by oversight: clearing a source is an edit to one file, visible in version control, and the workflow follows the file.
 
+## 16a. The news-adjusted view
+
+An experimental layer beside the official outlook (change record CL-028). It follows the same rules as the air-traffic layer: its own process in the run, its own log (`operations/press/ingestion_log.jsonl`), no path by which it could alter a forecast. The press reading (`src/press/reading.py`) stores parsed events and never a headline, because the headline is the publisher's text and the event is a fact about it. The model (`src/press/outlook.py`) is fitted at run time on a shipped table of derived numbers, so the hosted repository needs no archive. The official outlook's ledger is only read. The output is rewritten only when a reading changed, so an idle run leaves the export identical.
+
 ## 17. Known design debts
 
 - `src/ops/selection.py` reads a helper from `src/dashboard`, a package that is otherwise a research tool. The helper should move into the engine.
 - The production run keeps a dormant branch for a weekly layer that no declared source uses.
-- The operational pipeline imports the event layer, so its code travels with the hosted repository although its sources are switched off there. The import should become optional.
+- The operational pipeline imports the event layer, so its code travels with the hosted repository although its sources are switched off there. The import should become optional. The press reading (section 16a) uses its parser.
 - The hosted repository's selection record cannot list the decisions of the research passes, whose result files are not in that repository. The rule is unaffected; the record there is shorter.
 - Accessibility and responsiveness are implemented by convention and are not tested.

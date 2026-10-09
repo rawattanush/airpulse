@@ -81,6 +81,60 @@ sources:
   - {id: bls_IV1311, <<: *bls_first_party, name: "Europe import air freight (BoP) price index, every release (BLS IV1311)"}
   - {id: eia_jet_fuel, <<: *eia_first_party, name: US Gulf Coast jet fuel (EIA), url: "https://www.eia.gov/dnav/pet/hist_xls/EER_EPJK_PF4_RGC_DPGd.xls", coverage: "daily spot price, 1990-04 onward", attribution: "Source: U.S. Energy Information Administration, spot prices, with the date of the release shown."}
   - {id: eia_brent, <<: *eia_first_party, name: Brent crude (EIA), url: "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls", coverage: "daily spot price, 1987-05 onward", attribution: "Source: U.S. Energy Information Administration, spot prices, with the date of the release shown."}
+  - id: press_aircargoweek
+    name: "Air Cargo Week: reported events"
+    authority: Air Cargo Week (publisher)
+    url: "https://aircargoweek.com/wp-json/wp/v2/posts"
+    data_type: parsed press events
+    frequency: working days
+    coverage: "one trade publication; the last 45 days"
+    license_class: OWNER-ACCEPTED
+    owner_decision: "2026-10-09, change record CL-028. The publisher's terms of reuse were not found and no permission was asked. The owner reads the publication's public interface once a day and shows, for each article, what kind of event it reported, its date and a link to it; the headline text and the article are not stored and not shown. Removed if the publisher objects."
+    commercial_allowed: true
+    public_display_allowed: true
+    storage_allowed: true
+    derived_data_allowed: true
+    api_required: false
+    credentials_required: false
+    stale_after: 4 days
+    enabled: true
+    production_status: PRODUCTION
+    licence_status: CLEARED
+    purpose: "events reported by the trade press, as inputs of the experimental news-adjusted outlook; not an input of the official outlook"
+    lag: "read once a day"
+    automation_allowed: true
+    attribution: "Reported by Air Cargo Week; each event links to the article."
+    limits: "CLEARED BY THE OWNER'S DECISION, not by the publisher. The rights marked true above are what the owner takes on himself, not what a licence grants."
+    evidence: "No terms of reuse were found on the publisher's site (read 2026-10-03); robots.txt does not disallow the interface. The class is OWNER-ACCEPTED for that reason."
+    evidence_url: "https://aircargoweek.com"
+    evidence_date: "2026-10-09"
+  - id: press_splash247
+    name: "Splash247: reported events"
+    authority: Splash247 (publisher)
+    url: "https://splash247.com/wp-json/wp/v2/posts"
+    data_type: parsed press events
+    frequency: working days
+    coverage: "one trade publication; the last 45 days"
+    license_class: OWNER-ACCEPTED
+    owner_decision: "2026-10-09, change record CL-028. The publisher's terms of reuse were not found and no permission was asked. The owner reads the publication's public interface once a day and shows, for each article, what kind of event it reported, its date and a link to it; the headline text and the article are not stored and not shown. Removed if the publisher objects."
+    commercial_allowed: true
+    public_display_allowed: true
+    storage_allowed: true
+    derived_data_allowed: true
+    api_required: false
+    credentials_required: false
+    stale_after: 4 days
+    enabled: true
+    production_status: PRODUCTION
+    licence_status: CLEARED
+    purpose: "events reported by the trade press, as inputs of the experimental news-adjusted outlook; not an input of the official outlook"
+    lag: "read once a day"
+    automation_allowed: true
+    attribution: "Reported by Splash247; each event links to the article."
+    limits: "CLEARED BY THE OWNER'S DECISION, not by the publisher. The rights marked true above are what the owner takes on himself, not what a licence grants."
+    evidence: "No terms of reuse were found on the publisher's site (read 2026-10-03); robots.txt does not disallow the interface. The class is OWNER-ACCEPTED for that reason."
+    evidence_url: "https://splash247.com"
+    evidence_date: "2026-10-09"
   - id: hkia
     name: Hong Kong International Airport flight information
     authority: Airport Authority Hong Kong, through DATA.GOV.HK
@@ -324,6 +378,7 @@ features:
 
   # ---------------------------------------------------------------- removed from the public product
   - {id: weekly_fuel_outlook, name: Weekly fuel-cost outlook, kind: prediction, status: NEEDS LICENCE, sources: [], reason: "Its weekly release windows, its fitted rule and its record were built on dated vintages of the fuel prices that only one relay service holds, and that service's terms forbid keeping the data and building models on them without its consent. The Energy Information Administration publishes no dated vintages from which they could be rebuilt. The outlook returns when it can be rerun on releases the deployed system has archived itself, or with that consent. Kept as research."}
+  - {id: news_adjusted_outlook, name: "News-adjusted outlook (experimental)", kind: prediction, status: PRODUCTION READY, sources: [press_aircargoweek, press_splash247, bls_IC1312], artifacts: ["news.json"], pages: [News-adjusted outlook], validation: "protocol 7.0, pre-registered: walk-forward on 63 months against the seasonal baseline and against the same model without news; news did not add value by the rule fixed in advance", wording: "experimental; shown beside the official outlook, never as it; its record is shown with it; events are summaries with links, not headlines", reason: "Shown beside the official outlook, never in its place, with the result of its pre-registered test (protocol 7.0): it did not improve on the seasonal baseline. Published as an experiment on the owner's decision."}
   - {id: event_intelligence, name: "Reported events, briefing and themes from the trade press", kind: observation, status: REMOVE FROM PUBLIC PRODUCT, sources: [news_aircargoweek, news_splash247], reason: "Two conditions fail. The right to display the publishers' headlines is not established (licence class UNKNOWN). The event extraction is not validated: it was checked only against a reference annotation whose annotator is not recorded. Kept as research in the repository and the Control Center."}
   - {id: european_airport_activity, name: European airport activity, kind: observation, status: NEEDS LICENCE, sources: [eurocontrol], reason: "The publisher forbids commercial use. Removed from the public product; it returns only with EUROCONTROL's written permission. Kept as research."}
   - {id: airport_anomaly_reading, name: "Expected activity, difference, reading and flags of unusual activity", kind: anomaly, status: REMOVE FROM PUBLIC PRODUCT, sources: [hkia, eurocontrol], reason: "Its validation events are now independently evidenced (data/reference/disruption_events.csv: 15 of 15), and it finds all of them, but it flags 7.1% of ordinary airport-days against the 5% allowed by the rule fixed before the test (protocol 4.0). The detector was not changed to pass. Not promoted; removed."}

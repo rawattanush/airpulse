@@ -9,7 +9,7 @@ One command is the whole run:
 ```
 python scripts/production_run.py                 # fetch what is due, issue what is due, validate, write the registry
 python scripts/production_run.py --offline       # no network: rebuild from the files held, issue anything not yet issued
-python scripts/production_run.py --force bls     # treat a group as due (fuel, bls, aviation; several allowed)
+python scripts/production_run.py --force bls     # treat a group as due (fuel, bls, aviation, press; several allowed)
 python scripts/production_run.py --plan          # print what is due and stop
 ```
 

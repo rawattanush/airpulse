@@ -37,7 +37,7 @@ on:
   workflow_dispatch:
     inputs:
       force:
-        description: "Groups to treat as due, separated by spaces (fuel bls aviation). Empty: only what is due."
+        description: "Groups to treat as due, separated by spaces (fuel bls aviation press). Empty: only what is due."
         required: false
         default: ""
 permissions:
@@ -80,7 +80,7 @@ jobs:
             "31 9 23 * *") FORCE="bls"; CADENCE=monthly ;;
             *)             FORCE="${FORCE_INPUT:-}"; CADENCE=daily ;;
           esac
-          for g in $FORCE; do case "$g" in fuel|bls|aviation) ;; *) echo "unknown group: $g (fuel bls aviation)"; exit 1 ;; esac; done
+          for g in $FORCE; do case "$g" in fuel|bls|aviation|press) ;; *) echo "unknown group: $g (fuel bls aviation press)"; exit 1 ;; esac; done
           echo "$CADENCE" > "$RUNNER_TEMP/cadence"
           code=0
           python scripts/production_run.py ${FORCE:+--force $FORCE} 2>&1 | tee "$RUNNER_TEMP/production.log" || code=$?

@@ -1,6 +1,6 @@
 # AirPulse: User Guide
 
-Version 1.1, 2026-10-07. This guide describes the website as it is built. Every page below was opened in the production build of the site, served the way the static host serves it, and the description was written from what the page showed. Figures quoted as examples are those of the data exported on 7 October 2026 and will differ later.
+Version 1.2, 2026-10-09. This guide describes the website as it is built. Every page below was opened in the production build of the site, served the way the static host serves it, and the description was written from what the page showed. Figures quoted as examples are those of the data exported on 7 October 2026 and will differ later.
 
 ## 1. Before you start
 
@@ -11,7 +11,7 @@ AirPulse publishes **one outlook a month**: whether the official price index for
 - **Monthly and late.** The index of a month is first published in the middle of the next month and revised in the three following releases. Pages mark a figure as *First release* or *Final*.
 - **Snapshot.** The foot of each page states the time of the last data refresh and how far the index and the fuel prices reach.
 
-Navigation: **Overview**, **Market** (Market, Monthly outlook, Trends, History, Fuel prices), **Operations** (Air traffic, Lanes, Replay, Estimate), **Research** (Methodology, Data). On a narrow screen the navigation is behind a Menu button.
+Navigation: **Overview**, **Market** (Market, Monthly outlook, News-adjusted, Trends, History, Fuel prices), **Operations** (Air traffic, Lanes, Replay, Estimate), **Research** (Methodology, Data). On a narrow screen the navigation is behind a Menu button.
 
 ## 2. Routes
 
@@ -24,6 +24,7 @@ Navigation: **Overview**, **Market** (Market, Monthly outlook, Trends, History, 
 | `/market/trends` | Trends | yes |
 | `/market/history` | History | yes |
 | `/market/fuel` | Fuel prices | yes |
+| `/market/news` | News-adjusted outlook (a trial) | yes |
 | `/market/weekly` | Weekly fuel-cost outlook (not offered) | linked from Fuel prices |
 | `/operations` | Air traffic | yes |
 | `/operations/route/<pair>` | One route, for example `HKG-ANC` | from the route table |
@@ -83,6 +84,15 @@ Four old addresses redirect: `/forecast`, `/history`, `/intelligence/drivers` (t
 - **Controls.** Year selector for the table; "Show all 126 months"; links to the record by direction, Methodology, Data state.
 - **Interpretation.** A forecast is Correct when its direction equals the direction of the final figure. Four of the 126 outlooks still await a final figure.
 - **Limitations.** One month ahead only. No size of move is forecast. Months without an outlook (October and November 2025, January 2026) are absent because the publisher's release pattern did not allow one to be issued before its outcome.
+
+### 5.2a News-adjusted outlook (`/market/news`)
+
+- **Purpose.** To show how recent news would shift the outlook, as a trial. It is not the AirPulse outlook.
+- **What you see.** A statement at the top that this is a trial and how it did in testing. The official outlook and the version with recent news side by side, each with its three probabilities. **The shift**: the probability points news adds to or takes from each direction. **Which news moves it**: for each of six kinds of news (disruption at sea, reported air-freight rates, cargo demand, air cargo capacity, geopolitical events, airspace disruption) its level now, its usual level and what it contributes. **What the press reported**: one line per reported event of the last 30 days (date, kind of event, places and organisations named, whether it presses prices up or down, and a link to the article). **How it did in testing**: months, months correct and how sure each version was, and a month-by-month table.
+- **Controls.** "Show all months" on the test table. Each source name opens the article at its publisher.
+- **Interpretation.** Read the direction of the shift, not its size. In testing the version with news was right about as often as the seasonal outlook (33 of 63 months against 32) and was much more sure of itself than that justified.
+- **Data source.** Two trade publications, read once a day. The text of an article or of its title is not shown and not kept; only what kind of event it reported.
+- **Limitations.** The reading of articles is done by fixed rules that miss many events and sometimes misread one. The model was trained on past months and has not shown that news improves the outlook. The official outlook never changes with news.
 
 ### 5.3 Trends (`/market/trends`)
 
@@ -170,7 +180,7 @@ Sections, in order: what AirPulse predicts and what it does not; the data; the t
 |---|---|
 | A price or quote for a shipment; a rate per kilogram | No lane-rate data are held |
 | A forecast of a commercial lane rate, at any horizon | No validated model exists |
-| News-based "intelligence" pages | An experimental event reader is research only; the old address redirects to Fuel prices |
+| An archive of news, a news search, briefings | Only the trial page of 5.2a exists; it shows summaries of reported events and links, no article text |
 | A weekly outlook | See 5.6 |
 | Expected levels or anomaly flags for air traffic | Did not meet its test |
 | Accounts, alerts, downloads, cookies | The site is static and stores nothing about a visitor |

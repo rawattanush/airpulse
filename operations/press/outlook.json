@@ -1,0 +1,604 @@
+{
+ "baseline": {
+  "prediction": "FLAT",
+  "probabilities": {
+   "down": 0.2631578947368421,
+   "flat": 0.3684210526315789,
+   "up": 0.3684210526315789
+  }
+ },
+ "events": [
+  {
+   "direction": 1,
+   "event_type": "TRADE_SURGE",
+   "first_reported": "2026-10-08T22:03:25Z",
+   "group": "trade_flow",
+   "last_reported": "2026-10-08T22:03:25Z",
+   "organisations": [
+    "Emirates SkyCargo"
+   ],
+   "places": [
+    "LATIN_AMERICA"
+   ],
+   "reports": 1,
+   "severity": 1,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/emirates-skycargo-accelerates-export-growth-from-south-america/"
+  },
+  {
+   "direction": 1,
+   "event_type": "TRADE_SURGE",
+   "first_reported": "2026-10-08T22:01:10Z",
+   "group": "trade_flow",
+   "last_reported": "2026-10-08T22:01:10Z",
+   "organisations": [],
+   "places": [
+    "AFRICA"
+   ],
+   "reports": 1,
+   "severity": 1,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/sub-saharan-africa-powers-global-trade-growth/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-10-08T21:55:15Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-10-08T21:55:15Z",
+   "organisations": [],
+   "places": [
+    "SG",
+    "singapore"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/singapore-team-targets-port-plannings-programming-bottleneck/"
+  },
+  {
+   "direction": 1,
+   "event_type": "HORMUZ_DISRUPTION",
+   "first_reported": "2026-10-06T07:56:05Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-10-07T08:15:16Z",
+   "organisations": [],
+   "places": [
+    "STRAIT_OF_HORMUZ"
+   ],
+   "reports": 2,
+   "severity": 3,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/tanker-attacks-around-hormuz-hit-wartime-high/"
+  },
+  {
+   "direction": 1,
+   "event_type": "MILITARY_ATTACK",
+   "first_reported": "2026-10-06T22:38:13Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-10-06T22:38:13Z",
+   "organisations": [],
+   "places": [
+    "east midlands"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/boats-destined-for-people-smugglers-seized-at-east-midlands-airport/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CLOSURE",
+   "first_reported": "2026-10-06T12:45:16Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-10-06T12:45:16Z",
+   "organisations": [],
+   "places": [
+    "AFRICA"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/africas-largest-iron-ore-export-terminal-enters-maintenance-shutdown/"
+  },
+  {
+   "direction": 1,
+   "event_type": "MILITARY_ATTACK",
+   "first_reported": "2026-10-06T08:30:45Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-10-06T08:30:45Z",
+   "organisations": [],
+   "places": [
+    "BLACK_SEA"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/grain-carrier-sinks-off-romania-after-suspected-russian-drone-strike/"
+  },
+  {
+   "direction": -1,
+   "event_type": "AIR_CARGO_DEMAND_DROP",
+   "first_reported": "2026-10-05T13:48:07Z",
+   "group": "cargo_demand_shock",
+   "last_reported": "2026-10-05T13:48:07Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/pricing-and-capacity-hold-steady-as-traffic-slows/"
+  },
+  {
+   "direction": 1,
+   "event_type": "TRADE_SURGE",
+   "first_reported": "2026-10-05T08:30:54Z",
+   "group": "trade_flow",
+   "last_reported": "2026-10-05T08:30:54Z",
+   "organisations": [],
+   "places": [
+    "STRAIT_OF_HORMUZ"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/oil-exports-surge-back-through-hormuz-despite-mounting-attacks/"
+  },
+  {
+   "direction": 1,
+   "event_type": "MILITARY_ATTACK",
+   "first_reported": "2026-10-02T08:15:11Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-10-02T08:15:11Z",
+   "organisations": [],
+   "places": [
+    "SA",
+    "STRAIT_OF_HORMUZ"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/fresh-attacks-hit-hormuz-tanker-and-saudi-oil-gateway/"
+  },
+  {
+   "direction": 1,
+   "event_type": "HORMUZ_DISRUPTION",
+   "first_reported": "2026-10-02T08:15:11Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-10-02T08:15:11Z",
+   "organisations": [],
+   "places": [
+    "SA",
+    "STRAIT_OF_HORMUZ"
+   ],
+   "reports": 1,
+   "severity": 3,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/fresh-attacks-hit-hormuz-tanker-and-saudi-oil-gateway/"
+  },
+  {
+   "direction": 1,
+   "event_type": "AIR_CARGO_DEMAND_SURGE",
+   "first_reported": "2026-10-01T13:55:19Z",
+   "group": "cargo_demand_shock",
+   "last_reported": "2026-10-01T13:55:19Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/shippers-turn-to-short-term-airfreight-deals-as-demand-growth-keeps-rates-elevated/"
+  },
+  {
+   "direction": -1,
+   "event_type": "CEASEFIRE",
+   "first_reported": "2026-10-01T02:07:57Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-10-01T02:07:57Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/montevideo-container-terminal-dispute-heads-towards-five-year-truce/"
+  },
+  {
+   "direction": 1,
+   "event_type": "AIRFREIGHT_RATE_INCREASE",
+   "first_reported": "2026-09-30T17:31:04Z",
+   "group": "airfreight_rate_signal",
+   "last_reported": "2026-09-30T17:31:04Z",
+   "organisations": [
+    "DHL"
+   ],
+   "places": [
+    "GB"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/dhl-express-average-rate-increase-of-5-9-percent-for-2027-in-united-kingdom/"
+  },
+  {
+   "direction": 1,
+   "event_type": "TRADE_SURGE",
+   "first_reported": "2026-09-30T09:22:00Z",
+   "group": "trade_flow",
+   "last_reported": "2026-09-30T09:22:00Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/gulf-crude-exports-rebound-sharply/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-09-29T02:00:12Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-09-29T02:00:12Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/kpler-data-highlights-terminal-level-congestion-hidden-by-port-averages/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-09-28T01:16:48Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-09-28T07:00:51Z",
+   "organisations": [],
+   "places": [
+    "ASIA"
+   ],
+   "reports": 2,
+   "severity": 2,
+   "source": "splash247",
+   "status": "POTENTIAL",
+   "url": "https://splash247.com/asian-container-port-congestion-threatens-to-stretch-deep-into-2027/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CLOSURE",
+   "first_reported": "2026-09-27T02:35:31Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-09-27T02:35:31Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ENDED",
+   "url": "https://splash247.com/ontario-backs-reopening-of-dormant-michipicoten-harbour/"
+  },
+  {
+   "direction": 1,
+   "event_type": "AIR_CARGO_DEMAND_SURGE",
+   "first_reported": "2026-09-24T11:01:29Z",
+   "group": "cargo_demand_shock",
+   "last_reported": "2026-09-24T11:01:29Z",
+   "organisations": [],
+   "places": [
+    "ES",
+    "LATIN_AMERICA"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/rhenus-spain-latin-america-export-volumes-up-more-than-30-percent/"
+  },
+  {
+   "direction": 1,
+   "event_type": "TRADE_DISRUPTION",
+   "first_reported": "2026-09-20T12:53:16Z",
+   "group": "trade_disruption",
+   "last_reported": "2026-09-23T19:51:00Z",
+   "organisations": [],
+   "places": [],
+   "reports": 3,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/fresh-strike-hits-montevideo-container-terminal/"
+  },
+  {
+   "direction": 1,
+   "event_type": "AIRFREIGHT_RATE_INCREASE",
+   "first_reported": "2026-09-21T12:15:18Z",
+   "group": "airfreight_rate_signal",
+   "last_reported": "2026-09-21T12:15:18Z",
+   "organisations": [],
+   "places": [
+    "ASIA"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/asia-pacific-air-cargo-spot-rates-capacity-and-tonnages-strengthen-further/"
+  },
+  {
+   "direction": 1,
+   "event_type": "AIR_CARGO_DEMAND_SURGE",
+   "first_reported": "2026-09-21T12:15:18Z",
+   "group": "cargo_demand_shock",
+   "last_reported": "2026-09-21T12:15:18Z",
+   "organisations": [],
+   "places": [
+    "ASIA"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/asia-pacific-air-cargo-spot-rates-capacity-and-tonnages-strengthen-further/"
+  },
+  {
+   "direction": 1,
+   "event_type": "SANCTIONS",
+   "first_reported": "2026-09-20T09:01:35Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-09-20T09:01:35Z",
+   "organisations": [],
+   "places": [
+    "RU"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/trump-signs-russia-sanctions-law-with-shadow-fleet-in-the-crosshairs/"
+  },
+  {
+   "direction": -1,
+   "event_type": "CEASEFIRE",
+   "first_reported": "2026-09-18T08:45:07Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-09-18T08:45:07Z",
+   "organisations": [],
+   "places": [
+    "BLACK_SEA",
+    "TR"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/turkey-pushes-black-sea-truce/"
+  },
+  {
+   "direction": -1,
+   "event_type": "AIR_CAPACITY_ADDITION",
+   "first_reported": "2026-09-17T12:24:38Z",
+   "group": "air_capacity_shock",
+   "last_reported": "2026-09-17T12:24:38Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 1,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/solitair-charters-two-new-cargo-services-to-uzbekistan/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-09-17T09:57:08Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-09-17T09:57:08Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/tenerife-terminal-adds-digital-platform-to-tackle-gate-bottlenecks/"
+  },
+  {
+   "direction": 1,
+   "event_type": "AIRFREIGHT_RATE_INCREASE",
+   "first_reported": "2026-09-15T10:04:24Z",
+   "group": "airfreight_rate_signal",
+   "last_reported": "2026-09-15T10:04:24Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 3,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/global-airfreight-rates-edge-higher-as-fuel-costs-surge/"
+  },
+  {
+   "direction": 1,
+   "event_type": "JET_FUEL_SPIKE",
+   "first_reported": "2026-09-15T10:04:24Z",
+   "group": "fuel_shock",
+   "last_reported": "2026-09-15T10:04:24Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 3,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/global-airfreight-rates-edge-higher-as-fuel-costs-surge/"
+  },
+  {
+   "direction": 1,
+   "event_type": "AIR_CARGO_DEMAND_SURGE",
+   "first_reported": "2026-09-15T09:30:36Z",
+   "group": "cargo_demand_shock",
+   "last_reported": "2026-09-15T09:30:36Z",
+   "organisations": [],
+   "places": [
+    "brussels"
+   ],
+   "reports": 1,
+   "severity": 3,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/brussels-airport-cargo-volumes-surge-22-percent-in-august/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-09-11T01:33:06Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-09-11T01:33:06Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/perfect-storm-sends-global-port-congestion-beyond-pandemic-peak/"
+  },
+  {
+   "direction": 1,
+   "event_type": "HORMUZ_DISRUPTION",
+   "first_reported": "2026-09-10T08:30:46Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-09-10T08:30:46Z",
+   "organisations": [],
+   "places": [
+    "STRAIT_OF_HORMUZ"
+   ],
+   "reports": 1,
+   "severity": 3,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/hormuz-attacks-reach-wartime-high/"
+  }
+ ],
+ "events_in_window": 31,
+ "experimental": true,
+ "issuance_date": "2026-09-16",
+ "model": {
+  "name": "T1 of protocol 7.0: logistic regression on the seasonal log-probabilities and six news features",
+  "trained_from": "2017-09",
+  "trained_on_months": 102,
+  "trained_to": "2026-05",
+  "window_days": 30
+ },
+ "news_adjusted": {
+  "articles_in_window": 1006,
+  "as_of": "2026-10-09T15:06:24Z",
+  "by_group": [
+   {
+    "group": "geopolitical_shock",
+    "label": "Geopolitical events",
+    "shift_points": {
+     "down": -0.1,
+     "flat": -0.8,
+     "up": 1.0
+    },
+    "usual": 0.1104,
+    "value": 0.0929
+   },
+   {
+    "group": "maritime_disruption",
+    "label": "Disruption at sea",
+    "shift_points": {
+     "down": -2.5,
+     "flat": -12.5,
+     "up": 15.0
+    },
+    "usual": 0.1084,
+    "value": 0.4703
+   },
+   {
+    "group": "airspace_disruption",
+    "label": "Airspace disruption",
+    "shift_points": {
+     "down": 0.0,
+     "flat": 0.0,
+     "up": 0.0
+    },
+    "usual": 0.0,
+    "value": 0.0
+   },
+   {
+    "group": "air_capacity_shock",
+    "label": "Air cargo capacity",
+    "shift_points": {
+     "down": 0.8,
+     "flat": 4.2,
+     "up": -5.0
+    },
+    "usual": -0.0837,
+    "value": -0.0197
+   },
+   {
+    "group": "cargo_demand_shock",
+    "label": "Cargo demand",
+    "shift_points": {
+     "down": 1.4,
+     "flat": 6.7,
+     "up": -8.1
+    },
+    "usual": 0.0133,
+    "value": 0.1577
+   },
+   {
+    "group": "airfreight_rate_signal",
+    "label": "Reported air-freight rates",
+    "shift_points": {
+     "down": -10.0,
+     "flat": 3.1,
+     "up": 6.8
+    },
+    "usual": 0.0,
+    "value": 0.1493
+   }
+  ],
+  "prediction": "UP",
+  "probabilities": {
+   "down": 0.12972597000997244,
+   "flat": 0.1292935338012731,
+   "up": 0.7409804961887545
+  },
+  "shift_points": {
+   "down": -13.3,
+   "flat": -23.9,
+   "up": 37.3
+  }
+ },
+ "official_forecaster": "BL-SEA",
+ "schema": "NEWS-OUTLOOK-1",
+ "series": "IC1312",
+ "sources": {
+  "press_aircargoweek": {
+   "articles": 323,
+   "from": "2026-08-25T16:06:30Z",
+   "retrieved_at": "2026-10-09T15:06:16Z",
+   "to": "2026-10-09T09:26:35Z"
+  },
+  "press_splash247": {
+   "articles": 1253,
+   "from": "2026-08-25T07:31:28Z",
+   "retrieved_at": "2026-10-09T15:06:24Z",
+   "to": "2026-10-09T10:44:00Z"
+  }
+ },
+ "target_period": "2026-09"
+}

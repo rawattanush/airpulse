@@ -1,0 +1,76 @@
+{
+ "generated": "2026-10-09",
+ "protocol": "7.0",
+ "series": "IC1312",
+ "features": [
+  "geopolitical_shock_30d_rate",
+  "maritime_disruption_30d_rate",
+  "airspace_disruption_30d_rate",
+  "air_capacity_shock_30d_rate",
+  "cargo_demand_shock_30d_rate",
+  "airfreight_rate_signal_30d_rate"
+ ],
+ "window_days": 30,
+ "snapshot_hash": "9a75a98d4c1c6c161d44e671fa87add37e681f2ff534848fcb19da9a92b9b0bb",
+ "news_archive_hash": "7bb4973b06d7bbb1cc085d7d458cccce4a8185eb9eee9a8e6e9c1e4beb15ba2e",
+ "parser_version": "P1.0",
+ "scored_months": 63,
+ "first_scored": "2020-12",
+ "last_scored": "2026-05",
+ "train_n_first_origin": 36,
+ "train_n_last_origin": 102,
+ "metrics": {
+  "SEA": {
+   "n": 63,
+   "hit_rate": 0.5079365079365079,
+   "balanced_hit_rate": 0.35914702581369246,
+   "macro_f1": 0.3469063987308303,
+   "brier": 0.565895522936128,
+   "log_loss": 0.9303122849885402,
+   "ece": 0.04662268947983243
+  },
+  "T0": {
+   "n": 63,
+   "hit_rate": 0.5238095238095238,
+   "balanced_hit_rate": 0.3602693602693603,
+   "macro_f1": 0.35102925243770317,
+   "brier": 0.5702784174983657,
+   "log_loss": 0.9242662241444692,
+   "ece": 0.08417435679414206
+  },
+  "T1": {
+   "n": 63,
+   "hit_rate": 0.5238095238095238,
+   "balanced_hit_rate": 0.367003367003367,
+   "macro_f1": 0.3693181818181818,
+   "brier": 0.6562488757264338,
+   "log_loss": 1.0894990090833587,
+   "ece": 0.189482554219241
+  }
+ },
+ "comparison": {
+  "T1_vs_SEA": {
+   "brier_diff": 0.09035335279030601,
+   "ci95_low": -0.031252078698180606,
+   "ci95_high": 0.21501658327011675,
+   "months_T1_right_ref_wrong": 10,
+   "months_ref_right_T1_wrong": 9,
+   "direction_changed_months": 20,
+   "better": false,
+   "worse": false
+  },
+  "T1_vs_T0": {
+   "brier_diff": 0.08597045822806813,
+   "ci95_low": -0.02156167387731199,
+   "ci95_high": 0.20307581574171701,
+   "months_T1_right_ref_wrong": 9,
+   "months_ref_right_T1_wrong": 9,
+   "direction_changed_months": 19,
+   "better": false,
+   "worse": false
+  },
+  "news_adds_value": false
+ },
+ "bootstrap_n": 5000,
+ "seed": 20261003
+}

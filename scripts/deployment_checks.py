@@ -169,7 +169,8 @@ def policy_ids(root=ROOT):
     import yaml
     with open(os.path.join(root, "config", "production_sources.yaml"), encoding="utf-8") as f: pol = yaml.safe_load(f)
     safe = ("COMMERCIAL-SAFE", "COMMERCIAL-SAFE-WITH-ATTRIBUTION", "COMMERCIAL-SAFE-WITH-LIMITS")
-    return sorted(s["id"] for s in pol["sources"] if s["license_class"] in safe and s["commercial_allowed"] is True and s["public_display_allowed"] is True and s["derived_data_allowed"] is True
+    owner = lambda s: s["license_class"] == "OWNER-ACCEPTED" and bool(str(s.get("owner_decision") or "").strip())      # terms not established: only with the owner's decision written beside it (CL-028)
+    return sorted(s["id"] for s in pol["sources"] if (s["license_class"] in safe or owner(s)) and s["commercial_allowed"] is True and s["public_display_allowed"] is True and s["derived_data_allowed"] is True
                   and s["enabled"] is True and s["production_status"] == "PRODUCTION")
 
 

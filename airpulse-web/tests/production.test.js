@@ -86,7 +86,7 @@ test('the registry of the product lists only sources whose terms allow the use, 
   assert.ok(r.sources.length >= 10)
   for (const s of r.sources) {
     for (const k of ['id', 'name', 'authority', 'type', 'frequency', 'license', 'attribution', 'last_success', 'last_attempt', 'latest_data', 'status', 'error', 'coverage']) assert.ok(k in s, `${s.id}: ${k}`)
-    assert.ok(STATUSES.includes(s.status), `${s.id}: ${s.status}`); assert.match(s.license, /^COMMERCIAL-SAFE/, `${s.id}: ${s.license}`); assert.ok(s.attribution.length > 10, `${s.id}: attribution`)
+    assert.ok(STATUSES.includes(s.status), `${s.id}: ${s.status}`); assert.match(s.license, /^(COMMERCIAL-SAFE|OWNER-ACCEPTED$)/, `${s.id}: ${s.license}`)   // OWNER-ACCEPTED: published on the owner's recorded decision (engine policy, CL-028); assert.ok(s.attribution.length > 10, `${s.id}: attribution`)
     if (s.status === 'HEALTHY') { assert.ok(s.last_success && s.stale_after_days > 0); assert.equal(s.error, '') }
     if (['STALE', 'DEGRADED', 'FAILED'].includes(s.status)) assert.ok(s.error.length > 0, `${s.id}: a source that is not healthy says why`)
     if (s.scheduled_runs === 0 && s.data_mode) assert.equal(s.data_mode, 'SNAPSHOT', `${s.id}: without a scheduled run nothing is called automated`)

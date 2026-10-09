@@ -12,6 +12,7 @@ A reading of a publisher's terms is not legal advice.
 | Jet fuel (US Gulf Coast) and Brent crude oil prices | U.S. Energy Information Administration, read at the Administration: its spreadsheets | The Administration's reuse page allows use and distribution with an acknowledgment. Its tables name a commercial data vendor as the source of the spot prices; whether that limits reuse was not asked of the Administration. Published on the owner's decision of 2026-10-08, without a confirmation; removed if the publisher or the vendor objects | `research/data_samples/`, `operations/current/`, `operations/raw/` |
 | Flight information of Hong Kong International Airport | Airport Authority Hong Kong, through data.gov.hk | Free for commercial and non-commercial use with the source named. CLEARED | `operations/aviation/raw/hkia/` |
 | International report: departures (US airports) | U.S. Department of Transportation | Public domain. CLEARED | `operations/aviation/official/usdot/` |
+| Events reported by Air Cargo Week and Splash247 (kind of event, date, link; no headline or article text) | The two publishers, read at their public interfaces | Terms of reuse not established. Read and shown on the owner's decision of 2026-10-09; removed if a publisher objects | `operations/press/` |
 | Airport names and coordinates in `data/reference/airports.csv` | OurAirports | Public domain | `data/reference/` |
 
 BLS.gov cannot vouch for the data or analyses derived from these data after the data have been retrieved from BLS.gov.

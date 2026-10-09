@@ -1,0 +1,45 @@
+# Source reliability registry, version 1.0 (2026-10-04). Read by src/news/taxonomy.py.
+#
+# A tier is a classification by KIND of source, used as a configurable weight. It is not a measured accuracy
+# of any outlet and no scientific conclusion of the project depends on a particular weight: the ablation
+# reports raw event counts beside weighted sums, and the weights can be changed here without touching code
+# (a change requires rebuilding the event store; features then carry the new registry_version).
+registry_version: "1.0"
+
+tiers:
+  1: {weight: 1.00, description: "official bodies and primary parties: government agencies, airports, airlines, shipping lines, industry organisations, established news wires"}
+  2: {weight: 0.85, description: "established logistics and aviation trade publications"}
+  3: {weight: 0.60, description: "general news aggregation"}
+  4: {weight: 0.30, description: "social and community sources"}
+
+default_tier: 3          # a source that is not listed below
+
+# default_mode: the transport mode a headline of this source is about when it names none.
+sources:
+  aircargoweek:
+    name: Air Cargo Week
+    domain: aircargoweek.com
+    kind: trade publication (air cargo)
+    tier: 2
+    default_mode: AIR
+    access: public WordPress REST API; robots.txt does not disallow it (checked 2026-10-04); terms page not found
+    connected: true
+  splash247:
+    name: Splash247
+    domain: splash247.com
+    kind: trade publication (shipping)
+    tier: 2
+    default_mode: SEA
+    access: public WordPress REST API; robots.txt does not disallow it (checked 2026-10-04); terms page read, no clause on automated access found
+    connected: true
+
+# Sources examined and NOT connected, with the reason. They are listed so that the decision is on record.
+not_connected:
+  - {name: GDELT DOC 2.0 API, reason: "HTTP 429 (rate limit) on every request from this network on 2026-10-03 and 2026-10-04"}
+  - {name: Air Cargo News (aircargonews.net), reason: "REST API disabled; robots.txt disallows /wp-json/"}
+  - {name: The Loadstar (theloadstar.com), reason: "REST API requires authentication"}
+  - {name: FreightWaves (freightwaves.com), reason: "robots.txt disallows /wp-json/"}
+  - {name: gCaptain (gcaptain.com), reason: "robots.txt disallows URLs with query strings, which the paged API needs"}
+  - {name: STAT Times (stattimes.com), reason: "no public API found"}
+  - {name: OilPrice.com, reason: "not used by design; fuel prices come from EIA"}
+  - {name: commercial news wires and paywalled publications, reason: "not legally accessible without a licence"}

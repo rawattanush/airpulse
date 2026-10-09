@@ -6,7 +6,7 @@ Version 1.1, 2026-10-07. This document states what was checked, with which resul
 
 | Check | Result |
 |---|---|
-| Engine tests | 239 tests: 238 passed, 1 skipped by design, 0 failed |
+| Engine tests | 244 tests: 243 passed, 1 skipped by design, 0 failed |
 | Validators | 10 of 10 pass |
 | Final audit | 137 of 137 checks pass |
 | Application tests | 47 of 47 pass |
@@ -27,7 +27,7 @@ No check was removed, skipped or loosened to obtain these results. Section 6 lis
 
 ## 3. Verification
 
-### 3.1 Engine tests (239)
+### 3.1 Engine tests (244)
 
 Run with `python -m pytest tests`. About twenty-three minutes.
 
@@ -39,11 +39,12 @@ Run with `python -m pytest tests`. About twenty-three minutes.
 | Production pipeline | `test_production.py` | 33 | Registry, due sources, failure isolation, selection, run record, workflows |
 | Public product | `test_public_product.py` | 8 | Licence classes, feature gate, regeneration |
 | Deployment | `test_deployment.py` | 14 | Workflow order and stops, credentials, allow-list, pre-upload checks |
+| News-adjusted outlook | `test_news_outlook.py` | 5 | Press reading keeps no headline; a failed reading changes nothing; the model never alters the official outlook; owner's decision required |
 | Licence repair | `test_licence_repair.py` | 11 | Release reconstruction, no later value in a column, licence status and gate, absence of the retired path |
 | Replay and dashboard | `test_dashboard_replay.py` | 7 | Replay shows only what was published |
 | Research record | seven files of the event layer, `test_v2_expansion.py`, `test_v3_global.py`, `test_v4_aviation.py`, `test_derivatives.py` | 127 | Research results; not requirements of the product |
 
-The one skipped test applies only inside a hosted repository; five test files are shipped there and run in its workflow (57 pass, 10 skipped by design, the skipped ones needing research files).
+The one skipped test applies only inside a hosted repository; five test files are shipped there and run in its workflow (the tests that apply there pass; those needing research files are skipped by design).
 
 **What the tests prove.** That each unit behaves as specified on the cases written for it, including failure cases: a corrupt answer, a timeout, a broken record chain, a source switched off. Tests of adapters run against recorded answers with a fixed clock, so they are repeatable.
 

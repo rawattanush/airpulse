@@ -1,24 +1,24 @@
 {
- "built_at": "2026-10-08T16:58:33Z",
+ "built_at": "2026-10-09T20:49:39Z",
  "built_from": {
-  "application_commit": "659a5a8e5f09b577aca45123a614c4bc02858704",
-  "engine_commit": "8b5d3231434524aba57da848f96bafdde736a8bf"
+  "application_commit": "b91aa1946681bc34f8bad7185d2742e40f598e54",
+  "engine_commit": "503fa94848d735ebc45f14181e29e8a19172f453"
  },
  "by_folder": {
   "(root)": {
-   "bytes": 12934,
+   "bytes": 13471,
    "files": 6
   },
   ".github": {
-   "bytes": 14555,
+   "bytes": 14573,
    "files": 2
   },
   "airpulse-web": {
-   "bytes": 4798301,
-   "files": 78
+   "bytes": 4812942,
+   "files": 79
   },
   "config": {
-   "bytes": 41163,
+   "bytes": 47008,
    "files": 2
   },
   "data": {
@@ -26,43 +26,43 @@
    "files": 6
   },
   "docs": {
-   "bytes": 3696906,
+   "bytes": 3749034,
    "files": 52
   },
   "evaluation": {
-   "bytes": 1043224,
-   "files": 6
+   "bytes": 1087959,
+   "files": 11
   },
   "operations": {
-   "bytes": 15304446,
-   "files": 119
+   "bytes": 16188978,
+   "files": 131
   },
   "research": {
-   "bytes": 3875541,
-   "files": 30
+   "bytes": 3905091,
+   "files": 32
   },
   "scripts": {
-   "bytes": 112402,
+   "bytes": 113195,
    "files": 11
   },
   "src": {
-   "bytes": 370774,
-   "files": 79
+   "bytes": 396006,
+   "files": 82
   },
   "tests": {
-   "bytes": 118004,
-   "files": 5
+   "bytes": 126466,
+   "files": 6
   }
  },
- "bytes": 29434437,
- "files": 396,
+ "bytes": 30500910,
+ "files": 420,
  "largest_files": [
   {
    "bytes": 10263986,
    "path": "operations/aviation/official/usdot/international_report_departures.csv.gz"
   },
   {
-   "bytes": 1904083,
+   "bytes": 1946056,
    "path": "docs/SRS.pdf"
   },
   {
@@ -90,8 +90,8 @@
    "path": "airpulse-web/public/brand/loading.jpg"
   }
  ],
- "manifest_sha256": "4c64e6f6bd26e0970fae29ebcf43f83c79457118b70fa8e30b4020f274a63f2f",
- "mode": "first build",
+ "manifest_sha256": "afdf0745d74b5cbe8c0305eb111f6d69474ea19364c84898bae3f7a89c5f5238",
+ "mode": "update of code, configuration, tests and documents; operations/ left as it was, except state added for layers it did not hold: press",
  "sources_switched_off": [
   "news_aircargoweek",
   "news_splash247",
@@ -125,7 +125,7 @@
   "src/v3/report.py",
   "src/v3/stable.py"
  ],
- "src_tree_sha256": "d656446247f15b6c81710cc904529e76b9cfb4ba0d1e20a10ef9d56fd3a00d8c",
+ "src_tree_sha256": "5e89a6bba6a11d3503ea73d229fcf918e0bdfdafe9e73d533e42290c0b0997a5",
  "trial": null,
  "what": "AirPulse production repository: engine, customer application and one production workflow. Built by scripts/build_public_repo.py of the research repository; see README.md."
 }

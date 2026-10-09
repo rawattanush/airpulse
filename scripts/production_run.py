@@ -4,7 +4,7 @@
 
     python scripts/production_run.py                 # fetch what is due, issue what is due, validate, write the registry
     python scripts/production_run.py --offline       # no network: rebuild from the files held, issue anything not yet issued
-    python scripts/production_run.py --force bls     # treat a group as due (fuel, bls, news, weekly, aviation; several allowed)
+    python scripts/production_run.py --force bls     # treat a group as due (fuel, bls, news, weekly, aviation, press; several allowed)
     python scripts/production_run.py --plan          # print what is due and stop
 
 PUBLICATION-AWARE. A scheduler may start this every day. It does not fetch everything every day: a source is asked when
@@ -37,7 +37,7 @@ from src.ops import pipeline                                         # noqa: E40
 
 PY = sys.executable
 RUNS = os.path.join(ROOT, "operations", "production_runs.jsonl")
-GROUP_OF = lambda r: {"core": ("news" if r["id"].startswith("news_") else "fuel" if r["id"].startswith("eia_") else "bls"), "weekly": "weekly", "aviation": "aviation"}.get(r["layer"])
+GROUP_OF = lambda r: {"core": ("news" if r["id"].startswith("news_") else "fuel" if r["id"].startswith("eia_") else "bls"), "weekly": "weekly", "aviation": "aviation", "press": "press"}.get(r["layer"])
 EXPECT_NEW_DATA = {"fuel": 8, "bls": 28, "news": 2, "weekly": 8}     # days after the newest data at which the publisher normally has more; aviation feeds declare a check interval only
 RETRY_AFTER_HOURS = 20
 LIMITS = {"prepare": 1500, "core": 1500, "news": 2400, "weekly": 900, "aviation": 3000, "verify": 300}      # seconds; a step that exceeds its limit is stopped and recorded as failed
@@ -150,6 +150,9 @@ def main(argv):
         step("event layer: rebuild the event store from the archive held", ["-m", "src.news.cli", "build"], LIMITS["news"], log)
     if any(r.get("layer") == "weekly" and r["status"] not in ("DISABLED", "RESEARCH_ONLY") for r in reg0["sources"]):      # the weekly fuel outlook is out of the product (CL-024): no weekly source is declared
         step("weekly fuel outlook: " + ("refresh, " if "weekly" in plan else "no fetch due; ") + "record outcomes, issue the newest once", ["-m", "src.v2.cli", "weekly-run"] + ([] if "weekly" in plan else ["--offline"]), LIMITS["weekly"], log)
+    if any(r.get("layer") == "press" and r["status"] not in ("DISABLED", "RESEARCH_ONLY") for r in reg0["sources"]):      # experimental, beside the official outlook (CL-028); its own process, so that it cannot stop or alter the outlook
+        pr = sorted(plan.get("press", {}))
+        step("news-adjusted outlook (experimental): " + ("read " + ", ".join(pr) if pr else "no reading due") + "; apply the trained model to the newest outlook", ["-m", "src.press.outlook", "--live"] + (["--sources", *pr] if pr else ["--no-fetch"]), LIMITS["news"], log)
     av = sorted(plan.get("aviation", {}))
     step("air traffic: " + ("refresh " + ", ".join(av) if av else "no fetch due") + "; aggregates, quality report", ["-m", "src.aviation.cli", "refresh"] + (["--sources", *av] if av else ["--offline"]), LIMITS["aviation"], log)
 

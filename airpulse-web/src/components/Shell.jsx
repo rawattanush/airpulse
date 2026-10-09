@@ -8,7 +8,7 @@ import { Loading, Logo } from './bits.jsx'
 // Five destinations. A destination with more than one page shows its pages in a second row.
 export const NAV = [
   { label: 'Overview', to: '/dashboard', under: ['/dashboard'] },
-  { label: 'Market', to: '/market', under: ['/market'], items: [{ to: '/market', label: 'Market', end: true }, { to: '/market/forecast', label: 'Monthly outlook' }, { to: '/market/trends', label: 'Trends' }, { to: '/market/history', label: 'History' }, { to: '/market/fuel', label: 'Fuel prices' }] },
+  { label: 'Market', to: '/market', under: ['/market'], items: [{ to: '/market', label: 'Market', end: true }, { to: '/market/forecast', label: 'Monthly outlook' }, { to: '/market/news', label: 'News-adjusted' }, { to: '/market/trends', label: 'Trends' }, { to: '/market/history', label: 'History' }, { to: '/market/fuel', label: 'Fuel prices' }] },
   { label: 'Operations', to: '/operations', under: ['/operations', '/routes', '/replay', '/estimate'], items: [{ to: '/operations', label: 'Air traffic' }, { to: '/routes', label: 'Lanes' }, { to: '/replay', label: 'Replay' }, { to: '/estimate', label: 'Estimate' }] },
   { label: 'Research', to: '/methodology', under: ['/methodology', '/data'], items: [{ to: '/methodology', label: 'Methodology' }, { to: '/data', label: 'Data' }] },
 ]

@@ -50,6 +50,15 @@ A second attribute, the licence class (for example "commercial use with attribut
 - **Status: CLEARED.** A work of the U.S. Government.
 - **Use:** a historical record of departures by route.
 
+### 2.5 Air Cargo Week and Splash247: press events for the news-adjusted view
+
+- **Status: CLEARED in the policy by the owner's decision of 2026-10-09 (class OWNER-ACCEPTED). Not confirmed by the publishers.**
+- **What is read:** the article metadata of the last 45 days, once a day, through each publication's public interface.
+- **What is kept and shown:** for each article the events a fixed set of rules recognises in its headline (kind, direction, places and organisations named), its address and date, and a hash of the normalised headline. **The headline text and the article are not stored, not committed and not shown.** The site shows what kind of event was reported and links to the article.
+- **Terms.** No terms of reuse were found on either site; no permission was asked. The owner accepts that and removes the sources if a publisher objects. The policy refuses this class unless the owner's decision is written beside it.
+- **Use.** Inputs of the experimental news-adjusted view only. Not an input of the official outlook.
+- **Not the same as** the research archive of headlines (section 4), which holds the publishers' text and is not in the hosted repository.
+
 ## 3. Retired: the access path through FRED and ALFRED
 
 Until 2026-10-07 the product read the index vintages through ALFRED and the fuel series through FRED, two data services of the Federal Reserve Bank of St. Louis. An earlier licence audit had classed that path as usable with limits, on the strength of the service's summary of its terms.
@@ -70,7 +79,7 @@ The full terms, read again with those of the programming interface, license a do
 
 | Data | Why research only |
 |---|---|
-| Trade-press headlines (two publications) | The publishers' terms on reuse are unknown |
+| Trade-press headline archive (two publications, from 2014) | The publishers' text; terms on reuse unknown; not redistributed. A table of numbers derived from it (monthly rates of reported events) is shipped for training the news-adjusted model |
 | EUROCONTROL airport statistics | Commercial use forbidden |
 | Historical flight lists 2019 to 2022 | A research data set with its own terms |
 | Aircraft positions (community network) | Not in the product; source switched off |
@@ -130,6 +139,7 @@ Each figure on the site names its source and the date of its data. The Data page
 | EIA fuel prices | CLEARED by the owner's decision; not confirmed by the publisher | Remove on objection. The drafted question can still be sent |
 | FRED / ALFRED in production | RETIRED; none present | None |
 | FRED / ALFRED copies in the research repository | RESEARCH_ONLY / RETIRED | Owner decides: ask the Bank's consent, or delete |
+| Press events (two trade publications) | CLEARED by the owner's decision; terms not established | Remove on objection |
 | Commercial rate data | Not used | A licence, if a rate product is wanted |
 | Brand photographs on the site | Right to publish to be confirmed by the owner (known issue KI-092) | Owner confirms or replaces |
 | Hosting provider's rule on commercial use of free static hosting | Noted (known issue KI-093) | Owner reviews before any commercial use |

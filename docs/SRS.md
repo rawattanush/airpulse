@@ -2,14 +2,14 @@
 
 **Air Freight Market Intelligence and Benchmark Forecasting Platform**
 
-<!-- srs: version=1.2; date=2026-10-08; status=Released. Published on the owner's decision with one licence point open (section 9.4); reference=Change record CL-027 of the research repository. A hosted repository names the commits it was built from in PUBLIC_REPOSITORY.json -->
+<!-- srs: version=1.3; date=2026-10-09; status=Released. Published on the owner's decision with one licence point open (section 9.4); reference=Change record CL-028 of the research repository. A hosted repository names the commits it was built from in PUBLIC_REPOSITORY.json -->
 
 | | |
 |---|---|
-| Version | 1.2 |
-| Date | 2026-10-08 |
+| Version | 1.3 |
+| Date | 2026-10-09 |
 | Document status | Released. Published on the owner's decision with one licence point open (section 9.4) |
-| Repository reference | Change record CL-027 of the research repository. A hosted repository names the commits it was built from in `PUBLIC_REPOSITORY.json` |
+| Repository reference | Change record CL-028 of the research repository. A hosted repository names the commits it was built from in `PUBLIC_REPOSITORY.json` |
 | PDF | `docs/SRS.pdf`, built from this file by `python scripts/build_srs.py` |
 
 ## 1. Document Control
@@ -60,6 +60,7 @@ Sources carry one of four production classes: PRODUCTION, RESEARCH_ONLY, RETIRED
 | 1.0 | 2026-10-07 | First issue of the consolidated specification, after the licence repair (change record CL-024) and the verification of the production path |
 | 1.1 | 2026-10-07 | Diagrams split and enlarged so that no label prints below 7.5 points; sections on constraints, security, licensing controls and failure handling added; user guide verified in the running application; no requirement changed |
 | 1.2 | 2026-10-08 | Licence status of the fuel prices: cleared by the owner's decision, without a confirmation of the publisher; sections 2, 9.1, 9.3, 9.4 and 12.13 follow. No requirement changed |
+| 1.3 | 2026-10-09 | News-adjusted outlook added as an experimental feature beside the official outlook (FR-027, sections 2, 3.1, 3.3, 9.7, 11.9); test counts follow |
 
 ## 2. Executive Summary
 
@@ -73,6 +74,7 @@ The product consists of:
 - **Fuel intelligence.** Daily U.S. Gulf Coast jet fuel and Brent crude spot prices, as context.
 - **Aviation activity.** Observed flights at Hong Kong International Airport, with cargo flights apart, and monthly departures on U.S. international routes.
 - **A scenario calculator.** Arithmetic on a rate the visitor enters.
+- **A news-adjusted view, on trial.** A trained model shows how events reported by the trade press in the last 30 days would shift the outlook's probabilities. It is shown beside the official outlook with its own record; in its test it did not improve on the seasonal outlook (section 11.9).
 - **Source transparency.** For every source: provider, purpose, publication frequency, age of the data, state of the last retrieval and licence status.
 
 **What AirPulse is not.** It is not a freight quotation engine and it does not forecast a commercial lane rate. An index is a benchmark of price movement across many shipments; it is not the price of a shipment. No validated forecast of a commercial rate at a horizon of days or weeks exists in this system, because no rate history that may lawfully be used without a commercial licence was found (section 5).
@@ -91,6 +93,7 @@ The product consists of:
 4. A walk-forward evaluation of five forecasters and the selection of the official forecaster by rule.
 5. Export of the data to static files and a public web application that renders them.
 6. A deployment workflow with gates for record integrity, tests, export contract, pre-upload checks and licence status.
+7. An experimental news-adjusted view of the outlook, from a daily reading of two trade publications of which only parsed events are kept (FR-027).
 
 ### 3.2 Out of scope
 
@@ -108,7 +111,7 @@ The following are research results and are **not part of the product**: nothing 
 
 | Component | What it is | Why it is not in the product | Code in the hosted repository |
 |---|---|---|---|
-| Event layer (`src/news`) | Rule-based reading of trade-press headlines | Parser experimental; its features added no predictive value; the publishers' terms on reuse are unknown | Yes: the operational pipeline imports it. Its two sources are switched off there; no headline, event or output of it is shipped |
+| Headline archive and event store (`src/news`, `research/news_archive`) | Twelve years of headline metadata of two trade publications and the events parsed from them | The archive is the publishers' text and is not redistributed. Its parser serves the news-adjusted view (FR-027), which keeps no headline | Code: yes. The archive and the event store: no |
 | Expansion and global passes (`src/v2`, `src/v3`) | Further data groups and model ladders under protocols 2.0 and 3.0 | No candidate met its promotion rule; the data came through the retired access path | No |
 | Weekly fuel-cost outlook | A weekly outlook of fuel cost | Its release windows existed only through the retired access path (section 9.6) | No |
 | Air-traffic anomaly reading, capacity proxy, corridor index | Derived readings of the air-traffic data | Did not meet the rule fixed in protocol 4.0 | Yes, as modules of `src/aviation`; their output is excluded from the repository and from the export. The experiment commands (`src/aviation/experiment.py`) are not there |
@@ -491,6 +494,18 @@ Each requirement is given with its inputs, processing, outputs, acceptance crite
 | Acceptance criteria | Two runs give the same ledger byte for byte on one platform; on another platform the ledger is numerically equivalent within justified tolerances. |
 | Traceability | Baseline: REQ-REP-001, REQ-REP-003, REQ-FN-004, REQ-PUB-005. Modules: `src/cli.py`, `scripts/check_benchmark_ledger.py`. Tests: T15, T19 to T22, PB-T06, LR-T05. |
 
+#### FR-027 News-adjusted outlook (experimental)
+
+| Field | Specification |
+|---|---|
+| Description | Beside the official outlook, and never in its place, the system shall show how a trained model shifts the outlook's probabilities given the events reported by the trade press in the last 30 days, with the measured record of that model and a summary of each reported event with a link to its article. |
+| Priority | Optional |
+| Inputs | The newest official outlook; the parsed events of the last 45 days from two publications; a training table of past months (seasonal probabilities, news features, outcomes). |
+| Processing | The press is read once a day and parsed by fixed rules; only parsed events are stored, no headline text. A logistic regression fitted on the training table is applied to the seasonal probabilities and the news features. |
+| Outputs | `operations/press/outlook.json`; the page News-adjusted of the site. |
+| Acceptance criteria | A failed or invalid reading changes nothing; the ledger of the official outlook is only read; no stored or exported file holds a headline; the page states that the model did not improve on the seasonal outlook in its pre-registered test. |
+| Traceability | Baseline: No baseline requirement (owner instruction, change record CL-028; protocol 7.0). Modules: `src/press/reading.py`, `src/press/outlook.py`; `airpulse-web/src/pages/NewsOutlook.jsx`. Tests: NO-T1 to NO-T5; application tests. |
+
 ## 8. Non-Functional Requirements
 
 *Table 6. Non-functional requirements.*
@@ -597,13 +612,17 @@ Neither source is an input of the forecast.
 |---|---|---|
 | Index vintages and fuel series read through FRED and ALFRED | RETIRED | Replaced by the publishers' own files (section 3.4) |
 | Dated weekly releases of the fuel series | RESEARCH_ONLY | No publisher holds them; the weekly fuel-cost outlook left the product |
-| Trade-press headlines (two publications) | RESEARCH_ONLY | Terms of reuse unknown |
+| Trade-press headline archive (two publications) | RESEARCH_ONLY | Terms of reuse unknown; not redistributed |
 | European airport statistics | RESEARCH_ONLY | Publisher forbids commercial use |
 | Historical flight lists 2019 to 2022 | RESEARCH_ONLY | Research data set |
 | Aircraft positions | RESEARCH_ONLY, switched off | Not in the product |
 | Commercial weekly lane rates; live flight tracking; a news event database | NOT_CONNECTED | Assessed; a commercial licence would be required, or the terms are unknown. Never read |
 
 Commercial freight-rate providers were assessed in two audits. None is used: every one either sells its data under licence or forbids automated collection in its terms, and no licence was bought. Details are in `docs/DATA_AND_LICENSING.md`.
+
+### 9.7 Press events for the news-adjusted view (PRODUCTION, on the owner's decision)
+
+Two trade publications (Air Cargo Week, Splash247) are read once a day through their public interfaces, for the last 45 days. Each headline is parsed by fixed rules into events (type, status, direction, severity, places and organisations named). **Only the parsed events, the article's address and date, and a hash of the normalised headline are stored; the headline text is not stored, not committed and not shown.** The site shows what kind of event an article reported, with a link to it. The publishers' terms of reuse were not found and no permission was asked: the policy records the two sources in the class OWNER-ACCEPTED with the owner's decision of 2026-10-09 written out, and they are removed if a publisher objects. They are inputs of the experimental view only, never of the official outlook.
 
 ## 10. Forecasting Requirements
 
@@ -702,6 +721,12 @@ All 122 scored forecasts are retrospective: computed after the fact under a prot
 ### 11.8 Sample size
 
 122 months, three classes. The difference between the official forecaster and the best model is five correct months. No formal significance test is reported and none is claimed.
+
+### 11.9 News-adjusted outlook (experimental)
+
+Protocol 7.0, committed before the run. The question: given the seasonal baseline's probabilities for a month, do news features observed before issuance improve them? Three forecasters on identical months (63, from 2020-12 to 2026-05): the seasonal baseline; a logistic regression on its three log-probabilities (a recalibration, without news); and the same regression with six news features (30-day rates of reported events by group). The decision rule required the version with news to have a lower probability score than both others, with both 95 per cent bootstrap intervals below zero.
+
+Result: **news did not add value.** The version with news named the right direction in 33 months against 32 for the baseline, and changed the call in 20 months (right where the baseline was wrong in 10, wrong where it was right in 9). Its probabilities were worse: it gave on average 71 per cent to the direction it named and was right 52 per cent of the time, where the baseline gave 55 per cent and was right 51 per cent. By the owner's instruction the model is nevertheless shown on the site as a trial, beside the official outlook and with this record (FR-027). It is not the official forecaster and the selection rule of section 10.9 is untouched.
 
 ## 12. System Architecture
 
@@ -860,7 +885,7 @@ Figure 17 shows the chain along which every requirement is traced. The matrix in
 
 ## 14. Verification Summary
 
-The state verified for this version: 239 engine tests, of which 238 pass and 1 is skipped by design; 10 of 10 validators; 137 of 137 checks of the final audit; 47 of 47 tests of the application; a production build; a clean clone on Linux with all four workflows; a rehearsal of the hosted repository in five phases; deterministic reruns; a scan of the hosted repository and the built site for restricted sources and private material with no finding. What each of these proves and does not prove is the subject of `docs/VERIFICATION_AND_VALIDATION.md`.
+The state verified for this version: 244 engine tests, of which 243 pass and 1 is skipped by design; 10 of 10 validators; 137 of 137 checks of the final audit; 47 of 47 tests of the application; a production build; a clean clone on Linux with all four workflows; a rehearsal of the hosted repository in five phases; deterministic reruns; a scan of the hosted repository and the built site for restricted sources and private material with no finding. What each of these proves and does not prove is the subject of `docs/VERIFICATION_AND_VALIDATION.md`.
 
 ## 15. Assumptions, Constraints and Dependencies
 

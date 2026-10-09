@@ -40,6 +40,7 @@ of days or weeks. The index is a benchmark, not a price.
 | Jet fuel and crude oil prices | US Energy Information Administration, read at the Administration (published on the owner's decision, without the publisher's confirmation: see `NOTICE.md`) |
 | Flights at Hong Kong International Airport, cargo flights apart | the airport's flight information (data.gov.hk) |
 | Monthly departures on US international routes (a historical record) | US Department of Transportation |
+| News-adjusted view of the outlook (a trial; in testing it did not improve on the official outlook) | a model trained on past months, applied to events reported by two trade publications; summaries and links only, no article text |
 | Shipment scenario calculator | arithmetic on a rate the visitor enters; no price is invented |
 | State of every source and of the last run | computed from the run records |
 

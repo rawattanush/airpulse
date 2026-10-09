@@ -166,7 +166,7 @@ cd airpulse-live
 git push
 ```
 
-`--update` replaces code, configuration, tests and documents and leaves `operations/` as the live repository has it. Push only if the verification ended with `passed: True`.
+`--update` replaces code, configuration, tests and documents and leaves `operations/` as the live repository has it. One exception: when an update declares a new group of sources, the folder of that group under `operations/` is added, because the live repository has never held it (the builder names it in its output). Push only if the verification ended with `passed: True`. No `--force` is needed: the update is one commit on top of what the scheduled runs have written.
 
 ---
 

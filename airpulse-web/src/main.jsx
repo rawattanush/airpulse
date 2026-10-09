@@ -22,6 +22,7 @@ import Overview from './pages/Overview.jsx'
 const Market = lazy(() => import('./pages/Market.jsx'))
 const Forecast = lazy(() => import('./pages/Forecast.jsx'))
 const WeeklyFuel = lazy(() => import('./pages/WeeklyFuel.jsx'))
+const NewsOutlook = lazy(() => import('./pages/NewsOutlook.jsx'))
 const Trends = lazy(() => import('./pages/Trends.jsx'))
 const History = lazy(() => import('./pages/History.jsx'))
 const FuelPrices = lazy(() => import('./pages/FuelPrices.jsx'))
@@ -46,6 +47,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="/market" element={page(<Market />)} />
           <Route path="/market/forecast" element={page(<Forecast />)} />
           <Route path="/market/weekly" element={page(<WeeklyFuel />)} />
+          <Route path="/market/news" element={page(<NewsOutlook />)} />
           <Route path="/market/trends" element={page(<Trends />)} />
           <Route path="/market/history" element={page(<History />)} />
           <Route path="/market/fuel" element={page(<FuelPrices />)} />

@@ -305,6 +305,31 @@ elif os.path.exists(W_RES):
         }
 write("weekly.json", weekly)
 
+# ---------------------------------------------------------------- news-adjusted outlook (experimental; beside the official outlook, never in its place)
+N_OUT, N_RES, N_LED = (os.path.join(ROOT, *x) for x in (("operations", "press", "outlook.json"), ("evaluation", "news_tilt_results.json"), ("evaluation", "news_tilt_ledger.csv")))
+news = {"available": False, "reason": (POLICY["features"].get("news_adjusted_outlook") or {}).get("reason") or "Not part of the product."}
+if "news_adjusted_outlook" in FEATURES and all(os.path.exists(x) for x in (N_OUT, N_RES, N_LED)):
+    with open(N_OUT, encoding="utf-8") as fh: no = json.load(fh)
+    with open(N_RES, encoding="utf-8") as fh: nr = json.load(fh)
+    nl = pd.read_csv(N_LED, keep_default_na=False); pk = lambda q, pred: {"d": q["down"], "f": q["flat"], "u": q["up"], "p": pred}
+    valid_forecast(no["news_adjusted"]["probabilities"]["down"], no["news_adjusted"]["probabilities"]["flat"], no["news_adjusted"]["probabilities"]["up"], no["news_adjusted"]["prediction"], "news-adjusted outlook")
+    rows = {}; sc_ = nl[nl["STATUS"] == "SCORED"]
+    def side(fid):                                                       # in plain terms: how many months, how many right, and how sure it was on average of the direction it named
+        g = sc_[sc_["FORECASTER"] == fid]; return {"n": int(len(g)), "correct": int((g["PREDICTION"] == g["ACTUAL"]).sum()), "sure": float(g[["P_DOWN", "P_FLAT", "P_UP"]].astype(float).max(axis=1).mean())}
+    for r in nl.itertuples():
+        if r.FORECASTER in ("SEA", "T1"): rows.setdefault(r.TARGET_MONTH, {"m": r.TARGET_MONTH, "a": r.ACTUAL or None})[r.FORECASTER.lower()] = {"d": float(r.P_DOWN), "f": float(r.P_FLAT), "u": float(r.P_UP), "p": r.PREDICTION}
+    news = {"available": True, "experimental": True, "target_period": no["target_period"], "issuance_date": no["issuance_date"],
+            "baseline": pk(no["baseline"]["probabilities"], no["baseline"]["prediction"]), "adjusted": pk(no["news_adjusted"]["probabilities"], no["news_adjusted"]["prediction"]),
+            "as_of": no["news_adjusted"]["as_of"], "articles_in_window": no["news_adjusted"]["articles_in_window"], "shift_points": no["news_adjusted"]["shift_points"], "by_group": no["news_adjusted"]["by_group"],
+            "reports": [{"type": e["event_type"], "group": e["group"], "status": e["status"], "direction": e["direction"], "severity": e["severity"], "first": e["first_reported"], "last": e["last_reported"], "n": e["reports"],
+                         "source": e["source"], "url": e["url"], "places": e["places"], "organisations": e["organisations"]} for e in no["events"]],
+            "reports_in_window": no["events_in_window"], "model": {k: no["model"][k] for k in ("trained_on_months", "trained_from", "trained_to", "window_days")}, "read": no["sources"],
+            "test": {"months": nr["scored_months"], "first": nr["first_scored"], "last": nr["last_scored"], "adds_value": nr["comparison"]["news_adds_value"],
+                     "seasonal": side("SEA"), "with_news": side("T1"), "call_changed_months": nr["comparison"]["T1_vs_SEA"]["direction_changed_months"],
+                     "news_right_seasonal_wrong": nr["comparison"]["T1_vs_SEA"]["months_T1_right_ref_wrong"], "seasonal_right_news_wrong": nr["comparison"]["T1_vs_SEA"]["months_ref_right_T1_wrong"]},
+            "history": [rows[m] for m in sorted(rows) if "sea" in rows[m] and "t1" in rows[m]]}
+write("news.json", news)
+
 # ---------------------------------------------------------------- fuel (observed)
 fuel = {}; FUEL_KEY = {config.JET_FUEL: "jet", config.BRENT_CRUDE: "brent"}      # the pages name the two prices, not a publisher's series key
 for sid, (title, _) in config.FUEL_SERIES.items():
@@ -419,7 +444,7 @@ def logical(o):
 
 
 staged = sorted(os.path.relpath(os.path.join(d, f_), OUT).replace(os.sep, "/") for d, _, fs in os.walk(OUT) for f_ in fs)
-need = {"core.json", "outlook.json", "weekly.json", "replay.json", "aviation.json", *(f"market/{s}.json" for s in config.BLS_SERIES)}
+need = {"core.json", "outlook.json", "weekly.json", "news.json", "replay.json", "aviation.json", *(f"market/{s}.json" for s in config.BLS_SERIES)}
 if need - set(staged): sys.exit(f"export incomplete, nothing published: missing {sorted(need - set(staged))}")
 h = hashlib.sha256(); loaded = {}
 for name in staged:

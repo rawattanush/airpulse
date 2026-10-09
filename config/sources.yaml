@@ -19,6 +19,7 @@ version: 1
 
 layers:   # where each layer writes its run records and how to read them
   core:     {log: operations/ingestion_log.jsonl,          time: retrieved_at, latest: [latest_observation], success: [UPDATED, UNCHANGED, SEEDED],          partial: []}
+  press:    {log: operations/press/ingestion_log.jsonl,    time: retrieved_at, latest: [latest_observation], success: [UPDATED, UNCHANGED],                  partial: []}
   aviation: {log: operations/aviation/ingestion_log.jsonl, time: fetched_at,   latest: [latest_observation, day], success: [NEW, REVISED, UNCHANGED, OK, SEEDED], partial: [PARTIAL, RATE_LIMITED]}
 
 sources:
@@ -95,6 +96,36 @@ sources:
     notes: Experimental event layer. Not an input of any forecast. Terms as read on 2026-10-03, robots.txt does not disallow the interface; the terms page has no clause on automated access.
 
   # ------------------------------------------------------------------ aviation operations layer (experimental)
+  - id: press_aircargoweek
+    layer: press
+    name: "Air Cargo Week: reported events"
+    url: https://aircargoweek.com/wp-json/wp/v2/posts
+    type: parsed press events
+    frequency: working days
+    check_every_days: 1
+    stale_after_days: 4
+    data_stale_after_days: 10
+    active: true
+    production: true
+    license: Publisher's copyright; terms of reuse not established. Read on the owner's decision. Only parsed events (type, direction, date, link) are kept and shown; no headline text, no article text.
+    coverage: one trade publication; the last 45 days
+    feeds: [news-adjusted outlook (experimental)]
+    notes: Experimental. Not an input of the official outlook. The research archive of headlines is a different source (news_*) and is not used at run time.
+  - id: press_splash247
+    layer: press
+    name: "Splash247: reported events"
+    url: https://splash247.com/wp-json/wp/v2/posts
+    type: parsed press events
+    frequency: working days
+    check_every_days: 1
+    stale_after_days: 4
+    data_stale_after_days: 10
+    active: true
+    production: true
+    license: Publisher's copyright; terms of reuse not established. Read on the owner's decision. Only parsed events (type, direction, date, link) are kept and shown; no headline text, no article text.
+    coverage: one trade publication; the last 45 days
+    feeds: [news-adjusted outlook (experimental)]
+    notes: Experimental. Not an input of the official outlook. The research archive of headlines is a different source (news_*) and is not used at run time.
   - id: hkia
     layer: aviation
     name: Hong Kong International Airport flight information

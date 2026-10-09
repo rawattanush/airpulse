@@ -1,13 +1,13 @@
 # Requirements Traceability Matrix
 
-AirPulse, version 1.1 of the specification (`docs/SRS.md`). Date: 2026-10-07.
+AirPulse, version 1.3 of the specification (`docs/SRS.md`). Date: 2026-10-07.
 
 This matrix links every requirement of the specification to the design component that carries it, the module that implements it, the tests that verify it and the evidence that validates it. Design components are described in `docs/SYSTEM_DESIGN.md`; tests and evidence in `docs/VERIFICATION_AND_VALIDATION.md`.
 
 ## 1. How to read the matrix
 
 - **Baseline** names the requirement of the frozen baseline (`requirements/requirements.csv`, 155 requirements) from which the specification's requirement is consolidated. The baseline has its own, finer matrix in `traceability/requirements.csv`, which a validator checks on every run of the test workflow.
-- **Test** identifiers are those in the names of the test functions: T (`tests/test_phase1_data.py`, `tests/test_phase2_6_forecasting.py`), OP-T (`tests/test_ops_pipeline.py`), PR-T (`tests/test_production.py`), PB-T (`tests/test_public_product.py`), DP-T (`tests/test_deployment.py`), LR-T (`tests/test_licence_repair.py`), DB-T (`tests/test_dashboard_replay.py`). Application tests are the files of `airpulse-web/tests`.
+- **Test** identifiers are those in the names of the test functions: T (`tests/test_phase1_data.py`, `tests/test_phase2_6_forecasting.py`), OP-T (`tests/test_ops_pipeline.py`), PR-T (`tests/test_production.py`), PB-T (`tests/test_public_product.py`), NO-T (`tests/test_news_outlook.py`), DP-T (`tests/test_deployment.py`), LR-T (`tests/test_licence_repair.py`), DB-T (`tests/test_dashboard_replay.py`). Application tests are the files of `airpulse-web/tests`.
 - **Evidence** names a check beyond the unit tests: a validator, a section of the final audit (`scripts/final_audit.py`), the clean-clone run, a rehearsal or a scan. Results are recorded in `evaluation/licence_repair/verification.json`.
 - **Status**: *Implemented* or *Verified* means the tests and the evidence named pass on the commits stated in the verification document. A qualified status says what is missing.
 - The tests of the research record (event layer, experiment passes) are in the research repository only; they verify research results, not requirements of the product, and are not listed here.
@@ -42,6 +42,7 @@ This matrix links every requirement of the specification to the design component
 | **FR-024** Scenario calculator | Publication: application | `airpulse-web/src/pages/Estimate.jsx`, `src/lib` | Application tests (scenario) | Application tests | Policy feature `scenario_calculator` (no baseline requirement) | Implemented |
 | **FR-025** Deployment gating | Publication: deployment checks | `scripts/deployment_checks.py`, `.github/workflows/production.yml` | DP-T02, DP-T03, DP-T08, LR-T08 | Hosted rehearsal, phase B; final audit G2, L4 | REQ-HOST-002, REQ-HOST-003, REQ-HOST-005 | Implemented |
 | **FR-026** Reproduction from the files held | Validated engine: command line | `src/cli.py`, `scripts/check_benchmark_ledger.py` | T15, T19 to T22, PB-T06, LR-T05 | Clean-clone run; deterministic rerun | REQ-REP-001, REQ-REP-003, REQ-FN-004, REQ-PUB-005 | Implemented |
+| **FR-027** News-adjusted outlook (experimental) | Operational pipeline: press reading (isolated) | `src/press/reading.py`, `src/press/outlook.py`; `airpulse-web/src/pages/NewsOutlook.jsx` | NO-T1 to NO-T5; application tests | Protocol 7.0 evaluation (`evaluation/news_tilt.md`); hosted rehearsal | No baseline requirement (owner instruction, change record CL-028; protocol 7.0) | Implemented; experimental: did not improve on the baseline |
 
 ## 3. Non-functional requirements
 
@@ -66,7 +67,7 @@ This matrix links every requirement of the specification to the design component
 
 ## 4. Coverage
 
-- Requirements: 26 functional, 16 non-functional. Every one has a design component, a module and validation evidence. Two (NFR-012 accessibility, NFR-013 responsive interface) have no automated test; their status says so.
+- Requirements: 27 functional, 16 non-functional. Every one has a design component, a module and validation evidence. Two (NFR-012 accessibility, NFR-013 responsive interface) have no automated test; their status says so.
 - Components of the design without a requirement of their own: none. The research-only packages (`src/v2`, `src/v3`, `src/news`, `src/aviation/experiment.py`, `src/dashboard` as a research tool) carry no requirement of the product; they are documented in section 3.3 of the specification. Of them, `src/v2`, `src/v3` and `src/aviation/experiment.py` are not in the hosted repository; `src/news` and `src/dashboard` are present there as code the pipeline imports, the event layer with its sources switched off and nothing of its data or output shipped.
 - Baseline requirements not consolidated into this specification are those of the research layers (families NEWS, NEWSVAL, EXP, GLB, WKL, AVOPS, AVDATA, DASH): they remain in the baseline with their own tests and are research only.
 

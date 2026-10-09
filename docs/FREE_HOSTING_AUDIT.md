@@ -74,22 +74,22 @@ Measured on the state held, not estimated from memory.
 | The built site | GitHub Pages | about 6 MiB of the 1 GB allowed | none | replaced by each deployment |
 | Reports and logs of runs | GitHub Actions: run summary, run log, one artifact for 30 days | outside the repository | expire by themselves | diagnostic, not a record: the record is the run records in git |
 
-The hosted repository at its first build: **395 files, 28.1 MiB** (plus two small files written by the builder: the source registry and the record of what the repository was built from). Expected growth: **53.4 MiB to 156.7 MiB a year**, most of it the US route file when it is replaced. At the high figure the repository reaches the recommended 1 GB after about 6 years. Every run prints the number of files and their size in its summary. If the repository ever nears 1 GB, the one large file is the place to act: keep only its newest version by starting the hosted repository afresh from its current state (`scripts/build_public_repo.py`), which loses no record, because the ledgers and logs are files, not history.
+The hosted repository at its first build: **411 files, 28.8 MiB** (plus two small files written by the builder: the source registry and the record of what the repository was built from). Expected growth: **53.4 MiB to 156.7 MiB a year**, most of it the US route file when it is replaced. At the high figure the repository reaches the recommended 1 GB after about 6 years. Every run prints the number of files and their size in its summary. If the repository ever nears 1 GB, the one large file is the place to act: keep only its newest version by starting the hosted repository afresh from its current state (`scripts/build_public_repo.py`), which loses no record, because the ledgers and logs are files, not history.
 
 By folder at the first build:
 
 | Folder | Files | Size |
 |---|---|---|
-| `operations` | 118 | 14.6 MiB |
-| `airpulse-web` | 78 | 4.6 MiB |
-| `research` | 30 | 3.7 MiB |
-| `docs` | 52 | 3.5 MiB |
-| `evaluation` | 6 | 1.0 MiB |
-| `src` | 79 | 0.4 MiB |
-| `tests` | 5 | 0.1 MiB |
+| `operations` | 122 | 15.1 MiB |
+| `airpulse-web` | 79 | 4.6 MiB |
+| `research` | 32 | 3.7 MiB |
+| `docs` | 52 | 3.6 MiB |
+| `evaluation` | 11 | 1.0 MiB |
+| `src` | 82 | 0.4 MiB |
+| `tests` | 6 | 0.1 MiB |
 | `scripts` | 11 | 0.1 MiB |
-| `data` | 6 | 0.0 MiB |
 | `config` | 2 | 0.0 MiB |
+| `data` | 6 | 0.0 MiB |
 | `.github` | 2 | 0.0 MiB |
 | `(root)` | 6 | 0.0 MiB |
 
@@ -104,7 +104,7 @@ No large-file service, no object store and no artifact-as-storage is used: the l
 | Pages deployment: 10 minutes | the deployment uploads about 6 MiB |
 | Published site: 1 GB | about 6 MiB |
 | Traffic: 100 GB a month (soft) | a first load is about 1 MiB; 100 GB is on the order of a hundred thousand first visits a month |
-| Repository: 1 GB recommended | 28.1 MiB at the first build |
+| Repository: 1 GB recommended | 28.8 MiB at the first build |
 | One file: 100 MiB refused, 50 MiB warned | largest file 9.8 MiB |
 | Schedules: 5 minutes at the shortest; may start late | three schedules, none at the start of an hour; the run asks only what is due, so a late start loses nothing |
 | Dependency cache: 10 GB | the Python and the Node packages, well under 1 GB |
