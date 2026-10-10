@@ -13,12 +13,12 @@
   "latest_timing": "LATE",
   "outcomes_recorded": 0
  },
- "generated_at": "2026-10-09T14:21:33Z",
+ "generated_at": "2026-10-10T04:12:40Z",
  "not_live_statement": "No AirPulse source is fetched continuously. A source is AUTOMATED only while a scheduler has recently run it; otherwise its data are a SNAPSHOT.",
  "pipeline_version": "OPS-1.0",
  "sources": [
   {
-   "age_days": 0.79,
+   "age_days": 1.37,
    "check_every_days": 7,
    "checksum": "d8446cab7fb635e0787036c7cd4c9302c3119c056cd5899880f7f14948ca8849",
    "data_mode": "SNAPSHOT",
@@ -42,7 +42,7 @@
    "validation": "passed: 8051 observations to 2026-10-06; 0 earlier values differ from the file held"
   },
   {
-   "age_days": 0.79,
+   "age_days": 1.37,
    "check_every_days": 7,
    "checksum": "64a0d877d8a467e991b4e64f23b13b94eb93bad3d044d30fd9521d1a2757943f",
    "data_mode": "SNAPSHOT",
@@ -66,7 +66,7 @@
    "validation": "passed: 9102 observations to 2026-10-06; 0 earlier values differ from the file held"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "f93f0c429f65803c70b068335f0371b7682e7fb36a6e47c75a33296a37c05cc2",
    "data_mode": "SNAPSHOT",
@@ -90,7 +90,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "064a46dc744ba7fbe85f40b571e1946cd82e072362728e4766475e0a840fa521",
    "data_mode": "SNAPSHOT",
@@ -114,7 +114,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "ebef64572024af7b8c6e8107b2db3e404bd4ce24e65dba45a240507b57f05afc",
    "data_mode": "SNAPSHOT",
@@ -138,7 +138,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "4cdc8ff3cd35460701eddf4c5df623fa1ec260e2a2624c42de589417dbd289e6",
    "data_mode": "SNAPSHOT",
@@ -162,7 +162,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "f1bca352864042c7deae375d477bbea252c72a45e510b63866f0778ea4e64e9b",
    "data_mode": "SNAPSHOT",
@@ -186,7 +186,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "a109db72fc68a77dba80bda04709e84a398951fe748278ee8c7d7bae475e47f8",
    "data_mode": "SNAPSHOT",
@@ -210,7 +210,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "7831d34dba55ed36afe17955bd08df8d71c6962c3a781322ae4e6cb5e4342010",
    "data_mode": "SNAPSHOT",
@@ -234,7 +234,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 19,
    "checksum": "12b88f7c2ba651a6a47ef467926d38e230b5b965bf53f3a5341112bcaa6b8425",
    "data_mode": "SNAPSHOT",
@@ -258,7 +258,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 1,
    "checksum": "9639195d8f42d415591cff43458b8ef861b7a04bc64d70ad2df85341507f0036",
    "data_mode": "SNAPSHOT",
@@ -282,7 +282,7 @@
    "validation": "passed: archive matches its manifest; 10 fetched, 9 new"
   },
   {
-   "age_days": 2.34,
+   "age_days": 2.92,
    "check_every_days": 1,
    "checksum": "7bb4973b06d7bbb1cc085d7d458cccce4a8185eb9eee9a8e6e9c1e4beb15ba2e",
    "data_mode": "SNAPSHOT",
@@ -307,11 +307,11 @@
   }
  ],
  "written_by_workflow_run": {
-  "commit": "fc399a498d4b06ca02096576b571dc9f0b279f71",
+  "commit": "c8ca0e15b2c0ca3e12ecc68350c4b1260a1e59d5",
   "repository": "rawattanush/airpulse",
   "run_attempt": "1",
-  "run_id": "37943240456",
-  "url": "https://github.com/rawattanush/airpulse/actions/runs/37943240456",
+  "run_id": "38023096145",
+  "url": "https://github.com/rawattanush/airpulse/actions/runs/38023096145",
   "workflow": "production"
  }
 }
