@@ -472,25 +472,9 @@
    "source": "splash247",
    "status": "ACTIVE",
    "url": "https://splash247.com/perfect-storm-sends-global-port-congestion-beyond-pandemic-peak/"
-  },
-  {
-   "direction": 1,
-   "event_type": "HORMUZ_DISRUPTION",
-   "first_reported": "2026-09-10T08:30:46Z",
-   "group": "maritime_disruption",
-   "last_reported": "2026-09-10T08:30:46Z",
-   "organisations": [],
-   "places": [
-    "STRAIT_OF_HORMUZ"
-   ],
-   "reports": 1,
-   "severity": 3,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/hormuz-attacks-reach-wartime-high/"
   }
  ],
- "events_in_window": 31,
+ "events_in_window": 30,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -501,8 +485,8 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 1006,
-  "as_of": "2026-10-09T15:06:24Z",
+  "articles_in_window": 978,
+  "as_of": "2026-10-10T13:36:58Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
@@ -510,21 +494,21 @@
     "shift_points": {
      "down": -0.1,
      "flat": -0.8,
-     "up": 1.0
+     "up": 0.9
     },
     "usual": 0.1104,
-    "value": 0.0929
+    "value": 0.0956
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -2.5,
-     "flat": -12.5,
-     "up": 15.0
+     "down": -1.9,
+     "flat": -11.0,
+     "up": 12.8
     },
     "usual": 0.1084,
-    "value": 0.4703
+    "value": 0.4056
    },
    {
     "group": "airspace_disruption",
@@ -541,46 +525,46 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.8,
-     "flat": 4.2,
-     "up": -5.0
+     "down": 0.7,
+     "flat": 4.8,
+     "up": -5.5
     },
     "usual": -0.0837,
-    "value": -0.0197
+    "value": -0.0203
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.4,
-     "flat": 6.7,
-     "up": -8.1
+     "down": 1.3,
+     "flat": 7.9,
+     "up": -9.2
     },
     "usual": 0.0133,
-    "value": 0.1577
+    "value": 0.1622
    },
    {
     "group": "airfreight_rate_signal",
     "label": "Reported air-freight rates",
     "shift_points": {
-     "down": -10.0,
-     "flat": 3.1,
+     "down": -10.6,
+     "flat": 3.8,
      "up": 6.8
     },
     "usual": 0.0,
-    "value": 0.1493
+    "value": 0.1535
    }
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.12972597000997244,
-   "flat": 0.129293533801273,
-   "up": 0.7409804961887545
+   "down": 0.1330976936525123,
+   "flat": 0.1522768739542808,
+   "up": 0.7146254323932069
   },
   "shift_points": {
-   "down": -13.3,
-   "flat": -23.9,
-   "up": 37.3
+   "down": -13.0,
+   "flat": -21.6,
+   "up": 34.6
   }
  },
  "official_forecaster": "BL-SEA",
@@ -588,16 +572,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 323,
-   "from": "2026-08-25T16:06:30Z",
-   "retrieved_at": "2026-10-09T15:06:16Z",
+   "articles": 316,
+   "from": "2026-08-26T23:01:43Z",
+   "retrieved_at": "2026-10-10T13:36:52Z",
    "to": "2026-10-09T09:26:35Z"
   },
   "press_splash247": {
-   "articles": 1253,
-   "from": "2026-08-25T07:31:28Z",
-   "retrieved_at": "2026-10-09T15:06:24Z",
-   "to": "2026-10-09T10:44:00Z"
+   "articles": 1234,
+   "from": "2026-08-26T06:11:10Z",
+   "retrieved_at": "2026-10-10T13:36:58Z",
+   "to": "2026-10-10T06:16:55Z"
   }
  },
  "target_period": "2026-09"

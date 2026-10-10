@@ -1,70 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:111988",
-   "mentions": [],
-   "published_utc": "2026-08-25T16:06:30Z",
-   "source_id": "aircargoweek",
-   "text_hash": "3a2e1b0ad6362a2591f9f89f81d49e6cc7c051e6f2de390b79eabe224f593387",
-   "url": "https://aircargoweek.com/monitoring-transplant-organs-during-transportation/"
-  },
-  {
-   "article_id": "aircargoweek:111986",
-   "mentions": [],
-   "published_utc": "2026-08-25T17:05:26Z",
-   "source_id": "aircargoweek",
-   "text_hash": "40b7b3fc609d3257d5dc301f389f60575798cb7d09ab5c9f4e42c0411658275a",
-   "url": "https://aircargoweek.com/acl-airshop-and-atlas-air-sign-a-long-term-uld-management-agreement/"
-  },
-  {
-   "article_id": "aircargoweek:112001",
-   "mentions": [],
-   "published_utc": "2026-08-26T08:28:11Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f22606d4d39853b51f4416d2dd92fd11a0fff0eac09ac3af0310b8712ea15230",
-   "url": "https://aircargoweek.com/my-freighter-expands-strategic-partnership-with-baltic-ground-services-across-europe/"
-  },
-  {
-   "article_id": "aircargoweek:112005",
-   "mentions": [],
-   "published_utc": "2026-08-26T09:51:57Z",
-   "source_id": "aircargoweek",
-   "text_hash": "14dff3710e79228ff0cab967d1564ec818cdcdd96370dd45a500bc6ae23ff932",
-   "url": "https://aircargoweek.com/wisetech-revenue-rises-79-percent-following-e2open-acquisition-and-cargowise-growth/"
-  },
-  {
-   "article_id": "aircargoweek:112013",
-   "mentions": [],
-   "published_utc": "2026-08-26T10:19:20Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c601479fc45d5484a3b87cc75f2a7f9d959469eb6ab016296af16452ee44d21b",
-   "url": "https://aircargoweek.com/norways-digitoll-customs-rollout-raises-air-cargo-delay-concerns/"
-  },
-  {
-   "article_id": "aircargoweek:112017",
-   "mentions": [],
-   "published_utc": "2026-08-26T10:31:22Z",
-   "source_id": "aircargoweek",
-   "text_hash": "b71c4d83690b832f68ca0039eb513d85fca0dcd011bdae1fc4e8a0c6f461dd59",
-   "url": "https://aircargoweek.com/slovakias-industrial-growth-fuels-demand-for-integrated-logistics/"
-  },
-  {
-   "article_id": "aircargoweek:112021",
-   "mentions": [],
-   "published_utc": "2026-08-26T10:34:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "9980ae37b3dd6321853fac005077982148dc0f253f105fb0e59b66ed48a24ff6",
-   "url": "https://aircargoweek.com/girteka-shifts-part-of-its-transport-operations-to-latvia-and-romania-amid-european-driver-shortage/"
-  },
-  {
-   "article_id": "aircargoweek:112025",
-   "mentions": [],
-   "published_utc": "2026-08-26T10:38:06Z",
-   "source_id": "aircargoweek",
-   "text_hash": "dfa89a50bff51707a59c2d5c99ee170835fcf542698605b4ba596517c5999a22",
-   "url": "https://aircargoweek.com/oslo-airport-awards-handling-license-to-wfs/"
-  },
-  {
    "article_id": "aircargoweek:112029",
    "mentions": [],
    "published_utc": "2026-08-26T23:01:43Z",
@@ -3266,6 +3202,14 @@
    "url": "https://aircargoweek.com/emirates-skycargo-accelerates-export-growth-from-south-america/"
   },
   {
+   "article_id": "aircargoweek:114572",
+   "mentions": [],
+   "published_utc": "2026-10-09T09:00:10Z",
+   "source_id": "aircargoweek",
+   "text_hash": "ad726cd4d9573afd3708cd78793c0d481eed55d75caddf30d17633a51ddf12b5",
+   "url": "https://aircargoweek.com/acs-expands-northern-uk-operations/"
+  },
+  {
    "article_id": "aircargoweek:114227",
    "mentions": [],
    "published_utc": "2026-10-09T09:12:34Z",
@@ -3282,10 +3226,10 @@
    "url": "https://aircargoweek.com/iag-cargo-welcomes-guatemalan-political-and-trade-delegation-to-madrid-hub/"
   }
  ],
- "from": "2026-08-25T16:06:30Z",
- "retrieved_at": "2026-10-09T15:06:16Z",
+ "from": "2026-08-26T23:01:43Z",
+ "retrieved_at": "2026-10-10T13:36:52Z",
  "schema": "PRESS-1",
- "sha256": "b6a9780dccf52c43d7d7ba5aed59e6a0eb778b00adea839d76bc66216cd0d7ba",
+ "sha256": "450031c37b2145502d78b9ba00683cce77eb952d177d30f727664817c8e00dd5",
  "source": "press_aircargoweek",
  "to": "2026-10-09T09:26:35Z",
  "window_days": 45
