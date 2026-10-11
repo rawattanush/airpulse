@@ -1,38 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112029",
-   "mentions": [],
-   "published_utc": "2026-08-26T23:01:43Z",
-   "source_id": "aircargoweek",
-   "text_hash": "8a8f809d36f35b6f919030a4b0a95d7fd7b09be39286174f0073f05e93da5673",
-   "url": "https://aircargoweek.com/air-china-cargo-partners-with-cargo-one-to-debut-e-booking-for-thousands-of-freight-forwarders/"
-  },
-  {
-   "article_id": "aircargoweek:112036",
-   "mentions": [],
-   "published_utc": "2026-08-27T08:39:02Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a9687532e82d224390f4523437da607e25cca76101c5374e622188c875b5b86a",
-   "url": "https://aircargoweek.com/aviator-signs-four-year-lufthansa-group-ground-handling-contract-at-gothenburg-landvetter-airport/"
-  },
-  {
-   "article_id": "aircargoweek:112040",
-   "mentions": [],
-   "published_utc": "2026-08-27T08:47:36Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c2c96741c9cd09e1f977d899ce026e8772ff769711d2b03945363c9972314543",
-   "url": "https://aircargoweek.com/bh-worldwide-temasek-polytechnic-bring-aerospace-logistics-to-life-through-student-podcasts/"
-  },
-  {
-   "article_id": "aircargoweek:112045",
-   "mentions": [],
-   "published_utc": "2026-08-27T08:52:19Z",
-   "source_id": "aircargoweek",
-   "text_hash": "1b67213495156e89bc08a01f7f34c3af554a16257ff672504deda7af8081af9c",
-   "url": "https://aircargoweek.com/parcelhero-launches-pallet-airfreight-guide-to-help-growing-exporters/"
-  },
-  {
    "article_id": "aircargoweek:112049",
    "mentions": [],
    "published_utc": "2026-08-27T13:07:57Z",
@@ -3226,10 +3194,10 @@
    "url": "https://aircargoweek.com/iag-cargo-welcomes-guatemalan-political-and-trade-delegation-to-madrid-hub/"
   }
  ],
- "from": "2026-08-26T23:01:43Z",
- "retrieved_at": "2026-10-10T13:36:52Z",
+ "from": "2026-08-27T13:07:57Z",
+ "retrieved_at": "2026-10-11T13:59:19Z",
  "schema": "PRESS-1",
- "sha256": "450031c37b2145502d78b9ba00683cce77eb952d177d30f727664817c8e00dd5",
+ "sha256": "fe8d49f8aa801afb5f9e8046d641cc697a036002c017f4f8ef9b64b14703d962",
  "source": "press_aircargoweek",
  "to": "2026-10-09T09:26:35Z",
  "window_days": 45
