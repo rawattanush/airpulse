@@ -1,12 +1,12 @@
 # AirPulse operations report (daily)
 
-Generated 2026-10-11T14:00:11Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-10-12T16:44:18Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 6; started by a scheduler: 3; started by hand: 3.
-- Last run: 2026-10-11T13:57:18Z, started by schedule, exit 0, gate passed.
-- Source fetches on record: 7 by a scheduler, 112 by hand.
+- Runs on record: 7; started by a scheduler: 4; started by hand: 3.
+- Last run: 2026-10-12T16:41:22Z, started by schedule, exit 0, gate passed.
+- Source fetches on record: 13 by a scheduler, 112 by hand.
 
 ## Sources
 
@@ -24,11 +24,11 @@ Generated 2026-10-11T14:00:11Z from the run records, the ledgers and the clock. 
 | Europe import air freight (BoP) price index, every release (BLS IV1311) | HEALTHY | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days |  |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | HEALTHY | 2026-10-11T13:59:19Z | 2026-10-09T09:26:35Z | 4 days |  |
-| Splash247: reported events | HEALTHY | 2026-10-11T13:59:25Z | 2026-10-11T05:40:15Z | 4 days |  |
-| Hong Kong International Airport flight information | HEALTHY | 2026-10-11T13:59:54Z | 2026-10-10 | 3 days |  |
+| Air Cargo Week: reported events | HEALTHY | 2026-10-12T16:43:23Z | 2026-10-12T15:35:51Z | 4 days |  |
+| Splash247: reported events | HEALTHY | 2026-10-12T16:43:29Z | 2026-10-12T11:04:34Z | 4 days |  |
+| Hong Kong International Airport flight information | HEALTHY | 2026-10-12T16:44:01Z | 2026-10-11 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
-| US international nonstop departures (US DOT) | HEALTHY | 2026-10-05T16:22:00Z | 2025-12 | 14 days |  |
+| US international nonstop departures (US DOT) | HEALTHY | 2026-10-12T16:43:49Z | 2025-12 | 14 days |  |
 | Aircraft positions near airports (adsb.lol) | DISABLED | - | - | 3 days |  |
 | Tracked flight lists 2019 to 2022 (Zenodo record 7923702) | DISABLED | - | - | - |  |
 | Live flight-tracking interface (research network) | DISABLED | - | - | - |  |

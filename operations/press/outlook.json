@@ -10,10 +10,27 @@
  "events": [
   {
    "direction": 1,
+   "event_type": "AIR_CARGO_DEMAND_SURGE",
+   "first_reported": "2026-10-12T15:35:51Z",
+   "group": "cargo_demand_shock",
+   "last_reported": "2026-10-12T15:35:51Z",
+   "organisations": [],
+   "places": [
+    "heathrow",
+    "london"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "aircargoweek",
+   "status": "ACTIVE",
+   "url": "https://aircargoweek.com/5-percent-cargo-volume-growth-at-london-heathrow/"
+  },
+  {
+   "direction": 1,
    "event_type": "WAR_ESCALATION",
-   "first_reported": "2026-10-11T05:40:15Z",
+   "first_reported": "2026-10-12T07:30:15Z",
    "group": "geopolitical_shock",
-   "last_reported": "2026-10-11T05:40:15Z",
+   "last_reported": "2026-10-12T07:30:15Z",
    "organisations": [],
    "places": [],
    "reports": 1,
@@ -474,7 +491,7 @@
    "url": "https://aircargoweek.com/brussels-airport-cargo-volumes-surge-22-percent-in-august/"
   }
  ],
- "events_in_window": 30,
+ "events_in_window": 31,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -485,30 +502,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 935,
-  "as_of": "2026-10-11T13:59:25Z",
+  "articles_in_window": 970,
+  "as_of": "2026-10-12T16:43:29Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 0.3,
-     "flat": 3.6,
-     "up": -3.9
+     "down": 0.2,
+     "flat": 3.7,
+     "up": -3.8
     },
     "usual": 0.1104,
-    "value": 0.1682
+    "value": 0.1621
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -1.1,
-     "flat": -12.0,
-     "up": 13.1
+     "down": -0.6,
+     "flat": -12.4,
+     "up": 13.0
     },
     "usual": 0.1084,
-    "value": 0.3788
+    "value": 0.3651
    },
    {
     "group": "airspace_disruption",
@@ -525,46 +542,46 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.4,
-     "flat": 6.2,
-     "up": -6.6
+     "down": 0.2,
+     "flat": 7.2,
+     "up": -7.4
     },
     "usual": -0.0837,
-    "value": -0.0212
+    "value": -0.0204
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 0.9,
-     "flat": 11.0,
-     "up": -11.9
+     "down": 0.8,
+     "flat": 14.9,
+     "up": -15.8
     },
     "usual": 0.0133,
-    "value": 0.1697
+    "value": 0.2103
    },
    {
     "group": "airfreight_rate_signal",
     "label": "Reported air-freight rates",
     "shift_points": {
-     "down": -11.6,
-     "flat": 5.4,
-     "up": 6.2
+     "down": -11.5,
+     "flat": 6.1,
+     "up": 5.3
     },
     "usual": 0.0,
-    "value": 0.1606
+    "value": 0.1548
    }
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.13549762564099657,
-   "flat": 0.21150858781183537,
-   "up": 0.6529937865471681
+   "down": 0.13906346441059705,
+   "flat": 0.2512034115795054,
+   "up": 0.6097331240098975
   },
   "shift_points": {
-   "down": -12.8,
-   "flat": -15.7,
-   "up": 28.5
+   "down": -12.4,
+   "flat": -11.7,
+   "up": 24.1
   }
  },
  "official_forecaster": "BL-SEA",
@@ -572,16 +589,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 312,
-   "from": "2026-08-27T13:07:57Z",
-   "retrieved_at": "2026-10-11T13:59:19Z",
-   "to": "2026-10-09T09:26:35Z"
+   "articles": 317,
+   "from": "2026-08-30T23:05:49Z",
+   "retrieved_at": "2026-10-12T16:43:23Z",
+   "to": "2026-10-12T15:35:51Z"
   },
   "press_splash247": {
-   "articles": 1191,
-   "from": "2026-08-27T06:46:43Z",
-   "retrieved_at": "2026-10-11T13:59:25Z",
-   "to": "2026-10-11T05:40:15Z"
+   "articles": 1170,
+   "from": "2026-08-28T09:30:00Z",
+   "retrieved_at": "2026-10-12T16:43:29Z",
+   "to": "2026-10-12T11:04:34Z"
   }
  },
  "target_period": "2026-09"
