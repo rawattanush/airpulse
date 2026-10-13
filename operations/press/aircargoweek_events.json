@@ -3233,13 +3233,61 @@
    "source_id": "aircargoweek",
    "text_hash": "fb4961b74fc6e29864ad17e8b72b38d8ac2b9ead1ae08b8726451f0bbfeef434",
    "url": "https://aircargoweek.com/5-percent-cargo-volume-growth-at-london-heathrow/"
+  },
+  {
+   "article_id": "aircargoweek:114721",
+   "mentions": [],
+   "published_utc": "2026-10-12T19:46:53Z",
+   "source_id": "aircargoweek",
+   "text_hash": "6433bf59e7124c6eab393283692f442f52a63b1b99db397f3117a63ed925a6f0",
+   "url": "https://aircargoweek.com/logistics-uk-supports-uk-eu-summit-to-boost-trade/"
+  },
+  {
+   "article_id": "aircargoweek:114728",
+   "mentions": [],
+   "published_utc": "2026-10-13T07:06:33Z",
+   "source_id": "aircargoweek",
+   "text_hash": "8c9e6e1848dc5e2afd6147e79b69edac7bd8e92301d072837582f89a672832d8",
+   "url": "https://aircargoweek.com/air-canada-appoints-flyus-to-support-puerto-rico-operations/"
+  },
+  {
+   "article_id": "aircargoweek:114725",
+   "mentions": [],
+   "published_utc": "2026-10-13T08:00:15Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c984a669c6e0dabad8f391f2f066dc59a40ce0181842dbe16fd7e10fc6775b07",
+   "url": "https://aircargoweek.com/upneesh-gill-becomes-hermes-logistics-technologies-head-of-product-and-service-delivery/"
+  },
+  {
+   "article_id": "aircargoweek:114733",
+   "mentions": [],
+   "published_utc": "2026-10-13T08:10:41Z",
+   "source_id": "aircargoweek",
+   "text_hash": "eec435462ff88397e7b3bb3002d6ecae8b5b3a7ee55ede9d769b750700002d6a",
+   "url": "https://aircargoweek.com/cairo-punta-cana-and-male-added-to-air-france-klm-martinair-winter-network/"
+  },
+  {
+   "article_id": "aircargoweek:114755",
+   "mentions": [],
+   "published_utc": "2026-10-13T08:44:52Z",
+   "source_id": "aircargoweek",
+   "text_hash": "05c139a2bb95df809b02cc61b35074fb235136330b22fc7ef74cbc5007efc42f",
+   "url": "https://aircargoweek.com/dynamic-tariffing-agility-resilience-and-investment/"
+  },
+  {
+   "article_id": "aircargoweek:114738",
+   "mentions": [],
+   "published_utc": "2026-10-13T08:51:46Z",
+   "source_id": "aircargoweek",
+   "text_hash": "a2b10afe87134e6810183d376ed537a02d4fb29c70749f909e96b83a9643d4a9",
+   "url": "https://aircargoweek.com/global-tonnages-bounce-back-in-september/"
   }
  ],
  "from": "2026-08-30T23:05:49Z",
- "retrieved_at": "2026-10-12T16:43:23Z",
+ "retrieved_at": "2026-10-13T14:59:17Z",
  "schema": "PRESS-1",
- "sha256": "a0e71e2711fcd77fde243457108f333d925b2db35b9c22f19d4e3eaa13be01fe",
+ "sha256": "12858168946d1f0473a9a09f47e72dd858ee9fbf03eeb28c041e30c8b9768dab",
  "source": "press_aircargoweek",
- "to": "2026-10-12T15:35:51Z",
+ "to": "2026-10-13T08:51:46Z",
  "window_days": 45
 }
