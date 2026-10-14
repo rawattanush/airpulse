@@ -3281,13 +3281,53 @@
    "source_id": "aircargoweek",
    "text_hash": "a2b10afe87134e6810183d376ed537a02d4fb29c70749f909e96b83a9643d4a9",
    "url": "https://aircargoweek.com/global-tonnages-bounce-back-in-september/"
+  },
+  {
+   "article_id": "aircargoweek:114788",
+   "mentions": [],
+   "published_utc": "2026-10-13T15:06:46Z",
+   "source_id": "aircargoweek",
+   "text_hash": "44369a1682225870b776d0ccd026121fb2731f2ca714af70a4202c114b30c970",
+   "url": "https://aircargoweek.com/airlines-raise-concerns-of-hard-winter-to-come/"
+  },
+  {
+   "article_id": "aircargoweek:114792",
+   "mentions": [],
+   "published_utc": "2026-10-13T15:22:39Z",
+   "source_id": "aircargoweek",
+   "text_hash": "704f7f4e46aa9e629138635030d796a087d7b87d08eb4be3a2013ff50c34019f",
+   "url": "https://aircargoweek.com/hendrik-falk-appointed-vp-of-the-americas-at-network-aviation-group/"
+  },
+  {
+   "article_id": "aircargoweek:114576",
+   "mentions": [],
+   "published_utc": "2026-10-14T08:00:18Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c512b4b461342269c4fa3279ebe841bc1210ae5285157da2cb34946952cbf4b0",
+   "url": "https://aircargoweek.com/e-commerce-growth-remains-resilient/"
+  },
+  {
+   "article_id": "aircargoweek:114798",
+   "mentions": [],
+   "published_utc": "2026-10-14T09:52:23Z",
+   "source_id": "aircargoweek",
+   "text_hash": "df079a97026c0b2d960e28998085eb925c3b2dab1257d08e083b25791fa0b072",
+   "url": "https://aircargoweek.com/air-france-klm-martinair-cargo-to-automate-perishables-centre-at-paris-cdg/"
+  },
+  {
+   "article_id": "aircargoweek:114806",
+   "mentions": [],
+   "published_utc": "2026-10-14T10:49:50Z",
+   "source_id": "aircargoweek",
+   "text_hash": "ab75fa0dea7d99a597e4831a8325310758320e73a607ee81b0f94030bf7f627b",
+   "url": "https://aircargoweek.com/frankfurt-airport-records-2-5-percent-september-growth-in-cargo-throughput/"
   }
  ],
  "from": "2026-08-30T23:05:49Z",
- "retrieved_at": "2026-10-13T14:59:17Z",
+ "retrieved_at": "2026-10-14T12:52:15Z",
  "schema": "PRESS-1",
- "sha256": "12858168946d1f0473a9a09f47e72dd858ee9fbf03eeb28c041e30c8b9768dab",
+ "sha256": "f8000f175dfc11511bf4380ea6bf42e773571dfa1f88362a8737915a9201e578",
  "source": "press_aircargoweek",
- "to": "2026-10-13T08:51:46Z",
+ "to": "2026-10-14T10:49:50Z",
  "window_days": 45
 }
