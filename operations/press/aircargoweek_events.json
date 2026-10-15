@@ -1,86 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112138",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:05:49Z",
-   "source_id": "aircargoweek",
-   "text_hash": "0a4fe930b2af35eafda47434f782d7a01d27031dd8d26cb7e369cdf5c891c863",
-   "url": "https://aircargoweek.com/turning-emissions-data-into-a-competitive-advantage/"
-  },
-  {
-   "article_id": "aircargoweek:112124",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:10:52Z",
-   "source_id": "aircargoweek",
-   "text_hash": "4993f35787b680726cbbf9689da3a2d73e49c6dc1f026c85dc80d494c0294852",
-   "url": "https://aircargoweek.com/turning-sewage-into-a-viable-decarbonisation-pathway/"
-  },
-  {
-   "article_id": "aircargoweek:112125",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:15:53Z",
-   "source_id": "aircargoweek",
-   "text_hash": "87a2792b61b2926703c87f4cb5cbeb231a5e7fe6fed06b22ff771749c42528c2",
-   "url": "https://aircargoweek.com/ai-moves-beyond-digitalisation/"
-  },
-  {
-   "article_id": "aircargoweek:112126",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:20:54Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a3bb38381ed32eabb3bb249a47abf517266252ea249fe0b1030548339939a185",
-   "url": "https://aircargoweek.com/air-cargos-hidden-efficiency-challenge/"
-  },
-  {
-   "article_id": "aircargoweek:112127",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:25:55Z",
-   "source_id": "aircargoweek",
-   "text_hash": "3f2cdff8e1094fc59a9eff11568faeb2840d855d72ce2a5aec79d5efb5fc3d63",
-   "url": "https://aircargoweek.com/a-key-differentiator-in-advanced-air-mobility/"
-  },
-  {
-   "article_id": "aircargoweek:112128",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:30:56Z",
-   "source_id": "aircargoweek",
-   "text_hash": "e8542ead634cfecb5fbd4c4eff36b8eecf8f1c6e61893db1b75ee71c88b75e64",
-   "url": "https://aircargoweek.com/xcr-bets-on-agility/"
-  },
-  {
-   "article_id": "aircargoweek:112129",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:45:57Z",
-   "source_id": "aircargoweek",
-   "text_hash": "5ecf73423f5e1144c557ef03905068ef4dec085c29db813c19fe5c6369ecf2de",
-   "url": "https://aircargoweek.com/moving-from-compliance-to-a-competitive-edge/"
-  },
-  {
-   "article_id": "aircargoweek:112130",
-   "mentions": [],
-   "published_utc": "2026-08-30T23:50:58Z",
-   "source_id": "aircargoweek",
-   "text_hash": "5dac4ac8b566a5c1d61a1eaa5f3ea7dfa34fc4ae290307d7238519cd739b37ee",
-   "url": "https://aircargoweek.com/network-flexibility-at-the-centre-of-growth/"
-  },
-  {
-   "article_id": "aircargoweek:112131",
-   "mentions": [],
-   "published_utc": "2026-08-31T00:00:59Z",
-   "source_id": "aircargoweek",
-   "text_hash": "19ea532ae8ae761a4520fa720ca6bff2f4e4a71105f36356eeb000add429a844",
-   "url": "https://aircargoweek.com/electric-aviation-advances-in-the-gulf/"
-  },
-  {
-   "article_id": "aircargoweek:112133",
-   "mentions": [],
-   "published_utc": "2026-08-31T01:15:01Z",
-   "source_id": "aircargoweek",
-   "text_hash": "572fd7f3fb2b83a1067274379686f0ae4ba56ac6f9f49cdea816d58511ee29f4",
-   "url": "https://aircargoweek.com/60-seconds-with-adam-gunnarsson/"
-  },
-  {
    "article_id": "aircargoweek:112232",
    "mentions": [],
    "published_utc": "2026-09-01T08:20:05Z",
@@ -3321,13 +3241,53 @@
    "source_id": "aircargoweek",
    "text_hash": "ab75fa0dea7d99a597e4831a8325310758320e73a607ee81b0f94030bf7f627b",
    "url": "https://aircargoweek.com/frankfurt-airport-records-2-5-percent-september-growth-in-cargo-throughput/"
+  },
+  {
+   "article_id": "aircargoweek:114810",
+   "mentions": [],
+   "published_utc": "2026-10-14T13:09:25Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c54e5e07a17db285bed66bbeba3d6182b0b04f674701698edb8f4f498d1a4a0b",
+   "url": "https://aircargoweek.com/rhenus-to-commence-permanent-presence-within-dubai-humanitarian/"
+  },
+  {
+   "article_id": "aircargoweek:114814",
+   "mentions": [],
+   "published_utc": "2026-10-14T13:17:24Z",
+   "source_id": "aircargoweek",
+   "text_hash": "b7df6663dbbb3218acd33a21d74328fa3da8a4499f16e766fb15f721e68520e7",
+   "url": "https://aircargoweek.com/fiata-world-congress-2027-addis-ababa-event-confirmed/"
+  },
+  {
+   "article_id": "aircargoweek:114818",
+   "mentions": [],
+   "published_utc": "2026-10-14T13:25:32Z",
+   "source_id": "aircargoweek",
+   "text_hash": "80e4240ad745cd8b0912d63695ffea2152619accc27bc741a4fa530620005bd9",
+   "url": "https://aircargoweek.com/fedex-europes-digitalised-booking-portal-launched-for-temperature-sensitive-cargo/"
+  },
+  {
+   "article_id": "aircargoweek:114824",
+   "mentions": [],
+   "published_utc": "2026-10-15T09:22:14Z",
+   "source_id": "aircargoweek",
+   "text_hash": "5c75f56890bf7a0126e8c7441967b80b0e75d80cf19998a9258fc731f32e7cb4",
+   "url": "https://aircargoweek.com/lufthansa-selected-for-49-9-percent-stake-in-tap-air-portugal/"
+  },
+  {
+   "article_id": "aircargoweek:114827",
+   "mentions": [],
+   "published_utc": "2026-10-15T10:03:45Z",
+   "source_id": "aircargoweek",
+   "text_hash": "38fbbeca71bdc8f0bbc5f879c3b01153364832adf3084f65d66d5fee6abd5a64",
+   "url": "https://aircargoweek.com/k-pop-air-cargo-reaches-1000-metric-tonnes/"
   }
  ],
- "from": "2026-08-30T23:05:49Z",
- "retrieved_at": "2026-10-14T12:52:15Z",
+ "from": "2026-09-01T08:20:05Z",
+ "retrieved_at": "2026-10-15T12:39:58Z",
  "schema": "PRESS-1",
- "sha256": "f8000f175dfc11511bf4380ea6bf42e773571dfa1f88362a8737915a9201e578",
+ "sha256": "08c48069e0fc68bd594e4cecb156df1d0fd5ccaeb47dc6a012b9b7ba155020be",
  "source": "press_aircargoweek",
- "to": "2026-10-14T10:49:50Z",
+ "to": "2026-10-15T10:03:45Z",
  "window_days": 45
 }
