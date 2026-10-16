@@ -1,38 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112232",
-   "mentions": [],
-   "published_utc": "2026-09-01T08:20:05Z",
-   "source_id": "aircargoweek",
-   "text_hash": "6f9e1052c10806a5256191621cdea78ebe200a967c75044cde172f3a5fbb2357",
-   "url": "https://aircargoweek.com/brussels-airlines-marks-dorothea-von-boxbergs-departure/"
-  },
-  {
-   "article_id": "aircargoweek:112237",
-   "mentions": [],
-   "published_utc": "2026-09-01T08:26:17Z",
-   "source_id": "aircargoweek",
-   "text_hash": "047ae1568d7f8d98fd7e73e2979e478d445736b3d40324638602e911cd542959",
-   "url": "https://aircargoweek.com/menzies-aviation-completes-largest-integration-in-its-history-and-strengthens-us-market-leadership/"
-  },
-  {
-   "article_id": "aircargoweek:112247",
-   "mentions": [],
-   "published_utc": "2026-09-01T08:39:39Z",
-   "source_id": "aircargoweek",
-   "text_hash": "e663ebd70cb2512b2aeda1bea72bae2251dc6bdf7317f6df7a05ef18cf393fd5",
-   "url": "https://aircargoweek.com/taag-angola-airlines-appoints-aviareps-as-general-sales-agent-for-europe/"
-  },
-  {
-   "article_id": "aircargoweek:112251",
-   "mentions": [],
-   "published_utc": "2026-09-01T08:55:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "d484796dd0cdc735819a82d7262ba9d8cfb47b6bab06196b54103bde701bccd4",
-   "url": "https://aircargoweek.com/solitair-expands-african-network-with-new-routes-to-nigeria-and-somaliland/"
-  },
-  {
    "article_id": "aircargoweek:112255",
    "mentions": [],
    "published_utc": "2026-09-01T11:44:18Z",
@@ -3281,13 +3249,80 @@
    "source_id": "aircargoweek",
    "text_hash": "38fbbeca71bdc8f0bbc5f879c3b01153364832adf3084f65d66d5fee6abd5a64",
    "url": "https://aircargoweek.com/k-pop-air-cargo-reaches-1000-metric-tonnes/"
+  },
+  {
+   "article_id": "aircargoweek:114832",
+   "mentions": [
+    {
+     "affected_mode": "AIR",
+     "airlines": [],
+     "airports": [
+      "schiphol"
+     ],
+     "carriers": [],
+     "chokepoints": [],
+     "countries": [],
+     "direction": 1,
+     "duration_class": "UNKNOWN",
+     "effects": {
+      "capacity": "UNKNOWN",
+      "demand": "INCREASE",
+      "diversion_pressure": "UNKNOWN",
+      "supply": "UNKNOWN"
+     },
+     "event_type": "AIR_CARGO_DEMAND_SURGE",
+     "extraction_confidence": 0.8,
+     "feature_group": "cargo_demand_shock",
+     "geographic_scope": "FACILITY",
+     "parent_category": "AIR_CARGO",
+     "parser_version": "P1.0",
+     "pattern_conf": 0.8,
+     "ports": [],
+     "raw_text_hash": "20e8ce85599ac48ad1d926c364a70d43f03b24f55acdfccc2c35d6d435526a44",
+     "regions": [],
+     "severity": 2,
+     "source_reliability": 0.85,
+     "source_tier": 2,
+     "source_type": "trade publication (air cargo)",
+     "status": "ACTIVE",
+     "taxonomy_version": "1.0"
+    }
+   ],
+   "published_utc": "2026-10-15T13:03:41Z",
+   "source_id": "aircargoweek",
+   "text_hash": "20e8ce85599ac48ad1d926c364a70d43f03b24f55acdfccc2c35d6d435526a44",
+   "url": "https://aircargoweek.com/schiphol-cargo-records-8-percent-tonnage-growth-in-september/"
+  },
+  {
+   "article_id": "aircargoweek:114836",
+   "mentions": [],
+   "published_utc": "2026-10-15T15:45:12Z",
+   "source_id": "aircargoweek",
+   "text_hash": "e1d69e2e3ef6c45b09072367f5d89672ddcf05cd413e2f36c3ae7102a7b48d0e",
+   "url": "https://aircargoweek.com/golden-week-makes-way-for-peak-season-preparations/"
+  },
+  {
+   "article_id": "aircargoweek:114844",
+   "mentions": [],
+   "published_utc": "2026-10-16T09:45:39Z",
+   "source_id": "aircargoweek",
+   "text_hash": "cd9697850abd9fe9320bf3811bd81aa020e3315017bef8e7968bdbb469c52f08",
+   "url": "https://aircargoweek.com/asia-airfreight-terminal-renewed-for-15-years-at-hong-kong-international-airport/"
+  },
+  {
+   "article_id": "aircargoweek:114893",
+   "mentions": [],
+   "published_utc": "2026-10-16T10:39:03Z",
+   "source_id": "aircargoweek",
+   "text_hash": "63964151d31d491a426396634e143033c22fa26e14e1a821ee8bb4129a95c87a",
+   "url": "https://aircargoweek.com/turkish-airlines-and-cfm-sign-mou-for-more-than-600-leap-1b-engines/"
   }
  ],
- "from": "2026-09-01T08:20:05Z",
- "retrieved_at": "2026-10-15T12:39:58Z",
+ "from": "2026-09-01T11:44:18Z",
+ "retrieved_at": "2026-10-16T12:20:56Z",
  "schema": "PRESS-1",
- "sha256": "08c48069e0fc68bd594e4cecb156df1d0fd5ccaeb47dc6a012b9b7ba155020be",
+ "sha256": "1ebb9097ca2136cf5f9e905ebc807388266b5769f62e48a69cdbb9f2252cd6b5",
  "source": "press_aircargoweek",
- "to": "2026-10-15T10:03:45Z",
+ "to": "2026-10-16T10:39:03Z",
  "window_days": 45
 }
