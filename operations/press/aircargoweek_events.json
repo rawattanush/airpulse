@@ -1,116 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112255",
-   "mentions": [],
-   "published_utc": "2026-09-01T11:44:18Z",
-   "source_id": "aircargoweek",
-   "text_hash": "b15496bf867511c4688e09ef8dbf0a5d0be37fb649e6b732b0cfe0638276a1c4",
-   "url": "https://aircargoweek.com/fraport-brasil-s-a-aeroporto-de-fortaleza-assumes-operations-at-jericoacoara-airport/"
-  },
-  {
-   "article_id": "aircargoweek:112259",
-   "mentions": [],
-   "published_utc": "2026-09-01T12:37:03Z",
-   "source_id": "aircargoweek",
-   "text_hash": "e59725d0e2f869e3ee49fb9b62e90eef0debf6dab7e008531fe04e86b19eae82",
-   "url": "https://aircargoweek.com/awery-appoints-gianluca-marcangelo-executive-vice-president-of-global-sales/"
-  },
-  {
-   "article_id": "aircargoweek:112263",
-   "mentions": [],
-   "published_utc": "2026-09-01T12:39:28Z",
-   "source_id": "aircargoweek",
-   "text_hash": "fe82fff8f2f287038327d928fdcf97b99f83a965295dc3472f0c5a3f66eb2eb3",
-   "url": "https://aircargoweek.com/dubai-air-cargo-customs-transactions-rise-53-percent/"
-  },
-  {
-   "article_id": "aircargoweek:112267",
-   "mentions": [],
-   "published_utc": "2026-09-01T12:41:21Z",
-   "source_id": "aircargoweek",
-   "text_hash": "b8f039815f67c1ad7a7bda64b717ff23016716c3325f4d4eaac65efb6468f568",
-   "url": "https://aircargoweek.com/kr-automates-high-volume-eu-ecommerce-air-filings-with-descartes/"
-  },
-  {
-   "article_id": "aircargoweek:112271",
-   "mentions": [],
-   "published_utc": "2026-09-01T12:43:41Z",
-   "source_id": "aircargoweek",
-   "text_hash": "e933bbc721ceec229f8524ea8ac48abf376d260384394abfc45cd526cbec74d1",
-   "url": "https://aircargoweek.com/fruit-logistica-connect-india-to-launch-in-mumbai-in-2028/"
-  },
-  {
-   "article_id": "aircargoweek:112275",
-   "mentions": [
-    {
-     "affected_mode": "MULTI",
-     "airlines": [],
-     "airports": [
-      "leipzig"
-     ],
-     "carriers": [],
-     "chokepoints": [],
-     "countries": [
-      "DE",
-      "RU"
-     ],
-     "direction": 1,
-     "duration_class": "UNKNOWN",
-     "effects": {
-      "capacity": "UNKNOWN",
-      "demand": "UNKNOWN",
-      "diversion_pressure": "INCREASE",
-      "supply": "DECREASE"
-     },
-     "event_type": "MILITARY_ATTACK",
-     "extraction_confidence": 0.85,
-     "feature_group": "geopolitical_shock",
-     "geographic_scope": "FACILITY",
-     "parent_category": "GEOPOLITICAL",
-     "parser_version": "P1.0",
-     "pattern_conf": 0.85,
-     "ports": [],
-     "raw_text_hash": "f8507b03cd254ee6fb64a11f89695bff945d39cc2f9a9cbaec8f3d87744458e9",
-     "regions": [],
-     "severity": 2,
-     "source_reliability": 0.85,
-     "source_tier": 2,
-     "source_type": "trade publication (air cargo)",
-     "status": "ACTIVE",
-     "taxonomy_version": "1.0"
-    }
-   ],
-   "published_utc": "2026-09-01T16:03:52Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f8507b03cd254ee6fb64a11f89695bff945d39cc2f9a9cbaec8f3d87744458e9",
-   "url": "https://aircargoweek.com/germany-blames-russia-for-drone-attack-at-leipzig-halle-airport/"
-  },
-  {
-   "article_id": "aircargoweek:112282",
-   "mentions": [],
-   "published_utc": "2026-09-01T16:11:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "b3a59b3d047972d11a55995b28c2a8cc1e958c2007d75f42d56870ea0e53ef8d",
-   "url": "https://aircargoweek.com/von-der-leyen-pledges-eu-response-to-leipzig-halle-airport-attack/"
-  },
-  {
-   "article_id": "aircargoweek:112295",
-   "mentions": [],
-   "published_utc": "2026-09-02T08:59:36Z",
-   "source_id": "aircargoweek",
-   "text_hash": "39ed12a71eac19c92d79ef2ca932379f8eaaed9bfd827efe432fe9834695e811",
-   "url": "https://aircargoweek.com/zelensky-issues-warning-to-airlines-over-completely-unsafe-russian-airspace/"
-  },
-  {
-   "article_id": "aircargoweek:112303",
-   "mentions": [],
-   "published_utc": "2026-09-02T09:16:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "46c87da725b79f20483a78be2a8aadb890a2955dc3df0e71ca0f601b453d573c",
-   "url": "https://aircargoweek.com/transaid-launches-its-2026-christmas-appeal-a-brighter-road-ahead/"
-  },
-  {
    "article_id": "aircargoweek:112308",
    "mentions": [],
    "published_utc": "2026-09-02T10:58:19Z",
@@ -3318,10 +3208,10 @@
    "url": "https://aircargoweek.com/turkish-airlines-and-cfm-sign-mou-for-more-than-600-leap-1b-engines/"
   }
  ],
- "from": "2026-09-01T11:44:18Z",
- "retrieved_at": "2026-10-16T12:20:56Z",
+ "from": "2026-09-02T10:58:19Z",
+ "retrieved_at": "2026-10-17T11:34:58Z",
  "schema": "PRESS-1",
- "sha256": "1ebb9097ca2136cf5f9e905ebc807388266b5769f62e48a69cdbb9f2252cd6b5",
+ "sha256": "a34c7fa1dcf8cbd0a101083d11c96b738de2ccf11a2ff350f856be8fe9d50546",
  "source": "press_aircargoweek",
  "to": "2026-10-16T10:39:03Z",
  "window_days": 45

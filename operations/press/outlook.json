@@ -475,23 +475,9 @@
    "source": "aircargoweek",
    "status": "ACTIVE",
    "url": "https://aircargoweek.com/solitair-charters-two-new-cargo-services-to-uzbekistan/"
-  },
-  {
-   "direction": 1,
-   "event_type": "PORT_CONGESTION",
-   "first_reported": "2026-09-17T09:57:08Z",
-   "group": "maritime_disruption",
-   "last_reported": "2026-09-17T09:57:08Z",
-   "organisations": [],
-   "places": [],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/tenerife-terminal-adds-digital-platform-to-tackle-gate-bottlenecks/"
   }
  ],
- "events_in_window": 31,
+ "events_in_window": 30,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -502,30 +488,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 954,
-  "as_of": "2026-10-16T12:21:02Z",
+  "articles_in_window": 921,
+  "as_of": "2026-10-17T11:35:04Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 0.4,
-     "flat": 3.1,
-     "up": -3.5
+     "down": 0.3,
+     "flat": 3.7,
+     "up": -4.1
     },
     "usual": 0.1104,
-    "value": 0.1648
+    "value": 0.1707
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -1.5,
-     "flat": -12.8,
-     "up": 14.3
+     "down": -1.1,
+     "flat": -12.0,
+     "up": 13.2
     },
     "usual": 0.1084,
-    "value": 0.4158
+    "value": 0.3845
    },
    {
     "group": "airspace_disruption",
@@ -542,46 +528,46 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.6,
-     "flat": 5.7,
-     "up": -6.3
+     "down": 0.4,
+     "flat": 6.2,
+     "up": -6.6
     },
     "usual": -0.0837,
-    "value": -0.0208
+    "value": -0.0215
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.4,
-     "flat": 10.9,
-     "up": -12.3
+     "down": 1.2,
+     "flat": 12.3,
+     "up": -13.5
     },
     "usual": 0.0133,
-    "value": 0.1901
+    "value": 0.1969
    },
    {
     "group": "airfreight_rate_signal",
     "label": "Reported air-freight rates",
     "shift_points": {
-     "down": -7.4,
-     "flat": 3.2,
-     "up": 4.2
+     "down": -7.8,
+     "flat": 3.7,
+     "up": 4.1
     },
     "usual": 0.0,
-    "value": 0.095
+    "value": 0.0984
    }
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.17381649016023656,
-   "flat": 0.1922985633229707,
-   "up": 0.6338849465167927
+   "down": 0.1740434974729025,
+   "flat": 0.21380382181265584,
+   "up": 0.6121526807144417
   },
   "shift_points": {
    "down": -8.9,
-   "flat": -17.6,
-   "up": 26.5
+   "flat": -15.5,
+   "up": 24.4
   }
  },
  "official_forecaster": "BL-SEA",
@@ -589,16 +575,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 323,
-   "from": "2026-09-01T11:44:18Z",
-   "retrieved_at": "2026-10-16T12:20:56Z",
+   "articles": 314,
+   "from": "2026-09-02T10:58:19Z",
+   "retrieved_at": "2026-10-17T11:34:58Z",
    "to": "2026-10-16T10:39:03Z"
   },
   "press_splash247": {
-   "articles": 1210,
-   "from": "2026-09-01T04:37:36Z",
-   "retrieved_at": "2026-10-16T12:21:02Z",
-   "to": "2026-10-16T10:00:00Z"
+   "articles": 1177,
+   "from": "2026-09-02T04:21:00Z",
+   "retrieved_at": "2026-10-17T11:35:04Z",
+   "to": "2026-10-17T04:55:10Z"
   }
  },
  "target_period": "2026-09"
