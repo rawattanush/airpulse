@@ -1,126 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112308",
-   "mentions": [],
-   "published_utc": "2026-09-02T10:58:19Z",
-   "source_id": "aircargoweek",
-   "text_hash": "22133458c932918b8e2646885724c6720152e9d0941ba5a49228ad8a4b15148b",
-   "url": "https://aircargoweek.com/dhl-appointed-by-sas-scandinavian-airlines-in-3-year-ground-handling-contract/"
-  },
-  {
-   "article_id": "aircargoweek:112312",
-   "mentions": [],
-   "published_utc": "2026-09-02T11:26:12Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f622a4a5d0ad5bc7173930cc8913c0484195775d38fd7b3976451d07413aebc0",
-   "url": "https://aircargoweek.com/transense-and-unison-collaboration-advances-next-gen-propulsion-in-hybrid-electric-flight/"
-  },
-  {
-   "article_id": "aircargoweek:112316",
-   "mentions": [],
-   "published_utc": "2026-09-02T11:28:10Z",
-   "source_id": "aircargoweek",
-   "text_hash": "dd7016bb4b515c757dd1330d44dfcebcac6f60e678fdd83957ec0f146ee31edf",
-   "url": "https://aircargoweek.com/procharter-co-ordinates-an-124-heavy-lift-charter-for-aerospace-logistics/"
-  },
-  {
-   "article_id": "aircargoweek:112319",
-   "mentions": [],
-   "published_utc": "2026-09-02T11:30:42Z",
-   "source_id": "aircargoweek",
-   "text_hash": "fa4c1cd8a81a00a1c6e1756537ed73bf06d321ffaf0f9370c243c392c830229a",
-   "url": "https://aircargoweek.com/could-an-in-house-mro-make-atlas-air-more-valuable/"
-  },
-  {
-   "article_id": "aircargoweek:112322",
-   "mentions": [],
-   "published_utc": "2026-09-02T12:13:40Z",
-   "source_id": "aircargoweek",
-   "text_hash": "58403b9a2c8f3ce642ba28e498cc65adbcb05bb49d5e309293404f96f296ba86",
-   "url": "https://aircargoweek.com/fiata-and-wisetech-global-renew-partnership-for-three-years/"
-  },
-  {
-   "article_id": "aircargoweek:112345",
-   "mentions": [],
-   "published_utc": "2026-09-02T13:46:11Z",
-   "source_id": "aircargoweek",
-   "text_hash": "383041de61c434b3ec18013105c0b4091f240f177193e90629dea7f2b6c7593a",
-   "url": "https://aircargoweek.com/frankfurt-cargo-community-gathers-for-11th-air-cargo-conference/"
-  },
-  {
-   "article_id": "aircargoweek:112349",
-   "mentions": [],
-   "published_utc": "2026-09-02T13:56:37Z",
-   "source_id": "aircargoweek",
-   "text_hash": "ea58316d1f1c9976257e3baf5461ef16f94989fcc7c68c0a7b221f63737d7776",
-   "url": "https://aircargoweek.com/ai-and-e-commerce-reshape-cargo-demand/"
-  },
-  {
-   "article_id": "aircargoweek:112350",
-   "mentions": [],
-   "published_utc": "2026-09-02T14:09:36Z",
-   "source_id": "aircargoweek",
-   "text_hash": "081a1a7813a842355c9b1c2f279e09488e6f6a4c0b13760d7633ba1a0eaba4f6",
-   "url": "https://aircargoweek.com/air-cargo-demand-holds-as-disruption-reshapes-trade-flows/"
-  },
-  {
-   "article_id": "aircargoweek:112458",
-   "mentions": [],
-   "published_utc": "2026-09-02T15:40:24Z",
-   "source_id": "aircargoweek",
-   "text_hash": "85f734fe7424925109bf18147820a079d222116b0d7cdf767325df6e0b210f4b",
-   "url": "https://aircargoweek.com/airforwarders-association-urges-washington-and-ottawa-to-resume-trade-talks/"
-  },
-  {
-   "article_id": "aircargoweek:112452",
-   "mentions": [],
-   "published_utc": "2026-09-03T06:10:06Z",
-   "source_id": "aircargoweek",
-   "text_hash": "0715a7203f7594bdb289d916d8e08e67c923c2c7d599929d6a0c64d62fc1a024",
-   "url": "https://aircargoweek.com/when-aftermarket-capacity-consolidates-market-access-becomes-the-advantage/"
-  },
-  {
-   "article_id": "aircargoweek:112443",
-   "mentions": [],
-   "published_utc": "2026-09-03T07:30:31Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a4769a24c571098faef9eb30cf710b5a41e2e0beffaed0a6032ae49006fe9181",
-   "url": "https://aircargoweek.com/dronamics-to-shape-the-integration-of-large-drones-into-european-airspace/"
-  },
-  {
-   "article_id": "aircargoweek:112377",
-   "mentions": [],
-   "published_utc": "2026-09-03T08:30:37Z",
-   "source_id": "aircargoweek",
-   "text_hash": "150813fbe1b2cf6efc9e781689ef1f0ad0685387e583f48e1392a768df3fadb6",
-   "url": "https://aircargoweek.com/asl-australia-signs-preferred-supplier-agreement-with-acron-aviation-for-boeing-737-pilot-training/"
-  },
-  {
-   "article_id": "aircargoweek:112381",
-   "mentions": [],
-   "published_utc": "2026-09-03T09:29:56Z",
-   "source_id": "aircargoweek",
-   "text_hash": "6dd0ecdf1a2e69311fe4d322e73d58d0832998c8c153c96e9777bb7cf2666361",
-   "url": "https://aircargoweek.com/csafe-launches-reusable-thermal-cover-for-pharmaceutical-airfreight/"
-  },
-  {
-   "article_id": "aircargoweek:112464",
-   "mentions": [],
-   "published_utc": "2026-09-03T10:13:17Z",
-   "source_id": "aircargoweek",
-   "text_hash": "ed6afa70a3fb170744892160ba4507b2f7d43a2c9a01e046fdea104dba6ff1be",
-   "url": "https://aircargoweek.com/menzies-aviation-appoints-emma-deane-as-senior-vice-president-commercial-for-oceania-southeast-asia/"
-  },
-  {
-   "article_id": "aircargoweek:112393",
-   "mentions": [],
-   "published_utc": "2026-09-03T10:30:29Z",
-   "source_id": "aircargoweek",
-   "text_hash": "0b55ce96e1b2b7912e9bd786dae2bbc3b1da4d65a6b0de543d6d0d8ab49b998a",
-   "url": "https://aircargoweek.com/ai-tops-investment-priorities-for-96-percent-of-pharma-supply-chain-leaders/"
-  },
-  {
    "article_id": "aircargoweek:112396",
    "mentions": [],
    "published_utc": "2026-09-03T11:30:28Z",
@@ -3208,10 +3088,10 @@
    "url": "https://aircargoweek.com/turkish-airlines-and-cfm-sign-mou-for-more-than-600-leap-1b-engines/"
   }
  ],
- "from": "2026-09-02T10:58:19Z",
- "retrieved_at": "2026-10-17T11:34:58Z",
+ "from": "2026-09-03T11:30:28Z",
+ "retrieved_at": "2026-10-18T12:03:11Z",
  "schema": "PRESS-1",
- "sha256": "a34c7fa1dcf8cbd0a101083d11c96b738de2ccf11a2ff350f856be8fe9d50546",
+ "sha256": "e78db69dd06792f7d30aeed646324af4e5a89e718752496931696fc58cbf69d7",
  "source": "press_aircargoweek",
  "to": "2026-10-16T10:39:03Z",
  "window_days": 45

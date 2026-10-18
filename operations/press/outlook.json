@@ -444,40 +444,9 @@
    "source": "splash247",
    "status": "ACTIVE",
    "url": "https://splash247.com/trump-signs-russia-sanctions-law-with-shadow-fleet-in-the-crosshairs/"
-  },
-  {
-   "direction": -1,
-   "event_type": "CEASEFIRE",
-   "first_reported": "2026-09-18T08:45:07Z",
-   "group": "geopolitical_shock",
-   "last_reported": "2026-09-18T08:45:07Z",
-   "organisations": [],
-   "places": [
-    "BLACK_SEA",
-    "TR"
-   ],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/turkey-pushes-black-sea-truce/"
-  },
-  {
-   "direction": -1,
-   "event_type": "AIR_CAPACITY_ADDITION",
-   "first_reported": "2026-09-17T12:24:38Z",
-   "group": "air_capacity_shock",
-   "last_reported": "2026-09-17T12:24:38Z",
-   "organisations": [],
-   "places": [],
-   "reports": 1,
-   "severity": 1,
-   "source": "aircargoweek",
-   "status": "ACTIVE",
-   "url": "https://aircargoweek.com/solitair-charters-two-new-cargo-services-to-uzbekistan/"
   }
  ],
- "events_in_window": 30,
+ "events_in_window": 28,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -488,30 +457,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 921,
-  "as_of": "2026-10-17T11:35:04Z",
+  "articles_in_window": 885,
+  "as_of": "2026-10-18T12:03:15Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
      "down": 0.3,
-     "flat": 3.7,
-     "up": -4.1
+     "flat": 8.7,
+     "up": -9.0
     },
     "usual": 0.1104,
-    "value": 0.1707
+    "value": 0.2321
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -1.1,
-     "flat": -12.0,
-     "up": 13.2
+     "down": -0.1,
+     "flat": -14.6,
+     "up": 14.7
     },
     "usual": 0.1084,
-    "value": 0.3845
+    "value": 0.4002
    },
    {
     "group": "airspace_disruption",
@@ -528,46 +497,46 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.4,
-     "flat": 6.2,
-     "up": -6.6
+     "down": -0.0,
+     "flat": 10.0,
+     "up": -10.0
     },
     "usual": -0.0837,
-    "value": -0.0215
+    "value": 0.0
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.2,
-     "flat": 12.3,
-     "up": -13.5
+     "down": 0.3,
+     "flat": 16.3,
+     "up": -16.6
     },
     "usual": 0.0133,
-    "value": 0.1969
+    "value": 0.2049
    },
    {
     "group": "airfreight_rate_signal",
     "label": "Reported air-freight rates",
     "shift_points": {
-     "down": -7.8,
-     "flat": 3.7,
-     "up": 4.1
+     "down": -8.3,
+     "flat": 4.9,
+     "up": 3.3
     },
     "usual": 0.0,
-    "value": 0.0984
+    "value": 0.1024
    }
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.1740434974729025,
-   "flat": 0.21380382181265584,
-   "up": 0.6121526807144417
+   "down": 0.17076061271473195,
+   "flat": 0.2887738706536348,
+   "up": 0.5404655166316332
   },
   "shift_points": {
-   "down": -8.9,
-   "flat": -15.5,
-   "up": 24.4
+   "down": -9.2,
+   "flat": -8.0,
+   "up": 17.2
   }
  },
  "official_forecaster": "BL-SEA",
@@ -575,16 +544,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 314,
-   "from": "2026-09-02T10:58:19Z",
-   "retrieved_at": "2026-10-17T11:34:58Z",
+   "articles": 299,
+   "from": "2026-09-03T11:30:28Z",
+   "retrieved_at": "2026-10-18T12:03:11Z",
    "to": "2026-10-16T10:39:03Z"
   },
   "press_splash247": {
-   "articles": 1177,
-   "from": "2026-09-02T04:21:00Z",
-   "retrieved_at": "2026-10-17T11:35:04Z",
-   "to": "2026-10-17T04:55:10Z"
+   "articles": 1141,
+   "from": "2026-09-03T04:16:13Z",
+   "retrieved_at": "2026-10-18T12:03:15Z",
+   "to": "2026-10-18T08:28:49Z"
   }
  },
  "target_period": "2026-09"

@@ -1,12 +1,12 @@
 # AirPulse operations report (daily)
 
-Generated 2026-10-17T11:35:48Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-10-18T12:03:51Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 13; started by a scheduler: 10; started by hand: 3.
-- Last run: 2026-10-17T11:33:30Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 47 by a scheduler, 112 by hand.
+- Runs on record: 14; started by a scheduler: 11; started by hand: 3.
+- Last run: 2026-10-18T12:02:11Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 52 by a scheduler, 112 by hand.
 
 ## Sources
 
@@ -24,9 +24,9 @@ Generated 2026-10-17T11:35:48Z from the run records, the ledgers and the clock. 
 | Europe import air freight (BoP) price index, every release (BLS IV1311) | DEGRADED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | HEALTHY | 2026-10-17T11:34:58Z | 2026-10-16T10:39:03Z | 4 days |  |
-| Splash247: reported events | HEALTHY | 2026-10-17T11:35:04Z | 2026-10-17T04:55:10Z | 4 days |  |
-| Hong Kong International Airport flight information | HEALTHY | 2026-10-17T11:35:34Z | 2026-10-16 | 3 days |  |
+| Air Cargo Week: reported events | HEALTHY | 2026-10-18T12:03:11Z | 2026-10-16T10:39:03Z | 4 days |  |
+| Splash247: reported events | HEALTHY | 2026-10-18T12:03:15Z | 2026-10-18T08:28:49Z | 4 days |  |
+| Hong Kong International Airport flight information | HEALTHY | 2026-10-18T12:03:43Z | 2026-10-17 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
 | US international nonstop departures (US DOT) | HEALTHY | 2026-10-12T18:04:36Z | 2025-12 | 14 days |  |
 | Aircraft positions near airports (adsb.lol) | DISABLED | - | - | 3 days |  |
