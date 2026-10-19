@@ -1,162 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112396",
-   "mentions": [],
-   "published_utc": "2026-09-03T11:30:28Z",
-   "source_id": "aircargoweek",
-   "text_hash": "1b78814191e88fa35528d8cecd9c522a5a85cdfd78f956d9ddcece1f38d5191a",
-   "url": "https://aircargoweek.com/kln-delivers-sustained-growth-in-revenue-and-core-net-profit/"
-  },
-  {
-   "article_id": "aircargoweek:112467",
-   "mentions": [],
-   "published_utc": "2026-09-03T13:04:01Z",
-   "source_id": "aircargoweek",
-   "text_hash": "2acc8f7a0d401749daf07b62037ad5204e63e2994bcc52af031a5307b46abecf",
-   "url": "https://aircargoweek.com/k9-unit-flown-by-emirates-skycargo-to-zimbabwe-begins-frontline-operations/"
-  },
-  {
-   "article_id": "aircargoweek:112488",
-   "mentions": [
-    {
-     "affected_mode": "AIR",
-     "airlines": [],
-     "airports": [],
-     "carriers": [],
-     "chokepoints": [],
-     "countries": [],
-     "direction": 1,
-     "duration_class": "UNKNOWN",
-     "effects": {
-      "capacity": "DECREASE",
-      "demand": "UNKNOWN",
-      "diversion_pressure": "UNKNOWN",
-      "supply": "DECREASE"
-     },
-     "event_type": "AIR_CARGO_CAPACITY_SHORTAGE",
-     "extraction_confidence": 0.85,
-     "feature_group": "air_capacity_shock",
-     "geographic_scope": "REGION",
-     "parent_category": "AIR_CARGO",
-     "parser_version": "P1.0",
-     "pattern_conf": 0.85,
-     "ports": [],
-     "raw_text_hash": "1f87a71e5fe6d27c8614d36568c5292c1167671a801e616928a30655d5383d61",
-     "regions": [
-      "EUROPE"
-     ],
-     "severity": 2,
-     "source_reliability": 0.85,
-     "source_tier": 2,
-     "source_type": "trade publication (air cargo)",
-     "status": "ACTIVE",
-     "taxonomy_version": "1.0"
-    }
-   ],
-   "published_utc": "2026-09-03T13:40:57Z",
-   "source_id": "aircargoweek",
-   "text_hash": "1f87a71e5fe6d27c8614d36568c5292c1167671a801e616928a30655d5383d61",
-   "url": "https://aircargoweek.com/europes-airfreight-road-network-faces-a-capacity-crunch/"
-  },
-  {
-   "article_id": "aircargoweek:112492",
-   "mentions": [],
-   "published_utc": "2026-09-04T09:00:05Z",
-   "source_id": "aircargoweek",
-   "text_hash": "bbea07fd146a2042abbee676e455ff08539fee99c2b5f541172c3e05db4ac55b",
-   "url": "https://aircargoweek.com/archer-launches-no-roads-flight-tour-ahead-of-la28/"
-  },
-  {
-   "article_id": "aircargoweek:112509",
-   "mentions": [],
-   "published_utc": "2026-09-04T09:28:19Z",
-   "source_id": "aircargoweek",
-   "text_hash": "dd8fb82fcdaa9ca3b643f18f28592853434a71d44fedaa8389ce683856539e41",
-   "url": "https://aircargoweek.com/doncaster-sheffield-airport-sets-new-sustainability-benchmark-with-independent-ecovadis-assessments/"
-  },
-  {
-   "article_id": "aircargoweek:112557",
-   "mentions": [],
-   "published_utc": "2026-09-04T10:46:13Z",
-   "source_id": "aircargoweek",
-   "text_hash": "d7a165a4b5c9e4d58f7cc65c5285689e0d8b7d1f98b8d3bfa2eb30c2fa60cc8d",
-   "url": "https://aircargoweek.com/dhl-and-absa-expand-gotrade-programme-across-africa/"
-  },
-  {
-   "article_id": "aircargoweek:112561",
-   "mentions": [],
-   "published_utc": "2026-09-04T10:48:04Z",
-   "source_id": "aircargoweek",
-   "text_hash": "d823995748ce80c837521d3e6a9e478c0d63b10691367432d03ece47407a1825",
-   "url": "https://aircargoweek.com/ovn-reaches-100000-expedited-freight-loads/"
-  },
-  {
-   "article_id": "aircargoweek:112576",
-   "mentions": [
-    {
-     "affected_mode": "AIR",
-     "airlines": [],
-     "airports": [],
-     "carriers": [],
-     "chokepoints": [],
-     "countries": [],
-     "direction": 1,
-     "duration_class": "UNKNOWN",
-     "effects": {
-      "capacity": "UNKNOWN",
-      "demand": "INCREASE",
-      "diversion_pressure": "UNKNOWN",
-      "supply": "UNKNOWN"
-     },
-     "event_type": "AIR_CARGO_DEMAND_SURGE",
-     "extraction_confidence": 0.7,
-     "feature_group": "cargo_demand_shock",
-     "geographic_scope": "UNKNOWN",
-     "parent_category": "AIR_CARGO",
-     "parser_version": "P1.0",
-     "pattern_conf": 0.8,
-     "ports": [],
-     "raw_text_hash": "af6517ec0e8800871814d9268abfa1f5ad53afc0de836dde8f9186c8738664e4",
-     "regions": [],
-     "severity": 2,
-     "source_reliability": 0.85,
-     "source_tier": 2,
-     "source_type": "trade publication (air cargo)",
-     "status": "ACTIVE",
-     "taxonomy_version": "1.0"
-    }
-   ],
-   "published_utc": "2026-09-04T12:01:30Z",
-   "source_id": "aircargoweek",
-   "text_hash": "af6517ec0e8800871814d9268abfa1f5ad53afc0de836dde8f9186c8738664e4",
-   "url": "https://aircargoweek.com/6-year-on-year-air-cargo-demand-growth-demonstrates-industry-resilience/"
-  },
-  {
-   "article_id": "aircargoweek:112595",
-   "mentions": [],
-   "published_utc": "2026-09-04T12:39:59Z",
-   "source_id": "aircargoweek",
-   "text_hash": "4e0758df6bc3f00d80da30a8a8e76e1021627b9222cdab7810e14bb582eee021",
-   "url": "https://aircargoweek.com/dhl-express-ceo-for-europe-shares-three-lessons-for-future-leaders/"
-  },
-  {
-   "article_id": "aircargoweek:112592",
-   "mentions": [],
-   "published_utc": "2026-09-04T12:59:36Z",
-   "source_id": "aircargoweek",
-   "text_hash": "8aea939cd6fc621a0848e8a6384d878bfafaa7f0ac22858ca1383b358cf7b008",
-   "url": "https://aircargoweek.com/dhl-global-forwarding-to-establish-dedicated-healthcare-logistics-facility-at-changi-airport/"
-  },
-  {
-   "article_id": "aircargoweek:112604",
-   "mentions": [],
-   "published_utc": "2026-09-04T13:08:03Z",
-   "source_id": "aircargoweek",
-   "text_hash": "31d0df71c619d49d8d5477a51acb457c20a255d00cb7c760254b08b07f98b715",
-   "url": "https://aircargoweek.com/iata-identifies-five-recurring-aviation-safety-culture-trends/"
-  },
-  {
    "article_id": "aircargoweek:112612",
    "mentions": [],
    "published_utc": "2026-09-04T13:52:47Z",
@@ -3086,13 +2930,168 @@
    "source_id": "aircargoweek",
    "text_hash": "63964151d31d491a426396634e143033c22fa26e14e1a821ee8bb4129a95c87a",
    "url": "https://aircargoweek.com/turkish-airlines-and-cfm-sign-mou-for-more-than-600-leap-1b-engines/"
+  },
+  {
+   "article_id": "aircargoweek:114423",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:05:11Z",
+   "source_id": "aircargoweek",
+   "text_hash": "96033702688a7689a13eda198bff9951a135637ab0b495057b83635a5130434c",
+   "url": "https://aircargoweek.com/from-cost-centre-to-commercial-lever/"
+  },
+  {
+   "article_id": "aircargoweek:114440",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:10:59Z",
+   "source_id": "aircargoweek",
+   "text_hash": "4c0f7a254c4cab1e468e70d7c4dfcce40e1a1b2f67585e1cebf80b61ad42c1fc",
+   "url": "https://aircargoweek.com/could-iata-change-in-liability-on-direct-airwaybills-dawb-be-an-opportunity-for-the-forwarding-industry/"
+  },
+  {
+   "article_id": "aircargoweek:114441",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:15:01Z",
+   "source_id": "aircargoweek",
+   "text_hash": "d923f7ab0005eb4d39255906c74e5f8033fc6bfa26110b277a7efc80d792041d",
+   "url": "https://aircargoweek.com/how-kyrgyzstans-cargo-airline-built-a-global-freight-network/"
+  },
+  {
+   "article_id": "aircargoweek:114442",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:15:02Z",
+   "source_id": "aircargoweek",
+   "text_hash": "59a1fb25c812fb4caf30f940e4dc48d6a796ec8013b98eafad858cacee7190ce",
+   "url": "https://aircargoweek.com/refueleu-is-the-saf-mandate-finally-working/"
+  },
+  {
+   "article_id": "aircargoweek:114443",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:30:03Z",
+   "source_id": "aircargoweek",
+   "text_hash": "1d70f90a10bae8a8b8d383b6900968fbd784e54e47b90fa542f1f622d334b369",
+   "url": "https://aircargoweek.com/tariffs-are-reshaping-the-airfreight-map/"
+  },
+  {
+   "article_id": "aircargoweek:114444",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:40:04Z",
+   "source_id": "aircargoweek",
+   "text_hash": "38e8eda635bdc04a1906b134ead570bcaf77987bc3bebfade47ca9b50944c716",
+   "url": "https://aircargoweek.com/the-operation-behind-the-equine-stars/"
+  },
+  {
+   "article_id": "aircargoweek:114445",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:45:15Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c7c78804490112e239d82e4d63dbd318752bb8a675af7fca649c45d38b10b816",
+   "url": "https://aircargoweek.com/precision-planning-supports-latam-cargos-big-cat-relocation/"
+  },
+  {
+   "article_id": "aircargoweek:114446",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:50:16Z",
+   "source_id": "aircargoweek",
+   "text_hash": "2c82f92ebc26d4c51eb66ea737cc0ad65033045be276246f46b96dd36c02ffde",
+   "url": "https://aircargoweek.com/60-seconds-with-alina-fetisova/"
+  },
+  {
+   "article_id": "aircargoweek:114447",
+   "mentions": [],
+   "published_utc": "2026-10-18T23:50:59Z",
+   "source_id": "aircargoweek",
+   "text_hash": "7c0a72fe193744d9231de2f8cecc5e7a9a0477894a290c0c0b3c2d932d6d7fd6",
+   "url": "https://aircargoweek.com/airfreight-in-africa-the-battle-for-hubs-to-open-up-the-continent/"
+  },
+  {
+   "article_id": "aircargoweek:114448",
+   "mentions": [],
+   "published_utc": "2026-10-19T00:00:00Z",
+   "source_id": "aircargoweek",
+   "text_hash": "54e5cad09f755393a500e998614887d706bb9a3dfc4ac9b474188174fa5bd393",
+   "url": "https://aircargoweek.com/disruption-changes-the-map/"
+  },
+  {
+   "article_id": "aircargoweek:114900",
+   "mentions": [],
+   "published_utc": "2026-10-19T08:14:29Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c235c4d5f7dee6be5ce8d9efe7e3ddf81c474f08fbb7e941a1e062aa5093bc1e",
+   "url": "https://aircargoweek.com/boeing-737-max-and-airbus-320neo-aircraft-now-serviced-by-airhub-aviation/"
+  },
+  {
+   "article_id": "aircargoweek:114903",
+   "mentions": [],
+   "published_utc": "2026-10-19T08:37:26Z",
+   "source_id": "aircargoweek",
+   "text_hash": "5a224df3d0df3e5cf15e1845acd5ddf7714b041cfd2fb8069ee617eacbc6aef5",
+   "url": "https://aircargoweek.com/open-logistics-foundation-calling-for-partners-to-pilot-time-slot-management/"
+  },
+  {
+   "article_id": "aircargoweek:114907",
+   "mentions": [],
+   "published_utc": "2026-10-19T08:56:05Z",
+   "source_id": "aircargoweek",
+   "text_hash": "52e61a1985cf364877cbc5591182585939c4ced82eb11953f7c8469a40b5e3aa",
+   "url": "https://aircargoweek.com/ontic-launches-cargocare-boeing-747-exchange-and-overhaul-programme/"
+  },
+  {
+   "article_id": "aircargoweek:114910",
+   "mentions": [],
+   "published_utc": "2026-10-19T10:46:04Z",
+   "source_id": "aircargoweek",
+   "text_hash": "b8000caa0db58314740ab75fbfd7e2557c82e347c78e0cdb7e648bbca727e02b",
+   "url": "https://aircargoweek.com/us-india-trade-deal-close-according-to-secretary-of-state-rubio/"
+  },
+  {
+   "article_id": "aircargoweek:114916",
+   "mentions": [
+    {
+     "affected_mode": "AIR",
+     "airlines": [],
+     "airports": [],
+     "carriers": [],
+     "chokepoints": [],
+     "countries": [
+      "AU"
+     ],
+     "direction": -1,
+     "duration_class": "UNKNOWN",
+     "effects": {
+      "capacity": "INCREASE",
+      "demand": "UNKNOWN",
+      "diversion_pressure": "UNKNOWN",
+      "supply": "INCREASE"
+     },
+     "event_type": "AIR_CAPACITY_ADDITION",
+     "extraction_confidence": 0.75,
+     "feature_group": "air_capacity_shock",
+     "geographic_scope": "COUNTRY",
+     "parent_category": "AVIATION",
+     "parser_version": "P1.0",
+     "pattern_conf": 0.75,
+     "ports": [],
+     "raw_text_hash": "bcfa3bf1a42935fde1df3dede78185715b0c6a5b08a9434280d95885be60e8bd",
+     "regions": [],
+     "severity": 1,
+     "source_reliability": 0.85,
+     "source_tier": 2,
+     "source_type": "trade publication (air cargo)",
+     "status": "ACTIVE",
+     "taxonomy_version": "1.0"
+    }
+   ],
+   "published_utc": "2026-10-19T13:42:16Z",
+   "source_id": "aircargoweek",
+   "text_hash": "bcfa3bf1a42935fde1df3dede78185715b0c6a5b08a9434280d95885be60e8bd",
+   "url": "https://aircargoweek.com/qantas-freight-and-australia-post-expand-capacity-with-first-of-three-freighters/"
   }
  ],
- "from": "2026-09-03T11:30:28Z",
- "retrieved_at": "2026-10-18T12:03:11Z",
+ "from": "2026-09-04T13:52:47Z",
+ "retrieved_at": "2026-10-19T14:38:00Z",
  "schema": "PRESS-1",
- "sha256": "e78db69dd06792f7d30aeed646324af4e5a89e718752496931696fc58cbf69d7",
+ "sha256": "d2797de15a198c486567954511a89f7797965418ba45e66755374cc67d02b977",
  "source": "press_aircargoweek",
- "to": "2026-10-16T10:39:03Z",
+ "to": "2026-10-19T13:42:16Z",
  "window_days": 45
 }
