@@ -1,38 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112612",
-   "mentions": [],
-   "published_utc": "2026-09-04T13:52:47Z",
-   "source_id": "aircargoweek",
-   "text_hash": "e862ff7faa8a74fde353819b3236cc2a141c790f0669a7bb60d072c276d10c33",
-   "url": "https://aircargoweek.com/gatwick-flights-grounded-as-norse-aircraft-rejects-take-off/"
-  },
-  {
-   "article_id": "aircargoweek:112622",
-   "mentions": [],
-   "published_utc": "2026-09-04T15:00:43Z",
-   "source_id": "aircargoweek",
-   "text_hash": "6eb33f6eb71e5d284daf0163122abd4c84b0bd7dfb2dfac88a63b3808f3ea112",
-   "url": "https://aircargoweek.com/motionminers-wins-the-lufthansa-cargo-innovation-award-2026/"
-  },
-  {
-   "article_id": "aircargoweek:112626",
-   "mentions": [],
-   "published_utc": "2026-09-04T15:04:08Z",
-   "source_id": "aircargoweek",
-   "text_hash": "81f41a13ba6ce3ce60908f6fc3fc75891ef07f891ebf24752b86df1f40819f53",
-   "url": "https://aircargoweek.com/heathrow-animal-reception-centre-retains-internationally-recognised-animal-welfare-accreditation/"
-  },
-  {
-   "article_id": "aircargoweek:112631",
-   "mentions": [],
-   "published_utc": "2026-09-04T15:14:55Z",
-   "source_id": "aircargoweek",
-   "text_hash": "8f60fdc9bcb5bcfccbaec4579d9ceeeb8875c262f25e6b097d655afd8352cfa7",
-   "url": "https://aircargoweek.com/iai-announces-maiden-flight-of-airbus-a330-300-passenger-to-freighter-converted-aircraft/"
-  },
-  {
    "article_id": "aircargoweek:113007",
    "mentions": [],
    "published_utc": "2026-09-06T23:05:35Z",
@@ -3085,13 +3053,53 @@
    "source_id": "aircargoweek",
    "text_hash": "bcfa3bf1a42935fde1df3dede78185715b0c6a5b08a9434280d95885be60e8bd",
    "url": "https://aircargoweek.com/qantas-freight-and-australia-post-expand-capacity-with-first-of-three-freighters/"
+  },
+  {
+   "article_id": "aircargoweek:114926",
+   "mentions": [],
+   "published_utc": "2026-10-19T15:04:16Z",
+   "source_id": "aircargoweek",
+   "text_hash": "be9202c863ae09bb5a2da6a8a8e5c00bc8854a8b2ea4d698171bdf330b074c75",
+   "url": "https://aircargoweek.com/iata-reports-24-percent-of-airline-financing-debt-due-in-next-12-months/"
+  },
+  {
+   "article_id": "aircargoweek:114930",
+   "mentions": [],
+   "published_utc": "2026-10-19T16:06:30Z",
+   "source_id": "aircargoweek",
+   "text_hash": "dbdb2ac3a14e69045f410254733586282bb6bb92531c73efa2dfa6f4bad91a54",
+   "url": "https://aircargoweek.com/deal-to-being-doncaster-sheffield-airport-land-into-public-ownership-approved/"
+  },
+  {
+   "article_id": "aircargoweek:114934",
+   "mentions": [],
+   "published_utc": "2026-10-20T09:01:28Z",
+   "source_id": "aircargoweek",
+   "text_hash": "fbcd5393177cb323d4805dd942082fb25b7bb15bf735ecd18e037dc8cacd6cc3",
+   "url": "https://aircargoweek.com/cargo-airline-association-appoints-josh-dover-as-managing-director-for-legislative-affairs/"
+  },
+  {
+   "article_id": "aircargoweek:114937",
+   "mentions": [],
+   "published_utc": "2026-10-20T11:06:46Z",
+   "source_id": "aircargoweek",
+   "text_hash": "431b794985f0291333189fd4879ee9d72cd0f0a9974fa981ada03bb7de0f6b8b",
+   "url": "https://aircargoweek.com/countdown-to-eu-e2-handling-fee-applied-from-1st-november/"
+  },
+  {
+   "article_id": "aircargoweek:114942",
+   "mentions": [],
+   "published_utc": "2026-10-20T11:45:25Z",
+   "source_id": "aircargoweek",
+   "text_hash": "7047a5c4334fa6b8bc3478596d168bfc2de00dc64a6300c3ef0dc21a2b5db0ef",
+   "url": "https://aircargoweek.com/geodis-establishes-new-european-distribution-hub-for-lovevery-in-germany/"
   }
  ],
- "from": "2026-09-04T13:52:47Z",
- "retrieved_at": "2026-10-19T14:38:00Z",
+ "from": "2026-09-06T23:05:35Z",
+ "retrieved_at": "2026-10-20T12:43:17Z",
  "schema": "PRESS-1",
- "sha256": "d2797de15a198c486567954511a89f7797965418ba45e66755374cc67d02b977",
+ "sha256": "c0bb1ae54344782f1d932871440508fb914985a73911cbf070d813257ee1e094",
  "source": "press_aircargoweek",
- "to": "2026-10-19T13:42:16Z",
+ "to": "2026-10-20T11:45:25Z",
  "window_days": 45
 }

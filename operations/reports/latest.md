@@ -1,12 +1,12 @@
-# AirPulse operations report (weekly)
+# AirPulse operations report (daily)
 
-Generated 2026-10-19T15:53:49Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-10-20T12:43:57Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 16; started by a scheduler: 13; started by hand: 3.
-- Last run: 2026-10-19T15:44:09Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 63 by a scheduler, 112 by hand.
+- Runs on record: 17; started by a scheduler: 14; started by hand: 3.
+- Last run: 2026-10-20T12:41:18Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 65 by a scheduler, 112 by hand.
 
 ## Sources
 
@@ -24,8 +24,8 @@ Generated 2026-10-19T15:53:49Z from the run records, the ledgers and the clock. 
 | Europe import air freight (BoP) price index, every release (BLS IV1311) | DEGRADED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | HEALTHY | 2026-10-19T14:38:00Z | 2026-10-19T13:42:16Z | 4 days |  |
-| Splash247: reported events | HEALTHY | 2026-10-19T14:38:07Z | 2026-10-19T12:00:00Z | 4 days |  |
+| Air Cargo Week: reported events | HEALTHY | 2026-10-20T12:43:17Z | 2026-10-20T11:45:25Z | 4 days |  |
+| Splash247: reported events | HEALTHY | 2026-10-20T12:43:23Z | 2026-10-20T11:00:00Z | 4 days |  |
 | Hong Kong International Airport flight information | HEALTHY | 2026-10-19T15:46:23Z | 2026-10-18 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
 | US international nonstop departures (US DOT) | HEALTHY | 2026-10-19T15:46:12Z | 2026-06 | 14 days |  |
