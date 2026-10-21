@@ -418,51 +418,19 @@
   {
    "direction": 1,
    "event_type": "TRADE_DISRUPTION",
-   "first_reported": "2026-09-20T12:53:16Z",
+   "first_reported": "2026-09-23T19:51:00Z",
    "group": "trade_disruption",
    "last_reported": "2026-09-23T19:51:00Z",
    "organisations": [],
    "places": [],
-   "reports": 3,
+   "reports": 1,
    "severity": 2,
    "source": "splash247",
    "status": "ACTIVE",
-   "url": "https://splash247.com/fresh-strike-hits-montevideo-container-terminal/"
-  },
-  {
-   "direction": 1,
-   "event_type": "AIRFREIGHT_RATE_INCREASE",
-   "first_reported": "2026-09-21T12:15:18Z",
-   "group": "airfreight_rate_signal",
-   "last_reported": "2026-09-21T12:15:18Z",
-   "organisations": [],
-   "places": [
-    "ASIA"
-   ],
-   "reports": 1,
-   "severity": 2,
-   "source": "aircargoweek",
-   "status": "ACTIVE",
-   "url": "https://aircargoweek.com/asia-pacific-air-cargo-spot-rates-capacity-and-tonnages-strengthen-further/"
-  },
-  {
-   "direction": 1,
-   "event_type": "AIR_CARGO_DEMAND_SURGE",
-   "first_reported": "2026-09-21T12:15:18Z",
-   "group": "cargo_demand_shock",
-   "last_reported": "2026-09-21T12:15:18Z",
-   "organisations": [],
-   "places": [
-    "ASIA"
-   ],
-   "reports": 1,
-   "severity": 2,
-   "source": "aircargoweek",
-   "status": "ACTIVE",
-   "url": "https://aircargoweek.com/asia-pacific-air-cargo-spot-rates-capacity-and-tonnages-strengthen-further/"
+   "url": "https://splash247.com/inco-ships-seafarers-begin-industrial-action/"
   }
  ],
- "events_in_window": 29,
+ "events_in_window": 27,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -473,30 +441,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 962,
-  "as_of": "2026-10-20T12:43:23Z",
+  "articles_in_window": 950,
+  "as_of": "2026-10-21T12:55:35Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 0.4,
-     "flat": 3.0,
-     "up": -3.5
+     "down": 0.7,
+     "flat": 2.4,
+     "up": -3.1
     },
     "usual": 0.1104,
-    "value": 0.1664
+    "value": 0.1685
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -1.8,
-     "flat": -13.8,
-     "up": 15.6
+     "down": -3.0,
+     "flat": -11.3,
+     "up": 14.4
     },
     "usual": 0.1084,
-    "value": 0.4477
+    "value": 0.4533
    },
    {
     "group": "airspace_disruption",
@@ -513,46 +481,46 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.6,
-     "flat": 5.3,
-     "up": -5.9
+     "down": 1.0,
+     "flat": 4.1,
+     "up": -5.1
     },
     "usual": -0.0837,
-    "value": -0.0221
+    "value": -0.0224
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.5,
-     "flat": 10.2,
-     "up": -11.8
+     "down": 1.6,
+     "flat": 6.3,
+     "up": -7.8
     },
     "usual": 0.0133,
-    "value": 0.1885
+    "value": 0.1432
    },
    {
     "group": "airfreight_rate_signal",
     "label": "Reported air-freight rates",
     "shift_points": {
-     "down": -7.3,
-     "flat": 3.0,
-     "up": 4.3
+     "down": -3.8,
+     "flat": 1.2,
+     "up": 2.6
     },
     "usual": 0.0,
-    "value": 0.0942
+    "value": 0.0477
    }
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.1718323461281976,
-   "flat": 0.17946894728830107,
-   "up": 0.6486987065835015
+   "down": 0.20198273536616024,
+   "flat": 0.1330082408136309,
+   "up": 0.6650090238202089
   },
   "shift_points": {
-   "down": -9.1,
-   "flat": -18.9,
-   "up": 28.0
+   "down": -6.1,
+   "flat": -23.5,
+   "up": 29.7
   }
  },
  "official_forecaster": "BL-SEA",
@@ -560,16 +528,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 304,
+   "articles": 310,
    "from": "2026-09-06T23:05:35Z",
-   "retrieved_at": "2026-10-20T12:43:17Z",
-   "to": "2026-10-20T11:45:25Z"
+   "retrieved_at": "2026-10-21T12:55:29Z",
+   "to": "2026-10-21T11:23:17Z"
   },
   "press_splash247": {
-   "articles": 1144,
-   "from": "2026-09-05T04:57:24Z",
-   "retrieved_at": "2026-10-20T12:43:23Z",
-   "to": "2026-10-20T11:00:00Z"
+   "articles": 1168,
+   "from": "2026-09-06T16:38:00Z",
+   "retrieved_at": "2026-10-21T12:55:35Z",
+   "to": "2026-10-21T11:00:20Z"
   }
  },
  "target_period": "2026-09"

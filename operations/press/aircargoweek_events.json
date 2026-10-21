@@ -3093,13 +3093,61 @@
    "source_id": "aircargoweek",
    "text_hash": "7047a5c4334fa6b8bc3478596d168bfc2de00dc64a6300c3ef0dc21a2b5db0ef",
    "url": "https://aircargoweek.com/geodis-establishes-new-european-distribution-hub-for-lovevery-in-germany/"
+  },
+  {
+   "article_id": "aircargoweek:114947",
+   "mentions": [],
+   "published_utc": "2026-10-20T13:19:56Z",
+   "source_id": "aircargoweek",
+   "text_hash": "b0205c31d13768b1cfa32772828f3076677f7543d438cc06d6d837d5574be39d",
+   "url": "https://aircargoweek.com/first-fortnight-of-october-sees-rates-hold-steady/"
+  },
+  {
+   "article_id": "aircargoweek:114956",
+   "mentions": [],
+   "published_utc": "2026-10-20T14:28:15Z",
+   "source_id": "aircargoweek",
+   "text_hash": "508ab92ae0379ed516841e8752bef8ac27ea9cfd74a803487cbef7540967932e",
+   "url": "https://aircargoweek.com/european-shippers-council-joins-cargo-iq-in-development-of-air-cargo-service/"
+  },
+  {
+   "article_id": "aircargoweek:114962",
+   "mentions": [],
+   "published_utc": "2026-10-20T14:53:28Z",
+   "source_id": "aircargoweek",
+   "text_hash": "17d2c55b2dd4d196df1f92a26721a7ba7b7e9b6fdce2c123f92f2a88ae571049",
+   "url": "https://aircargoweek.com/cargotech-connecting-air-cargo-supply-chain-workflows-across-the-ecosystem/"
+  },
+  {
+   "article_id": "aircargoweek:114968",
+   "mentions": [],
+   "published_utc": "2026-10-21T08:32:19Z",
+   "source_id": "aircargoweek",
+   "text_hash": "3a042c94b7fe6b41cccb5b0e04eed8b89cd905811bce370953824d8d115b186a",
+   "url": "https://aircargoweek.com/ecs-group-appoints-francisco-hernandez-as-coo-americas/"
+  },
+  {
+   "article_id": "aircargoweek:114972",
+   "mentions": [],
+   "published_utc": "2026-10-21T09:28:20Z",
+   "source_id": "aircargoweek",
+   "text_hash": "f6fb6221ee74a91fa74f517c8d285fbeefd1f3544b46a66bb13cf6079d48c19c",
+   "url": "https://aircargoweek.com/etihad-cargo-supports-rescue-of-two-brown-bears-from-russia-to-ireland/"
+  },
+  {
+   "article_id": "aircargoweek:114977",
+   "mentions": [],
+   "published_utc": "2026-10-21T11:23:17Z",
+   "source_id": "aircargoweek",
+   "text_hash": "8355e56aa55e20d31bba1ef2fd271eafaab92eb663d5deebfd5e2f80d13e0e9e",
+   "url": "https://aircargoweek.com/electronic-bills-of-lading-adoption-grows-10-percent-amid-focus-on-interoperability/"
   }
  ],
  "from": "2026-09-06T23:05:35Z",
- "retrieved_at": "2026-10-20T12:43:17Z",
+ "retrieved_at": "2026-10-21T12:55:29Z",
  "schema": "PRESS-1",
- "sha256": "c0bb1ae54344782f1d932871440508fb914985a73911cbf070d813257ee1e094",
+ "sha256": "d28d52c6107fef0d81eebadc785a88ff9810e3bcd0f2481748c89f21045212cc",
  "source": "press_aircargoweek",
- "to": "2026-10-20T11:45:25Z",
+ "to": "2026-10-21T11:23:17Z",
  "window_days": 45
 }
