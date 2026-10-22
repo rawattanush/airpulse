@@ -1,126 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:113007",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:05:35Z",
-   "source_id": "aircargoweek",
-   "text_hash": "2e538ffbcf2bf8a397c6081c035b32da7e03fe0d717ccc1f822ebdd7debeedf5",
-   "url": "https://aircargoweek.com/flying-cavallunas-equine-stars-to-hong-kong/"
-  },
-  {
-   "article_id": "aircargoweek:113008",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:10:50Z",
-   "source_id": "aircargoweek",
-   "text_hash": "65131e2906cae378f90ed97f9f5d8d1ece3e7343ac410e77b5075f7077c4a259",
-   "url": "https://aircargoweek.com/will-pakistans-new-airline-management-revive-cargo/"
-  },
-  {
-   "article_id": "aircargoweek:113009",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:15:12Z",
-   "source_id": "aircargoweek",
-   "text_hash": "3070e8cc33740af45623149a54eb690c6316af289b31b26f303801db95a57b7e",
-   "url": "https://aircargoweek.com/mng-airlines-commits-to-airbus/"
-  },
-  {
-   "article_id": "aircargoweek:113010",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:20:13Z",
-   "source_id": "aircargoweek",
-   "text_hash": "571e4a34a7e65332336681fbe920c5218f039e1d63cbdb6d2ac5dba059483d67",
-   "url": "https://aircargoweek.com/charterdesk-enters-the-market/"
-  },
-  {
-   "article_id": "aircargoweek:113013",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:25:39Z",
-   "source_id": "aircargoweek",
-   "text_hash": "4ce6162527916564f71673e9ed5f385acc770c220b1e9a734f7877d67d2ddc65",
-   "url": "https://aircargoweek.com/regional-cargo-finds-its-middle-ground/"
-  },
-  {
-   "article_id": "aircargoweek:113014",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:30:40Z",
-   "source_id": "aircargoweek",
-   "text_hash": "b0cbd3e408bc793139fbe65c2985481494fe58095e0e936b9c75be4d121a4d64",
-   "url": "https://aircargoweek.com/turkiyes-strategic-role/"
-  },
-  {
-   "article_id": "aircargoweek:113015",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:40:38Z",
-   "source_id": "aircargoweek",
-   "text_hash": "b848b3aa2ade5cde181cb9836ed3c0457ca5910702028efe07f44b0f3b168eec",
-   "url": "https://aircargoweek.com/why-reliability-is-becoming-the-new-priority-in-automotive-air-cargo/"
-  },
-  {
-   "article_id": "aircargoweek:113016",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:45:39Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c448ef152b4cfd6516eec12f658f5738d155e9079625bebce7e4d98b20c037bf",
-   "url": "https://aircargoweek.com/what-is-driving-uzbekistans-cargo-surge/"
-  },
-  {
-   "article_id": "aircargoweek:113018",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:50:13Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a59cd29ae8913c6554ff39790dc4a75ee187488ab2884ce40e2fb62d033b98d7",
-   "url": "https://aircargoweek.com/capacity-remains-the-foundation-but-connectivity-creates-value/"
-  },
-  {
-   "article_id": "aircargoweek:113017",
-   "mentions": [],
-   "published_utc": "2026-09-06T23:55:12Z",
-   "source_id": "aircargoweek",
-   "text_hash": "ea488ea3aeb85f12d3acb861a00fecfbfc71ec6469120ffc473fb850374c35c2",
-   "url": "https://aircargoweek.com/digitalisation-and-ai-reshape-air-france-klm-martinair-cargos-customer-proposition/"
-  },
-  {
-   "article_id": "aircargoweek:113019",
-   "mentions": [],
-   "published_utc": "2026-09-07T00:00:50Z",
-   "source_id": "aircargoweek",
-   "text_hash": "1afa456f523c4823d5df52d976059c424d53a62bc23f32273c6838881ebf09ee",
-   "url": "https://aircargoweek.com/60-seconds-with-alexis-lapot/"
-  },
-  {
-   "article_id": "aircargoweek:112639",
-   "mentions": [],
-   "published_utc": "2026-09-07T08:31:47Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a5600804986b462c6aa958e0d1e677e0796dc82225cbec1a330246adfb0f0919",
-   "url": "https://aircargoweek.com/five-dead-after-amazon-plane-crashes-at-miami-airport/"
-  },
-  {
-   "article_id": "aircargoweek:112642",
-   "mentions": [],
-   "published_utc": "2026-09-07T08:40:07Z",
-   "source_id": "aircargoweek",
-   "text_hash": "3dea2ed5d25b1e92918eb98d71257ef986bd38cc831a73ae65d5b1fcc00e1941",
-   "url": "https://aircargoweek.com/thai-airways-adopts-champ-cargo-management-suite-to-enhance-service-levels-and-customer-experience/"
-  },
-  {
-   "article_id": "aircargoweek:112653",
-   "mentions": [],
-   "published_utc": "2026-09-07T08:56:15Z",
-   "source_id": "aircargoweek",
-   "text_hash": "0feb63a20aff7fd9b9c4c1f3d81f35ca6e41ee8e0c45c4201790483ddd3ab3a9",
-   "url": "https://aircargoweek.com/felix-toepsch-becomes-new-vice-president-of-cargo-development-at-fraport-ag/"
-  },
-  {
-   "article_id": "aircargoweek:112657",
-   "mentions": [],
-   "published_utc": "2026-09-07T09:01:10Z",
-   "source_id": "aircargoweek",
-   "text_hash": "fe30a8faebb973fa4346b925e2840b7bdd4be953ff9e76b08d59e8811bbcfe53",
-   "url": "https://aircargoweek.com/messe-muenchen-india-acquires-india-international-cargo-show/"
-  },
-  {
    "article_id": "aircargoweek:112665",
    "mentions": [],
    "published_utc": "2026-09-07T12:12:53Z",
@@ -3141,13 +3021,53 @@
    "source_id": "aircargoweek",
    "text_hash": "8355e56aa55e20d31bba1ef2fd271eafaab92eb663d5deebfd5e2f80d13e0e9e",
    "url": "https://aircargoweek.com/electronic-bills-of-lading-adoption-grows-10-percent-amid-focus-on-interoperability/"
+  },
+  {
+   "article_id": "aircargoweek:114980",
+   "mentions": [],
+   "published_utc": "2026-10-21T12:56:26Z",
+   "source_id": "aircargoweek",
+   "text_hash": "2ca1660b54a4137dc86ff13efcdbd7d03aecb6951659a42fe73a7a9f43c6d6d2",
+   "url": "https://aircargoweek.com/davies-turner-secures-heathrow-logistics-hub-headquarters/"
+  },
+  {
+   "article_id": "aircargoweek:114987",
+   "mentions": [],
+   "published_utc": "2026-10-21T15:41:47Z",
+   "source_id": "aircargoweek",
+   "text_hash": "f230b1a42359c0c09d9301aed19a5084a5060ea6399dbd56a5aa9f5bc9ea3ab7",
+   "url": "https://aircargoweek.com/freight-handled-at-east-midlands-airport-increases-by-6-3-percent-in-september/"
+  },
+  {
+   "article_id": "aircargoweek:114991",
+   "mentions": [],
+   "published_utc": "2026-10-22T08:44:24Z",
+   "source_id": "aircargoweek",
+   "text_hash": "0da44f6cc16d1cf234b4cc473d47454bb035dd98bb890ccead69a8eb08f2efe7",
+   "url": "https://aircargoweek.com/staeco-takes-on-its-first-777-mammoth-freighter-conversion/"
+  },
+  {
+   "article_id": "aircargoweek:114995",
+   "mentions": [],
+   "published_utc": "2026-10-22T09:51:25Z",
+   "source_id": "aircargoweek",
+   "text_hash": "e7be28cd58faa41e2cf257655ab923347033da1797a04314c9c4544f8fe4d951",
+   "url": "https://aircargoweek.com/icelandic-cargo-connectivity-complemented-by-kales-iceland-air-china-appointment/"
+  },
+  {
+   "article_id": "aircargoweek:115000",
+   "mentions": [],
+   "published_utc": "2026-10-22T11:36:33Z",
+   "source_id": "aircargoweek",
+   "text_hash": "24617e6fbe9a94e015fdd754ab252b0f6db4b4dd31baab854e35d1a24566a0d5",
+   "url": "https://aircargoweek.com/liege-airport-reaches-over-10000-tonnes-of-traffic-to-and-from-chicago-ohare/"
   }
  ],
- "from": "2026-09-06T23:05:35Z",
- "retrieved_at": "2026-10-21T12:55:29Z",
+ "from": "2026-09-07T12:12:53Z",
+ "retrieved_at": "2026-10-22T12:57:52Z",
  "schema": "PRESS-1",
- "sha256": "d28d52c6107fef0d81eebadc785a88ff9810e3bcd0f2481748c89f21045212cc",
+ "sha256": "853b7a5a66ba3c96e9eebe38e1baeb273ce85d09a114d6ed1e604c8e63ca50e0",
  "source": "press_aircargoweek",
- "to": "2026-10-21T11:23:17Z",
+ "to": "2026-10-22T11:36:33Z",
  "window_days": 45
 }
