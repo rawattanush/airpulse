@@ -1,11 +1,11 @@
-# AirPulse operations report (daily)
+# AirPulse operations report (monthly)
 
-Generated 2026-10-23T12:38:21Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-10-23T14:23:08Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 20; started by a scheduler: 17; started by hand: 3.
-- Last run: 2026-10-23T12:35:21Z, started by schedule, exit 2, gate passed.
+- Runs on record: 21; started by a scheduler: 18; started by hand: 3.
+- Last run: 2026-10-23T14:20:49Z, started by schedule, exit 2, gate passed.
 - Source fetches on record: 82 by a scheduler, 112 by hand.
 
 ## Sources

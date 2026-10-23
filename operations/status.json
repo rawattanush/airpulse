@@ -13,12 +13,12 @@
   "latest_timing": "LATE",
   "outcomes_recorded": 0
  },
- "generated_at": "2026-10-23T12:37:25Z",
+ "generated_at": "2026-10-23T14:22:52Z",
  "not_live_statement": "No AirPulse source is fetched continuously. A source is AUTOMATED only while a scheduler has recently run it; otherwise its data are a SNAPSHOT.",
  "pipeline_version": "OPS-1.0",
  "sources": [
   {
-   "age_days": 0.99,
+   "age_days": 1.06,
    "check_every_days": 7,
    "checksum": "a9c96a914b1aa58094dd690ad11efe8fee43d64cd0921a9e245cfeadcc1936c3",
    "data_mode": "AUTOMATED",
@@ -42,7 +42,7 @@
    "validation": "passed: 8061 observations to 2026-10-20; 0 earlier values differ from the file held"
   },
   {
-   "age_days": 0.99,
+   "age_days": 1.06,
    "check_every_days": 7,
    "checksum": "fe9d08f1480fa5c62ebc5be60bf576fce1302b8e44f054220ea81ea990dcfb52",
    "data_mode": "AUTOMATED",
@@ -66,7 +66,7 @@
    "validation": "passed: 9112 observations to 2026-10-20; 0 earlier values differ from the file held"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "f93f0c429f65803c70b068335f0371b7682e7fb36a6e47c75a33296a37c05cc2",
    "data_mode": "SNAPSHOT",
@@ -74,11 +74,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:31Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "Asia \u2192 US air freight price index, every release (BLS IC1312)",
@@ -90,7 +90,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "064a46dc744ba7fbe85f40b571e1946cd82e072362728e4766475e0a840fa521",
    "data_mode": "SNAPSHOT",
@@ -98,11 +98,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:32Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "Europe \u2192 US air freight price index, every release (BLS IC1311)",
@@ -114,7 +114,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "ebef64572024af7b8c6e8107b2db3e404bd4ce24e65dba45a240507b57f05afc",
    "data_mode": "SNAPSHOT",
@@ -122,11 +122,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:32Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "All inbound US air freight price index, every release (BLS IC131)",
@@ -138,7 +138,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "4cdc8ff3cd35460701eddf4c5df623fa1ec260e2a2624c42de589417dbd289e6",
    "data_mode": "SNAPSHOT",
@@ -146,11 +146,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:33Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "US \u2192 Europe air freight price index, every release (BLS IS2311)",
@@ -162,7 +162,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "f1bca352864042c7deae375d477bbea252c72a45e510b63866f0778ea4e64e9b",
    "data_mode": "SNAPSHOT",
@@ -170,11 +170,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:34Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "US \u2192 Asia air freight price index, every release (BLS IS2312)",
@@ -186,7 +186,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "a109db72fc68a77dba80bda04709e84a398951fe748278ee8c7d7bae475e47f8",
    "data_mode": "SNAPSHOT",
@@ -194,11 +194,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:35Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "All outbound US air freight price index, every release (BLS IS231)",
@@ -210,7 +210,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "7831d34dba55ed36afe17955bd08df8d71c6962c3a781322ae4e6cb5e4342010",
    "data_mode": "SNAPSHOT",
@@ -218,11 +218,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:36Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "All US import air freight (BoP) price index, every release (BLS IV131)",
@@ -234,7 +234,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 19,
    "checksum": "12b88f7c2ba651a6a47ef467926d38e230b5b965bf53f3a5341112bcaa6b8425",
    "data_mode": "SNAPSHOT",
@@ -242,11 +242,11 @@
    "failure_reason": "HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm",
    "group": "bls",
    "http_status": 403,
-   "last_attempted_fetch": "2026-10-23T12:36:46Z",
+   "last_attempted_fetch": "2026-10-23T14:22:15Z",
    "last_result": "FAILED",
    "last_successful_fetch": "2026-10-07T06:11:36Z",
    "last_trigger": "schedule",
-   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+   "last_workflow_run": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
    "latest_observation": "2026-09-16",
    "manual_runs": 1,
    "name": "Europe import air freight (BoP) price index, every release (BLS IV1311)",
@@ -258,7 +258,7 @@
    "validation": "passed: 198 releases held to 2026-09-16; the Bureau lists 223 to 2026-09-16"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 1,
    "checksum": "9639195d8f42d415591cff43458b8ef861b7a04bc64d70ad2df85341507f0036",
    "data_mode": "SNAPSHOT",
@@ -282,7 +282,7 @@
    "validation": "passed: archive matches its manifest; 10 fetched, 9 new"
   },
   {
-   "age_days": 16.27,
+   "age_days": 16.34,
    "check_every_days": 1,
    "checksum": "7bb4973b06d7bbb1cc085d7d458cccce4a8185eb9eee9a8e6e9c1e4beb15ba2e",
    "data_mode": "SNAPSHOT",
@@ -307,11 +307,11 @@
   }
  ],
  "written_by_workflow_run": {
-  "commit": "9fe78a36f097097dc2fe980b964ef38d6b5cf6f5",
+  "commit": "ee9f6ec60a0aa93fe2b93fee4a2706b3b8683176",
   "repository": "rawattanush/airpulse",
   "run_attempt": "1",
-  "run_id": "39954351581",
-  "url": "https://github.com/rawattanush/airpulse/actions/runs/39954351581",
+  "run_id": "39968729112",
+  "url": "https://github.com/rawattanush/airpulse/actions/runs/39968729112",
   "workflow": "production"
  }
 }
