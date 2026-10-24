@@ -1,161 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112746",
-   "mentions": [],
-   "published_utc": "2026-09-08T11:49:37Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c47029211e6a0f734160637bb1348679e1a6393f4a00f00d4ad9ee1d3fbb3bd9",
-   "url": "https://aircargoweek.com/lot-polish-airlines-expands-southeast-asia-network/"
-  },
-  {
-   "article_id": "aircargoweek:112750",
-   "mentions": [],
-   "published_utc": "2026-09-08T11:52:46Z",
-   "source_id": "aircargoweek",
-   "text_hash": "552d4d05621dbe4f8259a742459350231988728df6ea48d10d7953f43acc1f9e",
-   "url": "https://aircargoweek.com/centrum-air-takes-flight-from-hyderabad/"
-  },
-  {
-   "article_id": "aircargoweek:112755",
-   "mentions": [],
-   "published_utc": "2026-09-08T11:56:13Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c587246e01ecf50f2827d926c55b85f3bcf33105438baf98e3ff1dadf8c1a11f",
-   "url": "https://aircargoweek.com/dsv-expands-air-thermodirect-network/"
-  },
-  {
-   "article_id": "aircargoweek:112759",
-   "mentions": [],
-   "published_utc": "2026-09-08T12:01:13Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c484c182cd205d95350d8f5d5226898603de1b9bf1bb719163411fa22b7ddfb5",
-   "url": "https://aircargoweek.com/africas-aviation-fleet-faces-major-expansion-by-2045/"
-  },
-  {
-   "article_id": "aircargoweek:112738",
-   "mentions": [],
-   "published_utc": "2026-09-08T12:15:48Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f5b29fbabbe6ba338f8b5de23ab6fb9b51753f468cf308cf03879e9ddd797a40",
-   "url": "https://aircargoweek.com/china-eastern-airlines-reunites-with-wfs-in-sweden/"
-  },
-  {
-   "article_id": "aircargoweek:112760",
-   "mentions": [],
-   "published_utc": "2026-09-08T12:40:11Z",
-   "source_id": "aircargoweek",
-   "text_hash": "7c12c366122d9b10971aedc26c23c044148ec898dc05433ec0d81da007f69f52",
-   "url": "https://aircargoweek.com/latin-americas-air-cargo-market-emerges-as-a-relative-haven-amid-global-disruption/"
-  },
-  {
-   "article_id": "aircargoweek:112779",
-   "mentions": [],
-   "published_utc": "2026-09-08T14:47:31Z",
-   "source_id": "aircargoweek",
-   "text_hash": "935ef305a5fad670d1b9cb6f8177b27aff8e81ba7cca94ac00796c8cd5dfcf0e",
-   "url": "https://aircargoweek.com/nats-technical-issue-disrupts-departures-at-uk-airports/"
-  },
-  {
-   "article_id": "aircargoweek:112791",
-   "mentions": [],
-   "published_utc": "2026-09-09T10:12:42Z",
-   "source_id": "aircargoweek",
-   "text_hash": "63949fc66db1e42177570996929665c70689030d387d9593df8a9ce7e9a28ec1",
-   "url": "https://aircargoweek.com/august-2026-parts-data-ge90-engine-controls-tighten-ahead-of-heavy-maintenance-season/"
-  },
-  {
-   "article_id": "aircargoweek:112794",
-   "mentions": [],
-   "published_utc": "2026-09-09T10:16:37Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a68978d14d9d3d5e031ed8f070f92b6782772bc9cc0b0b72484ca5d2d7948141",
-   "url": "https://aircargoweek.com/commercial-freight-networks-emerge-as-critical-disaster-response-infrastructure/"
-  },
-  {
-   "article_id": "aircargoweek:112795",
-   "mentions": [],
-   "published_utc": "2026-09-09T10:20:36Z",
-   "source_id": "aircargoweek",
-   "text_hash": "42b71cbdff9d5080b161a491f9dc7e8bf42cf837a8ba111c35ee90d9a220c2be",
-   "url": "https://aircargoweek.com/why-dg-misdeclaration-is-a-pricing-problem-not-a-training-problem/"
-  },
-  {
-   "article_id": "aircargoweek:112796",
-   "mentions": [],
-   "published_utc": "2026-09-09T10:29:47Z",
-   "source_id": "aircargoweek",
-   "text_hash": "ae5ad6b4d296ab3abb1ccd3c99b25df1ad60d489773677ef34b8a4f6f93b896f",
-   "url": "https://aircargoweek.com/what-genuine-allyship-looks-like-in-logistics/"
-  },
-  {
-   "article_id": "aircargoweek:112798",
-   "mentions": [],
-   "published_utc": "2026-09-09T10:39:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c6930aa432f03b3f44b40f43b98613de47cdfaaff89f2af833d9d16deb9c837b",
-   "url": "https://aircargoweek.com/ulds-become-a-data-asset/"
-  },
-  {
-   "article_id": "aircargoweek:112823",
-   "mentions": [],
-   "published_utc": "2026-09-09T10:41:58Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f37b3e8ae3d28f77740a1e4714acce2861c0c8fc51abf667d43c65795d3d0439",
-   "url": "https://aircargoweek.com/where-technology-meets-judgement/"
-  },
-  {
-   "article_id": "aircargoweek:112827",
-   "mentions": [
-    {
-     "affected_mode": "AIR",
-     "airlines": [],
-     "airports": [
-      "shanghai"
-     ],
-     "carriers": [],
-     "chokepoints": [],
-     "countries": [],
-     "direction": -1,
-     "duration_class": "UNKNOWN",
-     "effects": {
-      "capacity": "INCREASE",
-      "demand": "UNKNOWN",
-      "diversion_pressure": "UNKNOWN",
-      "supply": "INCREASE"
-     },
-     "event_type": "AIR_CAPACITY_ADDITION",
-     "extraction_confidence": 0.75,
-     "feature_group": "air_capacity_shock",
-     "geographic_scope": "FACILITY",
-     "parent_category": "AVIATION",
-     "parser_version": "P1.0",
-     "pattern_conf": 0.75,
-     "ports": [],
-     "raw_text_hash": "cbee5834118c7c81cfaa05f120aead463003cdb508bd5f7cc78ef5d0874cd833",
-     "regions": [],
-     "severity": 1,
-     "source_reliability": 0.85,
-     "source_tier": 2,
-     "source_type": "trade publication (air cargo)",
-     "status": "ACTIVE",
-     "taxonomy_version": "1.0"
-    }
-   ],
-   "published_utc": "2026-09-09T10:47:33Z",
-   "source_id": "aircargoweek",
-   "text_hash": "cbee5834118c7c81cfaa05f120aead463003cdb508bd5f7cc78ef5d0874cd833",
-   "url": "https://aircargoweek.com/pactl-expands-e-commerce-cargo-capacity-with-upgraded-shanghai-handling-centre/"
-  },
-  {
-   "article_id": "aircargoweek:112832",
-   "mentions": [],
-   "published_utc": "2026-09-09T10:57:24Z",
-   "source_id": "aircargoweek",
-   "text_hash": "876989236a3226a8b6119b88486216c56e68f92dfceebfb2c0f48f39fcd8e5e2",
-   "url": "https://aircargoweek.com/nats-system-failure-leaves-uk-airlines-battling-a-second-day-of-disruption/"
-  },
-  {
    "article_id": "aircargoweek:112835",
    "mentions": [],
    "published_utc": "2026-09-09T11:00:46Z",
@@ -2944,22 +2789,6 @@
    "url": "https://aircargoweek.com/liege-airport-reaches-over-10000-tonnes-of-traffic-to-and-from-chicago-ohare/"
   },
   {
-   "article_id": "aircargoweek:115003",
-   "mentions": [],
-   "published_utc": "2026-10-23T09:08:41Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f350fe225452a5f936fc548c34388a7c0710503ffbeeac32901c52cf7b04c239",
-   "url": "https://aircargoweek.com/kuehnenagel-reports-air-logistics-turnover-growth-of-almost-40-percent/"
-  },
-  {
-   "article_id": "aircargoweek:115006",
-   "mentions": [],
-   "published_utc": "2026-10-23T09:55:15Z",
-   "source_id": "aircargoweek",
-   "text_hash": "73716d369ee383a14d7d6543b5651a94c32349a32dcdfddfaa8ed700281c06bf",
-   "url": "https://aircargoweek.com/air-cargo-belgium-10-years-of-cargo-connectivity-celebrated/"
-  },
-  {
    "article_id": "aircargoweek:115067",
    "mentions": [
     {
@@ -3001,10 +2830,42 @@
      "taxonomy_version": "1.0"
     }
    ],
-   "published_utc": "2026-10-23T12:10:59Z",
+   "published_utc": "2026-10-23T08:00:59Z",
    "source_id": "aircargoweek",
    "text_hash": "adaacd8a079d0bf287cc3093985eb5f46a53b03353bcc68484f33c0a17afe32f",
    "url": "https://aircargoweek.com/iag-cargo-adds-route-to-colombo-and-increases-bangkok-and-delhi-frequency-in-winter-schedule/"
+  },
+  {
+   "article_id": "aircargoweek:115087",
+   "mentions": [],
+   "published_utc": "2026-10-23T09:00:54Z",
+   "source_id": "aircargoweek",
+   "text_hash": "4e6d2e9f47c07a2f01507324413715a1d53609fb5ecc309dcf0aca20ae0f9091",
+   "url": "https://aircargoweek.com/trinity-airways-and-jettainer-extend-uld-management-partnership/"
+  },
+  {
+   "article_id": "aircargoweek:115003",
+   "mentions": [],
+   "published_utc": "2026-10-23T09:08:41Z",
+   "source_id": "aircargoweek",
+   "text_hash": "f350fe225452a5f936fc548c34388a7c0710503ffbeeac32901c52cf7b04c239",
+   "url": "https://aircargoweek.com/kuehnenagel-reports-air-logistics-turnover-growth-of-almost-40-percent/"
+  },
+  {
+   "article_id": "aircargoweek:115006",
+   "mentions": [],
+   "published_utc": "2026-10-23T09:55:15Z",
+   "source_id": "aircargoweek",
+   "text_hash": "73716d369ee383a14d7d6543b5651a94c32349a32dcdfddfaa8ed700281c06bf",
+   "url": "https://aircargoweek.com/air-cargo-belgium-10-years-of-cargo-connectivity-celebrated/"
+  },
+  {
+   "article_id": "aircargoweek:115078",
+   "mentions": [],
+   "published_utc": "2026-10-23T12:00:02Z",
+   "source_id": "aircargoweek",
+   "text_hash": "bccd25175de0b5fbe766c74638d93d82e7e455f070a71a81b72609880d405cdc",
+   "url": "https://aircargoweek.com/avianca-cargo-and-kuehnenagel-win-cargo-iq-quality-rally-for-continuous-improvement-methodology/"
   },
   {
    "article_id": "aircargoweek:115074",
@@ -3013,13 +2874,21 @@
    "source_id": "aircargoweek",
    "text_hash": "e39d0e5da8b137ba4faa7570bf19315b34312085914593e55dd3f987d602a991",
    "url": "https://aircargoweek.com/cargo-aircraft-fire-reported-during-landing-at-chubu-in-japan/"
+  },
+  {
+   "article_id": "aircargoweek:115082",
+   "mentions": [],
+   "published_utc": "2026-10-23T14:04:12Z",
+   "source_id": "aircargoweek",
+   "text_hash": "7011563e3611c86500f92e9aeecdde8164a5e9b0c381b3a2eea0e6087e83b8c3",
+   "url": "https://aircargoweek.com/bridging-the-gap-between-automation-and-interpretation/"
   }
  ],
- "from": "2026-09-08T11:49:37Z",
- "retrieved_at": "2026-10-23T12:37:26Z",
+ "from": "2026-09-09T11:00:46Z",
+ "retrieved_at": "2026-10-24T11:59:08Z",
  "schema": "PRESS-1",
- "sha256": "0a1a4529476877a969916534585a25d0e2868233566b939aab2bb5fcf6e8d8ba",
+ "sha256": "f6a95e08d71770f961df3cb9306024ad4e154b56d43712a10b672005a11b7ec0",
  "source": "press_aircargoweek",
- "to": "2026-10-23T12:36:04Z",
+ "to": "2026-10-23T14:04:12Z",
  "window_days": 45
 }

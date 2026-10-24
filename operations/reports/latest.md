@@ -1,12 +1,12 @@
-# AirPulse operations report (monthly)
+# AirPulse operations report (daily)
 
-Generated 2026-10-23T14:23:08Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-10-24T11:59:52Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 21; started by a scheduler: 18; started by hand: 3.
-- Last run: 2026-10-23T14:20:49Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 82 by a scheduler, 112 by hand.
+- Runs on record: 22; started by a scheduler: 19; started by hand: 3.
+- Last run: 2026-10-24T11:58:02Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 87 by a scheduler, 112 by hand.
 
 ## Sources
 
@@ -24,9 +24,9 @@ Generated 2026-10-23T14:23:08Z from the run records, the ledgers and the clock. 
 | Europe import air freight (BoP) price index, every release (BLS IV1311) | DEGRADED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | HEALTHY | 2026-10-23T12:37:26Z | 2026-10-23T12:36:04Z | 4 days |  |
-| Splash247: reported events | HEALTHY | 2026-10-23T12:37:31Z | 2026-10-23T09:58:00Z | 4 days |  |
-| Hong Kong International Airport flight information | HEALTHY | 2026-10-23T12:38:06Z | 2026-10-22 | 3 days |  |
+| Air Cargo Week: reported events | HEALTHY | 2026-10-24T11:59:08Z | 2026-10-23T14:04:12Z | 4 days |  |
+| Splash247: reported events | HEALTHY | 2026-10-24T11:59:11Z | 2026-10-23T09:58:00Z | 4 days |  |
+| Hong Kong International Airport flight information | HEALTHY | 2026-10-24T11:59:43Z | 2026-10-23 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
 | US international nonstop departures (US DOT) | HEALTHY | 2026-10-19T15:46:12Z | 2026-06 | 14 days |  |
 | Aircraft positions near airports (adsb.lol) | DISABLED | - | - | 3 days |  |
