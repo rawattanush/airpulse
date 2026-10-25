@@ -446,30 +446,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 920,
-  "as_of": "2026-10-24T11:59:11Z",
+  "articles_in_window": 885,
+  "as_of": "2026-10-25T12:33:58Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 1.6,
-     "flat": 3.7,
-     "up": -5.2
+     "down": 1.7,
+     "flat": 3.9,
+     "up": -5.6
     },
     "usual": 0.1104,
-    "value": 0.2233
+    "value": 0.2321
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -3.7,
-     "flat": -10.5,
-     "up": 14.1
+     "down": -3.8,
+     "flat": -11.2,
+     "up": 15.0
     },
     "usual": 0.1084,
-    "value": 0.4681
+    "value": 0.4866
    },
    {
     "group": "airspace_disruption",
@@ -486,46 +486,46 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.7,
-     "flat": 2.2,
-     "up": -2.9
+     "down": 0.6,
+     "flat": 2.1,
+     "up": -2.8
     },
     "usual": -0.0837,
-    "value": -0.0462
+    "value": -0.048
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.1,
-     "flat": 3.8,
-     "up": -4.9
+     "down": 1.2,
+     "flat": 4.0,
+     "up": -5.1
     },
     "usual": 0.0133,
-    "value": 0.0986
+    "value": 0.1024
    },
    {
     "group": "airfreight_rate_signal",
     "label": "Reported air-freight rates",
     "shift_points": {
-     "down": -3.9,
+     "down": -4.0,
      "flat": 1.1,
-     "up": 2.8
+     "up": 2.9
     },
     "usual": 0.0,
-    "value": 0.0493
+    "value": 0.0512
    }
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.19765823116607584,
-   "flat": 0.11004110570059489,
-   "up": 0.6923006631333293
+   "down": 0.1952454627171766,
+   "flat": 0.11065545878589016,
+   "up": 0.6940990784969332
   },
   "shift_points": {
-   "down": -6.5,
+   "down": -6.8,
    "flat": -25.8,
-   "up": 32.4
+   "up": 32.6
   }
  },
  "official_forecaster": "BL-SEA",
@@ -533,16 +533,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 282,
-   "from": "2026-09-09T11:00:46Z",
-   "retrieved_at": "2026-10-24T11:59:08Z",
+   "articles": 278,
+   "from": "2026-09-10T12:15:41Z",
+   "retrieved_at": "2026-10-25T12:33:54Z",
    "to": "2026-10-23T14:04:12Z"
   },
   "press_splash247": {
-   "articles": 1136,
-   "from": "2026-09-09T05:02:00Z",
-   "retrieved_at": "2026-10-24T11:59:11Z",
-   "to": "2026-10-23T09:58:00Z"
+   "articles": 1106,
+   "from": "2026-09-10T06:00:03Z",
+   "retrieved_at": "2026-10-25T12:33:58Z",
+   "to": "2026-10-25T08:05:14Z"
   }
  },
  "target_period": "2026-09"

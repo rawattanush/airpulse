@@ -1,38 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112835",
-   "mentions": [],
-   "published_utc": "2026-09-09T11:00:46Z",
-   "source_id": "aircargoweek",
-   "text_hash": "b3d8433e0e2de1b14e5afe973c0656c8df07112593934277f5d70d5ff54f1ca7",
-   "url": "https://aircargoweek.com/airlines-demand-nats-overhaul-after-latest-air-traffic-control-disruption/"
-  },
-  {
-   "article_id": "aircargoweek:112834",
-   "mentions": [],
-   "published_utc": "2026-09-09T11:04:22Z",
-   "source_id": "aircargoweek",
-   "text_hash": "aa49a1ae3c4e939d631fc7ec2ebb62be02b61f3c2377b2283185bfccea847f61",
-   "url": "https://aircargoweek.com/ntsb-issues-statement-on-miami-cargo-aircraft-crash/"
-  },
-  {
-   "article_id": "aircargoweek:112849",
-   "mentions": [],
-   "published_utc": "2026-09-09T14:07:26Z",
-   "source_id": "aircargoweek",
-   "text_hash": "95760e798f68b0b185fcd1075726a0e04b852cda6fe15f4f999b88560fed9543",
-   "url": "https://aircargoweek.com/eu-cross-border-forum-commences-in-liege/"
-  },
-  {
-   "article_id": "aircargoweek:112850",
-   "mentions": [],
-   "published_utc": "2026-09-09T14:08:36Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f7ff86e5bfaf0d6b1ef0aec954395ac79f29b1a8504ea8c72d283ac4113336dc",
-   "url": "https://aircargoweek.com/customs-reforms-loom-over-eu/"
-  },
-  {
    "article_id": "aircargoweek:112861",
    "mentions": [],
    "published_utc": "2026-09-10T12:15:41Z",
@@ -2884,10 +2852,10 @@
    "url": "https://aircargoweek.com/bridging-the-gap-between-automation-and-interpretation/"
   }
  ],
- "from": "2026-09-09T11:00:46Z",
- "retrieved_at": "2026-10-24T11:59:08Z",
+ "from": "2026-09-10T12:15:41Z",
+ "retrieved_at": "2026-10-25T12:33:54Z",
  "schema": "PRESS-1",
- "sha256": "f6a95e08d71770f961df3cb9306024ad4e154b56d43712a10b672005a11b7ec0",
+ "sha256": "78d8f6e7febb29760faa9f8cdf9f0fe8dfb847aba89f7f33a147c66f74649c57",
  "source": "press_aircargoweek",
  "to": "2026-10-23T14:04:12Z",
  "window_days": 45
