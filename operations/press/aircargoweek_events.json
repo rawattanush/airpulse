@@ -1,142 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112861",
-   "mentions": [],
-   "published_utc": "2026-09-10T12:15:41Z",
-   "source_id": "aircargoweek",
-   "text_hash": "d00074313a4f59c63b58fda489517d30121ef3a270ed1b6ae68e89fe93593862",
-   "url": "https://aircargoweek.com/roger-gray-appointed-chair-of-onereg/"
-  },
-  {
-   "article_id": "aircargoweek:112865",
-   "mentions": [],
-   "published_utc": "2026-09-10T12:17:09Z",
-   "source_id": "aircargoweek",
-   "text_hash": "4ca26da5ebb4482bb122bbc79b81667dcf67fc448b2aea9ca53d5b3e893746e7",
-   "url": "https://aircargoweek.com/air-logistics-needs-to-attract-the-next-gen-not-just-invest-in-it/"
-  },
-  {
-   "article_id": "aircargoweek:112868",
-   "mentions": [],
-   "published_utc": "2026-09-10T12:19:44Z",
-   "source_id": "aircargoweek",
-   "text_hash": "5ae2449fa36659daa9cae3b89289662567cac11c464e3795ee20045ddf1c11ce",
-   "url": "https://aircargoweek.com/logistics-is-the-thread-holding-bayeux-tapestry-exhibit-together/"
-  },
-  {
-   "article_id": "aircargoweek:112871",
-   "mentions": [],
-   "published_utc": "2026-09-10T12:21:03Z",
-   "source_id": "aircargoweek",
-   "text_hash": "de07cff0e58a09f86ec7c9928cb5864eda441c8b346b3bc81253ef02b2e15e2b",
-   "url": "https://aircargoweek.com/emirates-skycargo-connects-indias-growth-story-to-global-markets/"
-  },
-  {
-   "article_id": "aircargoweek:112876",
-   "mentions": [],
-   "published_utc": "2026-09-10T12:34:55Z",
-   "source_id": "aircargoweek",
-   "text_hash": "2b6c533cba00a5dbc4e4af04d5023a207ba0b6fe4ddd8c10b45017cd2c82f31f",
-   "url": "https://aircargoweek.com/ethiopian-airlines-boeing-freighter-plan-signals-bigger-africa-cargo-strategy/"
-  },
-  {
-   "article_id": "aircargoweek:112875",
-   "mentions": [],
-   "published_utc": "2026-09-10T12:35:33Z",
-   "source_id": "aircargoweek",
-   "text_hash": "340adea486802531455e171de2e0b644c6e5ba8062cc923baf4dccd4b2bf2d5d",
-   "url": "https://aircargoweek.com/kenya-aviation-strike-exposes-the-fragility-of-east-africas-air-cargo-gateway/"
-  },
-  {
-   "article_id": "aircargoweek:112881",
-   "mentions": [],
-   "published_utc": "2026-09-10T13:54:44Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c77cde7e3a2e7f6e812ba0b1330238fba75ba3203877a7818a8d62edaba557f8",
-   "url": "https://aircargoweek.com/archer-completes-first-no-roads-tour-flight/"
-  },
-  {
-   "article_id": "aircargoweek:112885",
-   "mentions": [],
-   "published_utc": "2026-09-10T14:19:00Z",
-   "source_id": "aircargoweek",
-   "text_hash": "3f762891facc5730465f4df94a2726fd803d588d87dda4eafe40ef4b5dd4c6e9",
-   "url": "https://aircargoweek.com/ceva-logistics-pilots-next-generation-autonomous-electric-vehicles-in-singapore/"
-  },
-  {
-   "article_id": "aircargoweek:112892",
-   "mentions": [],
-   "published_utc": "2026-09-10T14:23:28Z",
-   "source_id": "aircargoweek",
-   "text_hash": "243788b6de0f024d319ddc8406622c9a583b8218a700b917539235ba17b950af",
-   "url": "https://aircargoweek.com/iata-releases-2027-cargo-and-ground-operations-manuals/"
-  },
-  {
-   "article_id": "aircargoweek:112896",
-   "mentions": [],
-   "published_utc": "2026-09-10T15:29:04Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c8a821a47872ae37795d404a92aa7c9495607f6267140ce47fe486af4809e58c",
-   "url": "https://aircargoweek.com/industry-standardisation-a-pipe-dream-without-collaboration/"
-  },
-  {
-   "article_id": "aircargoweek:112900",
-   "mentions": [],
-   "published_utc": "2026-09-10T15:31:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "86f51f32940b064bc37ade10f176fe2c61bc4be4599d3ef67cf6cec5c9d46f3b",
-   "url": "https://aircargoweek.com/industry-leaders-agree-resilience-and-adaptation-critical-in-new-normal/"
-  },
-  {
-   "article_id": "aircargoweek:112904",
-   "mentions": [],
-   "published_utc": "2026-09-10T15:37:11Z",
-   "source_id": "aircargoweek",
-   "text_hash": "8959ebd9a3cfff18536e1c1aff92f9e385b8fb0066b1e4c99f8600dab5d08ef1",
-   "url": "https://aircargoweek.com/vipul-misra-takes-the-helm-as-interim-ceo-of-srilankan-airlines/"
-  },
-  {
-   "article_id": "aircargoweek:112908",
-   "mentions": [],
-   "published_utc": "2026-09-10T15:38:51Z",
-   "source_id": "aircargoweek",
-   "text_hash": "d4e079f0976c2215976854d79476fae5fb0251ec1c8b660a1a2ecd4b104ed199",
-   "url": "https://aircargoweek.com/egyptair-plans-new-cairo-singapore-sydney-service-from-early-2027/"
-  },
-  {
-   "article_id": "aircargoweek:112967",
-   "mentions": [],
-   "published_utc": "2026-09-11T11:25:02Z",
-   "source_id": "aircargoweek",
-   "text_hash": "96bc48d3a76168be1368f42e9e381612c87d0cfe33dd34f04d2b9804c42da8f4",
-   "url": "https://aircargoweek.com/sebastian-acuto-takes-office-as-the-new-vp-of-operations-and-maintenance-at-latam-airlines-group/"
-  },
-  {
-   "article_id": "aircargoweek:112971",
-   "mentions": [],
-   "published_utc": "2026-09-11T11:26:24Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f41aaa89b49863fee983db4c0b8893319b9d97452a64df46b0c214c428e32191",
-   "url": "https://aircargoweek.com/martin-schulze-appointed-to-the-bvmw-federal-economic-senate/"
-  },
-  {
-   "article_id": "aircargoweek:112975",
-   "mentions": [],
-   "published_utc": "2026-09-11T11:34:29Z",
-   "source_id": "aircargoweek",
-   "text_hash": "2bd44152320887aa9c138cf094f2082b7d3d7f76cd201d7b2747022fc6863fe9",
-   "url": "https://aircargoweek.com/dhl-and-alibaba-com-partner-to-bring-ai-powered-logistics-capabilities-to-small-and-medium-sized-enterprises-worldwide/"
-  },
-  {
-   "article_id": "aircargoweek:112979",
-   "mentions": [],
-   "published_utc": "2026-09-11T11:52:28Z",
-   "source_id": "aircargoweek",
-   "text_hash": "9fd12a9f783edf0eddf090b37b3a3a5e8c8aa8ff18d7ad2f1f477c029b87ab13",
-   "url": "https://aircargoweek.com/london-joins-us-commemorations-marking-25-years-since-9-11/"
-  },
-  {
    "article_id": "aircargoweek:112991",
    "mentions": [],
    "published_utc": "2026-09-11T14:44:23Z",
@@ -2850,13 +2714,101 @@
    "source_id": "aircargoweek",
    "text_hash": "7011563e3611c86500f92e9aeecdde8164a5e9b0c381b3a2eea0e6087e83b8c3",
    "url": "https://aircargoweek.com/bridging-the-gap-between-automation-and-interpretation/"
+  },
+  {
+   "article_id": "aircargoweek:114449",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:05:26Z",
+   "source_id": "aircargoweek",
+   "text_hash": "767f8b79fff6526df2603eabdf063f5dc3d36de3c298b54b6c275f039974b0ff",
+   "url": "https://aircargoweek.com/audit-intelligence-takes-flight/"
+  },
+  {
+   "article_id": "aircargoweek:114450",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:10:27Z",
+   "source_id": "aircargoweek",
+   "text_hash": "da9cda4ca06817502f574667901b1d62decdfa0781b4637b5581484b47113c9a",
+   "url": "https://aircargoweek.com/60-seconds-with-richard-forson/"
+  },
+  {
+   "article_id": "aircargoweek:114451",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:15:29Z",
+   "source_id": "aircargoweek",
+   "text_hash": "9ac89dc638b7b5a7af952bc58f4f1da79ad2553c17f7fca6d5ada6415822246f",
+   "url": "https://aircargoweek.com/operational-excellence-in-a-high-volume-environment/"
+  },
+  {
+   "article_id": "aircargoweek:114453",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:20:31Z",
+   "source_id": "aircargoweek",
+   "text_hash": "58e790b9f1b995011a36c4e6ace4fe8bd2a7d03b6da20eba5cd8e6443287adc8",
+   "url": "https://aircargoweek.com/ai-cargo-under-the-microscope/"
+  },
+  {
+   "article_id": "aircargoweek:114459",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:25:17Z",
+   "source_id": "aircargoweek",
+   "text_hash": "29be9130846bc2b1ecf8315f966875f88ba525462f9e4956aed8ef2b0c223629",
+   "url": "https://aircargoweek.com/latin-americas-ground-handling-push/"
+  },
+  {
+   "article_id": "aircargoweek:114454",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:30:32Z",
+   "source_id": "aircargoweek",
+   "text_hash": "15b192a4dabeabd525972d7a970b767686bc4c9949d63964896dddd6e5f53000",
+   "url": "https://aircargoweek.com/legal-gaps-expose-global-wildlife-supply-chains-to-illegal-pet-trade/"
+  },
+  {
+   "article_id": "aircargoweek:114458",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:40:17Z",
+   "source_id": "aircargoweek",
+   "text_hash": "ef30448b1fab1bb62df651e90e69da8ca669b2374c9d5dbbe4ecb69ad15edb6f",
+   "url": "https://aircargoweek.com/from-tracking-to-action/"
+  },
+  {
+   "article_id": "aircargoweek:114455",
+   "mentions": [],
+   "published_utc": "2026-10-26T00:40:33Z",
+   "source_id": "aircargoweek",
+   "text_hash": "826cb5f1ed2ca0eb33507d73e464e0c60cb02b60f97f9b60b9bea605b3311252",
+   "url": "https://aircargoweek.com/reframing-the-control-layer/"
+  },
+  {
+   "article_id": "aircargoweek:114452",
+   "mentions": [],
+   "published_utc": "2026-10-26T02:00:30Z",
+   "source_id": "aircargoweek",
+   "text_hash": "b45983c556499e7eacb146272a579f97d929c3f2bd6915ecad0dfa79d8dbe8c7",
+   "url": "https://aircargoweek.com/sahel-insecurity-puts-transport-corridors-under-pressure/"
+  },
+  {
+   "article_id": "aircargoweek:115092",
+   "mentions": [],
+   "published_utc": "2026-10-26T08:53:11Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c4442e45abf587270c4d25de97a255922cdf025af5780aeeb814f45e3c420e8d",
+   "url": "https://aircargoweek.com/deugro-keeps-wind-in-generator-production-sites-sails/"
+  },
+  {
+   "article_id": "aircargoweek:115005",
+   "mentions": [],
+   "published_utc": "2026-10-26T11:11:54Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c08174f1cb9c344b2ac7ddc48a46abc92d8f21eabbbd895b4cafd77f2ad47883",
+   "url": "https://aircargoweek.com/boeing-777-freighter-overtakes-747-as-most-operated-cargo-aircraft/"
   }
  ],
- "from": "2026-09-10T12:15:41Z",
- "retrieved_at": "2026-10-25T12:33:54Z",
+ "from": "2026-09-11T14:44:23Z",
+ "retrieved_at": "2026-10-26T14:10:24Z",
  "schema": "PRESS-1",
- "sha256": "78d8f6e7febb29760faa9f8cdf9f0fe8dfb847aba89f7f33a147c66f74649c57",
+ "sha256": "037ffed338ab6c020dc0e21db779a48a1b0d9f8e214c7d7ea7410cbaf490c7b7",
  "source": "press_aircargoweek",
- "to": "2026-10-23T14:04:12Z",
+ "to": "2026-10-26T11:11:54Z",
  "window_days": 45
 }

@@ -1,12 +1,12 @@
 # AirPulse operations report (daily)
 
-Generated 2026-10-25T12:34:45Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-10-26T14:11:16Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 23; started by a scheduler: 20; started by hand: 3.
-- Last run: 2026-10-25T12:32:26Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 92 by a scheduler, 112 by hand.
+- Runs on record: 24; started by a scheduler: 21; started by hand: 3.
+- Last run: 2026-10-26T14:09:19Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 98 by a scheduler, 112 by hand.
 
 ## Sources
 
@@ -24,11 +24,11 @@ Generated 2026-10-25T12:34:45Z from the run records, the ledgers and the clock. 
 | Europe import air freight (BoP) price index, every release (BLS IV1311) | DEGRADED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | HEALTHY | 2026-10-25T12:33:54Z | 2026-10-23T14:04:12Z | 4 days |  |
-| Splash247: reported events | HEALTHY | 2026-10-25T12:33:58Z | 2026-10-25T08:05:14Z | 4 days |  |
-| Hong Kong International Airport flight information | HEALTHY | 2026-10-25T12:34:31Z | 2026-10-24 | 3 days |  |
+| Air Cargo Week: reported events | HEALTHY | 2026-10-26T14:10:24Z | 2026-10-26T11:11:54Z | 4 days |  |
+| Splash247: reported events | HEALTHY | 2026-10-26T14:10:28Z | 2026-10-26T12:47:00Z | 4 days |  |
+| Hong Kong International Airport flight information | HEALTHY | 2026-10-26T14:10:56Z | 2026-10-25 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
-| US international nonstop departures (US DOT) | HEALTHY | 2026-10-19T15:46:12Z | 2026-06 | 14 days |  |
+| US international nonstop departures (US DOT) | HEALTHY | 2026-10-26T14:10:48Z | 2026-06 | 14 days |  |
 | Aircraft positions near airports (adsb.lol) | DISABLED | - | - | 3 days |  |
 | Tracked flight lists 2019 to 2022 (Zenodo record 7923702) | DISABLED | - | - | - |  |
 | Live flight-tracking interface (research network) | DISABLED | - | - | - |  |
