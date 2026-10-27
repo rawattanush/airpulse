@@ -1,14 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:112991",
-   "mentions": [],
-   "published_utc": "2026-09-11T14:44:23Z",
-   "source_id": "aircargoweek",
-   "text_hash": "31860fa558ada81e28f17b10c58957dbb5189376d1b410cb8bb58ce9ac6e58e2",
-   "url": "https://aircargoweek.com/the-us-commemorates-9-11-with-memorial-services-across-the-nation/"
-  },
-  {
    "article_id": "aircargoweek:113053",
    "mentions": [],
    "published_utc": "2026-09-13T23:05:51Z",
@@ -2802,13 +2794,150 @@
    "source_id": "aircargoweek",
    "text_hash": "c08174f1cb9c344b2ac7ddc48a46abc92d8f21eabbbd895b4cafd77f2ad47883",
    "url": "https://aircargoweek.com/boeing-777-freighter-overtakes-747-as-most-operated-cargo-aircraft/"
+  },
+  {
+   "article_id": "aircargoweek:115101",
+   "mentions": [],
+   "published_utc": "2026-10-26T14:53:24Z",
+   "source_id": "aircargoweek",
+   "text_hash": "a0a0560d1179514dea95ef3057f82aa6a0b655e35ed63a5b9df62cab5f48b60f",
+   "url": "https://aircargoweek.com/cargolux-reports-landing-gear-failure-on-boeing-747-8f-aircraft/"
+  },
+  {
+   "article_id": "aircargoweek:115105",
+   "mentions": [],
+   "published_utc": "2026-10-26T15:27:24Z",
+   "source_id": "aircargoweek",
+   "text_hash": "29e5eb5d9a58dfd686c8bf8dbea949340aed0b98d0c91bcc95d297d6c2ff8971",
+   "url": "https://aircargoweek.com/fuel-costs-and-low-value-goods-policy-ahead-of-uk-government-budget/"
+  },
+  {
+   "article_id": "aircargoweek:115111",
+   "mentions": [],
+   "published_utc": "2026-10-26T15:55:50Z",
+   "source_id": "aircargoweek",
+   "text_hash": "78363f8af69513d192810981a5e211633adea18325328852c4d36ef5ad8c04f3",
+   "url": "https://aircargoweek.com/c-h-robinson-overhauls-ai-usage-for-air-freight-and-customs-brokerage/"
+  },
+  {
+   "article_id": "aircargoweek:114507",
+   "mentions": [
+    {
+     "affected_mode": "AIR",
+     "airlines": [],
+     "airports": [],
+     "carriers": [],
+     "chokepoints": [],
+     "countries": [],
+     "direction": 1,
+     "duration_class": "UNKNOWN",
+     "effects": {
+      "capacity": "UNKNOWN",
+      "demand": "INCREASE",
+      "diversion_pressure": "UNKNOWN",
+      "supply": "UNKNOWN"
+     },
+     "event_type": "AIR_CARGO_DEMAND_SURGE",
+     "extraction_confidence": 0.65,
+     "feature_group": "cargo_demand_shock",
+     "geographic_scope": "UNKNOWN",
+     "parent_category": "AIR_CARGO",
+     "parser_version": "P1.0",
+     "pattern_conf": 0.75,
+     "ports": [],
+     "raw_text_hash": "01f48a0567b4cca120381f3a6e69f309cae1910f46ad73add49d240d46986dfe",
+     "regions": [],
+     "severity": 3,
+     "source_reliability": 0.85,
+     "source_tier": 2,
+     "source_type": "trade publication (air cargo)",
+     "status": "ACTIVE",
+     "taxonomy_version": "1.0"
+    }
+   ],
+   "published_utc": "2026-10-27T06:00:14Z",
+   "source_id": "aircargoweek",
+   "text_hash": "01f48a0567b4cca120381f3a6e69f309cae1910f46ad73add49d240d46986dfe",
+   "url": "https://aircargoweek.com/turning-record-volumes-into-resilient-capacity/"
+  },
+  {
+   "article_id": "aircargoweek:114508",
+   "mentions": [],
+   "published_utc": "2026-10-27T06:00:15Z",
+   "source_id": "aircargoweek",
+   "text_hash": "cbcce6da6c04f8385469d882a8b8bb97b6a92a854eeb07a9bb74f72398de54c6",
+   "url": "https://aircargoweek.com/menzies-and-ami-build-a-connected-us-cargo-proposition/"
+  },
+  {
+   "article_id": "aircargoweek:114509",
+   "mentions": [],
+   "published_utc": "2026-10-27T06:00:16Z",
+   "source_id": "aircargoweek",
+   "text_hash": "2313683ace11cbf02fda7c2ddc52b4959b921027ee544ec6e020d5adc6734ee4",
+   "url": "https://aircargoweek.com/systems-of-record-to-systems-of-action/"
+  },
+  {
+   "article_id": "aircargoweek:114510",
+   "mentions": [],
+   "published_utc": "2026-10-27T06:00:17Z",
+   "source_id": "aircargoweek",
+   "text_hash": "1a0824e0b684cbfcc4f04673b4f083d355760c1b6b3f7ce68586afe24f594162",
+   "url": "https://aircargoweek.com/disruption-reshapes-priorities/"
+  },
+  {
+   "article_id": "aircargoweek:114511",
+   "mentions": [],
+   "published_utc": "2026-10-27T06:00:18Z",
+   "source_id": "aircargoweek",
+   "text_hash": "71889b2c43c1b5e357990dbbab6e3d3504e96e0317b56557a1f07f3de5baf938",
+   "url": "https://aircargoweek.com/aeronet-targets-north-american-growth/"
+  },
+  {
+   "article_id": "aircargoweek:114505",
+   "mentions": [],
+   "published_utc": "2026-10-27T06:00:32Z",
+   "source_id": "aircargoweek",
+   "text_hash": "62742dbabd8229925637be3c951125a905682ecb868302b3f007127c5026f54d",
+   "url": "https://aircargoweek.com/tiaca-new-leadership-for-a-new-era/"
+  },
+  {
+   "article_id": "aircargoweek:114506",
+   "mentions": [],
+   "published_utc": "2026-10-27T06:00:40Z",
+   "source_id": "aircargoweek",
+   "text_hash": "15d7facff77c236d63da637d99a60c2345aa3067e8c591aaf13e324315f22c36",
+   "url": "https://aircargoweek.com/cargo-opportunity-expands-in-florida/"
+  },
+  {
+   "article_id": "aircargoweek:115121",
+   "mentions": [],
+   "published_utc": "2026-10-27T10:20:30Z",
+   "source_id": "aircargoweek",
+   "text_hash": "9a03260749458c2c9be29774f5d9b85e198fd82d04e9e8e24df82339fa1af5c6",
+   "url": "https://aircargoweek.com/international-air-freight-industry-sets-its-sights-on-air-cargo-europe-2027/"
+  },
+  {
+   "article_id": "aircargoweek:115125",
+   "mentions": [],
+   "published_utc": "2026-10-27T11:38:40Z",
+   "source_id": "aircargoweek",
+   "text_hash": "0d8cd714c370291ac78db7d55e43def7061552464c0e08e4e556be13cb3da57d",
+   "url": "https://aircargoweek.com/riyadh-airport-lost-up-to-1500-tonnes-of-outbound-air-cargo-capacity-a-day/"
+  },
+  {
+   "article_id": "aircargoweek:115129",
+   "mentions": [],
+   "published_utc": "2026-10-27T12:58:43Z",
+   "source_id": "aircargoweek",
+   "text_hash": "91348afe8bdaeabd9402d8565f0964cd57ccfc40bbaf347648156fc05525a551",
+   "url": "https://aircargoweek.com/cargo-compliance-targeted-with-rotates-expansion-into-operational-products/"
   }
  ],
- "from": "2026-09-11T14:44:23Z",
- "retrieved_at": "2026-10-26T14:10:24Z",
+ "from": "2026-09-13T23:05:51Z",
+ "retrieved_at": "2026-10-27T13:10:57Z",
  "schema": "PRESS-1",
- "sha256": "037ffed338ab6c020dc0e21db779a48a1b0d9f8e214c7d7ea7410cbaf490c7b7",
+ "sha256": "00ea19230162dfb8c224db7b86554d4bd702986d2a8956efd7b599b3e68528c6",
  "source": "press_aircargoweek",
- "to": "2026-10-26T11:11:54Z",
+ "to": "2026-10-27T12:58:43Z",
  "window_days": 45
 }
