@@ -2931,13 +2931,109 @@
    "source_id": "aircargoweek",
    "text_hash": "91348afe8bdaeabd9402d8565f0964cd57ccfc40bbaf347648156fc05525a551",
    "url": "https://aircargoweek.com/cargo-compliance-targeted-with-rotates-expansion-into-operational-products/"
+  },
+  {
+   "article_id": "aircargoweek:115139",
+   "mentions": [],
+   "published_utc": "2026-10-27T14:51:51Z",
+   "source_id": "aircargoweek",
+   "text_hash": "03e8f6b930fa11d643e2d6b0bc76799dbcde7144097ca4ef741308aafbb0f28d",
+   "url": "https://aircargoweek.com/worlds-first-native-ai-powered-air-cargo-community-system-to-be-launched-at-miami-airport/"
+  },
+  {
+   "article_id": "aircargoweek:114512",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:20Z",
+   "source_id": "aircargoweek",
+   "text_hash": "39eaeabe093b26f7258d3ea0e2c0b4264a600fc198f6849cffc5ac86f4ef15ab",
+   "url": "https://aircargoweek.com/leadership-during-unprecedented-times/"
+  },
+  {
+   "article_id": "aircargoweek:114513",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:21Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c3b731b8bdd88d8b55bda1f90b5e86f6d0d909f4385b0aede4880c7253bc3348",
+   "url": "https://aircargoweek.com/avianca-cargos-miami-advantage/"
+  },
+  {
+   "article_id": "aircargoweek:114514",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:22Z",
+   "source_id": "aircargoweek",
+   "text_hash": "2e06a6fd234ee172eea0d19d431959407cc067da5755411313a75f3ac3ecb8dc",
+   "url": "https://aircargoweek.com/rebalancing-global-growth/"
+  },
+  {
+   "article_id": "aircargoweek:114515",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:23Z",
+   "source_id": "aircargoweek",
+   "text_hash": "09db7792a0f13ab004a8b7c0f01fcd9877ab1c73c258486dd19a843761694f12",
+   "url": "https://aircargoweek.com/cargo-plastics-take-on-a-new-role/"
+  },
+  {
+   "article_id": "aircargoweek:114516",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:24Z",
+   "source_id": "aircargoweek",
+   "text_hash": "1f77e95836377ed89a5b09252f4f306024ced852979cd5e370d56c8d100e346a",
+   "url": "https://aircargoweek.com/ywg-eyes-expanded-role/"
+  },
+  {
+   "article_id": "aircargoweek:114517",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:25Z",
+   "source_id": "aircargoweek",
+   "text_hash": "cb9a3f0f07696f0df26f9e067030c07d094e3e3e17627d0f7e75125e915fd49c",
+   "url": "https://aircargoweek.com/americas-air-cargo-flows-grow-more-complex/"
+  },
+  {
+   "article_id": "aircargoweek:114518",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:26Z",
+   "source_id": "aircargoweek",
+   "text_hash": "68eff9e9e90114e87f74e061480315c84a95d16c46f59528b4e093047d71156d",
+   "url": "https://aircargoweek.com/infrastructure-connectivity-and-execution/"
+  },
+  {
+   "article_id": "aircargoweek:115160",
+   "mentions": [],
+   "published_utc": "2026-10-28T09:01:16Z",
+   "source_id": "aircargoweek",
+   "text_hash": "fcc497c6594faa6ec3a1d2674d12b30c1975bed3a41d8ccd9ff9d64c8245a513",
+   "url": "https://aircargoweek.com/tap-air-portugals-first-direct-orlando-flight-set-to-launch-this-month/"
+  },
+  {
+   "article_id": "aircargoweek:115175",
+   "mentions": [],
+   "published_utc": "2026-10-28T09:28:55Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c9d3a436f6abc815ed6dabe5f3d32c0f553d21289ce5e5147e73dfa4e30a07d2",
+   "url": "https://aircargoweek.com/the-minister-the-budget-and-the-report-a-critical-moment-for-uk-logistics/"
+  },
+  {
+   "article_id": "aircargoweek:115156",
+   "mentions": [],
+   "published_utc": "2026-10-28T11:00:23Z",
+   "source_id": "aircargoweek",
+   "text_hash": "35768082586b0764e51eccab9dd508c31653b97da8012674956f6b627025fb26",
+   "url": "https://aircargoweek.com/challenge-group-to-operate-new-twice-weekly-india-europe-us-freighter-connection/"
+  },
+  {
+   "article_id": "aircargoweek:115184",
+   "mentions": [],
+   "published_utc": "2026-10-28T11:01:33Z",
+   "source_id": "aircargoweek",
+   "text_hash": "5a5bdbb4ac9f25b12cc0fef75501b316abf6934d98113e040b4092202655a00a",
+   "url": "https://aircargoweek.com/liege-and-viracopos-target-new-europe-brazil-cargo-connections/"
   }
  ],
  "from": "2026-09-13T23:05:51Z",
- "retrieved_at": "2026-10-27T13:10:57Z",
+ "retrieved_at": "2026-10-28T14:00:10Z",
  "schema": "PRESS-1",
- "sha256": "00ea19230162dfb8c224db7b86554d4bd702986d2a8956efd7b599b3e68528c6",
+ "sha256": "02613743ff17e04fd862a8efb690d2bf6f86c16dd437d66dcdc744d5a98edd18",
  "source": "press_aircargoweek",
- "to": "2026-10-27T12:58:43Z",
+ "to": "2026-10-28T11:01:33Z",
  "window_days": 45
 }

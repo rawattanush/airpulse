@@ -1,22 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "splash247:246556",
-   "mentions": [],
-   "published_utc": "2026-09-12T05:34:53Z",
-   "source_id": "splash247",
-   "text_hash": "993dac0842f73721c4d474dfed7b2622b0388bf9310c0646bcaf38e050ea6d2c",
-   "url": "https://splash247.com/ictsi-adds-lae-capacity-as-overflow-berth-demand-grows/"
-  },
-  {
-   "article_id": "splash247:246559",
-   "mentions": [],
-   "published_utc": "2026-09-12T05:37:44Z",
-   "source_id": "splash247",
-   "text_hash": "3e15df84200811ecf40fc03ac9d6fa48f2a46ab8597cc5c14cab2447a1280e71",
-   "url": "https://splash247.com/charleston-extends-inland-reach-with-huntsville-rail-link/"
-  },
-  {
    "article_id": "splash247:246661",
    "mentions": [],
    "published_utc": "2026-09-13T17:26:00Z",
@@ -9872,13 +9856,253 @@
    "source_id": "splash247",
    "text_hash": "5619067a41de7a145c3eeaa4bad1ba508df7575b01e034818f13100db94e6359",
    "url": "https://splash247.com/seatrium-and-karpowership-eye-southeast-asia-floating-infrastructure-push/"
+  },
+  {
+   "article_id": "splash247:249804",
+   "mentions": [],
+   "published_utc": "2026-10-27T23:55:56Z",
+   "source_id": "splash247",
+   "text_hash": "efd02a7d24f5f492822cded48b4d68a14a4e4d1596d227518b9e48f039690307",
+   "url": "https://splash247.com/us-awards-498m-for-port-infrastructure-upgrades/"
+  },
+  {
+   "article_id": "splash247:249816",
+   "mentions": [],
+   "published_utc": "2026-10-27T23:58:00Z",
+   "source_id": "splash247",
+   "text_hash": "42d5d8a3107d2daa8c0e7d69a8feb627fbc0a06b4ef8967375df9cd5a88509e7",
+   "url": "https://splash247.com/port-of-oakland-starts-119m-terminal-electrification-programme/"
+  },
+  {
+   "article_id": "splash247:249820",
+   "mentions": [],
+   "published_utc": "2026-10-28T00:08:00Z",
+   "source_id": "splash247",
+   "text_hash": "30c700c3fcc795ceec1020c5cce4abfc8aa89048e32a076a9f0561005a026089",
+   "url": "https://splash247.com/colombo-west-terminal-gears-up-to-double-capacity/"
+  },
+  {
+   "article_id": "splash247:249863",
+   "mentions": [],
+   "published_utc": "2026-10-28T00:20:00Z",
+   "source_id": "splash247",
+   "text_hash": "72b7c25dc5beb5910ca72fd1034565388308847a8e021cd0add2834e0f486ce0",
+   "url": "https://splash247.com/japanese-contractor-wins-166m-sihanoukville-terminal-deal/"
+  },
+  {
+   "article_id": "splash247:249841",
+   "mentions": [],
+   "published_utc": "2026-10-28T00:25:00Z",
+   "source_id": "splash247",
+   "text_hash": "4480a6e3e4c8352318e526b7be6a74ba5ee8c1faacf32590222bd48940a77ffe",
+   "url": "https://splash247.com/maldives-begins-shifting-commercial-port-operations-to-thilafushi/"
+  },
+  {
+   "article_id": "splash247:249865",
+   "mentions": [],
+   "published_utc": "2026-10-28T00:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "25c4316791173768decc60c58926927bb05d9bd6023b3ad41768bbb1583e7c90",
+   "url": "https://splash247.com/strike-threat-hangs-over-half-of-americas-busiest-port-complex/"
+  },
+  {
+   "article_id": "splash247:249829",
+   "mentions": [],
+   "published_utc": "2026-10-28T01:00:13Z",
+   "source_id": "splash247",
+   "text_hash": "9e262e2f25a66d7953c1a3fc213f6ddf5432efcfcfc63785d18ea3aa6037ca33",
+   "url": "https://splash247.com/lila-global-lines-up-its-finest-asset-play-to-date/"
+  },
+  {
+   "article_id": "splash247:249810",
+   "mentions": [],
+   "published_utc": "2026-10-28T02:00:54Z",
+   "source_id": "splash247",
+   "text_hash": "c242f4406920c3164fd3c9bb0d59c27a6dc2a381208cc30c71e82a2dc076a6d4",
+   "url": "https://splash247.com/peter-dohle-tipped-for-chengxi-boxship-quartet/"
+  },
+  {
+   "article_id": "splash247:249834",
+   "mentions": [],
+   "published_utc": "2026-10-28T02:10:00Z",
+   "source_id": "splash247",
+   "text_hash": "6bc837ed4ab490e796ea5907081277a6b7d6bf45b9438ecb346bad48e1952d3b",
+   "url": "https://splash247.com/bomesc-lands-fresh-fpso-topsides-contract-from-sbm-offshore/"
+  },
+  {
+   "article_id": "splash247:249836",
+   "mentions": [],
+   "published_utc": "2026-10-28T02:20:00Z",
+   "source_id": "splash247",
+   "text_hash": "5e4b0447de2ad2e3c662e0e26bf304064e60bbcfd2f6a6a701caa11cf06dc9b2",
+   "url": "https://splash247.com/saipem-bags-121m-drilling-double-with-eni/"
+  },
+  {
+   "article_id": "splash247:249840",
+   "mentions": [],
+   "published_utc": "2026-10-28T02:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "82214bd5fcbc5e99a69268495453e62ab3821fde47249ee8f98202774e66d27e",
+   "url": "https://splash247.com/siem-orders-scv-newbuild-duo-from-chinese-yard/"
+  },
+  {
+   "article_id": "splash247:249848",
+   "mentions": [],
+   "published_utc": "2026-10-28T02:40:00Z",
+   "source_id": "splash247",
+   "text_hash": "654bee6d652bfefca32180ebd40aad126cf1c9605b51623f9d6dba1722f00fcf",
+   "url": "https://splash247.com/ades-jackup-lines-up-work-offshore-indonesia/"
+  },
+  {
+   "article_id": "splash247:249832",
+   "mentions": [],
+   "published_utc": "2026-10-28T03:00:13Z",
+   "source_id": "splash247",
+   "text_hash": "f42ed9b2271a7ece42b3d593719cfee8af52469aad74c6ff53a53cb17dfa1686",
+   "url": "https://splash247.com/shippings-275m-lesson-in-the-limits-of-sanctions-screening/"
+  },
+  {
+   "article_id": "splash247:249818",
+   "mentions": [],
+   "published_utc": "2026-10-28T05:00:25Z",
+   "source_id": "splash247",
+   "text_hash": "6c6b2e138744af2b8eeba2cdb3d1b4c8ebf429470cee2ac42506f3f031a313b1",
+   "url": "https://splash247.com/wallenius-wilhelmsen-extends-car-carrier-newbuild-drive/"
+  },
+  {
+   "article_id": "splash247:249813",
+   "mentions": [],
+   "published_utc": "2026-10-28T06:00:22Z",
+   "source_id": "splash247",
+   "text_hash": "06a8c915be01355aed8d99a1506adec9a2c2472efacf5737a9c4aab4d1b923c4",
+   "url": "https://splash247.com/meadway-bulkers-splashes-out-on-ultramax-series-in-china/"
+  },
+  {
+   "article_id": "splash247:249808",
+   "mentions": [],
+   "published_utc": "2026-10-28T07:31:38Z",
+   "source_id": "splash247",
+   "text_hash": "2e001c393b6ad6472e287c3577809c2050d2c57fdfc86aec83af6616d3c1fa7f",
+   "url": "https://splash247.com/venergy-breaks-into-vlccs-with-hengli-order/"
+  },
+  {
+   "article_id": "splash247:249837",
+   "mentions": [],
+   "published_utc": "2026-10-28T07:45:53Z",
+   "source_id": "splash247",
+   "text_hash": "02d3fef700cdbbcc86dee249a61074e28235edeffaf9c7a704cfa60e1f4362ca",
+   "url": "https://splash247.com/sanctioned-russian-tankers-head-for-us-carrying-diesel/"
+  },
+  {
+   "article_id": "splash247:249822",
+   "mentions": [],
+   "published_utc": "2026-10-28T08:00:05Z",
+   "source_id": "splash247",
+   "text_hash": "4353016743897779016e9df25e7fbc09780eb6a7afb27683a3b5c7be16db000e",
+   "url": "https://splash247.com/maritime-ceo-forum-shippings-wartime-boom-tests-discipline/"
+  },
+  {
+   "article_id": "splash247:249825",
+   "mentions": [],
+   "published_utc": "2026-10-28T08:15:12Z",
+   "source_id": "splash247",
+   "text_hash": "d8fcbd62afc704f548f6bf476f6ec00892b94d5b1e1d2af717e6d35ac4bab920",
+   "url": "https://splash247.com/iran-singles-out-sinokor/"
+  },
+  {
+   "article_id": "splash247:249850",
+   "mentions": [],
+   "published_utc": "2026-10-28T08:28:45Z",
+   "source_id": "splash247",
+   "text_hash": "b3bf283c874e6445b9649f4305906e061515da1d694438fedd32e59a491522cf",
+   "url": "https://splash247.com/south-korea-targets-fully-autonomous-ships-by-2032-in-sweeping-ai-strategy/"
+  },
+  {
+   "article_id": "splash247:249853",
+   "mentions": [],
+   "published_utc": "2026-10-28T08:29:53Z",
+   "source_id": "splash247",
+   "text_hash": "1069cdbfd6e73df639fde04136ef2b32f54a39b7e9578384daa09b77a842a641",
+   "url": "https://splash247.com/hanwha-moves-to-link-ship-cybersecurity-with-insurance-premiums/"
+  },
+  {
+   "article_id": "splash247:249827",
+   "mentions": [],
+   "published_utc": "2026-10-28T08:30:28Z",
+   "source_id": "splash247",
+   "text_hash": "6360ed09866536481cc0494a196e5eafb804f329bb936b7ea325011d0249c807",
+   "url": "https://splash247.com/containership-orderbook-heads-towards-16m-teu/"
+  },
+  {
+   "article_id": "splash247:249855",
+   "mentions": [],
+   "published_utc": "2026-10-28T09:38:00Z",
+   "source_id": "splash247",
+   "text_hash": "61c640683e78bb2f10a4e5f7756717d59c61737c0aa75d0c9cff57d3aa718d4b",
+   "url": "https://splash247.com/woodside-exits-delayed-timor-leste-gas-project/"
+  },
+  {
+   "article_id": "splash247:249857",
+   "mentions": [],
+   "published_utc": "2026-10-28T10:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "8d85ce3787caf1c38d8eea3514554e8ea9b288ce33deedcf6b0c269ada28aaa3",
+   "url": "https://splash247.com/south-korean-shipyard-set-for-offshore-wind-makeover/"
+  },
+  {
+   "article_id": "splash247:249860",
+   "mentions": [],
+   "published_utc": "2026-10-28T10:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "3c6cb8cafd8071b07da818963e8a38180591ac60f7eb91d5b92f453478197dec",
+   "url": "https://splash247.com/norway-lines-up-full-scale-test-of-marine-nuclear-propulsion-system/"
+  },
+  {
+   "article_id": "splash247:249878",
+   "mentions": [],
+   "published_utc": "2026-10-28T12:31:29Z",
+   "source_id": "splash247",
+   "text_hash": "c4768bdc79a70664da21e96106dfaf9f44ab4ea619cc949166088e8623a5cc19",
+   "url": "https://splash247.com/noble-offloads-idle-drillship-for-38m/"
+  },
+  {
+   "article_id": "splash247:249880",
+   "mentions": [],
+   "published_utc": "2026-10-28T12:41:10Z",
+   "source_id": "splash247",
+   "text_hash": "c3c5aeba04de58c55325500cfe746a4c7f5f86eb6c8f27d9495f92a0ee88364e",
+   "url": "https://splash247.com/crediport-and-wavebl-test-fully-digital-letter-of-credit/"
+  },
+  {
+   "article_id": "splash247:249883",
+   "mentions": [],
+   "published_utc": "2026-10-28T12:50:53Z",
+   "source_id": "splash247",
+   "text_hash": "d688d35cd49652cdb33ac91c14fb00fcb8dcd4f0fad955fd7139dfaf6378dd03",
+   "url": "https://splash247.com/shipping-gets-new-framework-for-operational-and-emissions-reporting/"
+  },
+  {
+   "article_id": "splash247:249886",
+   "mentions": [],
+   "published_utc": "2026-10-28T12:56:57Z",
+   "source_id": "splash247",
+   "text_hash": "6a1220532682fb9ad3dcfe60c621a3516af6394489e60a535194eb22041b577f",
+   "url": "https://splash247.com/new-tool-shows-when-biofuel-beats-fossil-fuel-on-cost/"
+  },
+  {
+   "article_id": "splash247:249888",
+   "mentions": [],
+   "published_utc": "2026-10-28T13:03:11Z",
+   "source_id": "splash247",
+   "text_hash": "d2ee200b53580ab877646c8b0d8be0f109c9f40165434a1e69e3abf25b819743",
+   "url": "https://splash247.com/equinor-among-first-customers-for-explosion-proof-inspection-robots/"
   }
  ],
- "from": "2026-09-12T05:34:53Z",
- "retrieved_at": "2026-10-27T13:11:01Z",
+ "from": "2026-09-13T17:26:00Z",
+ "retrieved_at": "2026-10-28T14:00:17Z",
  "schema": "PRESS-1",
- "sha256": "86176c425f30c1303ed8243f5447db588c564fbbe663bbae9e6e8626704190aa",
+ "sha256": "9e317c5cbe68617e5279171dab1e6a1999ec36e910852b614bff28a871f4a8cf",
  "source": "press_splash247",
- "to": "2026-10-27T12:30:00Z",
+ "to": "2026-10-28T13:03:11Z",
  "window_days": 45
 }
