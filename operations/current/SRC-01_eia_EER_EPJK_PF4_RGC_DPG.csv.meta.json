@@ -1,9 +1,9 @@
 {
  "source_id": "SRC-01",
  "url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPJK_PF4_RGC_DPGd.xls",
- "retrieved_at": "2026-10-22T12:57:14Z",
- "sha256": "a9c96a914b1aa58094dd690ad11efe8fee43d64cd0921a9e245cfeadcc1936c3",
+ "retrieved_at": "2026-10-29T14:11:51Z",
+ "sha256": "8b5b1ca01ba829a1c5e169f8f9b27eb26170b50b7539e0e0e5570d8bd3f2465f",
  "http_status": 200,
- "bytes": 136100,
- "note": "operational refresh (OPS-1.0): spreadsheet 5d1c898ecef3c777 kept as operations/raw/eia_jet_fuel/20261022T125714Z_5d1c898ecef3.xls.gz and written as observation_date,value; previous file cffb8e4489e842f1"
+ "bytes": 136184,
+ "note": "operational refresh (OPS-1.0): spreadsheet 4eeacef2c47a1777 kept as operations/raw/eia_jet_fuel/20261029T141151Z_4eeacef2c47a.xls.gz and written as observation_date,value; previous file a9c96a914b1aa580"
 }

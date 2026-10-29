@@ -9,6 +9,20 @@
  },
  "events": [
   {
+   "direction": 1,
+   "event_type": "MILITARY_ATTACK",
+   "first_reported": "2026-10-29T08:00:01Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-10-29T08:00:01Z",
+   "organisations": [],
+   "places": [],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/drone-hit-boxship-sinks-off-bulgaria/"
+  },
+  {
    "direction": -1,
    "event_type": "CEASEFIRE",
    "first_reported": "2026-10-27T06:00:22Z",
@@ -420,20 +434,6 @@
    "source": "splash247",
    "status": "ACTIVE",
    "url": "https://splash247.com/gulf-crude-exports-rebound-sharply/"
-  },
-  {
-   "direction": 1,
-   "event_type": "PORT_CONGESTION",
-   "first_reported": "2026-09-29T02:00:12Z",
-   "group": "maritime_disruption",
-   "last_reported": "2026-09-29T02:00:12Z",
-   "organisations": [],
-   "places": [],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/kpler-data-highlights-terminal-level-congestion-hidden-by-port-averages/"
   }
  ],
  "events_in_window": 27,
@@ -447,30 +447,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 953,
-  "as_of": "2026-10-28T14:00:17Z",
+  "articles_in_window": 952,
+  "as_of": "2026-10-29T14:12:36Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 0.7,
-     "flat": 2.2,
-     "up": -2.9
+     "down": 1.1,
+     "flat": 4.5,
+     "up": -5.6
     },
     "usual": 0.1104,
-    "value": 0.165
+    "value": 0.2098
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -3.0,
-     "flat": -10.1,
-     "up": 13.1
+     "down": -2.1,
+     "flat": -9.9,
+     "up": 12.0
     },
     "usual": 0.1084,
-    "value": 0.4311
+    "value": 0.3869
    },
    {
     "group": "airspace_disruption",
@@ -487,9 +487,9 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.6,
-     "flat": 2.6,
-     "up": -3.2
+     "down": 0.5,
+     "flat": 3.2,
+     "up": -3.7
     },
     "usual": -0.0837,
     "value": -0.0446
@@ -498,20 +498,20 @@
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.8,
-     "flat": 6.3,
-     "up": -8.1
+     "down": 1.4,
+     "flat": 7.8,
+     "up": -9.2
     },
     "usual": 0.0133,
-    "value": 0.1531
+    "value": 0.1533
    },
    {
     "group": "airfreight_rate_signal",
     "label": "Reported air-freight rates",
     "shift_points": {
-     "down": -3.8,
-     "flat": 1.2,
-     "up": 2.6
+     "down": -4.0,
+     "flat": 1.5,
+     "up": 2.5
     },
     "usual": 0.0,
     "value": 0.0476
@@ -519,14 +519,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.2019911012022805,
-   "flat": 0.12641057310414802,
-   "up": 0.6715983256935715
+   "down": 0.21134484431291398,
+   "flat": 0.15983871420681864,
+   "up": 0.6288164414802674
   },
   "shift_points": {
-   "down": -6.1,
-   "flat": -24.2,
-   "up": 30.3
+   "down": -5.2,
+   "flat": -20.9,
+   "up": 26.0
   }
  },
  "official_forecaster": "BL-SEA",
@@ -534,16 +534,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 296,
-   "from": "2026-09-13T23:05:51Z",
-   "retrieved_at": "2026-10-28T14:00:10Z",
-   "to": "2026-10-28T11:01:33Z"
+   "articles": 290,
+   "from": "2026-09-15T06:19:58Z",
+   "retrieved_at": "2026-10-29T14:12:30Z",
+   "to": "2026-10-29T14:01:02Z"
   },
   "press_splash247": {
-   "articles": 1143,
-   "from": "2026-09-13T17:26:00Z",
-   "retrieved_at": "2026-10-28T14:00:17Z",
-   "to": "2026-10-28T13:03:11Z"
+   "articles": 1160,
+   "from": "2026-09-14T06:30:01Z",
+   "retrieved_at": "2026-10-29T14:12:36Z",
+   "to": "2026-10-29T12:34:00Z"
   }
  },
  "target_period": "2026-09"
