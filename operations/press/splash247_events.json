@@ -1,278 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "splash247:246593",
-   "mentions": [],
-   "published_utc": "2026-09-14T06:30:01Z",
-   "source_id": "splash247",
-   "text_hash": "e69d9666ed981b5d4f0d532dbdd311025fe46b0234ce480be9cac692194a5be4",
-   "url": "https://splash247.com/procopiou-lines-up-near-1bn-hengli-eight-ship-package/"
-  },
-  {
-   "article_id": "splash247:246574",
-   "mentions": [],
-   "published_utc": "2026-09-14T07:00:00Z",
-   "source_id": "splash247",
-   "text_hash": "6eb23293b0b285220c5e120e1eca658dc06b2dfe8a66e0e60cf112d3fdc0ec2a",
-   "url": "https://splash247.com/western-carriers-opens-kolkata-cargo-terminal/"
-  },
-  {
-   "article_id": "splash247:246623",
-   "mentions": [],
-   "published_utc": "2026-09-14T07:00:55Z",
-   "source_id": "splash247",
-   "text_hash": "a033570f802cf444e309edc90f0f04ea17905d6b2471b8adc07625f0f0a82e9d",
-   "url": "https://splash247.com/the-case-for-decisions-that-survive-the-forecast/"
-  },
-  {
-   "article_id": "splash247:246631",
-   "mentions": [],
-   "published_utc": "2026-09-14T07:30:51Z",
-   "source_id": "splash247",
-   "text_hash": "2b6ecbc1c36f38d68380dd0a6a145fbdd4f7a29f4f53293da7311ddd1ff68b4c",
-   "url": "https://splash247.com/backcasting-enters-the-shipping-mainstream/"
-  },
-  {
-   "article_id": "splash247:246576",
-   "mentions": [],
-   "published_utc": "2026-09-14T07:45:02Z",
-   "source_id": "splash247",
-   "text_hash": "8c697c78afd8c7d7204087a820e9e263fbf8ce0024d12148aa8e032a75ead0d8",
-   "url": "https://splash247.com/russia-turns-to-shipping-containers-to-shield-refineries-from-ukrainian-drones/"
-  },
-  {
-   "article_id": "splash247:246589",
-   "mentions": [],
-   "published_utc": "2026-09-14T08:00:11Z",
-   "source_id": "splash247",
-   "text_hash": "5fdcc1003bc4bdfe9e518d5d296c89cb580b864ec1825beefd4c850cd83818d1",
-   "url": "https://splash247.com/middle-east-shipping-squeezed-as-hormuz-and-bab-el-mandeb-risks-converge/"
-  },
-  {
-   "article_id": "splash247:246655",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:11:12Z",
-   "source_id": "splash247",
-   "text_hash": "cd2d6edeb366d2714dc530b9798b0af6b4c8f3ad8ba22433914c8c86e5a892e9",
-   "url": "https://splash247.com/vict-starts-next-port-of-melbourne-expansion/"
-  },
-  {
-   "article_id": "splash247:246633",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:20:00Z",
-   "source_id": "splash247",
-   "text_hash": "13c6c85ad14f0fa6900d4152fd2607e70cb2e2031a1e21ade3dafd74cac779dd",
-   "url": "https://splash247.com/esl-shipping-signs-up-for-stegra-steel-flows/"
-  },
-  {
-   "article_id": "splash247:246605",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:30:00Z",
-   "source_id": "splash247",
-   "text_hash": "33806c680ef524a875b18e0af0acd62131122c23d7dd071062e5cdbc185e397f",
-   "url": "https://splash247.com/transworld-keeps-fleet-reshuffle-rolling-with-bulker-sale/"
-  },
-  {
-   "article_id": "splash247:246618",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:35:00Z",
-   "source_id": "splash247",
-   "text_hash": "7c2da60ed97fc8092a4427302d1c43363aa0fe7a688cf724a0f39da4903e41fa",
-   "url": "https://splash247.com/cosco-readies-listing-of-its-shipyard-division/"
-  },
-  {
-   "article_id": "splash247:246665",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:36:00Z",
-   "source_id": "splash247",
-   "text_hash": "17a224c76e5edcc5d78574cab1dfae0a5b1af6d4b1ae8d0297a627c3912f94d7",
-   "url": "https://splash247.com/panjin-opens-vlcc-crude-gateway-for-huajin-aramco-project/"
-  },
-  {
-   "article_id": "splash247:246638",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:38:00Z",
-   "source_id": "splash247",
-   "text_hash": "a4b0e9e886437e5f9417840617f34476aad364c2df120dca955741fcacba2bca",
-   "url": "https://splash247.com/ksat-lines-up-indian-satellite-data-to-hunt-dark-ships/"
-  },
-  {
-   "article_id": "splash247:246649",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:49:00Z",
-   "source_id": "splash247",
-   "text_hash": "415815a7e68a82a6e23d2e9ba912b834880e9bd04e52e3429040a980a31134df",
-   "url": "https://splash247.com/zeebrugge-drops-pin-codes-for-digital-container-release/"
-  },
-  {
-   "article_id": "splash247:246653",
-   "mentions": [],
-   "published_utc": "2026-09-14T09:58:00Z",
-   "source_id": "splash247",
-   "text_hash": "73ccd63bd64762c94b74bd51016851f7938efb015c7b013aa7c2c46eafcf52ec",
-   "url": "https://splash247.com/classnk-brings-membrane-tanks-into-hydrogen-carrier-rulebook/"
-  },
-  {
-   "article_id": "splash247:246616",
-   "mentions": [],
-   "published_utc": "2026-09-14T10:00:00Z",
-   "source_id": "splash247",
-   "text_hash": "79483fa7bd838e804a710885d1607637a3f45abb7311caa0d2c74f983e5d4201",
-   "url": "https://splash247.com/aegean-cashes-in-modern-aframax-for-83m/"
-  },
-  {
-   "article_id": "splash247:246626",
-   "mentions": [],
-   "published_utc": "2026-09-14T10:30:00Z",
-   "source_id": "splash247",
-   "text_hash": "574edff5c3f712568a0529e9e26b8e444de1444ed08276e94f11e668eddac656",
-   "url": "https://splash247.com/sfl-locks-in-750m-with-hapag-lloyd-extensions/"
-  },
-  {
-   "article_id": "splash247:246622",
-   "mentions": [],
-   "published_utc": "2026-09-14T11:00:00Z",
-   "source_id": "splash247",
-   "text_hash": "bef54d3ae7f8ad764ab1da205b86570287a91e92920284b2aa0cb0ea74e39a4d",
-   "url": "https://splash247.com/tokyo-adds-635m-to-shipyard-revival-push/"
-  },
-  {
-   "article_id": "splash247:246608",
-   "mentions": [],
-   "published_utc": "2026-09-14T18:21:00Z",
-   "source_id": "splash247",
-   "text_hash": "84379a65686cb948d31d5fc9ba7941e9381a8c406296c5f76a3b3eb9cdf1a1e4",
-   "url": "https://splash247.com/more-boxes-overboard-cargo-securing-is-a-chain-of-responsibility/"
-  },
-  {
-   "article_id": "splash247:246673",
-   "mentions": [],
-   "published_utc": "2026-09-14T18:57:00Z",
-   "source_id": "splash247",
-   "text_hash": "d08d86830bb8017cb3c001a6b46e1150959aec55ae7e766a8b6819f767c47b59",
-   "url": "https://splash247.com/delaware-breaks-ground-on-669m-container-terminal/"
-  },
-  {
-   "article_id": "splash247:246685",
-   "mentions": [],
-   "published_utc": "2026-09-14T20:06:00Z",
-   "source_id": "splash247",
-   "text_hash": "b27b194592180a25baea41cc0dfbe7a6ea43d6a91d58073a9a40dd570353e3f2",
-   "url": "https://splash247.com/hapag-lloyd-locks-in-african-terminal-capacity-with-dp-world/"
-  },
-  {
-   "article_id": "splash247:246723",
-   "mentions": [],
-   "published_utc": "2026-09-15T01:08:08Z",
-   "source_id": "splash247",
-   "text_hash": "d7fb128dcafbd4bdc08500fcc13be75348340e546c9b4edf9f928d4a107cf675",
-   "url": "https://splash247.com/wave-cluster-launches-to-speed-maritime-decarbonisation-trials/"
-  },
-  {
-   "article_id": "splash247:246725",
-   "mentions": [],
-   "published_utc": "2026-09-15T01:09:02Z",
-   "source_id": "splash247",
-   "text_hash": "f7163d3f801a8e707a99da8ed117403f238d2c3f1f1a9a6d1448a672a9ff568a",
-   "url": "https://splash247.com/kr-and-hd-hyundai-samho-automate-partial-launching-safety-checks/"
-  },
-  {
-   "article_id": "splash247:246727",
-   "mentions": [],
-   "published_utc": "2026-09-15T01:10:15Z",
-   "source_id": "splash247",
-   "text_hash": "4bfec8ffe548c5320982ca4ad196458d755b8d5efc8e7b41600d60a676520841",
-   "url": "https://splash247.com/dnv-and-hd-ksoe-team-up-on-software-defined-vessel-assurance/"
-  },
-  {
-   "article_id": "splash247:246709",
-   "mentions": [],
-   "published_utc": "2026-09-15T01:30:05Z",
-   "source_id": "splash247",
-   "text_hash": "7cd0691884af178ca1eac588f68acb81de083b00621bccdb09c2308f2df6a0fc",
-   "url": "https://splash247.com/intermaritime-and-carsten-rehder-form-hamburg-shipmanagement-joint-venture/"
-  },
-  {
-   "article_id": "splash247:246677",
-   "mentions": [],
-   "published_utc": "2026-09-15T02:00:00Z",
-   "source_id": "splash247",
-   "text_hash": "ad7bb6e46e52f129ac94d2884667be92fdfc0538870ef572e36b9b89c663d1a8",
-   "url": "https://splash247.com/complexio-takes-maritime-ai-mainstream-with-gartner-recognition/"
-  },
-  {
-   "article_id": "splash247:246718",
-   "mentions": [],
-   "published_utc": "2026-09-15T02:00:00Z",
-   "source_id": "splash247",
-   "text_hash": "cc49656e5c2ff235fa97f7b7c3c9ba32bc90762d431aa2822619bcbc7f8d38bd",
-   "url": "https://splash247.com/advantage-tankers-orders-mr-quartet-at-gsi/"
-  },
-  {
-   "article_id": "splash247:246720",
-   "mentions": [],
-   "published_utc": "2026-09-15T02:10:00Z",
-   "source_id": "splash247",
-   "text_hash": "08c080f9353ab81857b05ed1c75211c585e8b07cf193b141715f3db8b64d1050",
-   "url": "https://splash247.com/lamprell-secures-role-on-6-2bn-adnoc-gas-project/"
-  },
-  {
-   "article_id": "splash247:246715",
-   "mentions": [],
-   "published_utc": "2026-09-15T02:20:00Z",
-   "source_id": "splash247",
-   "text_hash": "b52321b19d77d9374ebb2dc4c72574bdb078ef4a08d454cd95aead2ec65ba4db",
-   "url": "https://splash247.com/hornbeck-wins-decommissioning-work-in-north-sea/"
-  },
-  {
-   "article_id": "splash247:246712",
-   "mentions": [],
-   "published_utc": "2026-09-15T02:30:00Z",
-   "source_id": "splash247",
-   "text_hash": "9c4797c41448f4dd0b927a4a6c482b863c5de73d5e94b05b63db2b26205cd055",
-   "url": "https://splash247.com/borr-drilling-hands-operating-control-of-three-jackups-to-mexican-partner/"
-  },
-  {
-   "article_id": "splash247:246706",
-   "mentions": [],
-   "published_utc": "2026-09-15T02:40:00Z",
-   "source_id": "splash247",
-   "text_hash": "e267e406e5d9f29d3d02a2ec15c89dfed0ea552a23f1a88a21b83263e18bd1eb",
-   "url": "https://splash247.com/saipem-lands-350m-angola-offshore-contract/"
-  },
-  {
-   "article_id": "splash247:246679",
-   "mentions": [],
-   "published_utc": "2026-09-15T03:49:01Z",
-   "source_id": "splash247",
-   "text_hash": "e641084ad8320674aca37b8d528fdd7916a54e32e4724be02798bca4a382d47b",
-   "url": "https://splash247.com/who-owns-the-ships-data/"
-  },
-  {
-   "article_id": "splash247:246722",
-   "mentions": [],
-   "published_utc": "2026-09-15T05:42:00Z",
-   "source_id": "splash247",
-   "text_hash": "545d9406e374ad0c2b4f3a62d8423eda6391c45ca4e71451b7028ebfae0a16e4",
-   "url": "https://splash247.com/middle-east-shipping-routes-pull-in-opposite-directions/"
-  },
-  {
-   "article_id": "splash247:246730",
-   "mentions": [],
-   "published_utc": "2026-09-15T05:45:54Z",
-   "source_id": "splash247",
-   "text_hash": "9ddfd416ab6dc02263d2eb1c5f9a08fefb0697ce53c667f448ef92511b968b02",
-   "url": "https://splash247.com/hafnia-set-to-become-torms-largest-shareholder/"
-  },
-  {
-   "article_id": "splash247:246670",
-   "mentions": [],
-   "published_utc": "2026-09-15T06:00:07Z",
-   "source_id": "splash247",
-   "text_hash": "d9d30f186aab014e184cf34f4b068ea7348a598be0cd2e853029d616f7f7d34a",
-   "url": "https://splash247.com/shippings-crystal-ball-cracks-in-the-2020s/"
-  },
-  {
    "article_id": "splash247:246682",
    "mentions": [],
    "published_utc": "2026-09-15T07:19:00Z",
@@ -10265,13 +9993,293 @@
    "source_id": "splash247",
    "text_hash": "65c536a7f2809e2ceeb25564314ba7172d5fbc7df6c24a495c9dd5e13cec79de",
    "url": "https://splash247.com/wallenius-wilhelmsen-locks-in-1bn-contract-haul/"
+  },
+  {
+   "article_id": "splash247:249979",
+   "mentions": [],
+   "published_utc": "2026-10-29T15:54:45Z",
+   "source_id": "splash247",
+   "text_hash": "ef4c49046121b079244650c796cbb82b3e1480b84b05ae1e7f1200b6a6621ee5",
+   "url": "https://splash247.com/kiel-breaks-ground-on-41m-baltic-cargo-terminal-expansion/"
+  },
+  {
+   "article_id": "splash247:249982",
+   "mentions": [],
+   "published_utc": "2026-10-29T15:59:16Z",
+   "source_id": "splash247",
+   "text_hash": "ba23e42f44aeeee7dd41e9ef6ad36c3347f2ba288ad5860fdd814063732f69ea",
+   "url": "https://splash247.com/hhla-expands-trieste-terminal-with-new-trailer-handling-area/"
+  },
+  {
+   "article_id": "splash247:249985",
+   "mentions": [],
+   "published_utc": "2026-10-29T16:05:23Z",
+   "source_id": "splash247",
+   "text_hash": "51ace29bdccc3c450c0c0a88ebe5d8909037e133b8d4ee168c01ba74b24e25c1",
+   "url": "https://splash247.com/suape-moves-ahead-with-259m-cargo-terminal-lease/"
+  },
+  {
+   "article_id": "splash247:249988",
+   "mentions": [],
+   "published_utc": "2026-10-29T16:09:03Z",
+   "source_id": "splash247",
+   "text_hash": "dc41fe93b5a3d90f0e39e58b84c9e4a9c52b9dfa60d6e6aec4a5f0a2082eddc9",
+   "url": "https://splash247.com/port-of-tauranga-raises-31m-from-second-property-sale/"
+  },
+  {
+   "article_id": "splash247:249990",
+   "mentions": [],
+   "published_utc": "2026-10-29T16:13:43Z",
+   "source_id": "splash247",
+   "text_hash": "6c51ae0d8e13ea7feaabfee656d5bd2afe17479a9f3f74cbd6d9a55c1cb37ae7",
+   "url": "https://splash247.com/natpower-marine-plugs-into-cma-cgms-zebox/"
+  },
+  {
+   "article_id": "splash247:249993",
+   "mentions": [],
+   "published_utc": "2026-10-29T16:20:11Z",
+   "source_id": "splash247",
+   "text_hash": "bb212c2a3e93dfe820b68f950983594eb7174ce808777d953e8c59eb801e90b6",
+   "url": "https://splash247.com/singapore-partnership-targets-ai-powered-coastal-surveillance/"
+  },
+  {
+   "article_id": "splash247:249997",
+   "mentions": [],
+   "published_utc": "2026-10-29T16:35:54Z",
+   "source_id": "splash247",
+   "text_hash": "5a1ceb0449e48ff62e334e7e1f8d3cc02013f9108157c39f2059bd13efb4a3c1",
+   "url": "https://splash247.com/new-research-exposes-gaps-in-digital-crew-certification/"
+  },
+  {
+   "article_id": "splash247:249998",
+   "mentions": [],
+   "published_utc": "2026-10-29T16:44:48Z",
+   "source_id": "splash247",
+   "text_hash": "15af1095a12e079618cd17b4d1a918f070e62aab0112528121d94abb1afeafe2",
+   "url": "https://splash247.com/fatal-shipboard-accident-exposes-training-and-safety-failures/"
+  },
+  {
+   "article_id": "splash247:250005",
+   "mentions": [],
+   "published_utc": "2026-10-29T17:32:00Z",
+   "source_id": "splash247",
+   "text_hash": "c9b9b85f5ce2167e1a71cd2f9842ee8612bea96b3eddf5f922ab3fd4de6c014e",
+   "url": "https://splash247.com/togo-and-russia-sign-seafarer-certificate-recognition-deal/"
+  },
+  {
+   "article_id": "splash247:249995",
+   "mentions": [],
+   "published_utc": "2026-10-29T21:28:16Z",
+   "source_id": "splash247",
+   "text_hash": "52059264db824ee7c19c73ccb64408e377f65640dabf19b76988ab4a2331a171",
+   "url": "https://splash247.com/shippings-digital-crew-records-problem-runs-deeper-than-paper/"
+  },
+  {
+   "article_id": "splash247:249969",
+   "mentions": [],
+   "published_utc": "2026-10-29T21:44:00Z",
+   "source_id": "splash247",
+   "text_hash": "267e3997066455587e23afb0c970ba2e6cbf9a7610abd2561ebb72f746ac63a7",
+   "url": "https://splash247.com/eu-software-liability-overhaul-protects-crews-but-not-shipowners/"
+  },
+  {
+   "article_id": "splash247:250010",
+   "mentions": [],
+   "published_utc": "2026-10-29T21:55:00Z",
+   "source_id": "splash247",
+   "text_hash": "53e1abd84ea8f3bdcfb704288bcde432c6e8406c5c2da66d852eca693a350763",
+   "url": "https://splash247.com/hoopo-targets-container-fires-with-heat-pattern-monitoring/"
+  },
+  {
+   "article_id": "splash247:249966",
+   "mentions": [],
+   "published_utc": "2026-10-29T22:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "9a3c139f3f6e2e1ad589fb193fe3217f3e519e16ba3b8ae62d344b8bc4afae38",
+   "url": "https://splash247.com/when-maritime-technology-creates-more-work-than-it-saves/"
+  },
+  {
+   "article_id": "splash247:250034",
+   "mentions": [],
+   "published_utc": "2026-10-29T23:38:39Z",
+   "source_id": "splash247",
+   "text_hash": "33b78285b0a81cb3cd8831148b527321c46c9e1847556956d6f8ef7f93dd9574",
+   "url": "https://splash247.com/global-dockworker-action-spreads-to-113-ports-across-five-continents/"
+  },
+  {
+   "article_id": "splash247:250036",
+   "mentions": [],
+   "published_utc": "2026-10-29T23:47:17Z",
+   "source_id": "splash247",
+   "text_hash": "85ce750b4461a0628b09aa7393807d11cf17de5ec71f3166c18fa19a6e4e97f6",
+   "url": "https://splash247.com/danish-ports-turn-away-business-as-electricity-shortages-threaten-shore-power-rollout/"
+  },
+  {
+   "article_id": "splash247:250007",
+   "mentions": [],
+   "published_utc": "2026-10-30T02:00:21Z",
+   "source_id": "splash247",
+   "text_hash": "ccc3afe428adb92f77e17309a81a05d8dc8d6db984b4bd4d5f16d87f3e02baac",
+   "url": "https://splash247.com/institute-of-chartered-shipbrokers-appoints-first-female-president/"
+  },
+  {
+   "article_id": "splash247:250047",
+   "mentions": [],
+   "published_utc": "2026-10-30T02:10:00Z",
+   "source_id": "splash247",
+   "text_hash": "5840f26470f5f96599068bdece63d9854d6d396fba87e3e95e06d5ffeefa1c78",
+   "url": "https://splash247.com/aker-bp-and-dno-sanction-fast-track-north-sea-oil-development/"
+  },
+  {
+   "article_id": "splash247:250029",
+   "mentions": [],
+   "published_utc": "2026-10-30T02:20:00Z",
+   "source_id": "splash247",
+   "text_hash": "cf18767c097f27b99f542635e724aab0f85e93db1713e6fbeb0f2240a2a8b7b1",
+   "url": "https://splash247.com/equinors-us-offshore-wind-project-faces-fresh-schedule-setback/"
+  },
+  {
+   "article_id": "splash247:250026",
+   "mentions": [],
+   "published_utc": "2026-10-30T02:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "a95c9f497d6459e489b06984cca2ba7d93c4896fc27e908a4936cdc37aca6cdc",
+   "url": "https://splash247.com/seatrium-bags-fpso-integration-job-from-sbm-offshore/"
+  },
+  {
+   "article_id": "splash247:250015",
+   "mentions": [],
+   "published_utc": "2026-10-30T02:40:00Z",
+   "source_id": "splash247",
+   "text_hash": "4d13f51f6a01a82ae11b7ef4929d9c199a0e446e809e1824d25a0bc1999b0626",
+   "url": "https://splash247.com/three-bodies-found-after-borr-rig-sinking/"
+  },
+  {
+   "article_id": "splash247:249971",
+   "mentions": [],
+   "published_utc": "2026-10-30T03:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "b1303ffb0d5c311100509a9c298932a942c47e9e6582fa4cee6440914e2cc4a0",
+   "url": "https://splash247.com/the-morning-after-what-decembers-imo-vote-means-for-a-fixture/"
+  },
+  {
+   "article_id": "splash247:250023",
+   "mentions": [],
+   "published_utc": "2026-10-30T06:13:54Z",
+   "source_id": "splash247",
+   "text_hash": "bdcacdf4d2c25e99fabb9d19a4884e62d4a6d6138d4122688493eaf0d1bfe46e",
+   "url": "https://splash247.com/cvc-takes-majority-stake-in-spanish-ship-repair-yard-cernaval/"
+  },
+  {
+   "article_id": "splash247:250057",
+   "mentions": [],
+   "published_utc": "2026-10-30T07:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "7bf9557ad207bf78bdb74a04e645cbbbeebeedb8d421ada18eeb26c3c905e174",
+   "url": "https://splash247.com/hengli-leaps-from-fifth-to-first-in-global-shipbuilding-rankings/"
+  },
+  {
+   "article_id": "splash247:250011",
+   "mentions": [],
+   "published_utc": "2026-10-30T07:49:48Z",
+   "source_id": "splash247",
+   "text_hash": "29406bbfacefa932a93f6ae916d5776daf60d114bf81c0a7d53ddb2ba5b938b4",
+   "url": "https://splash247.com/tanker-targeted-with-hull-mounted-explosives-in-hormuz/"
+  },
+  {
+   "article_id": "splash247:250050",
+   "mentions": [],
+   "published_utc": "2026-10-30T08:00:49Z",
+   "source_id": "splash247",
+   "text_hash": "8c7a88559a63e72dd3faed4c2b775ca93f2ac71bbbad204bdfbeef72a3f20dcb",
+   "url": "https://splash247.com/splash-wrap-new-networks-old-faultlines/"
+  },
+  {
+   "article_id": "splash247:250017",
+   "mentions": [],
+   "published_utc": "2026-10-30T08:07:29Z",
+   "source_id": "splash247",
+   "text_hash": "f16602f1dc7bc6b9532e0902fb32a39d63e9bfa1c8d2e2ce3b154f73e1dd530b",
+   "url": "https://splash247.com/maritime-ceo-forum-when-to-leave-the-party/"
+  },
+  {
+   "article_id": "splash247:250028",
+   "mentions": [],
+   "published_utc": "2026-10-30T08:26:28Z",
+   "source_id": "splash247",
+   "text_hash": "5b7cc8abf2083576a6e24c86afe4d0fe82d6bef1d33646396f900e9322c3561b",
+   "url": "https://splash247.com/oil-majors-count-the-cost-of-runaway-tanker-rates/"
+  },
+  {
+   "article_id": "splash247:250032",
+   "mentions": [],
+   "published_utc": "2026-10-30T08:45:01Z",
+   "source_id": "splash247",
+   "text_hash": "97e35d3a65beecde3b6eb9c87ee0310bb713067be8868cbea12c110acfca69b0",
+   "url": "https://splash247.com/dockworkers-unite-across-113-ports-in-global-anti-war-protest/"
+  },
+  {
+   "article_id": "splash247:250056",
+   "mentions": [],
+   "published_utc": "2026-10-30T09:17:00Z",
+   "source_id": "splash247",
+   "text_hash": "542a7174e95d4fad97794216218060a34d0eaf71c4c0e4a120efac4228a0df8c",
+   "url": "https://splash247.com/european-inland-ports-push-for-drought-safeguards-in-eu-climate-law/"
+  },
+  {
+   "article_id": "splash247:250062",
+   "mentions": [],
+   "published_utc": "2026-10-30T09:20:00Z",
+   "source_id": "splash247",
+   "text_hash": "672e4074c95b935d042925e525b4648d9862a49cd65c8fa79ddc14ceaea1c8ae",
+   "url": "https://splash247.com/ancona-lines-up-nine-cargo-berth-tenders-in-343m-port-overhaul/"
+  },
+  {
+   "article_id": "splash247:250070",
+   "mentions": [],
+   "published_utc": "2026-10-30T09:22:00Z",
+   "source_id": "splash247",
+   "text_hash": "2e288794daf9842fc9b4705c9e850e4f36702df98f07c8fb6cc5e48774eac94d",
+   "url": "https://splash247.com/msc-pushes-deeper-into-italian-port-logistics/"
+  },
+  {
+   "article_id": "splash247:250073",
+   "mentions": [],
+   "published_utc": "2026-10-30T09:24:49Z",
+   "source_id": "splash247",
+   "text_hash": "d67e2e3a0c012501db730278f1d98760be065fd8af6fc46f5da6ff17e8293817",
+   "url": "https://splash247.com/navtor-brings-near-live-ais-tracking-to-fleet-managers/"
+  },
+  {
+   "article_id": "splash247:250038",
+   "mentions": [],
+   "published_utc": "2026-10-30T09:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "535b3446a0c1aba7e3e4711ac4a1783df8521c5beac972bb5c6a7a9607ee65e6",
+   "url": "https://splash247.com/china-merchants-tanker-arm-targets-yangtze-fleet-renewal/"
+  },
+  {
+   "article_id": "splash247:250049",
+   "mentions": [],
+   "published_utc": "2026-10-30T10:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "7da71df0d48f7bacd138e14e663ec2ca0e4c4b867ab798960ee61c083cd55d63",
+   "url": "https://splash247.com/evalend-drops-newcastlemax-option-at-dajin-heavy/"
+  },
+  {
+   "article_id": "splash247:250043",
+   "mentions": [],
+   "published_utc": "2026-10-30T10:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "a1e0ea993be94d6c85aaccb67348b9287faa8e474ab5f37b5866f2734fcd108b",
+   "url": "https://splash247.com/swedish-owner-veritas-books-up-to-six-chemical-tankers-in-china/"
   }
  ],
- "from": "2026-09-14T06:30:01Z",
- "retrieved_at": "2026-10-29T14:12:36Z",
+ "from": "2026-09-15T07:19:00Z",
+ "retrieved_at": "2026-10-30T14:03:59Z",
  "schema": "PRESS-1",
- "sha256": "9eb946623125da1b41f4bf36a80c2ad8bc0f0331a80e99a872d7ffbad8b15ff1",
+ "sha256": "c15d148e0e37b2cb53e5bb8c5efc61a33d53acd61f8b09df454eb9dcd2fe1d5b",
  "source": "press_splash247",
- "to": "2026-10-29T12:34:00Z",
+ "to": "2026-10-30T10:30:00Z",
  "window_days": 45
 }
