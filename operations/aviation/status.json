@@ -1,17 +1,17 @@
 {
  "feeds": {
   "hkia": {
-   "age_hours": 22.075277777777778,
-   "attempts": 160,
-   "days_archived": 113,
+   "age_hours": 21.620277777777776,
+   "attempts": 163,
+   "days_archived": 114,
    "failures_since_last_success": 0,
-   "last_attempt": "2026-10-30T14:04:27Z",
+   "last_attempt": "2026-10-31T13:37:09Z",
    "last_failure_reason": null,
    "last_result": "NEW",
-   "last_success": "2026-10-30T14:04:27Z",
+   "last_success": "2026-10-31T13:37:09Z",
    "mode": "RECENT",
-   "newest_observation": "2026-10-29T23:59:59+08:00",
-   "scheduled_runs": 63,
+   "newest_observation": "2026-10-30T23:59:59+08:00",
+   "scheduled_runs": 66,
    "triggers": [
     "manual",
     "manual-dispatch",
@@ -19,7 +19,7 @@
    ]
   },
   "positions": {
-   "age_hours": 597.4961111111111,
+   "age_hours": 621.0411111111111,
    "attempts": 2,
    "days_archived": null,
    "failures_since_last_success": 0,
@@ -35,7 +35,7 @@
    ]
   }
  },
- "generated": "2026-10-30T14:04:30Z",
+ "generated": "2026-10-31T13:37:12Z",
  "log_intact": true,
  "quality": {
   "checked": {
@@ -43,8 +43,8 @@
     "switched_off": true
    },
    "hkia": {
-    "days": 113,
-    "records": 126651
+    "days": 114,
+    "records": 127797
    },
    "usdot": {
     "files": 1
@@ -54,7 +54,7 @@
   "warnings": {
    "hkia": [
     "same_origin_and_destination: 23 records",
-    "unknown_airport: 53483 records"
+    "unknown_airport: 53964 records"
    ]
   }
  }

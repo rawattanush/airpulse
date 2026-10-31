@@ -1,86 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:113234",
-   "mentions": [],
-   "published_utc": "2026-09-15T13:40:35Z",
-   "source_id": "aircargoweek",
-   "text_hash": "f6f9920a1e9a6da28c50ea44c862e85ebee9d2fa3d7e6c7f5a7ccdf829a9d5c0",
-   "url": "https://aircargoweek.com/kevin-wang-takes-taiwan-helm-to-drive-ggg-growth/"
-  },
-  {
-   "article_id": "aircargoweek:113230",
-   "mentions": [],
-   "published_utc": "2026-09-16T05:35:10Z",
-   "source_id": "aircargoweek",
-   "text_hash": "21cd528eb0b2c28e6f71a8f35aeffa2f5917f3b1650a469d73107c0d023dd2ce",
-   "url": "https://aircargoweek.com/air-cargo-week-face-to-face-with-9-11/"
-  },
-  {
-   "article_id": "aircargoweek:113289",
-   "mentions": [],
-   "published_utc": "2026-09-16T08:00:07Z",
-   "source_id": "aircargoweek",
-   "text_hash": "3a7814b523e6e5ec750f8a93e79e7fafe9268d7a0b85323c161ac027a92c561d",
-   "url": "https://aircargoweek.com/acia-aero-leasing-delivers-atr72-600-to-air-nostrum/"
-  },
-  {
-   "article_id": "aircargoweek:113263",
-   "mentions": [],
-   "published_utc": "2026-09-16T08:01:08Z",
-   "source_id": "aircargoweek",
-   "text_hash": "ad9c34081dcbb849cafab04513f3e6d61c7b89e64532821326135a24021e4e0f",
-   "url": "https://aircargoweek.com/westjet-appoints-aviareps-as-cargo-gsa-in-india/"
-  },
-  {
-   "article_id": "aircargoweek:113277",
-   "mentions": [],
-   "published_utc": "2026-09-16T10:08:07Z",
-   "source_id": "aircargoweek",
-   "text_hash": "0e9a74365711eabfa0cefd80dfc4b1a1af7d4da9fcf99a449f14641ba449236f",
-   "url": "https://aircargoweek.com/aviation-minister-hails-importance-of-uks-largest-dedicated-air-cargo-hub/"
-  },
-  {
-   "article_id": "aircargoweek:113279",
-   "mentions": [],
-   "published_utc": "2026-09-16T10:10:16Z",
-   "source_id": "aircargoweek",
-   "text_hash": "2c181342050fd315bc7ac516b1f2726901d3c23e933616e962c89e0b240257c6",
-   "url": "https://aircargoweek.com/etihad-airways-and-swissport-expand-global-partnership/"
-  },
-  {
-   "article_id": "aircargoweek:113284",
-   "mentions": [],
-   "published_utc": "2026-09-16T10:11:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "0197c8adc35ab0c478abdb0ed4721cef864bb1d25296f6726e79714ed463bc76",
-   "url": "https://aircargoweek.com/uk-airports-show-robust-activity-in-h1-2026/"
-  },
-  {
-   "article_id": "aircargoweek:113285",
-   "mentions": [],
-   "published_utc": "2026-09-16T10:13:16Z",
-   "source_id": "aircargoweek",
-   "text_hash": "6bea0226d67a4faf3d82689383a5c9a232ead12349c4521a5f07adc88d79b80b",
-   "url": "https://aircargoweek.com/kalitta-air-and-air-atlanta-icelandic-leverage-champs-cargospot-weight-balance-solution/"
-  },
-  {
-   "article_id": "aircargoweek:113267",
-   "mentions": [],
-   "published_utc": "2026-09-16T10:22:37Z",
-   "source_id": "aircargoweek",
-   "text_hash": "ba8bdb39085237c15b31f62f5b83cad83bf25ffbf2079ffeaabe12b9a2c61b4f",
-   "url": "https://aircargoweek.com/american-airlines-cargo-appoints-danny-robbeson-director-head-of-global-accounts/"
-  },
-  {
-   "article_id": "aircargoweek:113296",
-   "mentions": [],
-   "published_utc": "2026-09-16T10:24:59Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a439c584b7086d518a554e4b5e2cf65d9e0608f833df8d3e68428b5a8b4f1512",
-   "url": "https://aircargoweek.com/air-france-klm-martinair-cargo-introduces-vacuum-lift/"
-  },
-  {
    "article_id": "aircargoweek:113307",
    "mentions": [],
    "published_utc": "2026-09-17T12:19:17Z",
@@ -2848,13 +2768,21 @@
    "source_id": "aircargoweek",
    "text_hash": "ec03ca125fd0b62781b97b25ac8e0e3305f8c96906d2a782503b1cc6f2d76347",
    "url": "https://aircargoweek.com/swiss-worldcargo-bengaluru-connection-commences-as-first-ever-destination-in-southern-india/"
+  },
+  {
+   "article_id": "aircargoweek:115315",
+   "mentions": [],
+   "published_utc": "2026-10-30T17:09:05Z",
+   "source_id": "aircargoweek",
+   "text_hash": "fd75abad8ade002b7807a08d03ee66375ab27a56bacdc6df112adb6e6f24989e",
+   "url": "https://aircargoweek.com/iag-cargo-reports-spanish-all-saints-day-behind-spike-in-flower-demand/"
   }
  ],
- "from": "2026-09-15T13:40:35Z",
- "retrieved_at": "2026-10-30T14:03:54Z",
+ "from": "2026-09-17T12:19:17Z",
+ "retrieved_at": "2026-10-31T13:36:38Z",
  "schema": "PRESS-1",
- "sha256": "e73db21c2a730987a50749d861f4217e0e7e06f16c5970987d5ea74cc9838ff3",
+ "sha256": "22b646aab655aa1249198558378a744f8919867bacda3fededeb35b755646284",
  "source": "press_aircargoweek",
- "to": "2026-10-30T11:53:10Z",
+ "to": "2026-10-30T17:09:05Z",
  "window_days": 45
 }
