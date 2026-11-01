@@ -1,71 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:113307",
-   "mentions": [],
-   "published_utc": "2026-09-17T12:19:17Z",
-   "source_id": "aircargoweek",
-   "text_hash": "57b702aa10f951e5a19fc25ba2fc18c8ab7bc64cff6f7d1bde16fbc50faba7ce",
-   "url": "https://aircargoweek.com/jorg-krings-joins-jettainer-as-senior-global-account-manager/"
-  },
-  {
-   "article_id": "aircargoweek:113311",
-   "mentions": [
-    {
-     "affected_mode": "AIR",
-     "airlines": [],
-     "airports": [],
-     "carriers": [],
-     "chokepoints": [],
-     "countries": [],
-     "direction": -1,
-     "duration_class": "UNKNOWN",
-     "effects": {
-      "capacity": "INCREASE",
-      "demand": "UNKNOWN",
-      "diversion_pressure": "UNKNOWN",
-      "supply": "INCREASE"
-     },
-     "event_type": "AIR_CAPACITY_ADDITION",
-     "extraction_confidence": 0.7,
-     "feature_group": "air_capacity_shock",
-     "geographic_scope": "UNKNOWN",
-     "parent_category": "AVIATION",
-     "parser_version": "P1.0",
-     "pattern_conf": 0.8,
-     "ports": [],
-     "raw_text_hash": "adedfca3ad891316025930f43ded802ce7483d5bf7eef4538db952dc0ee8818e",
-     "regions": [],
-     "severity": 1,
-     "source_reliability": 0.85,
-     "source_tier": 2,
-     "source_type": "trade publication (air cargo)",
-     "status": "ACTIVE",
-     "taxonomy_version": "1.0"
-    }
-   ],
-   "published_utc": "2026-09-17T12:24:38Z",
-   "source_id": "aircargoweek",
-   "text_hash": "adedfca3ad891316025930f43ded802ce7483d5bf7eef4538db952dc0ee8818e",
-   "url": "https://aircargoweek.com/solitair-charters-two-new-cargo-services-to-uzbekistan/"
-  },
-  {
-   "article_id": "aircargoweek:113315",
-   "mentions": [],
-   "published_utc": "2026-09-17T12:27:14Z",
-   "source_id": "aircargoweek",
-   "text_hash": "35b090cfd68cab49aac59ffe72e79747fd15fe401d8c37ac3d5285db54b6616f",
-   "url": "https://aircargoweek.com/hermes-logistics-technologies-launches-hermesone/"
-  },
-  {
-   "article_id": "aircargoweek:113323",
-   "mentions": [],
-   "published_utc": "2026-09-17T13:04:26Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a5e6f9dda4b3f4c2309bc68ed354ffd004e49e689869d3ec281f8c93d98d0130",
-   "url": "https://aircargoweek.com/iag-cargo-maskargo-and-qatar-airways-cargo-complete-first-customer-shipment-across-global-cargo-joint-business-network/"
-  },
-  {
    "article_id": "aircargoweek:113327",
    "mentions": [],
    "published_utc": "2026-09-17T13:15:52Z",
@@ -2778,10 +2713,10 @@
    "url": "https://aircargoweek.com/iag-cargo-reports-spanish-all-saints-day-behind-spike-in-flower-demand/"
   }
  ],
- "from": "2026-09-17T12:19:17Z",
- "retrieved_at": "2026-10-31T13:36:38Z",
+ "from": "2026-09-17T13:15:52Z",
+ "retrieved_at": "2026-11-01T14:15:09Z",
  "schema": "PRESS-1",
- "sha256": "22b646aab655aa1249198558378a744f8919867bacda3fededeb35b755646284",
+ "sha256": "afbe0051dca872d566b96376791e41cd36845977b2500b19027a1fb6a9a35036",
  "source": "press_aircargoweek",
  "to": "2026-10-30T17:09:05Z",
  "window_days": 45
