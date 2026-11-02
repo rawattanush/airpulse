@@ -1,62 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "aircargoweek:113327",
-   "mentions": [],
-   "published_utc": "2026-09-17T13:15:52Z",
-   "source_id": "aircargoweek",
-   "text_hash": "8ea82f1d8e73c5a0c0cb13216e1a558b68c77813040afafd8c7dc4f6147e7d0e",
-   "url": "https://aircargoweek.com/lufthansa-cargo-expands-modular-product-portfolio-with-add-on-service-emergency/"
-  },
-  {
-   "article_id": "aircargoweek:113332",
-   "mentions": [],
-   "published_utc": "2026-09-17T13:32:34Z",
-   "source_id": "aircargoweek",
-   "text_hash": "6c3ea2c6503d4b26504627e5cf5215103e52473d537f44172d85c9c0f5f9bb6f",
-   "url": "https://aircargoweek.com/roberto-alvo-named-ceo-of-the-year-at-the-2026-bravo-business-awards/"
-  },
-  {
-   "article_id": "aircargoweek:113337",
-   "mentions": [],
-   "published_utc": "2026-09-17T13:42:52Z",
-   "source_id": "aircargoweek",
-   "text_hash": "8da7277353b8ed19ac8f9c009492d270df35b6725e4495324357242a392fa306",
-   "url": "https://aircargoweek.com/ethiopian-cargo-joins-cargoai-to-power-its-digital-booking-capabilities/"
-  },
-  {
-   "article_id": "aircargoweek:113341",
-   "mentions": [],
-   "published_utc": "2026-09-17T13:45:15Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c7d8615a7125ad43221965a62fc8b5a925745da27c8225dae244b1fca30b934a",
-   "url": "https://aircargoweek.com/bermudair-becomes-the-second-embraer-e-freighter-operator/"
-  },
-  {
-   "article_id": "aircargoweek:113350",
-   "mentions": [],
-   "published_utc": "2026-09-18T08:01:26Z",
-   "source_id": "aircargoweek",
-   "text_hash": "a8c042dc1f51198f6c697b7bec2b99d7b7488203dcc44b079dfc8f38e955dce7",
-   "url": "https://aircargoweek.com/geodis-opens-new-freight-forwarding-office-in-the-philippines/"
-  },
-  {
-   "article_id": "aircargoweek:113376",
-   "mentions": [],
-   "published_utc": "2026-09-18T10:54:51Z",
-   "source_id": "aircargoweek",
-   "text_hash": "485df598dfdbadb22973c1bf2c8fa2dbb77901a02c936e437f346054458a0488",
-   "url": "https://aircargoweek.com/faa-grants-boeing-waiver-to-sell-777f-freighters-past-2028/"
-  },
-  {
-   "article_id": "aircargoweek:113380",
-   "mentions": [],
-   "published_utc": "2026-09-18T11:00:19Z",
-   "source_id": "aircargoweek",
-   "text_hash": "c68df0e025077648209694b0a49b45c8a1b8c3cd57179f19e298abf2acd21c65",
-   "url": "https://aircargoweek.com/aviator-wins-long-term-lufthansa-group-full-handling-contract-in-norway/"
-  },
-  {
    "article_id": "aircargoweek:113610",
    "mentions": [],
    "published_utc": "2026-09-20T23:05:23Z",
@@ -2711,13 +2655,133 @@
    "source_id": "aircargoweek",
    "text_hash": "fd75abad8ade002b7807a08d03ee66375ab27a56bacdc6df112adb6e6f24989e",
    "url": "https://aircargoweek.com/iag-cargo-reports-spanish-all-saints-day-behind-spike-in-flower-demand/"
+  },
+  {
+   "article_id": "aircargoweek:114584",
+   "mentions": [],
+   "published_utc": "2026-11-02T00:05:02Z",
+   "source_id": "aircargoweek",
+   "text_hash": "6471556984a7ba052854304fda560b6d372e8719b82734c985c7b39497512136",
+   "url": "https://aircargoweek.com/positioning-in-an-e-commerce-cargo-landscape/"
+  },
+  {
+   "article_id": "aircargoweek:114640",
+   "mentions": [],
+   "published_utc": "2026-11-02T00:10:36Z",
+   "source_id": "aircargoweek",
+   "text_hash": "af99616fdc231cfddb0e928c949669fac15d87779b26914273bec9a6499bd913",
+   "url": "https://aircargoweek.com/scats-767-300bcf-to-be-the-first-to-operate-in-kazakhstan/"
+  },
+  {
+   "article_id": "aircargoweek:114659",
+   "mentions": [],
+   "published_utc": "2026-11-02T00:20:40Z",
+   "source_id": "aircargoweek",
+   "text_hash": "5475b5015ccfcda713994993dd242cc9ca2ce632c5580d2172a39291d7e60840",
+   "url": "https://aircargoweek.com/visibility-compliance-and-resilience/"
+  },
+  {
+   "article_id": "aircargoweek:114656",
+   "mentions": [],
+   "published_utc": "2026-11-02T00:40:37Z",
+   "source_id": "aircargoweek",
+   "text_hash": "d36f2116c719ac8bdcc338eebd9a2cf0771229b41d49403742559ab8e3928940",
+   "url": "https://aircargoweek.com/why-compliant-battery-cargo-can-still-miss-airline-acceptance/"
+  },
+  {
+   "article_id": "aircargoweek:114657",
+   "mentions": [],
+   "published_utc": "2026-11-02T00:50:38Z",
+   "source_id": "aircargoweek",
+   "text_hash": "af785c9168cd962b413867fd9526bc470a6ef9df1ac334e14e731424483cbcdf",
+   "url": "https://aircargoweek.com/airfreights-innovation-question/"
+  },
+  {
+   "article_id": "aircargoweek:114660",
+   "mentions": [],
+   "published_utc": "2026-11-02T01:00:41Z",
+   "source_id": "aircargoweek",
+   "text_hash": "4945e620b4e3a5112732fe10c1feb1db17e4d7ff62d0bcb7a3d5cc0c680578b7",
+   "url": "https://aircargoweek.com/how-regional-agents-are-filling-global-cargo-gaps/"
+  },
+  {
+   "article_id": "aircargoweek:114661",
+   "mentions": [],
+   "published_utc": "2026-11-02T01:15:41Z",
+   "source_id": "aircargoweek",
+   "text_hash": "48f7a270205cf4579842c4d9e4a6b50bf6854e8549237b70a678f5855bde94d7",
+   "url": "https://aircargoweek.com/oklahomas-aerospace-ambition-2/"
+  },
+  {
+   "article_id": "aircargoweek:114662",
+   "mentions": [],
+   "published_utc": "2026-11-02T01:25:42Z",
+   "source_id": "aircargoweek",
+   "text_hash": "1fc85cd7f01f00239dba03b684d32acd72c18a9da3bfd5ece9c2817420db1896",
+   "url": "https://aircargoweek.com/gateways-serving-global-networks/"
+  },
+  {
+   "article_id": "aircargoweek:114663",
+   "mentions": [],
+   "published_utc": "2026-11-02T01:30:44Z",
+   "source_id": "aircargoweek",
+   "text_hash": "795f082d0115bbb66bb7ae049508260076fae0ebfe4e10dbe8d61ef935886f98",
+   "url": "https://aircargoweek.com/speed-flexibility-and-supply-chains/"
+  },
+  {
+   "article_id": "aircargoweek:114627",
+   "mentions": [],
+   "published_utc": "2026-11-02T03:00:27Z",
+   "source_id": "aircargoweek",
+   "text_hash": "676f33825c1a507ed3f8a241591ec59b64f73c1a36eaf248ddd411b8ccd15197",
+   "url": "https://aircargoweek.com/60-seconds-with-ingo-roessler/"
+  },
+  {
+   "article_id": "aircargoweek:112797",
+   "mentions": [],
+   "published_utc": "2026-11-02T09:00:22Z",
+   "source_id": "aircargoweek",
+   "text_hash": "48f7a270205cf4579842c4d9e4a6b50bf6854e8549237b70a678f5855bde94d7",
+   "url": "https://aircargoweek.com/oklahomas-aerospace-ambition/"
+  },
+  {
+   "article_id": "aircargoweek:115322",
+   "mentions": [],
+   "published_utc": "2026-11-02T09:47:49Z",
+   "source_id": "aircargoweek",
+   "text_hash": "7a413d187ada95d55234ecf2867fbb7676aa82bfc8a8c53c03aa3e62762819cb",
+   "url": "https://aircargoweek.com/ita-ceo-calls-for-pause-on-eu-carbon-costs-as-it-targets-operating-profits/"
+  },
+  {
+   "article_id": "aircargoweek:115325",
+   "mentions": [],
+   "published_utc": "2026-11-02T10:01:52Z",
+   "source_id": "aircargoweek",
+   "text_hash": "90783e7e3cac7d33e7e473883e1ee8e2f0b5f1bfa893b161843e1d78d4b2c63d",
+   "url": "https://aircargoweek.com/portfolio-of-ai-apps-released-by-smart-kargo-targeting-measurable-value-to-airlines/"
+  },
+  {
+   "article_id": "aircargoweek:115337",
+   "mentions": [],
+   "published_utc": "2026-11-02T10:42:19Z",
+   "source_id": "aircargoweek",
+   "text_hash": "7cc47056c8ff09ca6e2fe94c64ba7d2a51ac8b66f1401f46d36112fa8242cd84",
+   "url": "https://aircargoweek.com/africa-leads-global-race-to-supply-aviation-carbon-credits/"
+  },
+  {
+   "article_id": "aircargoweek:115340",
+   "mentions": [],
+   "published_utc": "2026-11-02T12:43:20Z",
+   "source_id": "aircargoweek",
+   "text_hash": "d5576fee8cba381aa18161077c1dc0a4e362c860f599cb7702f86c63b12d1ad3",
+   "url": "https://aircargoweek.com/singapore-airlines-signs-to-offtake-next-gen-saf-from-aether-fuels/"
   }
  ],
- "from": "2026-09-17T13:15:52Z",
- "retrieved_at": "2026-11-01T14:15:09Z",
+ "from": "2026-09-20T23:05:23Z",
+ "retrieved_at": "2026-11-02T17:00:45Z",
  "schema": "PRESS-1",
- "sha256": "afbe0051dca872d566b96376791e41cd36845977b2500b19027a1fb6a9a35036",
+ "sha256": "1fe948b69be4301dd0ceb24f9d1b781e0089b1817a59c84dafb65e4c437e8290",
  "source": "press_aircargoweek",
- "to": "2026-10-30T17:09:05Z",
+ "to": "2026-11-02T12:43:20Z",
  "window_days": 45
 }
