@@ -1,19 +1,19 @@
-# AirPulse operations report (daily)
+# AirPulse operations report (weekly)
 
-Generated 2026-11-02T17:01:29Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-11-02T18:34:18Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 32; started by a scheduler: 29; started by hand: 3.
-- Last run: 2026-11-02T16:59:36Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 144 by a scheduler, 112 by hand.
+- Runs on record: 33; started by a scheduler: 30; started by hand: 3.
+- Last run: 2026-11-02T18:31:46Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 150 by a scheduler, 112 by hand.
 
 ## Sources
 
 | Source | Status | Last success | Newest data | Stale after | Note |
 |---|---|---|---|---|---|
-| US Gulf Coast jet fuel (EIA) | HEALTHY | 2026-10-29T14:11:51Z | 2026-10-27 | 14 days |  |
-| Brent crude (EIA) | HEALTHY | 2026-10-29T14:11:52Z | 2026-10-27 | 14 days |  |
+| US Gulf Coast jet fuel (EIA) | HEALTHY | 2026-11-02T18:33:09Z | 2026-10-27 | 14 days |  |
+| Brent crude (EIA) | HEALTHY | 2026-11-02T18:33:10Z | 2026-10-27 | 14 days |  |
 | Asia → US air freight price index, every release (BLS IC1312) | DEGRADED | 2026-10-07T06:11:31Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
 | Europe → US air freight price index, every release (BLS IC1311) | DEGRADED | 2026-10-07T06:11:32Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
 | All inbound US air freight price index, every release (BLS IC131) | DEGRADED | 2026-10-07T06:11:32Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
@@ -26,9 +26,9 @@ Generated 2026-11-02T17:01:29Z from the run records, the ledgers and the clock. 
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
 | Air Cargo Week: reported events | HEALTHY | 2026-11-02T17:00:45Z | 2026-11-02T12:43:20Z | 4 days |  |
 | Splash247: reported events | HEALTHY | 2026-11-02T17:00:49Z | 2026-11-02T13:00:00Z | 4 days |  |
-| Hong Kong International Airport flight information | HEALTHY | 2026-11-02T17:01:16Z | 2026-11-01 | 3 days |  |
+| Hong Kong International Airport flight information | HEALTHY | 2026-11-02T18:33:57Z | 2026-11-01 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
-| US international nonstop departures (US DOT) | HEALTHY | 2026-11-02T17:01:08Z | 2026-06 | 14 days |  |
+| US international nonstop departures (US DOT) | HEALTHY | 2026-11-02T18:33:49Z | 2026-06 | 14 days |  |
 | Aircraft positions near airports (adsb.lol) | DISABLED | - | - | 3 days |  |
 | Tracked flight lists 2019 to 2022 (Zenodo record 7923702) | DISABLED | - | - | - |  |
 | Live flight-tracking interface (research network) | DISABLED | - | - | - |  |
