@@ -2775,13 +2775,53 @@
    "source_id": "aircargoweek",
    "text_hash": "d5576fee8cba381aa18161077c1dc0a4e362c860f599cb7702f86c63b12d1ad3",
    "url": "https://aircargoweek.com/singapore-airlines-signs-to-offtake-next-gen-saf-from-aether-fuels/"
+  },
+  {
+   "article_id": "aircargoweek:115359",
+   "mentions": [],
+   "published_utc": "2026-11-03T10:17:59Z",
+   "source_id": "aircargoweek",
+   "text_hash": "c3583e1f4be2ae43ccce664df8767104c121fe8355ce02509d68a7c070264034",
+   "url": "https://aircargoweek.com/new-4300-sq-m-opens-at-gabriele-dannunzio-airport-in-brescia-montichiari/"
+  },
+  {
+   "article_id": "aircargoweek:115367",
+   "mentions": [],
+   "published_utc": "2026-11-03T11:21:14Z",
+   "source_id": "aircargoweek",
+   "text_hash": "fe8baacb00ce82fff74639053ca1389d44d435ad03d2bf4f30c664659608b861",
+   "url": "https://aircargoweek.com/central-china-longhao-airlines-begins-operations-at-east-midlands-airport/"
+  },
+  {
+   "article_id": "aircargoweek:115352",
+   "mentions": [],
+   "published_utc": "2026-11-03T12:01:19Z",
+   "source_id": "aircargoweek",
+   "text_hash": "9677e46531aba9b28b27227d0eda7ba52b5877e33b89822ad4b621d8fc1c50b9",
+   "url": "https://aircargoweek.com/emirates-skycargo-launches-dedicated-service-to-carry-ai-infrastructure-amid-increasing-demand/"
+  },
+  {
+   "article_id": "aircargoweek:115374",
+   "mentions": [],
+   "published_utc": "2026-11-03T12:28:33Z",
+   "source_id": "aircargoweek",
+   "text_hash": "0951f8d9592337ae3c3c135f8af06e860035927d21ac7c96082bba5b3414c4ec",
+   "url": "https://aircargoweek.com/logipharma-launches-dedicated-air-cargo-hub-for-2027/"
+  },
+  {
+   "article_id": "aircargoweek:115378",
+   "mentions": [],
+   "published_utc": "2026-11-03T13:47:43Z",
+   "source_id": "aircargoweek",
+   "text_hash": "2bf3db2c58a8293edc70d0546b59d6daf5c12e545d325a32ba32cff23b8b4213",
+   "url": "https://aircargoweek.com/four-aircraft-land-at-european-airports-following-suspected-bomb-threats/"
   }
  ],
  "from": "2026-09-20T23:05:23Z",
- "retrieved_at": "2026-11-02T17:00:45Z",
+ "retrieved_at": "2026-11-03T15:01:37Z",
  "schema": "PRESS-1",
- "sha256": "1fe948b69be4301dd0ceb24f9d1b781e0089b1817a59c84dafb65e4c437e8290",
+ "sha256": "4384d5afc5d8986c4a0b8c7c82aed9b69892b9f27ab7aacb315fb01b6bcd2bc1",
  "source": "press_aircargoweek",
- "to": "2026-11-02T12:43:20Z",
+ "to": "2026-11-03T13:47:43Z",
  "window_days": 45
 }

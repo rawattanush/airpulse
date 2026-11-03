@@ -10,6 +10,22 @@
  "events": [
   {
    "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-11-03T01:17:49Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-11-03T01:17:49Z",
+   "organisations": [],
+   "places": [
+    "MIDDLE_EAST"
+   ],
+   "reports": 1,
+   "severity": 3,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/middle-east-port-congestion-hits-record/"
+  },
+  {
+   "direction": 1,
    "event_type": "MILITARY_ATTACK",
    "first_reported": "2026-11-02T09:13:00Z",
    "group": "geopolitical_shock",
@@ -386,7 +402,7 @@
    "url": "https://splash247.com/oil-exports-surge-back-through-hormuz-despite-mounting-attacks/"
   }
  ],
- "events_in_window": 24,
+ "events_in_window": 25,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -397,30 +413,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 902,
-  "as_of": "2026-11-02T17:00:49Z",
+  "articles_in_window": 931,
+  "as_of": "2026-11-03T15:02:09Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 1.6,
-     "flat": 5.3,
-     "up": -6.9
+     "down": 1.7,
+     "flat": 4.4,
+     "up": -6.1
     },
     "usual": 0.1104,
-    "value": 0.2356
+    "value": 0.2282
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -2.4,
-     "flat": -10.3,
-     "up": 12.7
+     "down": -3.3,
+     "flat": -11.7,
+     "up": 15.0
     },
     "usual": 0.1084,
-    "value": 0.4084
+    "value": 0.4732
    },
    {
     "group": "airspace_disruption",
@@ -437,23 +453,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.5,
-     "flat": 2.9,
-     "up": -3.4
+     "down": 0.6,
+     "flat": 2.6,
+     "up": -3.2
     },
     "usual": -0.0837,
-    "value": -0.0471
+    "value": -0.0456
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.7,
-     "flat": 7.9,
-     "up": -9.6
+     "down": 2.0,
+     "flat": 6.6,
+     "up": -8.6
     },
     "usual": 0.0133,
-    "value": 0.1618
+    "value": 0.1567
    },
    {
     "group": "airfreight_rate_signal",
@@ -469,14 +485,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.25157718510734756,
-   "flat": 0.15524191376967433,
-   "up": 0.5931809011229782
+   "down": 0.2429683605463458,
+   "flat": 0.1323424702640387,
+   "up": 0.6246891691896156
   },
   "shift_points": {
-   "down": -1.2,
-   "flat": -21.3,
-   "up": 22.5
+   "down": -2.0,
+   "flat": -23.6,
+   "up": 25.6
   }
  },
  "official_forecaster": "BL-SEA",
@@ -484,16 +500,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 277,
+   "articles": 282,
    "from": "2026-09-20T23:05:23Z",
-   "retrieved_at": "2026-11-02T17:00:45Z",
-   "to": "2026-11-02T12:43:20Z"
+   "retrieved_at": "2026-11-03T15:01:37Z",
+   "to": "2026-11-03T13:47:43Z"
   },
   "press_splash247": {
-   "articles": 1088,
-   "from": "2026-09-18T09:30:00Z",
-   "retrieved_at": "2026-11-02T17:00:49Z",
-   "to": "2026-11-02T13:00:00Z"
+   "articles": 1113,
+   "from": "2026-09-19T14:05:52Z",
+   "retrieved_at": "2026-11-03T15:02:09Z",
+   "to": "2026-11-03T12:00:00Z"
   }
  },
  "target_period": "2026-09"
