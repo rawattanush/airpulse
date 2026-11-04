@@ -2793,14 +2793,6 @@
    "url": "https://aircargoweek.com/central-china-longhao-airlines-begins-operations-at-east-midlands-airport/"
   },
   {
-   "article_id": "aircargoweek:115352",
-   "mentions": [],
-   "published_utc": "2026-11-03T12:01:19Z",
-   "source_id": "aircargoweek",
-   "text_hash": "9677e46531aba9b28b27227d0eda7ba52b5877e33b89822ad4b621d8fc1c50b9",
-   "url": "https://aircargoweek.com/emirates-skycargo-launches-dedicated-service-to-carry-ai-infrastructure-amid-increasing-demand/"
-  },
-  {
    "article_id": "aircargoweek:115374",
    "mentions": [],
    "published_utc": "2026-11-03T12:28:33Z",
@@ -2813,15 +2805,71 @@
    "mentions": [],
    "published_utc": "2026-11-03T13:47:43Z",
    "source_id": "aircargoweek",
-   "text_hash": "2bf3db2c58a8293edc70d0546b59d6daf5c12e545d325a32ba32cff23b8b4213",
+   "text_hash": "1bd287aa8bdb182cc031132116d1f782bae44a55669cc0ee4aceae5ed2a4c993",
    "url": "https://aircargoweek.com/four-aircraft-land-at-european-airports-following-suspected-bomb-threats/"
+  },
+  {
+   "article_id": "aircargoweek:115352",
+   "mentions": [],
+   "published_utc": "2026-11-03T19:01:19Z",
+   "source_id": "aircargoweek",
+   "text_hash": "9677e46531aba9b28b27227d0eda7ba52b5877e33b89822ad4b621d8fc1c50b9",
+   "url": "https://aircargoweek.com/emirates-skycargo-launches-dedicated-service-to-carry-ai-infrastructure-amid-increasing-demand/"
+  },
+  {
+   "article_id": "aircargoweek:115393",
+   "mentions": [],
+   "published_utc": "2026-11-04T09:04:23Z",
+   "source_id": "aircargoweek",
+   "text_hash": "e2d61ac0f95973f72cd72f1e863809ed3560378f15e3b9b76f2d835fd1ca1ad1",
+   "url": "https://aircargoweek.com/cargo-air-hpt-parts-order-made-with-chromalloy-for-boeing-737s/"
+  },
+  {
+   "article_id": "aircargoweek:115396",
+   "mentions": [],
+   "published_utc": "2026-11-04T10:16:49Z",
+   "source_id": "aircargoweek",
+   "text_hash": "015181de48f973822cfac7ec8f8c86f7df1735e571a84a8ff7a10834c3e6e546",
+   "url": "https://aircargoweek.com/first-digital-air-traffic-control-in-asia-at-penang-airport/"
+  },
+  {
+   "article_id": "aircargoweek:115399",
+   "mentions": [],
+   "published_utc": "2026-11-04T10:23:49Z",
+   "source_id": "aircargoweek",
+   "text_hash": "98180858e1dae4a7ba1acac0443715c646891499ca22113006c70aa2f82ba56d",
+   "url": "https://aircargoweek.com/oman-air-expands-muscat-amsterdam-route/"
+  },
+  {
+   "article_id": "aircargoweek:115402",
+   "mentions": [],
+   "published_utc": "2026-11-04T12:09:21Z",
+   "source_id": "aircargoweek",
+   "text_hash": "2ac01f14b320aa4917c561018163dd01252efe0552f437783ee92150ed5c760c",
+   "url": "https://aircargoweek.com/singapore-airlines-appoints-menzies-aviation-at-western-sydney-international-airport/"
+  },
+  {
+   "article_id": "aircargoweek:115406",
+   "mentions": [],
+   "published_utc": "2026-11-04T14:21:14Z",
+   "source_id": "aircargoweek",
+   "text_hash": "b4c87f2ba1f163a145c9efeece68ac503c6b2fbf8a4317490fe519dab416b27f",
+   "url": "https://aircargoweek.com/two-houses-blue-us-midterms-and-potential-ai-airfreight-implications/"
+  },
+  {
+   "article_id": "aircargoweek:115410",
+   "mentions": [],
+   "published_utc": "2026-11-04T14:41:43Z",
+   "source_id": "aircargoweek",
+   "text_hash": "e592fb8302365c192aca8b307ea939dd5620960c82d370b546f227b73872753d",
+   "url": "https://aircargoweek.com/call-for-action-on-cargo-theft-from-the-airforwarders-association-post-midterm-results/"
   }
  ],
  "from": "2026-09-20T23:05:23Z",
- "retrieved_at": "2026-11-03T15:01:37Z",
+ "retrieved_at": "2026-11-04T15:23:16Z",
  "schema": "PRESS-1",
- "sha256": "4384d5afc5d8986c4a0b8c7c82aed9b69892b9f27ab7aacb315fb01b6bcd2bc1",
+ "sha256": "676177d32ef24d93e1845c862336491eab14085b732de577cfaf70ca3ea842e4",
  "source": "press_aircargoweek",
- "to": "2026-11-03T13:47:43Z",
+ "to": "2026-11-04T14:41:43Z",
  "window_days": 45
 }

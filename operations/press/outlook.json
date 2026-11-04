@@ -370,39 +370,9 @@
    "source": "splash247",
    "status": "ACTIVE",
    "url": "https://splash247.com/grain-carrier-sinks-off-romania-after-suspected-russian-drone-strike/"
-  },
-  {
-   "direction": -1,
-   "event_type": "AIR_CARGO_DEMAND_DROP",
-   "first_reported": "2026-10-05T13:48:07Z",
-   "group": "cargo_demand_shock",
-   "last_reported": "2026-10-05T13:48:07Z",
-   "organisations": [],
-   "places": [],
-   "reports": 1,
-   "severity": 2,
-   "source": "aircargoweek",
-   "status": "ACTIVE",
-   "url": "https://aircargoweek.com/pricing-and-capacity-hold-steady-as-traffic-slows/"
-  },
-  {
-   "direction": 1,
-   "event_type": "TRADE_SURGE",
-   "first_reported": "2026-10-05T08:30:54Z",
-   "group": "trade_flow",
-   "last_reported": "2026-10-05T08:30:54Z",
-   "organisations": [],
-   "places": [
-    "STRAIT_OF_HORMUZ"
-   ],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/oil-exports-surge-back-through-hormuz-despite-mounting-attacks/"
   }
  ],
- "events_in_window": 25,
+ "events_in_window": 23,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -413,30 +383,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 931,
-  "as_of": "2026-11-03T15:02:09Z",
+  "articles_in_window": 923,
+  "as_of": "2026-11-04T15:23:21Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 1.7,
-     "flat": 4.4,
-     "up": -6.1
+     "down": 1.4,
+     "flat": 5.3,
+     "up": -6.7
     },
     "usual": 0.1104,
-    "value": 0.2282
+    "value": 0.2302
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -3.3,
-     "flat": -11.7,
-     "up": 15.0
+     "down": -2.5,
+     "flat": -13.5,
+     "up": 15.9
     },
     "usual": 0.1084,
-    "value": 0.4732
+    "value": 0.4773
    },
    {
     "group": "airspace_disruption",
@@ -453,23 +423,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.6,
-     "flat": 2.6,
-     "up": -3.2
+     "down": 0.5,
+     "flat": 3.1,
+     "up": -3.5
     },
     "usual": -0.0837,
-    "value": -0.0456
+    "value": -0.046
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 2.0,
-     "flat": 6.6,
-     "up": -8.6
+     "down": 2.3,
+     "flat": 9.6,
+     "up": -11.8
     },
     "usual": 0.0133,
-    "value": 0.1567
+    "value": 0.2011
    },
    {
     "group": "airfreight_rate_signal",
@@ -485,14 +455,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.2429683605463458,
-   "flat": 0.1323424702640387,
-   "up": 0.6246891691896156
+   "down": 0.24568484082298062,
+   "flat": 0.16136871107357514,
+   "up": 0.5929464481034443
   },
   "shift_points": {
-   "down": -2.0,
-   "flat": -23.6,
-   "up": 25.6
+   "down": -1.7,
+   "flat": -20.7,
+   "up": 22.5
   }
  },
  "official_forecaster": "BL-SEA",
@@ -500,16 +470,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 282,
+   "articles": 288,
    "from": "2026-09-20T23:05:23Z",
-   "retrieved_at": "2026-11-03T15:01:37Z",
-   "to": "2026-11-03T13:47:43Z"
+   "retrieved_at": "2026-11-04T15:23:16Z",
+   "to": "2026-11-04T14:41:43Z"
   },
   "press_splash247": {
-   "articles": 1113,
-   "from": "2026-09-19T14:05:52Z",
-   "retrieved_at": "2026-11-03T15:02:09Z",
-   "to": "2026-11-03T12:00:00Z"
+   "articles": 1150,
+   "from": "2026-09-20T09:01:35Z",
+   "retrieved_at": "2026-11-04T15:23:21Z",
+   "to": "2026-11-04T12:40:00Z"
   }
  },
  "target_period": "2026-09"
