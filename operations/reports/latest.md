@@ -1,32 +1,32 @@
 # AirPulse operations report (daily)
 
-Generated 2026-11-04T15:24:00Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-11-05T15:26:53Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 35; started by a scheduler: 32; started by hand: 3.
-- Last run: 2026-11-04T15:21:31Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 159 by a scheduler, 112 by hand.
+- Runs on record: 36; started by a scheduler: 33; started by hand: 3.
+- Last run: 2026-11-05T15:24:12Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 166 by a scheduler, 112 by hand.
 
 ## Sources
 
 | Source | Status | Last success | Newest data | Stale after | Note |
 |---|---|---|---|---|---|
-| US Gulf Coast jet fuel (EIA) | HEALTHY | 2026-11-04T15:22:43Z | 2026-10-27 | 14 days |  |
-| Brent crude (EIA) | HEALTHY | 2026-11-04T15:22:44Z | 2026-10-27 | 14 days |  |
-| Asia → US air freight price index, every release (BLS IC1312) | DEGRADED | 2026-10-07T06:11:31Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
-| Europe → US air freight price index, every release (BLS IC1311) | DEGRADED | 2026-10-07T06:11:32Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
-| All inbound US air freight price index, every release (BLS IC131) | DEGRADED | 2026-10-07T06:11:32Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
-| US → Europe air freight price index, every release (BLS IS2311) | DEGRADED | 2026-10-07T06:11:33Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
-| US → Asia air freight price index, every release (BLS IS2312) | DEGRADED | 2026-10-07T06:11:34Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
-| All outbound US air freight price index, every release (BLS IS231) | DEGRADED | 2026-10-07T06:11:35Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
-| All US import air freight (BoP) price index, every release (BLS IV131) | DEGRADED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
-| Europe import air freight (BoP) price index, every release (BLS IV1311) | DEGRADED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; the data of the last success are held |
+| US Gulf Coast jet fuel (EIA) | HEALTHY | 2026-11-05T15:25:26Z | 2026-11-03 | 14 days |  |
+| Brent crude (EIA) | HEALTHY | 2026-11-05T15:25:27Z | 2026-11-03 | 14 days |  |
+| Asia → US air freight price index, every release (BLS IC1312) | FAILED | 2026-10-07T06:11:31Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
+| Europe → US air freight price index, every release (BLS IC1311) | FAILED | 2026-10-07T06:11:32Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
+| All inbound US air freight price index, every release (BLS IC131) | FAILED | 2026-10-07T06:11:32Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
+| US → Europe air freight price index, every release (BLS IS2311) | FAILED | 2026-10-07T06:11:33Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
+| US → Asia air freight price index, every release (BLS IS2312) | FAILED | 2026-10-07T06:11:34Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
+| All outbound US air freight price index, every release (BLS IS231) | FAILED | 2026-10-07T06:11:35Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
+| All US import air freight (BoP) price index, every release (BLS IV131) | FAILED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
+| Europe import air freight (BoP) price index, every release (BLS IV1311) | FAILED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 29 days ago |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | HEALTHY | 2026-11-04T15:23:16Z | 2026-11-04T14:41:43Z | 4 days |  |
-| Splash247: reported events | HEALTHY | 2026-11-04T15:23:21Z | 2026-11-04T12:40:00Z | 4 days |  |
-| Hong Kong International Airport flight information | HEALTHY | 2026-11-04T15:23:47Z | 2026-11-03 | 3 days |  |
+| Air Cargo Week: reported events | HEALTHY | 2026-11-05T15:26:01Z | 2026-11-05T15:10:10Z | 4 days |  |
+| Splash247: reported events | HEALTHY | 2026-11-05T15:26:06Z | 2026-11-05T14:47:17Z | 4 days |  |
+| Hong Kong International Airport flight information | HEALTHY | 2026-11-05T15:26:39Z | 2026-11-04 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
 | US international nonstop departures (US DOT) | HEALTHY | 2026-11-02T18:33:49Z | 2026-06 | 14 days |  |
 | Aircraft positions near airports (adsb.lol) | DISABLED | - | - | 3 days |  |

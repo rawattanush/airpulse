@@ -10,6 +10,39 @@
  "events": [
   {
    "direction": 1,
+   "event_type": "SANCTIONS",
+   "first_reported": "2026-11-05T08:00:04Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-11-05T08:00:04Z",
+   "organisations": [],
+   "places": [
+    "IR",
+    "US"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/us-sanctions-indian-couple-behind-fake-flag-empire-serving-irans-shadow-fleet/"
+  },
+  {
+   "direction": 1,
+   "event_type": "TRADE_DISRUPTION",
+   "first_reported": "2026-11-05T01:01:00Z",
+   "group": "trade_disruption",
+   "last_reported": "2026-11-05T01:01:00Z",
+   "organisations": [],
+   "places": [
+    "FR"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/french-ports-face-fresh-disruption-as-dockers-and-tug-crews-stage-back-to-back-strikes/"
+  },
+  {
+   "direction": 1,
    "event_type": "PORT_CONGESTION",
    "first_reported": "2026-11-03T01:17:49Z",
    "group": "maritime_disruption",
@@ -310,18 +343,18 @@
   {
    "direction": 1,
    "event_type": "HORMUZ_DISRUPTION",
-   "first_reported": "2026-10-06T07:56:05Z",
+   "first_reported": "2026-10-07T08:15:16Z",
    "group": "maritime_disruption",
    "last_reported": "2026-10-07T08:15:16Z",
    "organisations": [],
    "places": [
     "STRAIT_OF_HORMUZ"
    ],
-   "reports": 2,
+   "reports": 1,
    "severity": 3,
    "source": "splash247",
    "status": "ACTIVE",
-   "url": "https://splash247.com/tanker-attacks-around-hormuz-hit-wartime-high/"
+   "url": "https://splash247.com/twelve-injured-in-latest-hormuz-attack/"
   },
   {
    "direction": 1,
@@ -338,38 +371,6 @@
    "source": "aircargoweek",
    "status": "ACTIVE",
    "url": "https://aircargoweek.com/boats-destined-for-people-smugglers-seized-at-east-midlands-airport/"
-  },
-  {
-   "direction": 1,
-   "event_type": "PORT_CLOSURE",
-   "first_reported": "2026-10-06T12:45:16Z",
-   "group": "maritime_disruption",
-   "last_reported": "2026-10-06T12:45:16Z",
-   "organisations": [],
-   "places": [
-    "AFRICA"
-   ],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/africas-largest-iron-ore-export-terminal-enters-maintenance-shutdown/"
-  },
-  {
-   "direction": 1,
-   "event_type": "MILITARY_ATTACK",
-   "first_reported": "2026-10-06T08:30:45Z",
-   "group": "geopolitical_shock",
-   "last_reported": "2026-10-06T08:30:45Z",
-   "organisations": [],
-   "places": [
-    "BLACK_SEA"
-   ],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/grain-carrier-sinks-off-romania-after-suspected-russian-drone-strike/"
   }
  ],
  "events_in_window": 23,
@@ -383,30 +384,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 923,
-  "as_of": "2026-11-04T15:23:21Z",
+  "articles_in_window": 937,
+  "as_of": "2026-11-05T15:26:06Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 1.4,
-     "flat": 5.3,
-     "up": -6.7
+     "down": 1.2,
+     "flat": 5.4,
+     "up": -6.6
     },
     "usual": 0.1104,
-    "value": 0.2302
+    "value": 0.2238
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -2.5,
-     "flat": -13.5,
-     "up": 15.9
+     "down": -2.0,
+     "flat": -11.5,
+     "up": 13.5
     },
     "usual": 0.1084,
-    "value": 0.4773
+    "value": 0.4188
    },
    {
     "group": "airspace_disruption",
@@ -423,23 +424,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.5,
-     "flat": 3.1,
-     "up": -3.5
+     "down": 0.4,
+     "flat": 3.3,
+     "up": -3.7
     },
     "usual": -0.0837,
-    "value": -0.046
+    "value": -0.0454
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 2.3,
-     "flat": 9.6,
-     "up": -11.8
+     "down": 2.0,
+     "flat": 10.1,
+     "up": -12.1
     },
     "usual": 0.0133,
-    "value": 0.2011
+    "value": 0.1981
    },
    {
     "group": "airfreight_rate_signal",
@@ -455,14 +456,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.24568484082298062,
-   "flat": 0.16136871107357514,
-   "up": 0.5929464481034443
+   "down": 0.25111996826769556,
+   "flat": 0.1739861834613743,
+   "up": 0.5748938482709302
   },
   "shift_points": {
-   "down": -1.7,
-   "flat": -20.7,
-   "up": 22.5
+   "down": -1.2,
+   "flat": -19.4,
+   "up": 20.6
   }
  },
  "official_forecaster": "BL-SEA",
@@ -470,16 +471,16 @@
  "series": "IC1312",
  "sources": {
   "press_aircargoweek": {
-   "articles": 288,
-   "from": "2026-09-20T23:05:23Z",
-   "retrieved_at": "2026-11-04T15:23:16Z",
-   "to": "2026-11-04T14:41:43Z"
+   "articles": 277,
+   "from": "2026-09-21T14:47:46Z",
+   "retrieved_at": "2026-11-05T15:26:01Z",
+   "to": "2026-11-05T15:10:10Z"
   },
   "press_splash247": {
-   "articles": 1150,
-   "from": "2026-09-20T09:01:35Z",
-   "retrieved_at": "2026-11-04T15:23:21Z",
-   "to": "2026-11-04T12:40:00Z"
+   "articles": 1161,
+   "from": "2026-09-21T07:47:28Z",
+   "retrieved_at": "2026-11-05T15:26:06Z",
+   "to": "2026-11-05T14:47:17Z"
   }
  },
  "target_period": "2026-09"
