@@ -10,6 +10,22 @@
  "events": [
   {
    "direction": 1,
+   "event_type": "PORT_CLOSURE",
+   "first_reported": "2026-11-08T20:00:00Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-11-08T20:00:00Z",
+   "organisations": [],
+   "places": [
+    "CL"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ENDED",
+   "url": "https://splash247.com/chiles-busiest-container-port-reopens-after-haulage-deal/"
+  },
+  {
+   "direction": 1,
    "event_type": "PORT_CONGESTION",
    "first_reported": "2026-11-06T09:20:48Z",
    "group": "maritime_disruption",
@@ -338,7 +354,7 @@
    "url": "https://splash247.com/tanker-war-spreads-across-gulf/"
   }
  ],
- "events_in_window": 21,
+ "events_in_window": 22,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -349,30 +365,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 845,
-  "as_of": "2026-11-08T14:17:56Z",
+  "articles_in_window": 875,
+  "as_of": "2026-11-09T17:25:49Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
      "down": 0.8,
-     "flat": 7.9,
-     "up": -8.8
+     "flat": 7.4,
+     "up": -8.2
     },
     "usual": 0.1104,
-    "value": 0.2481
+    "value": 0.2396
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -0.8,
-     "flat": -9.5,
-     "up": 10.3
+     "down": -0.9,
+     "flat": -8.8,
+     "up": 9.7
     },
     "usual": 0.1084,
-    "value": 0.337
+    "value": 0.3254
    },
    {
     "group": "airspace_disruption",
@@ -389,23 +405,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": -0.0,
-     "flat": 3.6,
-     "up": -3.6
+     "down": 0.0,
+     "flat": 3.7,
+     "up": -3.7
     },
     "usual": -0.0837,
-    "value": -0.0503
+    "value": -0.0486
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
      "down": 1.2,
-     "flat": 13.9,
-     "up": -15.1
+     "flat": 13.2,
+     "up": -14.5
     },
     "usual": 0.0133,
-    "value": 0.2196
+    "value": 0.2121
    },
    {
     "group": "airfreight_rate_signal",
@@ -421,14 +437,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.2586298476512133,
-   "flat": 0.22996116282812848,
-   "up": 0.5114089895206583
+   "down": 0.25958941871202273,
+   "flat": 0.2236510510099571,
+   "up": 0.5167595302780201
   },
   "shift_points": {
-   "down": -0.5,
-   "flat": -13.8,
-   "up": 14.3
+   "down": -0.4,
+   "flat": -14.5,
+   "up": 14.8
   }
  },
  "official_forecaster": "BL-SEA",
@@ -442,10 +458,10 @@
    "to": "2026-11-05T15:10:10Z"
   },
   "press_splash247": {
-   "articles": 1116,
-   "from": "2026-09-24T08:52:48Z",
-   "retrieved_at": "2026-11-08T14:17:56Z",
-   "to": "2026-11-07T05:10:18Z"
+   "articles": 1126,
+   "from": "2026-09-25T09:35:00Z",
+   "retrieved_at": "2026-11-09T17:25:49Z",
+   "to": "2026-11-09T14:53:56Z"
   }
  },
  "target_period": "2026-09"
