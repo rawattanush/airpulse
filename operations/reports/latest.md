@@ -1,12 +1,12 @@
-# AirPulse operations report (weekly)
+# AirPulse operations report (daily)
 
-Generated 2026-11-09T18:59:03Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-11-10T15:36:05Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 41; started by a scheduler: 38; started by hand: 3.
-- Last run: 2026-11-09T18:56:05Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 189 by a scheduler, 112 by hand.
+- Runs on record: 42; started by a scheduler: 39; started by hand: 3.
+- Last run: 2026-11-10T15:32:30Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 190 by a scheduler, 112 by hand.
 
 ## Sources
 
@@ -24,8 +24,8 @@ Generated 2026-11-09T18:59:03Z from the run records, the ledgers and the clock. 
 | Europe import air freight (BoP) price index, every release (BLS IV1311) | FAILED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 34 days ago |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | FAILED | 2026-11-05T15:26:01Z | 2026-11-05T15:10:10Z | 4 days | HTTPError: HTTP Error 403: Forbidden; last success 4 days ago |
-| Splash247: reported events | HEALTHY | 2026-11-09T17:25:49Z | 2026-11-09T14:53:56Z | 4 days |  |
+| Air Cargo Week: reported events | FAILED | 2026-11-05T15:26:01Z | 2026-11-05T15:10:10Z | 4 days | HTTPError: HTTP Error 403: Forbidden; last success 5 days ago |
+| Splash247: reported events | HEALTHY | 2026-11-10T15:35:33Z | 2026-11-10T12:00:00Z | 4 days |  |
 | Hong Kong International Airport flight information | HEALTHY | 2026-11-09T18:58:42Z | 2026-11-08 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
 | US international nonstop departures (US DOT) | HEALTHY | 2026-11-09T18:58:34Z | 2026-06 | 14 days |  |
