@@ -10,6 +10,23 @@
  "events": [
   {
    "direction": 1,
+   "event_type": "SANCTIONS",
+   "first_reported": "2026-11-13T09:35:00Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-11-13T09:35:00Z",
+   "organisations": [],
+   "places": [
+    "GB",
+    "RU"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/uk-blacklists-11-ships-in-fresh-russia-sanctions-sweep/"
+  },
+  {
+   "direction": 1,
    "event_type": "PORT_CONGESTION",
    "first_reported": "2026-11-12T11:26:36Z",
    "group": "maritime_disruption",
@@ -403,20 +420,6 @@
    "source": "splash247",
    "status": "ACTIVE",
    "url": "https://splash247.com/249051-2/"
-  },
-  {
-   "direction": 1,
-   "event_type": "PORT_CONGESTION",
-   "first_reported": "2026-10-14T00:56:21Z",
-   "group": "maritime_disruption",
-   "last_reported": "2026-10-14T00:56:21Z",
-   "organisations": [],
-   "places": [],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/cargill-finds-fuel-savings-hidden-in-port-queues/"
   }
  ],
  "events_in_window": 26,
@@ -430,30 +433,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 912,
-  "as_of": "2026-11-12T15:58:33Z",
+  "articles_in_window": 914,
+  "as_of": "2026-11-13T15:22:15Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 2.4,
-     "flat": 7.0,
-     "up": -9.4
+     "down": 2.6,
+     "flat": 10.3,
+     "up": -12.9
     },
     "usual": 0.1104,
-    "value": 0.2889
+    "value": 0.3379
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -2.7,
-     "flat": -13.6,
-     "up": 16.3
+     "down": -1.5,
+     "flat": -13.3,
+     "up": 14.7
     },
     "usual": 0.1084,
-    "value": 0.4893
+    "value": 0.4417
    },
    {
     "group": "airspace_disruption",
@@ -470,23 +473,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.5,
-     "flat": 2.9,
-     "up": -3.4
+     "down": 0.2,
+     "flat": 3.5,
+     "up": -3.8
     },
     "usual": -0.0837,
-    "value": -0.0466
+    "value": -0.0465
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 1.6,
-     "flat": 7.5,
-     "up": -9.1
+     "down": 1.0,
+     "flat": 9.2,
+     "up": -10.2
     },
     "usual": 0.0133,
-    "value": 0.1538
+    "value": 0.1534
    },
    {
     "group": "airfreight_rate_signal",
@@ -502,14 +505,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.24733562931716865,
-   "flat": 0.15385459622756892,
-   "up": 0.5988097744552624
+   "down": 0.25579239091091893,
+   "flat": 0.19516090142603895,
+   "up": 0.5490467076630421
   },
   "shift_points": {
-   "down": -1.6,
-   "flat": -21.5,
-   "up": 23.0
+   "down": -0.7,
+   "flat": -17.3,
+   "up": 18.1
   }
  },
  "official_forecaster": "BL-SEA",
@@ -523,10 +526,10 @@
    "to": "2026-11-05T15:10:10Z"
   },
   "press_splash247": {
-   "articles": 1215,
-   "from": "2026-09-28T08:00:00Z",
-   "retrieved_at": "2026-11-12T15:58:33Z",
-   "to": "2026-11-12T13:08:26Z"
+   "articles": 1214,
+   "from": "2026-09-29T07:34:00Z",
+   "retrieved_at": "2026-11-13T15:22:15Z",
+   "to": "2026-11-13T10:07:01Z"
   }
  },
  "target_period": "2026-09"
