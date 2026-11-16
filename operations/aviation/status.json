@@ -1,17 +1,17 @@
 {
  "feeds": {
   "hkia": {
-   "age_hours": 25.013055555555557,
-   "attempts": 211,
+   "age_hours": 26.740833333333335,
+   "attempts": 214,
    "days_archived": 130,
    "failures_since_last_success": 0,
-   "last_attempt": "2026-11-16T17:00:30Z",
+   "last_attempt": "2026-11-16T18:44:12Z",
    "last_failure_reason": null,
-   "last_result": "NEW",
-   "last_success": "2026-11-16T17:00:30Z",
+   "last_result": "REVISED",
+   "last_success": "2026-11-16T18:44:12Z",
    "mode": "RECENT",
    "newest_observation": "2026-11-15T23:59:59+08:00",
-   "scheduled_runs": 114,
+   "scheduled_runs": 117,
    "triggers": [
     "manual",
     "manual-dispatch",
@@ -19,7 +19,7 @@
    ]
   },
   "positions": {
-   "age_hours": 1008.4338888888889,
+   "age_hours": 1010.1616666666666,
    "attempts": 2,
    "days_archived": null,
    "failures_since_last_success": 0,
@@ -35,7 +35,7 @@
    ]
   }
  },
- "generated": "2026-11-16T17:00:46Z",
+ "generated": "2026-11-16T18:44:26Z",
  "log_intact": true,
  "quality": {
   "checked": {
