@@ -1,70 +1,6 @@
 {
  "articles": [
   {
-   "article_id": "splash247:248136",
-   "mentions": [],
-   "published_utc": "2026-10-02T09:30:00Z",
-   "source_id": "splash247",
-   "text_hash": "274e872ba924a2ebfbbddc69342e0e2517eb4de32b3de559f2a73e0ee59f5288",
-   "url": "https://splash247.com/one-folds-hong-kong-regional-hq-into-singapore/"
-  },
-  {
-   "article_id": "splash247:248131",
-   "mentions": [],
-   "published_utc": "2026-10-02T10:00:00Z",
-   "source_id": "splash247",
-   "text_hash": "bf3d96e81a590539216df014738a2fb46ec6ccd8fc6a927a3322a0006c739339",
-   "url": "https://splash247.com/carlova-returns-to-japan-with-imabari-aframax-pair/"
-  },
-  {
-   "article_id": "splash247:248139",
-   "mentions": [],
-   "published_utc": "2026-10-02T10:05:00Z",
-   "source_id": "splash247",
-   "text_hash": "881a26f5d87ea648aceb1675acd2ad71fecb149e019664c05d607bdfe45cdd77",
-   "url": "https://splash247.com/mol-lands-vale-charter-for-two-tri-fuel-ore-carriers/"
-  },
-  {
-   "article_id": "splash247:248146",
-   "mentions": [],
-   "published_utc": "2026-10-02T10:10:00Z",
-   "source_id": "splash247",
-   "text_hash": "c07cd04f9fe55e2994480fc8154e29c02eb8b245c4092c8cf83fef583351d185",
-   "url": "https://splash247.com/chevron-extends-australia-asset-integrity-deal-with-enermech/"
-  },
-  {
-   "article_id": "splash247:248149",
-   "mentions": [],
-   "published_utc": "2026-10-02T10:15:00Z",
-   "source_id": "splash247",
-   "text_hash": "3e0fa66669e5357c387a466a71faf53e5a0c9003b43b92ec1397f5de8f8b27ed",
-   "url": "https://splash247.com/dof-secures-preliminary-award-for-2028-project/"
-  },
-  {
-   "article_id": "splash247:248174",
-   "mentions": [],
-   "published_utc": "2026-10-02T11:26:35Z",
-   "source_id": "splash247",
-   "text_hash": "ca2be42a1c8ba5029e413b3c9d799e423caddeea5e35b8d87f24963198314256",
-   "url": "https://splash247.com/canadian-seafarers-union-escalates-fight-over-labour-bill/"
-  },
-  {
-   "article_id": "splash247:248176",
-   "mentions": [],
-   "published_utc": "2026-10-03T00:23:17Z",
-   "source_id": "splash247",
-   "text_hash": "115941d171c9b8002f46c9b33ad7b719ef2288bf8259b913d88d18a3dd072178",
-   "url": "https://splash247.com/mission-to-seafarers-opens-newfoundland-welfare-centre/"
-  },
-  {
-   "article_id": "splash247:248178",
-   "mentions": [],
-   "published_utc": "2026-10-03T05:21:57Z",
-   "source_id": "splash247",
-   "text_hash": "1f6a5b7e4bba38a2ee5a76fd4c0ad94d1caf1ed1dbb10e901215c257bf2c8a12",
-   "url": "https://splash247.com/gioia-tauro-advances-port-capacity-upgrades/"
-  },
-  {
    "article_id": "splash247:248180",
    "mentions": [],
    "published_utc": "2026-10-03T09:54:21Z",
@@ -10143,13 +10079,301 @@
    "source_id": "splash247",
    "text_hash": "911da5f1825c7396fa8c4a9456d6d39b1d4b9f1cb37428dd20c297f65e9af499",
    "url": "https://splash247.com/xylas-wins-second-term-at-intercargo/"
+  },
+  {
+   "article_id": "splash247:251322",
+   "mentions": [],
+   "published_utc": "2026-11-16T17:25:57Z",
+   "source_id": "splash247",
+   "text_hash": "c1ed52892389c3357f5477397732c77b599c593f0d5fbee38214a3be55f781ba",
+   "url": "https://splash247.com/ai-whale-watcher-goes-live-at-prince-rupert/"
+  },
+  {
+   "article_id": "splash247:251325",
+   "mentions": [],
+   "published_utc": "2026-11-16T17:37:52Z",
+   "source_id": "splash247",
+   "text_hash": "7d6819395586cbaf96cdbb034a96765e0e6e387c2b4b8b6daedafc9ce52bcb87",
+   "url": "https://splash247.com/philippine-court-strikes-down-seafarer-compensation-bond-rule/"
+  },
+  {
+   "article_id": "splash247:251327",
+   "mentions": [],
+   "published_utc": "2026-11-16T17:53:16Z",
+   "source_id": "splash247",
+   "text_hash": "4d4d2c034dda1a5c5da611c666a763fdaf11b1a3b20eeab3db7f843f35fcbd46",
+   "url": "https://splash247.com/greek-shipowners-put-brussels-on-the-spot-over-imo-deadlock/"
+  },
+  {
+   "article_id": "splash247:251338",
+   "mentions": [],
+   "published_utc": "2026-11-16T18:35:00Z",
+   "source_id": "splash247",
+   "text_hash": "c6b09e4e17466122fc944fa73c10ec0adec8883de0fbb6dbe9b220bb1e315a21",
+   "url": "https://splash247.com/india-approves-2-65m-for-three-seafarer-welfare-facilities/"
+  },
+  {
+   "article_id": "splash247:251341",
+   "mentions": [],
+   "published_utc": "2026-11-16T19:43:00Z",
+   "source_id": "splash247",
+   "text_hash": "043b23cc7517b39b2958bcc92a6541db061bd935da0d43b7559c9f9f78dc46d3",
+   "url": "https://splash247.com/netherlands-opens-shipboard-employment-route-for-panamanian-seafarers/"
+  },
+  {
+   "article_id": "splash247:251390",
+   "mentions": [],
+   "published_utc": "2026-11-16T20:14:00Z",
+   "source_id": "splash247",
+   "text_hash": "1e79b0b74c1621a28b3b148178aec5ad5630be72a3b411f8a6c702a34ba54adf",
+   "url": "https://splash247.com/louis-dreyfus-joins-robotic-hull-cleaning-trials-in-singapore/"
+  },
+  {
+   "article_id": "splash247:251394",
+   "mentions": [],
+   "published_utc": "2026-11-16T20:23:00Z",
+   "source_id": "splash247",
+   "text_hash": "931a1d4a8c9ea7a0e6cc9fe1569d777bdda75c8252b610154dc72e398519621d",
+   "url": "https://splash247.com/sfl-rolls-out-orca-ai-navigation-platform-across-44-vessels/"
+  },
+  {
+   "article_id": "splash247:251336",
+   "mentions": [],
+   "published_utc": "2026-11-16T22:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "1a26a9f50b83a1d5e8d2c1753479802e4fbf57af1bd4ea0135728a35e2dbe0b9",
+   "url": "https://splash247.com/portonave-advances-350m-terminal-expansion-in-brazil/"
+  },
+  {
+   "article_id": "splash247:251334",
+   "mentions": [],
+   "published_utc": "2026-11-16T23:03:00Z",
+   "source_id": "splash247",
+   "text_hash": "e447181a369b2bb05a3ae5b1be9bba630a86a596a033af0ecfb4d7b951766d7b",
+   "url": "https://splash247.com/dp-world-moves-ahead-with-luanda-terminal-expansion/"
+  },
+  {
+   "article_id": "splash247:251361",
+   "mentions": [],
+   "published_utc": "2026-11-17T00:14:28Z",
+   "source_id": "splash247",
+   "text_hash": "91260793c99598d61d72d6764b1fc001499ccb29a0ff2c98422991a988fd6396",
+   "url": "https://splash247.com/dredging-difficulties-stymie-monrovia-port/"
+  },
+  {
+   "article_id": "splash247:251355",
+   "mentions": [],
+   "published_utc": "2026-11-17T01:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "80d197f52398774f582561ad0b45b4328d3c10274807cda23122086c75e7b164",
+   "url": "https://splash247.com/hong-kongs-reinvention-test/"
+  },
+  {
+   "article_id": "splash247:251347",
+   "mentions": [],
+   "published_utc": "2026-11-17T01:42:09Z",
+   "source_id": "splash247",
+   "text_hash": "11c8212faa8548bda58730336d069550313bc35b7df21e322fc0fac862be32e4",
+   "url": "https://splash247.com/two-sides-of-the-same-ship-why-maritime-needs-a-better-conversation/"
+  },
+  {
+   "article_id": "splash247:251374",
+   "mentions": [],
+   "published_utc": "2026-11-17T01:48:45Z",
+   "source_id": "splash247",
+   "text_hash": "ba77827c6104db68423bfc86562aa4c83a3f50389ea6c788417e28bdad529bf4",
+   "url": "https://splash247.com/filipino-cruise-ship-worker-wins-95000-disability-claim/"
+  },
+  {
+   "article_id": "splash247:251376",
+   "mentions": [],
+   "published_utc": "2026-11-17T01:51:03Z",
+   "source_id": "splash247",
+   "text_hash": "5e5015f35a34d2a7442970a5de58737fd9468079f3dccd22a276acd544f68ff4",
+   "url": "https://splash247.com/seafarers-subjected-to-four-hourly-musters-after-ship-arrested-in-us-port/"
+  },
+  {
+   "article_id": "splash247:251383",
+   "mentions": [],
+   "published_utc": "2026-11-17T01:52:27Z",
+   "source_id": "splash247",
+   "text_hash": "50620eed016d59a6f7e45c07301a9136aacad8167851374acaffbde37475d931",
+   "url": "https://splash247.com/china-moves-to-replace-handwritten-ship-logs-with-digital-records/"
+  },
+  {
+   "article_id": "splash247:251386",
+   "mentions": [],
+   "published_utc": "2026-11-17T01:55:01Z",
+   "source_id": "splash247",
+   "text_hash": "337d581d3dad19ec31304da8cef6e29b66e5e3c2902463e597b12533c482ec77",
+   "url": "https://splash247.com/china-takes-the-pen-out-of-bridge-recordkeeping/"
+  },
+  {
+   "article_id": "splash247:251372",
+   "mentions": [],
+   "published_utc": "2026-11-17T02:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "6c68359d71707bfd96a7bf05ef34c978e99467561c5792ee34d040482217a50b",
+   "url": "https://splash247.com/us-unveils-plan-to-turn-retired-offshore-platforms-into-artificial-reefs/"
+  },
+  {
+   "article_id": "splash247:251356",
+   "mentions": [],
+   "published_utc": "2026-11-17T02:10:00Z",
+   "source_id": "splash247",
+   "text_hash": "b771064b831e4086cb559e3682aa83af36cdf4619e2a47134d6f40ce34a0ae4a",
+   "url": "https://splash247.com/dof-clinches-three-year-african-offshore-vessel-contract/"
+  },
+  {
+   "article_id": "splash247:251362",
+   "mentions": [],
+   "published_utc": "2026-11-17T02:20:00Z",
+   "source_id": "splash247",
+   "text_hash": "0c657f36fabe572019dce98ad8192646b353591d757a45036d38d33c014de756",
+   "url": "https://splash247.com/chevron-closes-in-on-5bn-us-gulf-offshore-deal/"
+  },
+  {
+   "article_id": "splash247:251349",
+   "mentions": [],
+   "published_utc": "2026-11-17T02:30:00Z",
+   "source_id": "splash247",
+   "text_hash": "d64c688a4a20fcc0e024d3b77b89aba8634444a5950124c155fe63ed660872cd",
+   "url": "https://splash247.com/exxonmobil-pushes-past-million-barrel-daily-output-in-guyana/"
+  },
+  {
+   "article_id": "splash247:251397",
+   "mentions": [],
+   "published_utc": "2026-11-17T02:40:00Z",
+   "source_id": "splash247",
+   "text_hash": "727a3f555b0b96006d94212be45501c5b5177c3df2d27342ee8e70f731c3d72b",
+   "url": "https://splash247.com/cosl-splashes-1-64bn-on-59-offshore-support-vessel-newbuilds/"
+  },
+  {
+   "article_id": "splash247:251300",
+   "mentions": [],
+   "published_utc": "2026-11-17T03:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "f4947f5c5c83a6d5a4de613cb5c03aa6dad11ed182956e6a376ab86437eec6cb",
+   "url": "https://splash247.com/the-east-india-company-without-a-charter/"
+  },
+  {
+   "article_id": "splash247:251401",
+   "mentions": [],
+   "published_utc": "2026-11-17T05:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "fc9eec28eaf8f9243967e5ca2e1559dd22ff9a3c599f1259404ed96bf9830cd5",
+   "url": "https://splash247.com/fresh-strike-threat-hangs-over-itf-leadership/"
+  },
+  {
+   "article_id": "splash247:251393",
+   "mentions": [],
+   "published_utc": "2026-11-17T06:22:00Z",
+   "source_id": "splash247",
+   "text_hash": "bfe1a05cf321c7e4ab6f088a7bf4b2d895a0f17e72f46065f84e84d0bee6cde2",
+   "url": "https://splash247.com/celsius-returns-to-samsung-for-257m-lng-carrier/"
+  },
+  {
+   "article_id": "splash247:251367",
+   "mentions": [],
+   "published_utc": "2026-11-17T07:28:39Z",
+   "source_id": "splash247",
+   "text_hash": "45067854cc0fc232ff29bba9b23b0dafe04999f41af863e014bb87454f42ac76",
+   "url": "https://splash247.com/eu-widens-shadow-fleet-crackdown-to-tanker-managers-and-oil-buyers/"
+  },
+  {
+   "article_id": "splash247:251358",
+   "mentions": [],
+   "published_utc": "2026-11-17T07:45:57Z",
+   "source_id": "splash247",
+   "text_hash": "b755ea2b8e157ed6ed665b0d87b2200d3fbccc9106167d1cdf293e5bd2c6a14b",
+   "url": "https://splash247.com/another-merchant-ship-lost-in-black-sea-drone-onslaught/"
+  },
+  {
+   "article_id": "splash247:251197",
+   "mentions": [],
+   "published_utc": "2026-11-17T08:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "70cbe6a5bcba08076b4c166255d0f4584da008757585083bc4de6b6f82f27f45",
+   "url": "https://splash247.com/hong-kongs-shipowner-dynasties-face-the-succession-test/"
+  },
+  {
+   "article_id": "splash247:251350",
+   "mentions": [],
+   "published_utc": "2026-11-17T08:15:02Z",
+   "source_id": "splash247",
+   "text_hash": "b8df73f6483359485c42d7c33820bc0b501fc184bb56c27a9d4a3c813b5bea78",
+   "url": "https://splash247.com/china-emerges-as-dry-bulk-export-powerhouse/"
+  },
+  {
+   "article_id": "splash247:251369",
+   "mentions": [],
+   "published_utc": "2026-11-17T08:32:05Z",
+   "source_id": "splash247",
+   "text_hash": "2e7548f301fa8b43fc3c8cff78cbc669f44f7e31745003d1283fa8a17d8bf429",
+   "url": "https://splash247.com/african-nations-join-forces-to-impose-carbon-charges-on-shipping/"
+  },
+  {
+   "article_id": "splash247:251407",
+   "mentions": [],
+   "published_utc": "2026-11-17T09:18:35Z",
+   "source_id": "splash247",
+   "text_hash": "8d4780585b82779d635f84734025c6e77fb776327c47786c9702b791240f022c",
+   "url": "https://splash247.com/itf-joins-global-digital-seafarer-certificate-push/"
+  },
+  {
+   "article_id": "splash247:251410",
+   "mentions": [],
+   "published_utc": "2026-11-17T09:24:56Z",
+   "source_id": "splash247",
+   "text_hash": "d50ba9a9d53b13431158b6b1edee114004704f0292922e4fdd6bc91f20d3ec10",
+   "url": "https://splash247.com/itf-backs-digital-certificate-platform-for-seafarers/"
+  },
+  {
+   "article_id": "splash247:251366",
+   "mentions": [],
+   "published_utc": "2026-11-17T10:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "109c1a11b9ed6ffc913f9e2c682d2dda4903310a0a3688a2af322686d5b6205b",
+   "url": "https://splash247.com/apache-keeps-north-sea-assets-producing-despite-worker-walkouts/"
+  },
+  {
+   "article_id": "splash247:251377",
+   "mentions": [],
+   "published_utc": "2026-11-17T11:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "836407db03b8ccdc7e88f693c7bfe83f343b2487422799bf6678f659da34d74d",
+   "url": "https://splash247.com/allseas-taps-aker-solutions-for-massive-topside-dismantling-job/"
+  },
+  {
+   "article_id": "splash247:251384",
+   "mentions": [],
+   "published_utc": "2026-11-17T12:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "62dd41b240796cb3b7142573da5e8b2f02342f444be24499aff656632d12b0f9",
+   "url": "https://splash247.com/technipfmc-extends-charter-of-dof-csv/"
+  },
+  {
+   "article_id": "splash247:251400",
+   "mentions": [],
+   "published_utc": "2026-11-17T13:00:00Z",
+   "source_id": "splash247",
+   "text_hash": "2b42f91da57acf206dc295dccce2eec1162f74e0c0a7c2da3a72dad84a0bdf37",
+   "url": "https://splash247.com/semco-maritime-and-ptsc-bag-taiwan-offshore-wind-deal/"
+  },
+  {
+   "article_id": "splash247:251414",
+   "mentions": [],
+   "published_utc": "2026-11-17T15:18:58Z",
+   "source_id": "splash247",
+   "text_hash": "fb9286f467b38ec694f4f8ab45f47265512e26903c1f6bd04ab9dd4ceeba0b2b",
+   "url": "https://splash247.com/stealthgas-crew-airlifted-from-stricken-lpg-carrier-off-bulgaria/"
   }
  ],
- "from": "2026-10-02T09:30:00Z",
- "retrieved_at": "2026-11-16T17:00:01Z",
+ "from": "2026-10-03T09:54:21Z",
+ "retrieved_at": "2026-11-17T16:53:01Z",
  "schema": "PRESS-1",
- "sha256": "8728f18bea1c6afed41033efa78fd381d8ab6e3f891f335fdf72df3e78f0478e",
+ "sha256": "ad610c0aced255c2ff5ff22b09b0a3dff525c2b52324c05cdaa13fe43b3b2ab7",
  "source": "press_splash247",
- "to": "2026-11-16T12:54:05Z",
+ "to": "2026-11-17T15:18:58Z",
  "window_days": 45
 }

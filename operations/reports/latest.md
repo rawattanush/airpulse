@@ -1,12 +1,12 @@
-# AirPulse operations report (weekly)
+# AirPulse operations report (daily)
 
-Generated 2026-11-16T18:44:33Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
+Generated 2026-11-17T16:53:42Z from the run records, the ledgers and the clock. Do not edit: the next run overwrites it.
 
 ## Pipeline runs
 
-- Runs on record: 49; started by a scheduler: 46; started by hand: 3.
-- Last run: 2026-11-16T18:41:42Z, started by schedule, exit 2, gate passed.
-- Source fetches on record: 226 by a scheduler, 112 by hand.
+- Runs on record: 50; started by a scheduler: 47; started by hand: 3.
+- Last run: 2026-11-17T16:50:45Z, started by schedule, exit 2, gate passed.
+- Source fetches on record: 230 by a scheduler, 112 by hand.
 
 ## Sources
 
@@ -24,9 +24,9 @@ Generated 2026-11-16T18:44:33Z from the run records, the ledgers and the clock. 
 | Europe import air freight (BoP) price index, every release (BLS IV1311) | FAILED | 2026-10-07T06:11:36Z | 2026-09-16 | 28.5 days | HTTP 403 from https://www.bls.gov/bls/news-release/ximpim.htm; last success 41 days ago |
 | Air Cargo Week headlines | DISABLED | - | - | 3 days |  |
 | Splash247 headlines | DISABLED | - | - | 3 days |  |
-| Air Cargo Week: reported events | FAILED | 2026-11-05T15:26:01Z | 2026-11-05T15:10:10Z | 4 days | HTTPError: HTTP Error 403: Forbidden; last success 11 days ago |
-| Splash247: reported events | HEALTHY | 2026-11-16T17:00:01Z | 2026-11-16T12:54:05Z | 4 days |  |
-| Hong Kong International Airport flight information | HEALTHY | 2026-11-16T18:44:12Z | 2026-11-15 | 3 days |  |
+| Air Cargo Week: reported events | FAILED | 2026-11-05T15:26:01Z | 2026-11-05T15:10:10Z | 4 days | HTTPError: HTTP Error 403: Forbidden; last success 12 days ago |
+| Splash247: reported events | HEALTHY | 2026-11-17T16:53:01Z | 2026-11-17T15:18:58Z | 4 days |  |
+| Hong Kong International Airport flight information | HEALTHY | 2026-11-17T16:53:27Z | 2026-11-16 | 3 days |  |
 | European airports, daily movements (EUROCONTROL) | DISABLED | - | - | 14 days |  |
 | US international nonstop departures (US DOT) | HEALTHY | 2026-11-16T18:44:00Z | 2026-06 | 14 days |  |
 | Aircraft positions near airports (adsb.lol) | DISABLED | - | - | 3 days |  |
