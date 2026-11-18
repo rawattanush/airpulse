@@ -10,6 +10,22 @@
  "events": [
   {
    "direction": 1,
+   "event_type": "HORMUZ_DISRUPTION",
+   "first_reported": "2026-11-18T07:42:00Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-11-18T07:42:00Z",
+   "organisations": [],
+   "places": [
+    "STRAIT_OF_HORMUZ"
+   ],
+   "reports": 1,
+   "severity": 3,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/how-the-hormuz-crisis-handed-america-a-lasting-export-advantage/"
+  },
+  {
+   "direction": 1,
    "event_type": "MILITARY_ATTACK",
    "first_reported": "2026-11-16T06:35:27Z",
    "group": "geopolitical_shock",
@@ -378,34 +394,19 @@
   {
    "direction": 1,
    "event_type": "HORMUZ_DISRUPTION",
-   "first_reported": "2026-10-19T08:34:00Z",
+   "first_reported": "2026-10-19T21:20:49Z",
    "group": "maritime_disruption",
    "last_reported": "2026-10-22T07:00:00Z",
    "organisations": [],
    "places": [
+    "JO",
     "STRAIT_OF_HORMUZ"
    ],
-   "reports": 3,
+   "reports": 2,
    "severity": 3,
    "source": "splash247",
    "status": "ACTIVE",
-   "url": "https://splash247.com/hormuz-attacks-overwhelm-ukmto/"
-  },
-  {
-   "direction": -1,
-   "event_type": "AIR_CAPACITY_ADDITION",
-   "first_reported": "2026-10-19T13:42:16Z",
-   "group": "air_capacity_shock",
-   "last_reported": "2026-10-19T13:42:16Z",
-   "organisations": [],
-   "places": [
-    "AU"
-   ],
-   "reports": 1,
-   "severity": 1,
-   "source": "aircargoweek",
-   "status": "ACTIVE",
-   "url": "https://aircargoweek.com/qantas-freight-and-australia-post-expand-capacity-with-first-of-three-freighters/"
+   "url": "https://splash247.com/hormuz-crisis-drives-extraordinary-cargo-surge-at-jordans-aqaba-port/"
   }
  ],
  "events_in_window": 25,
@@ -419,30 +420,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 925,
-  "as_of": "2026-11-17T16:53:01Z",
+  "articles_in_window": 921,
+  "as_of": "2026-11-18T16:26:35Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
      "down": 3.6,
-     "flat": 11.2,
-     "up": -14.7
+     "flat": 11.0,
+     "up": -14.6
     },
     "usual": 0.1104,
-    "value": 0.3859
+    "value": 0.3876
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -1.8,
-     "flat": -12.6,
-     "up": 14.3
+     "down": -1.9,
+     "flat": -16.3,
+     "up": 18.2
     },
     "usual": 0.1084,
-    "value": 0.4365
+    "value": 0.5214
    },
    {
     "group": "airspace_disruption",
@@ -459,23 +460,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.3,
-     "flat": 3.4,
-     "up": -3.7
+     "down": 0.6,
+     "flat": 5.1,
+     "up": -5.8
     },
     "usual": -0.0837,
-    "value": -0.0459
+    "value": -0.0231
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 0.5,
-     "flat": 6.1,
+     "down": 0.6,
+     "flat": 6.0,
      "up": -6.6
     },
     "usual": 0.0133,
-    "value": 0.1026
+    "value": 0.1031
    },
    {
     "group": "airfreight_rate_signal",
@@ -491,14 +492,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.2589562955133019,
-   "flat": 0.18416489127468744,
-   "up": 0.5568788132120107
+   "down": 0.2522611623931211,
+   "flat": 0.18042446784323368,
+   "up": 0.5673143697636452
   },
   "shift_points": {
-   "down": -0.4,
-   "flat": -18.4,
-   "up": 18.8
+   "down": -1.1,
+   "flat": -18.8,
+   "up": 19.9
   }
  },
  "official_forecaster": "BL-SEA",
@@ -512,10 +513,10 @@
    "to": "2026-11-05T15:10:10Z"
   },
   "press_splash247": {
-   "articles": 1149,
-   "from": "2026-10-03T09:54:21Z",
-   "retrieved_at": "2026-11-17T16:53:01Z",
-   "to": "2026-11-17T15:18:58Z"
+   "articles": 1191,
+   "from": "2026-10-04T08:52:24Z",
+   "retrieved_at": "2026-11-18T16:26:35Z",
+   "to": "2026-11-18T14:41:23Z"
   }
  },
  "target_period": "2026-09"
