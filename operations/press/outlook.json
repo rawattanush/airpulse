@@ -10,6 +10,56 @@
  "events": [
   {
    "direction": 1,
+   "event_type": "WAR_ESCALATION",
+   "first_reported": "2026-11-19T09:20:12Z",
+   "group": "geopolitical_shock",
+   "last_reported": "2026-11-19T09:20:12Z",
+   "organisations": [],
+   "places": [
+    "PA",
+    "durban"
+   ],
+   "reports": 1,
+   "severity": 3,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/splash-ports-latest-liner-giants-go-shopping-panamas-port-war-escalates-and-durban-battles-gridlock/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-11-19T09:20:12Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-11-19T09:20:12Z",
+   "organisations": [],
+   "places": [
+    "PA",
+    "durban"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ACTIVE",
+   "url": "https://splash247.com/splash-ports-latest-liner-giants-go-shopping-panamas-port-war-escalates-and-durban-battles-gridlock/"
+  },
+  {
+   "direction": 1,
+   "event_type": "PORT_CONGESTION",
+   "first_reported": "2026-11-19T01:30:17Z",
+   "group": "maritime_disruption",
+   "last_reported": "2026-11-19T01:30:17Z",
+   "organisations": [],
+   "places": [
+    "durban"
+   ],
+   "reports": 1,
+   "severity": 2,
+   "source": "splash247",
+   "status": "ENDED",
+   "url": "https://splash247.com/transnet-moves-to-ease-durban-port-gridlock-with-extra-berth-ship-diversions/"
+  },
+  {
+   "direction": 1,
    "event_type": "HORMUZ_DISRUPTION",
    "first_reported": "2026-11-18T07:42:00Z",
    "group": "maritime_disruption",
@@ -394,22 +444,22 @@
   {
    "direction": 1,
    "event_type": "HORMUZ_DISRUPTION",
-   "first_reported": "2026-10-19T21:20:49Z",
+   "first_reported": "2026-10-22T07:00:00Z",
    "group": "maritime_disruption",
    "last_reported": "2026-10-22T07:00:00Z",
    "organisations": [],
    "places": [
-    "JO",
+    "IR",
     "STRAIT_OF_HORMUZ"
    ],
-   "reports": 2,
+   "reports": 1,
    "severity": 3,
    "source": "splash247",
    "status": "ACTIVE",
-   "url": "https://splash247.com/hormuz-crisis-drives-extraordinary-cargo-surge-at-jordans-aqaba-port/"
+   "url": "https://splash247.com/iran-claims-seven-vessels-hit-in-new-wave-of-hormuz-attacks/"
   }
  ],
- "events_in_window": 25,
+ "events_in_window": 28,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -420,30 +470,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 921,
-  "as_of": "2026-11-18T16:26:35Z",
+  "articles_in_window": 926,
+  "as_of": "2026-11-19T16:32:43Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 3.6,
-     "flat": 11.0,
-     "up": -14.6
+     "down": 4.4,
+     "flat": 14.5,
+     "up": -18.9
     },
     "usual": 0.1104,
-    "value": 0.3876
+    "value": 0.4636
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -1.9,
-     "flat": -16.3,
-     "up": 18.2
+     "down": -0.7,
+     "flat": -19.9,
+     "up": 20.6
     },
     "usual": 0.1084,
-    "value": 0.5214
+    "value": 0.5706
    },
    {
     "group": "airspace_disruption",
@@ -460,23 +510,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.6,
-     "flat": 5.1,
-     "up": -5.8
+     "down": 0.4,
+     "flat": 5.8,
+     "up": -6.2
     },
     "usual": -0.0837,
-    "value": -0.0231
+    "value": -0.0229
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 0.6,
-     "flat": 6.0,
-     "up": -6.6
+     "down": 0.3,
+     "flat": 6.8,
+     "up": -7.0
     },
     "usual": 0.0133,
-    "value": 0.1031
+    "value": 0.1025
    },
    {
     "group": "airfreight_rate_signal",
@@ -492,14 +542,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.2522611623931211,
-   "flat": 0.18042446784323368,
-   "up": 0.5673143697636452
+   "down": 0.2521339383990441,
+   "flat": 0.20867575869514113,
+   "up": 0.5391903029058148
   },
   "shift_points": {
    "down": -1.1,
-   "flat": -18.8,
-   "up": 19.9
+   "flat": -16.0,
+   "up": 17.1
   }
  },
  "official_forecaster": "BL-SEA",
@@ -513,10 +563,10 @@
    "to": "2026-11-05T15:10:10Z"
   },
   "press_splash247": {
-   "articles": 1191,
-   "from": "2026-10-04T08:52:24Z",
-   "retrieved_at": "2026-11-18T16:26:35Z",
-   "to": "2026-11-18T14:41:23Z"
+   "articles": 1205,
+   "from": "2026-10-05T08:45:15Z",
+   "retrieved_at": "2026-11-19T16:32:43Z",
+   "to": "2026-11-19T12:12:02Z"
   }
  },
  "target_period": "2026-09"
