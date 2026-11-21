@@ -440,42 +440,9 @@
    "source": "aircargoweek",
    "status": "ACTIVE",
    "url": "https://aircargoweek.com/iag-cargo-adds-route-to-colombo-and-increases-bangkok-and-delhi-frequency-in-winter-schedule/"
-  },
-  {
-   "direction": 1,
-   "event_type": "SANCTIONS",
-   "first_reported": "2026-10-22T07:06:01Z",
-   "group": "geopolitical_shock",
-   "last_reported": "2026-10-22T07:06:01Z",
-   "organisations": [],
-   "places": [
-    "US"
-   ],
-   "reports": 1,
-   "severity": 2,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/us-sanctions-net-widens-to-shipping-agents-and-lawyers/"
-  },
-  {
-   "direction": 1,
-   "event_type": "HORMUZ_DISRUPTION",
-   "first_reported": "2026-10-22T07:00:00Z",
-   "group": "maritime_disruption",
-   "last_reported": "2026-10-22T07:00:00Z",
-   "organisations": [],
-   "places": [
-    "IR",
-    "STRAIT_OF_HORMUZ"
-   ],
-   "reports": 1,
-   "severity": 3,
-   "source": "splash247",
-   "status": "ACTIVE",
-   "url": "https://splash247.com/iran-claims-seven-vessels-hit-in-new-wave-of-hormuz-attacks/"
   }
  ],
- "events_in_window": 29,
+ "events_in_window": 27,
  "experimental": true,
  "issuance_date": "2026-09-16",
  "model": {
@@ -486,30 +453,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 929,
-  "as_of": "2026-11-20T16:07:03Z",
+  "articles_in_window": 910,
+  "as_of": "2026-11-21T15:19:08Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
-     "down": 4.4,
-     "flat": 16.5,
-     "up": -21.0
+     "down": 3.7,
+     "flat": 15.7,
+     "up": -19.4
     },
     "usual": 0.1104,
-    "value": 0.4941
+    "value": 0.4546
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": -0.1,
-     "flat": -20.5,
-     "up": 20.6
+     "down": -0.4,
+     "flat": -17.0,
+     "up": 17.4
     },
     "usual": 0.1084,
-    "value": 0.5688
+    "value": 0.4966
    },
    {
     "group": "airspace_disruption",
@@ -526,23 +493,23 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": 0.2,
+     "down": 0.1,
      "flat": 6.2,
-     "up": -6.4
+     "up": -6.3
     },
     "usual": -0.0837,
-    "value": -0.0229
+    "value": -0.0234
    },
    {
     "group": "cargo_demand_shock",
     "label": "Cargo demand",
     "shift_points": {
-     "down": 0.0,
-     "flat": 7.2,
-     "up": -7.3
+     "down": -0.0,
+     "flat": 7.4,
+     "up": -7.4
     },
     "usual": 0.0133,
-    "value": 0.1022
+    "value": 0.1043
    },
    {
     "group": "airfreight_rate_signal",
@@ -558,14 +525,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.2531429145499553,
-   "flat": 0.22885334873471022,
-   "up": 0.5180037367153345
+   "down": 0.2570625953636764,
+   "flat": 0.23109337306010655,
+   "up": 0.511844031576217
   },
   "shift_points": {
-   "down": -1.0,
-   "flat": -14.0,
-   "up": 15.0
+   "down": -0.6,
+   "flat": -13.7,
+   "up": 14.3
   }
  },
  "official_forecaster": "BL-SEA",
@@ -579,10 +546,10 @@
    "to": "2026-11-05T15:10:10Z"
   },
   "press_splash247": {
-   "articles": 1212,
-   "from": "2026-10-06T08:30:45Z",
-   "retrieved_at": "2026-11-20T16:07:03Z",
-   "to": "2026-11-20T12:00:00Z"
+   "articles": 1192,
+   "from": "2026-10-07T07:30:00Z",
+   "retrieved_at": "2026-11-21T15:19:08Z",
+   "to": "2026-11-21T14:51:29Z"
   }
  },
  "target_period": "2026-09"
