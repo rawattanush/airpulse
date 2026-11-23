@@ -1,7 +1,7 @@
 {
  "feeds": {
   "hkia": {
-   "age_hours": 28.400555555555556,
+   "age_hours": 29.66111111111111,
    "attempts": 238,
    "days_archived": 137,
    "failures_since_last_success": 0,
@@ -19,7 +19,7 @@
    ]
   },
   "positions": {
-   "age_hours": 1179.8213888888888,
+   "age_hours": 1181.0819444444444,
    "attempts": 2,
    "days_archived": null,
    "failures_since_last_success": 0,
@@ -35,7 +35,7 @@
    ]
   }
  },
- "generated": "2026-11-23T20:24:01Z",
+ "generated": "2026-11-23T21:39:39Z",
  "log_intact": true,
  "quality": {
   "checked": {
