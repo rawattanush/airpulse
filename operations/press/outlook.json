@@ -479,30 +479,30 @@
   "window_days": 30
  },
  "news_adjusted": {
-  "articles_in_window": 958,
-  "as_of": "2026-11-24T18:52:17Z",
+  "articles_in_window": 943,
+  "as_of": "2026-11-25T17:59:09Z",
   "by_group": [
    {
     "group": "geopolitical_shock",
     "label": "Geopolitical events",
     "shift_points": {
      "down": 3.7,
-     "flat": 19.5,
-     "up": -23.1
+     "flat": 20.0,
+     "up": -23.6
     },
     "usual": 0.1104,
-    "value": 0.5072
+    "value": 0.5153
    },
    {
     "group": "maritime_disruption",
     "label": "Disruption at sea",
     "shift_points": {
-     "down": 1.0,
-     "flat": -20.8,
-     "up": 19.7
+     "down": 1.2,
+     "flat": -21.3,
+     "up": 20.1
     },
     "usual": 0.1084,
-    "value": 0.5516
+    "value": 0.5604
    },
    {
     "group": "airspace_disruption",
@@ -519,9 +519,9 @@
     "group": "air_capacity_shock",
     "label": "Air cargo capacity",
     "shift_points": {
-     "down": -0.1,
-     "flat": 9.3,
-     "up": -9.1
+     "down": -0.2,
+     "flat": 9.4,
+     "up": -9.2
     },
     "usual": -0.0837,
     "value": 0.0
@@ -531,11 +531,11 @@
     "label": "Cargo demand",
     "shift_points": {
      "down": -0.5,
-     "flat": 7.9,
-     "up": -7.5
+     "flat": 8.1,
+     "up": -7.6
     },
     "usual": 0.0133,
-    "value": 0.0991
+    "value": 0.1007
    },
    {
     "group": "airfreight_rate_signal",
@@ -551,14 +551,14 @@
   ],
   "prediction": "UP",
   "probabilities": {
-   "down": 0.25274077307035203,
-   "flat": 0.2694023337273259,
-   "up": 0.4778568932023221
+   "down": 0.25200104714064925,
+   "flat": 0.2733589688838174,
+   "up": 0.4746399839755335
   },
   "shift_points": {
-   "down": -1.0,
-   "flat": -9.9,
-   "up": 10.9
+   "down": -1.1,
+   "flat": -9.5,
+   "up": 10.6
   }
  },
  "official_forecaster": "BL-SEA",
@@ -572,10 +572,10 @@
    "to": "2026-11-05T15:10:10Z"
   },
   "press_splash247": {
-   "articles": 1184,
-   "from": "2026-10-10T20:01:00Z",
-   "retrieved_at": "2026-11-24T18:52:17Z",
-   "to": "2026-11-24T17:04:41Z"
+   "articles": 1220,
+   "from": "2026-10-11T16:02:00Z",
+   "retrieved_at": "2026-11-25T17:59:09Z",
+   "to": "2026-11-25T12:40:00Z"
   }
  },
  "target_period": "2026-09"
