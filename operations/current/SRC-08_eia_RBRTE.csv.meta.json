@@ -1,9 +1,9 @@
 {
  "source_id": "SRC-08",
  "url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
- "retrieved_at": "2026-11-19T16:31:17Z",
- "sha256": "9ff01c6929076773c3fbb981b58312346f32dc12bf056d5382c8ed3e41171a50",
+ "retrieved_at": "2026-11-26T17:41:31Z",
+ "sha256": "789c3fc7759fba9a61afb23297bb42249cb7463c3d62ad1436137efc2bdca6fe",
  "http_status": 200,
- "bytes": 155222,
- "note": "operational refresh (OPS-1.0): spreadsheet 099cc50c88f3f284 kept as operations/raw/eia_brent/20261119T163117Z_099cc50c88f3.xls.gz and written as observation_date,value; previous file 32090251dd048395"
+ "bytes": 155305,
+ "note": "operational refresh (OPS-1.0): spreadsheet 82ef9d6f48fbcce0 kept as operations/raw/eia_brent/20261126T174131Z_82ef9d6f48fb.xls.gz and written as observation_date,value; previous file 9ff01c6929076773"
 }
